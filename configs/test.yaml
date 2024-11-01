@@ -1,3 +1,20 @@
 
-pipeline:
+
+pred:
+    model: gpt
+    generate: true
+    from_file: false
+    path: /path/to/predictions.csv
+    out_path: /path/to/output.csv
+
+expl:
+    model: gpt
+    generate: true
+    from_file: false
+    path: /path/to/predictions.csv
+    out_path: /path/to/output.csv
+
+
+
+
 

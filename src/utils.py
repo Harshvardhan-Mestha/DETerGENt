@@ -14,7 +14,6 @@ import os
 import torch
 import random
 import base64
-import requests
 import numpy as np
 import pandas as pd
 from time import time
@@ -22,23 +21,27 @@ from tqdm import tqdm
 from PIL import Image
 import matplotlib.pyplot as plt
 from torchvision import transforms as T
-from medgpt.minigpt4.common.config import Config
-from medgpt.minigpt4.models.minigpt_v2 import MiniGPTv2
+# from medgpt.minigpt4.common.config import Config
+# from medgpt.minigpt4.models.minigpt_v2 import MiniGPTv2
 
 from typing import List, Tuple
 from dataclasses import dataclass
+import yaml
 
 
 
+class_names_short = ["ATCS", "CLFS", "CRDM", "COPD", "LNGN", "MSTL", "PLEF", "PNUM", "PNTX", "TUBC"]
 
 openai_org = os.getenv("OPENAI_ORG")
 openai_project = os.getenv("OPENAI_PROJECT")
 openai_key = os.getenv("OPENAI_KEY")
-client = OpenAI(
-    organization=openai_org,
-    project=openai_project,
-    api_key=openai_key,
-)
+# client = OpenAI(
+#     organization=openai_org,
+#     api_key=openai_key,
+# )
+
+MiniGPTv2 = list
+Config = list
 
 import base64
 
@@ -245,6 +248,7 @@ class PromptArgs:
     top_p: float = 0.9
     mode: str = ""
 
+
 def load_model(args: MiniGPTArgs) -> MiniGPTv2:
     '''
     Utility function to load a model.
@@ -349,6 +353,7 @@ def load_data(data_path="./data/xray_data.csv", split=0.25): # loads data from a
             if cname in class_data[i]:
                 l.append(i)
         class_idx.append(l)
+        print(f"[INFO] {cname} : {len(l)} examples")
 
     D = []
     for i in range(len(data)):
@@ -366,5 +371,12 @@ def load_data(data_path="./data/xray_data.csv", split=0.25): # loads data from a
             )
         )
 
+    print("[INFO] Data loaded")
     return D_classwise
 
+def load_config(path="./configs/test.yaml"):
+    with open(path) as stream:
+        config = yaml.safe_load(stream)
+        print("[INFO] Config loaded")
+
+    return config

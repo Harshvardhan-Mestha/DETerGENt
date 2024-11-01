@@ -10,25 +10,28 @@ import pandas as pd
 from openai import OpenAI
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
-from utils import load_model, generate, printAndLog, MiniGPTArgs
+# from utils import load_model, generate, printAndLog, MiniGPTArgs
+from utils import encode_image, generate, PromptArgs, MiniGPTArgs, load_model
 from argparse import ArgumentParser
 
 openai_org = os.getenv("OPENAI_ORG")
 openai_project = os.getenv("OPENAI_PROJECT")
 openai_key = os.getenv("OPENAI_KEY")
-client = OpenAI(
-    organization=openai_org,
-    project=openai_project,
-    api_key=openai_key,
-)
+# client = OpenAI(
+#     organization=openai_org,
+#     api_key=openai_key,
+# )
+print("[INFO] Loading MiniGPT-Med, this may take some time if this is the first launch")
+# model = load_model(MiniGPTArgs)
+model = list
 
 
-
-def report_gen(llm,x,model,prompt_args, model_args):
+def report_gen(llm,x,model,prompt_args=PromptArgs, model_args=MiniGPTArgs):
     report_prompt = "";
     e_pred = ""
 
     if llm=='gpt':
+        print("[INFO] Generating report using GPT-4o")
         image_paths = []
         for i in [os.listdir(f"./data/" + x)[0]]:
             image_path = f"./data/" + x + "/" + i
@@ -77,6 +80,7 @@ def report_gen(llm,x,model,prompt_args, model_args):
             e_pred = e_pred + i
 
     if llm=="medgpt":
+        print("[INFO] Generating report using MiniGPT-Med")
         try: 
             class_list = ["Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothelioma", "Cardiomegaly", "Plueral Effusion", "Pneumonia", "Pneumothorax", "Tuberculosis"]
             classes = ", ".join(class_list)
@@ -93,13 +97,14 @@ def report_gen(llm,x,model,prompt_args, model_args):
         except:
             pass
     print(e_pred)
-    return e_pred, report_prompt
+    return e_pred
 
-def pred_gen(llm,x,model,prompt_args, model_args):
+def pred_gen(llm,x,model=model,prompt_args=PromptArgs, model_args=MiniGPTArgs):
     class_prompt = "";
     y_pred = "";
 
     if llm=="gpt":
+        print("[INFO] Generating predictions using GPT-4o")
         image_paths = []
         for i in [os.listdir(f"./data/" + x)[0]]:
             image_path = f"./data/" + x + "/" + i
@@ -147,6 +152,7 @@ def pred_gen(llm,x,model,prompt_args, model_args):
             if c in y: y_pred = c; break
 
     if llm=="medgpt":
+        print("[INFO] Generating predictions using MiniGPT-Med")
         try:
             class_list = ["Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothelioma", "Cardiomegaly", "Plueral Effusion", "Pneumonia", "Pneumothorax", "Tuberculosis"]
             classes = ", ".join(class_list)
