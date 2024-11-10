@@ -7,7 +7,6 @@ from openai import OpenAI
 from abc import abstractmethod
 import sys
 sys.path.append('.')
-sys.path.append('medgpt')
 
 import io
 import os
@@ -21,27 +20,33 @@ from tqdm import tqdm
 from PIL import Image
 import matplotlib.pyplot as plt
 from torchvision import transforms as T
-# from medgpt.minigpt4.common.config import Config
-# from medgpt.minigpt4.models.minigpt_v2 import MiniGPTv2
+from minigpt4.common.config import Config
+from minigpt4.models.minigpt_v2 import MiniGPTv2
 
 from typing import List, Tuple
 from dataclasses import dataclass
 import yaml
 
-
-
 class_names_short = ["ATCS", "CLFS", "CRDM", "COPD", "LNGN", "MSTL", "PLEF", "PNUM", "PNTX", "TUBC"]
+class_list = ["Atelectasis",
+              "Calcifications",
+              "COPD",
+              "Lung Nodules",
+              "Mesothelioma",
+              "Cardiomegaly",
+              "Plueral Effusion",
+              "Pneumonia",
+              "Pneumothorax",
+              "Tuberculosis"
+              ]
 
 openai_org = os.getenv("OPENAI_ORG")
 openai_project = os.getenv("OPENAI_PROJECT")
 openai_key = os.getenv("OPENAI_KEY")
-# client = OpenAI(
-#     organization=openai_org,
-#     api_key=openai_key,
-# )
-
-MiniGPTv2 = list
-Config = list
+client = OpenAI(
+    organization=openai_org,
+    api_key=openai_key,
+)
 
 import base64
 
@@ -267,13 +272,13 @@ def load_model(args: MiniGPTArgs) -> MiniGPTv2:
     return model
 
 @torch.no_grad()
-def generate(args: MiniGPTArgs, 
-                   model: MiniGPTv2, 
-                   image_path: str, 
-                   text: str, 
-                   mode="caption", 
-                   temperature=1.0, 
-                   top_p=0.9) -> Tuple[str, float]:
+def miniGPTclient(args: MiniGPTArgs, 
+                 model: MiniGPTv2, 
+                 image_path: str, 
+                 text: str, 
+                 mode="caption", 
+                 temperature=1.0, 
+                 top_p=0.9) -> Tuple[str, float]:
     '''
     Utility to generate reports with a basic prompt structure
     
@@ -305,10 +310,9 @@ def generate(args: MiniGPTArgs,
                          temperature=temperature, 
                          top_p=top_p)
     end = time()
-    
-    out, logits = out
+    # out, logits = out
 
-    return out, (end - start), logits
+    return out, (end - start)
 
 def printAndLog(text: str, log: io.FileIO) -> None:
     '''

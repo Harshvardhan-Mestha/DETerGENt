@@ -31,7 +31,7 @@ from dataclasses import dataclass
 from argparse import ArgumentParser
 
 from utils import load_config, load_data, match, agree
-from lang import report_gen, pred_gen
+from lang import generate_report, generate_prediction
 
 
 
@@ -53,13 +53,13 @@ def main(config,D):
     pred_model = pred["model"];          expl_model = expl["model"];
     pred_path = pred["path"];            expl_path = expl["path"]
     pred_from_file = pred["from_file"];  expl_from_file = expl["from_file"]; 
-    pred_generate = pred["generate"];    expl_generate = expl["generate"] 
+    generate_predictionerate = pred["generate"];    expl_generate = expl["generate"] 
       
 
-    assert pred_from_file != pred_generate, "[PRED] Only one of from_file or generate can be True"
+    assert pred_from_file != generate_predictionerate, "[PRED] Only one of from_file or generate can be True"
     assert expl_from_file != expl_generate, "[EXPL] Only one of from_file or generate can be True"
-    assert (pred_from_file and len(pred_path) > 0) or pred_generate, "[PRED] from_file is True but path is not provided"
-    assert (expl_from_file and len(expl_path) > 0) or pred_generate, "[EXPL] from_file is True but path is not provided"
+    assert (pred_from_file and len(pred_path) > 0) or generate_predictionerate, "[PRED] from_file is True but path is not provided"
+    assert (expl_from_file and len(expl_path) > 0) or generate_predictionerate, "[EXPL] from_file is True but path is not provided"
 
 
     # predict 
@@ -74,7 +74,7 @@ def main(config,D):
             for pt in c[0]:
                 x, _, _ = pt
                 print(x)
-                pred = pred_gen(pred_model,x)
+                pred = generate_prediction(pred_model,x)
                 preds.append(pred)
 
         preds = pd.DataFrame(preds)
@@ -94,7 +94,7 @@ def main(config,D):
             for pt in c[0]:
                 x, _, _ = pt
                 print(x)
-                expl = report_gen(expl_model,x) ## change to take preds as input
+                expl = generate_report(expl_model,x) ## change to take preds as input
                 expls.append(expl)
 
         expls = pd.DataFrame(expls)
