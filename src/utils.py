@@ -9,19 +9,20 @@ from time import time
 from typing import Tuple, List
 from dataclasses import dataclass
 from argparse import ArgumentParser
-
+from typing import Tuple, List, Optional
 import yaml
 import torch
 import pandas as pd
 from PIL import Image
 from openai import OpenAI
 from torchvision import transforms as T
+import sys
+sys.path.append('/home/dell7810/hv/git/DETerGENt/')
 from minigpt4.common.config import Config
 from minigpt4.models.minigpt_v2 import MiniGPTv2
 
-class_names_short = ["ATCS", "CLFS", "CRDM", "COPD", "LNGN", "MSTL",
-                     "PLEF", "PNUM", "PNTX",
-                     "TUBC"]
+
+class_names_short = ["ATCS", "CLFS", "CRDM", "COPD", "LNGN", "MSTL", "PLEF", "PNUM", "PNTX", "TUBC"]
 class_list = ["Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothelioma",
               "Cardiomegaly", "Plueral Effusion", "Pneumonia", "Pneumothorax",
               "Tuberculosis"]
@@ -30,8 +31,8 @@ openai_org = os.getenv("OPENAI_ORG")
 openai_project = os.getenv("OPENAI_PROJECT")
 openai_key = os.getenv("OPENAI_KEY")
 client = OpenAI(
-    organization=openai_org,
-    api_key=openai_key,
+    organization="org-FS3BNL7yaD4kX7b68zAMckVr",
+    api_key="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",
 )
 
 
@@ -386,7 +387,7 @@ def load_data(data_path="./data/xray_data.csv"): # loads data from a csv file
     # iterate over the dataframe and get indices of classes
     for cname in class_names_short:
         l = []
-        for i, cname in enumerate(class_data):
+        for i in range(len(class_data)):
             if cname in class_data[i]:
                 l.append(i)
         class_idx.append(l)

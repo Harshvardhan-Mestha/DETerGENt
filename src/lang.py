@@ -19,11 +19,15 @@ from src.utils import (
 openai_org = os.getenv("OPENAI_ORG")
 openai_project = os.getenv("OPENAI_PROJECT")
 openai_key = os.getenv("OPENAI_KEY")
-CLIENT = OpenAI(
-    organization=openai_org,
-    api_key=openai_key,
-)
+# CLIENT = OpenAI(
+#     organization=openai_org,
+#     api_key=openai_key,
+# )
 
+CLIENT = OpenAI(
+    organization="org-FS3BNL7yaD4kX7b68zAMckVr",
+    api_key="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",
+)
 
 def generate_report(
     llm: str, x: str, pred: str,
@@ -180,12 +184,15 @@ def generate_prediction(
     y: str
         Predicted ailment for the given X-ray
     """
-
     # Get image path
     if os.path.isdir(f"data/{x}"):
-        image_path = os.path.abspath(os.listdir(f"data/{x}")[0])
+        image_name = os.listdir(f"data/{x}")[0]
+        image_path = os.getcwd() + f"/data/{x}/" + image_name
+
     else:
         image_path = x
+
+
 
     if llm == "gpt":
         print("[INFO] Generating predictions using GPT-4o")
@@ -232,7 +239,7 @@ def generate_prediction(
                 )
                 predictions = completion.choices[0].message.content
                 predictions = predictions.replace("\n", " ")
-
+                print(predictions)
                 # check if the prediction is valid and extract the prediction
                 if "Diagnosis" in predictions:
                     valid_prediction = True

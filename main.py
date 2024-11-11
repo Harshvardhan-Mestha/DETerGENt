@@ -53,13 +53,13 @@ def main(config, D: list) -> Optional[pd.DataFrame]:
             "case": []
         }
         for c in D:
-            for pt in c[0]:
+            for pt in c:
                 # TODO: remove this print statement
                 print(pt[0])
                 pred = generate_prediction(pred["model"], pt[0])
                 preds["img_path"].append(pt[0])
                 preds["pred"].append(pred)
-                preds["case"].append(pt[-1])
+                
 
         preds = pd.DataFrame(preds)
         preds.to_csv(pred["path"])
