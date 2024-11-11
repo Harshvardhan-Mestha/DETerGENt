@@ -1,23 +1,19 @@
-import sys
-sys.path.append('.')
-
 import re
 import os
 import wandb
 from time import time
 from io import StringIO
-from copy import deepcopy
 from typing import Union, Optional, Tuple
 
 import torch
 import torch.nn as nn
 import torch.distributed as dist
-from torchxrayvision import models
 import torch.multiprocessing as mp
 from torch.utils.data import DataLoader
 from torch.nn.parallel import DistributedDataParallel as DDP
 
-from vis.dataset import getDataLoadersFor5FoldCV
+from src.vis.model import ResNetAndHead
+from src.vis.dataset import getDataLoadersFor5FoldCV
 
 
 def setup(rank, world_size):
@@ -79,35 +75,10 @@ class Trainer:
         self.data_loaders = getDataLoadersFor5FoldCV(self.data_path, ddp=self.ddp)
         assert len(self.data_loaders) == 6, "Data loaders should be of length 5 + 1."
 
-        # resnet backbone
-        self.freeze_backbone = freeze_backbone
-        self.backbone = models.ResNet(weights="resnet50-res512-all")
-        self.backbone = self.backbone.to(self.device)
-        pattern = re.compile(r'model.layer4.2.*3')
-        for param in self.backbone.parameters():
-            param.requires_grad = False
-        if freeze_backbone:
-            self.backbone.eval()
-        else: # self.ddp
-            for name, param in self.backbone.named_parameters():
-                if pattern.match(name) is not None:
-                    param.requires_grad = True
-            if self.ddp:
-                self.backbone = DDP(self.backbone, device_ids=[self.device])
-        # store for resetting params
-        self.init_state_dict = {
-            "backbone": deepcopy(self.backbone.state_dict())
-        }
-
-        # model
-        self.model = nn.Sequential(
-            nn.Dropout(0.5),
-            nn.Linear(2048, num_classes)
-        ).to(self.device)
+        # model stuff
+        self.model = ResNetAndHead(num_classes, freeze_backbone).to(self.device)
         if self.ddp:
             self.model = DDP(self.model, device_ids=[self.device])
-        # store for resetting params
-        self.init_state_dict["model"] = deepcopy(self.model.state_dict())
 
         # loss and optimizer
         self.loss_fn = customBCE # nn.CrossEntropyLoss()
@@ -395,13 +366,10 @@ class Trainer:
                 "accuracy": 0.0,
             }
 
-        # reset model parameters after each fold, it's a linear layer, so use uniform -root(1/k) to root(1/k)
+        # reset model parameters after each fold
         if fold_num != 0:
-            model_dict = self.init_state_dict["model"]
-            self.model.load_state_dict(model_dict)
-            if not self.freeze_backbone:
-                backbone_dict = self.init_state_dict["backbone"]
-                self.backbone.load_state_dict(backbone_dict)
+            self.model._reset_head()
+            self.model._reset_backbone()
 
         # Initialize a new wandb run for each fold with a distinct name and group them under one group
         if self.device_check:
