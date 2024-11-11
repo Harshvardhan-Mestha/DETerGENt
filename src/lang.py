@@ -3,12 +3,11 @@ Interacts with both LLMs. Generates reports and predictions using GPT-4o and Min
 """
 
 import os
-import sys
 from typing import Optional
 
 from openai import OpenAI
 
-from utils import (
+from src.utils import (
     encode_image,
     mini_gpt_client,
     PromptArgs,
@@ -16,8 +15,6 @@ from utils import (
     MiniGPTv2,
     class_list
 )
-
-sys.path.append("minigpt4/")
 
 openai_org = os.getenv("OPENAI_ORG")
 openai_project = os.getenv("OPENAI_PROJECT")
@@ -78,10 +75,10 @@ def generate_report(
                 "content": [
                     {
                         "type": "text",
-                        "text": f"""Given is the X-ray image. 
-                        You shall analyse this image given that the patient has been diagnosed with {pred}.
+                        "text": f"""Given is the X-ray image.
+                        The patient has been diagnosed with {pred}.
                         Your output should be in the following format :
-                        "Explanation" - A short passage describing the contents of the image with respect to the ailments above
+                        "Explanation" - A short passage describing the contents of the image with respect to the ailment(s) above
                         Adhere to the output format strictly, and be concise.
                         Make no assumptions about the patient.
                         """,
@@ -119,15 +116,16 @@ def generate_report(
     elif llm == "medgpt":
         print("[INFO] Generating report using MiniGPT-Med")
 
-        # TODO: this logic needs to be refined
         if prompt_args is None:
-            prompt_args = PromptArgs()
+            prompt_args = PromptArgs(temperature=0.9,
+                                     top_p=0.9)
 
         valid_report = False
         while not valid_report:
             # TODO: Refine prompt.
-            report_prompt = f"""Given that the patient has been diagnosed with {pred},
-             write a detailed report on the findings.
+            report_prompt = f"""You are a radiologist.
+             The patient has been diagnosed with {pred}.
+             Given the X-ray image, write a detailed report on the findings.
             """
             prompt_args.mode = "caption"
             # get report from MiniGPTMed
@@ -192,63 +190,70 @@ def generate_prediction(
     if llm == "gpt":
         print("[INFO] Generating predictions using GPT-4o")
 
-        # TODO: refine prompt. (Prob have to do one-by-one)
-        messages = [
-            {
-                "role": "user",
-                "content": [
-                    {
-                        "type": "text",
-                        "text": f"""Given is the X-ray image. 
-                        Your task is to output an analysis of the given X-ray with respect to 10 major ailments. 
-                        You shall analyse this image closely for its attributes. 
-                        The 10 ailments are as follows : {', '.join(class_list)}
-                        You must provide an output strictly in the following format : 
-                        "Diagnosis" - Choose one and only one of the ailments given above
-                        Adhere to the output format strictly.
-                        Make no assumptions about the patient.
-                        Make minimal assumptions.
-                """,
-                    },
-                ],
-            }
-        ]
+        ovr_y = ""
+        for cls in class_list:
+            # TODO: refine prompt.
+            messages = [
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": f"""Given is the X-ray image.
+                            Your task is to output an analysis of the given X-ray with respect {cls}.
+                            You shall analyse this image closely for its attributes.
+                            You must provide an output strictly in the following format :
+                            "Diagnosis" - Yes/No
+                            Adhere to the output format strictly.
+                            Make no assumptions about the patient.
+                            """,
+                        },
+                    ],
+                }
+            ]
 
-        # add the image
-        encoding = encode_image(image_path)
-        messages[0]["content"].append(
-            {
-                "type": "image_url",
-                "image_url": {"url": f"data:image/jpeg;base64,{encoding}"},
-            }
-        )
-
-        valid_prediction = False
-        while not valid_prediction:
-            # get response from the API
-            completion = CLIENT.chat.completions.create(
-                model="gpt-4o",
-                messages=messages,
-                max_tokens=300,
+            # add the image
+            encoding = encode_image(image_path)
+            messages[0]["content"].append(
+                {
+                    "type": "image_url",
+                    "image_url": {"url": f"data:image/jpeg;base64,{encoding}"},
+                }
             )
-            predictions = completion.choices[0].message.content
-            predictions = predictions.replace("\n", " ")
 
-            # check if the prediction is valid and extract the prediction
-            if "Diagnosis" in predictions:
-                valid_prediction = True
-                y = predictions.split("-")[1].strip()
+            ailment = False
+            valid_prediction = False
+            while not valid_prediction:
+                # get response from the API
+                completion = CLIENT.chat.completions.create(
+                    model="gpt-4o",
+                    messages=messages,
+                    max_tokens=300,
+                )
+                predictions = completion.choices[0].message.content
+                predictions = predictions.replace("\n", " ")
+
+                # check if the prediction is valid and extract the prediction
+                if "Diagnosis" in predictions:
+                    valid_prediction = True
+                    ailment = predictions.split("-")[1].strip() == "Yes"
+
+            # add the ailment to the overall prediction
+            if ailment:
+                ovr_y += cls + ", "
+
+        # remove the trailing comma
+        y = ovr_y[:-2]
 
     elif llm == "medgpt":
         print("[INFO] Generating predictions using MiniGPT-Med")
 
-        # TODO: this logic needs to be refined
         if prompt_args is None:
-            prompt_args = PromptArgs()
+            prompt_args = PromptArgs(temperature=0.0,
+                                     top_p=1.0)
 
         class_prompt = f"""Which diseases are the most likely to be present in the given Xray?
-
-        {', '.join(class_list)}"""
+         {', '.join(class_list)}"""
 
         valid_prediction = False
         while not valid_prediction:

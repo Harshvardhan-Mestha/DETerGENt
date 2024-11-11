@@ -4,23 +4,28 @@ Main module that generates the predictions and explanations.
 
 import os
 import sys
+from typing import Optional
 from argparse import ArgumentParser
 
 import pandas as pd
-from lang import generate_report, generate_prediction
-from utils import load_config, load_data, match, agree
+from src.lang import generate_report, generate_prediction
+from src.utils import load_config, load_data, match, agree
 
 
-sys.path.append('.')
+sys.path.append('./')
+sys.path.append('minigpt4/')
 
 
-def main(config, D):
+def main(config, D: list) -> Optional[pd.DataFrame]:
     """
-    TODO: Add description
+    This function loops through the data and generates predictions and explanations.
 
     Args:
-        config (_type_): _description_
-        D (_type_): _description_
+        config (yaml config): Configuration file (for e.g., see configs/test.yaml).
+        D (List): List of data.
+
+    Returns:
+        Optional[pd.DataFrame]: Dataframe with the overall evaluation (if evaluation is set to True in the config).
     """
 
     # checks for config
@@ -44,7 +49,8 @@ def main(config, D):
         # TODO: This logic needs rework, need to add some of identification of the case to be predicted
         preds = {
             "img_path": [],
-            "pred": []
+            "pred": [],
+            "case": []
         }
         for c in D:
             for pt in c[0]:
@@ -53,6 +59,7 @@ def main(config, D):
                 pred = generate_prediction(pred["model"], pt[0])
                 preds["img_path"].append(pt[0])
                 preds["pred"].append(pred)
+                preds["case"].append(pt[-1])
 
         preds = pd.DataFrame(preds)
         preds.to_csv(pred["path"])
@@ -63,13 +70,18 @@ def main(config, D):
         expls = pd.read_csv(expl["path"])
     else:
         print("[INFO] Generating explanations on the fly.")
-        # TODO: This logic needs rework, need to add some of identification of the case to be explained
-        expls = []
+        expls = {
+            "img_path": [],
+            "explanation": [],
+            "case": []
+        }
         for _, row in preds.iterrows():
             # TODO: remove this print statement
             print(row["img_path"])
             expl = generate_report(expl["model"], row["img_path"], row["pred"])
-            expls.append(expl)
+            expls["img_path"].append(row["img_path"])
+            expls["explanation"].append(expl)
+            expls["case"].append(row["case"])
 
         expls = pd.DataFrame(expls)
         expls.to_csv(expl["path"])
@@ -77,7 +89,7 @@ def main(config, D):
     # evaluate
     if config["evaluate"]:
         print("[INFO] Evaluating predictions and explanations.")
-        out_csv = evaluate(list(preds), list(expls), D[1], D[2])
+        out_csv = evaluate(list(preds["pred"]), list(expls["explanation"]), D[1], D[2])
         return out_csv
 
     print("[INFO] Skipping evaluation.")
@@ -88,8 +100,7 @@ def evaluate(preds, expls, ys, es) -> pd.DataFrame:
     """
     Evaluates the predictions and explanations.
 
-    Args
-    ----
+    Args:
         preds (List[str])
             Predictions.
         expls (List[str])
@@ -99,8 +110,7 @@ def evaluate(preds, expls, ys, es) -> pd.DataFrame:
         es (List[str])
             Ground truth explanations.
 
-    Returns
-    -------
+    Returns:
         pd.DataFrame
             Dataframe with the overall evaluation.
     """

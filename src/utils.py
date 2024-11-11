@@ -4,12 +4,11 @@ This module has a lot of utlities, <add utilies>
 
 import io
 import os
-import sys
 import base64
 from time import time
+from typing import Tuple, List
 from dataclasses import dataclass
 from argparse import ArgumentParser
-from typing import Tuple, List, Optional
 
 import yaml
 import torch
@@ -20,13 +19,12 @@ from torchvision import transforms as T
 from minigpt4.common.config import Config
 from minigpt4.models.minigpt_v2 import MiniGPTv2
 
-sys.path.append('.')
-
-class_names_short = ["ATCS", "CLFS", "CRDM", "COPD", "LNGN", "MSTL", "PLEF", "PNUM", "PNTX", "TUBC"]
+class_names_short = ["ATCS", "CLFS", "CRDM", "COPD", "LNGN", "MSTL",
+                     "PLEF", "PNUM", "PNTX",
+                     "TUBC"]
 class_list = ["Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothelioma",
               "Cardiomegaly", "Plueral Effusion", "Pneumonia", "Pneumothorax",
-              "Tuberculosis"
-              ]
+              "Tuberculosis"]
 
 openai_org = os.getenv("OPENAI_ORG")
 openai_project = os.getenv("OPENAI_PROJECT")
@@ -134,12 +132,11 @@ def agree(e_a, e_b) -> bool:
                 "role": "system",
                 "content": f"""
                 You are a radiology expert, with detailed knowledge of {', '.join(class_list)}.
-                Your task is to check consistency between two given diagnoses/explanations of an XRay.
+                Your task is to check factual consistency between two given diagnoses/explanations of an XRay.
                 1. Ignore any personal patient information mentioned in either diagnosis/explanation, e.g. age, name, etc.
                 2. Consider consistency in terms of the symptoms only and not the causes, e.g. if a report mentions xyz can be
                 diagnosed from follow-up and another report just mentions xyz, then this is no problem, it's not necessary to mention follow-up.
-                3. VERY IMPORTANT, your answer should be the same if the two reports are swapped, i.e., independent of the order of the two reports.
-                4. Respond only in Yes/No."""
+                3. Respond only in Yes/No."""
             },
             {
                 "role": "user",
@@ -160,7 +157,18 @@ def agree(e_a, e_b) -> bool:
 def parse():
     """
     General purpose parse function.
-    TODO: Add options available.
+
+    Options
+    -------
+        --temperature: float
+            The temperature to use for generation. (default: 0.6)
+        --top-p: float
+            The top_p to use for generation. (default: 0.9)
+        --mode: str
+            The mode to use for generation. (default: "caption")
+        --expt: int
+            The experiment to run. (default: -1)
+    Rest of the options are required by MiniGPTMed.
     """
 
     parser = ArgumentParser()
@@ -177,28 +185,11 @@ def parse():
     )
 
     # experiment specific stuff
-    parser.add_argument("--temperature", type=float, default=1.0)
+    parser.add_argument("--temperature", type=float, default=0.6)
     parser.add_argument("--top-p", type=float, default=0.9)
     parser.add_argument("--mode", default="caption")
     parser.add_argument("--expt", default=-1, type=int, help="which expt to run")
 
-    parser.add_argument("--split",
-                        default=1,
-                        type=float,
-                        help="proportion of data to keep in train (default: 1)")
-    parser.add_argument("--max_tries",
-                        default=0,
-                        type=int,
-                        help="max tries for the llm to make (default:3)")
-    parser.add_argument("--pts",
-                        default=0,
-                        type=int,
-                        help="Points to evaluate per class (from both train and test) (default:3)")
-
-    help_lines = ['classes to evaluate (enter class index in a comma seperated manner)',
-                  '0:ATCS', '1:CLFS', '2:CRDM', '3:COPD', '4:LNGN', '5:MSTL', '6:PLEF',
-                  '7:PNUM', '8:PNTX', '9:TUBC']
-    parser.add_argument("--classes", default="0,1,2,3", type=str, help='\n'.join(help_lines))
     args = parser.parse_args()
 
     model_args = MiniGPTArgs(
@@ -213,7 +204,7 @@ def parse():
         mode=args.mode,
     )
 
-    return prompt_args, model_args, args
+    return prompt_args, model_args
 
 
 ### MEDGPT UTILS
@@ -246,27 +237,27 @@ class PromptArgs:
     mode: str = ""
 
 
-def load_model(args: MiniGPTArgs) -> MiniGPTv2:
+def load_model(model_args: MiniGPTArgs) -> MiniGPTv2:
     """
     Utility function to load a model.
     Complicated because of the way they have made their library.
-    Args
-    ----
-    args: MiniGPTArgs
-        The arguments to load the model (config file, gpu_id, etc.)
 
-    Returns
-    -------
-    model: MiniGPTv2
-        The loaded model.
+    Args:
+        args: MiniGPTArgs
+            The arguments to load the model (config file, gpu_id, etc.)
+
+    Returns:
+        model: MiniGPTv2
+            The loaded model.
     """
 
-    assert isinstance(args, MiniGPTArgs), f"Expect args to have these fields. {MiniGPTArgs.__dict__}"
+    assert isinstance(model_args, MiniGPTArgs), f"Expect args to have these fields. {MiniGPTArgs.__dict__}"
 
-    conf = Config(args)
+    # required to load the model
+    conf = Config(model_args)
 
     device = torch.device("cpu")
-    if args.gpu_id is not None:
+    if model_args.gpu_id is not None:
         device = torch.device("cuda")
     model = MiniGPTv2.from_config(conf.model_cfg).to(device=device)
 
@@ -285,23 +276,24 @@ def mini_gpt_client(model_args: MiniGPTArgs,
     
     [INST] <Img><ImageHere></Img>{mode}{text} [/INST]
 
-    Args
-    ----
-    args: MiniGPTArgs
-        The arguments to load the model (config file, gpu_id, etc.)
-    model: MiniGPTv2
-        An instantiated model to use for generation.
-    prompt_args: PromptArgs
-        The arguments to use for generation:
-    image_path: str
-        The path to the image to use for generation.
-    text: str
-        The text to use for generation.
+    TODO: add support for logits?
+
+    Args:
+        args: MiniGPTArgs
+            The arguments to load the model (config file, gpu_id, etc.)
+        model: MiniGPTv2
+            An instantiated model to use for generation.
+        prompt_args: PromptArgs
+            The arguments to use for generation:
+        image_path: str
+            The path to the image to use for generation.
+        text: str
+            The text to use for generation.
 
     Returns
     -------
-    out: str
-        The output from the model.
+        out: str
+            The output from the model.
     """
 
     prompt="[INST] <Img><ImageHere></Img>{mode}{text} [/INST]"
@@ -313,24 +305,23 @@ def mini_gpt_client(model_args: MiniGPTArgs,
         mode = f" [{mode}] " # otherwise put these brackets as required
     input_text = prompt.format(mode=mode, text=text)
 
+    # prepare the image
     transform = T.Compose([
         T.ToTensor(),
         T.Resize((448, 448))
     ])
-
     image = transform(Image.open(image_path).convert('RGB'))[None, :]
 
+    # transfer image to GPU if available
     if model_args.gpu_id is not None:
         image = image.to(dtype=torch.float16, device="cuda")
 
     start = time()
-    # TODO: check model arguments
     out = model.generate(image,
                          [input_text],
                          temperature=prompt_args.temperature,
                          top_p=prompt_args.top_p)
     end = time()
-    # out, logits = out
 
     return out, (end - start)
 
@@ -347,12 +338,19 @@ def print_and_log(text: str, log: io.FileIO) -> None:
 ### DATA UTILS
 
 
-def load_data(data_path="./data/xray_data.csv",
-              split=0.25): # loads data from a csv file
+def load_data(data_path="./data/xray_data.csv"): # loads data from a csv file
     """
-    Loads clas-wise data from a csv file.
-    TODO: use split.
-    TODO: does this work?
+    Loads class-wise data from a csv file.
+    
+    Data returned has the following structure:
+
+    [
+        [(x, y, e, case), (x, y, e, case), ...], # class 1
+        [(x, y, e, case), (x, y, e, case), ...], # class 2
+        ...
+    ]
+
+    There can be overlap between classes.
 
     Args:
         data_path (str, optional)
@@ -374,6 +372,7 @@ def load_data(data_path="./data/xray_data.csv",
         list(data["img_dir"]),
         list(data["label"]),
         list(data["desc"]),
+        list(data["case"]),
         list(data["desc_pth"]),
         list(data["diagnosis"]),
         list(data["certainty"]),
@@ -391,31 +390,32 @@ def load_data(data_path="./data/xray_data.csv",
             if cname in class_data[i]:
                 l.append(i)
         class_idx.append(l)
-        print(f"[INFO] {cname} : {len(l)} examples")
+        print(f"[INFO] {cname} has {len(l)} examples.")
 
+    # collect data in a list of (x, y, e, case) tuples
     D = []
     for i in range(len(data)):
-        D.append([D_ovr[0][i], D_ovr[1][i], D_ovr[2][i]]) # making it a list of [x, y, e]
-    D_classwise = []
+        D.append((D_ovr[0][i], D_ovr[1][i], D_ovr[2][i], D_ovr[3][i]))
 
+    D_classwise = []
     # make list of a class wise splits
     for idxs in class_idx:
         D_temp = []
         for i in idxs:
             D_temp.append(D[i])
-        D_classwise.append(list([D_temp, []]))
+        D_classwise.append(D_temp)
 
     print("[INFO] Data loaded.")
     return D_classwise
 
 
-def load_config(path="./configs/test.yaml"):
+def load_config(path="configs/test.yaml"):
     """
     Loads a config file.
 
     Args:
         path (str, optional)
-        Path to config file. Defaults to "./configs/test.yaml".
+            Path to config file. Defaults to "./configs/test.yaml".
 
     Returns:
         config: dict
@@ -424,6 +424,6 @@ def load_config(path="./configs/test.yaml"):
 
     with open(path, encoding='utf-8') as stream:
         config = yaml.safe_load(stream)
-        print("[INFO] Config loaded")
+        print(f"[INFO] Config {path} loaded.")
 
     return config

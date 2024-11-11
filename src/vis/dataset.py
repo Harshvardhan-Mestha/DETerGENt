@@ -44,7 +44,7 @@ class XRayDataset(Dataset):
         Initialize the dataset.
 
         Args:
-            data (Union[str, pd.DataFrame]): path to CSV file / DataFrame of the CSV, attributes : [image_path, label1, label2, label3]
+            data (Union[str, pd.DataFrame]): path to CSV file / DataFrame of the CSV, attributes : [image_path, label1, label2, label3, case]
             training (bool, optional): wether to use in training mode. Defaults to True.
         """
 
@@ -58,6 +58,7 @@ class XRayDataset(Dataset):
         self.data['label2'] = self.data['label2'].map(label2int_small)
         self.data['label3'] = self.data['label3'].map(label2int_small)
         self.num_classes = len(label2int_small) - 1
+        self.training = training
 
         transform_list = [
             T.Resize((512, 512)),
@@ -87,7 +88,10 @@ class XRayDataset(Dataset):
         num_neg = self.num_classes - label.sum()
         weights = torch.tensor([1.0, 1.0, 1.0, 1.0, 1.0, 1.0])
         weights[label == 1] = 10.0
-        return image, label, weights
+        if self.training:
+            return image, label, weights, self.data.iloc[idx]["case"]
+        else:
+            return image, label, weights
 
 
 def getDataLoadersFor5FoldCV(data: str, batch_size: int = 8, ddp: bool = True) -> List:
