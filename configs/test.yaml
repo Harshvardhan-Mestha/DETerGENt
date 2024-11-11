@@ -1,5 +1,5 @@
-
-
+exp_name: test
+evaluate: true
 pred:
     model: gpt
     generate: true
@@ -13,8 +13,3 @@ expl:
     from_file: false
     path: /path/to/predictions.csv
     out_path: /path/to/output.csv
-
-
-
-
-

@@ -10,7 +10,7 @@ from openai import OpenAI
 
 from utils import (
     encode_image,
-    miniGPTclient,
+    mini_gpt_client,
     PromptArgs,
     MiniGPTArgs,
     MiniGPTv2,
@@ -29,7 +29,7 @@ CLIENT = OpenAI(
 
 
 def generate_report(
-    llm: str, x: str,
+    llm: str, x: str, pred,
     model: Optional[MiniGPTv2] = None,
     prompt_args: Optional[PromptArgs] = None,
     model_args: Optional[MiniGPTArgs] = None
@@ -43,6 +43,8 @@ def generate_report(
         Language Model to use (one of 'gpt' or 'medgpt')
     x: str
         Directory of the X-ray image (if multiple images, use the first image) OR the image path
+    pred: str
+        Predicted ailment for the given X-ray
 
     The next 3 arguments are only used for MiniGPT-Med
     
@@ -69,6 +71,7 @@ def generate_report(
         print("[INFO] Generating report using GPT-4o")
 
         # messages object, to be passed to the OpenAI API
+        # TODO: refine prompt
         messages = [
             {
                 "role": "user",
@@ -76,9 +79,7 @@ def generate_report(
                     {
                         "type": "text",
                         "text": f"""Given is the X-ray image. 
-                        Your task is to output an analysis of the given X-ray with respect to 10 major ailments. 
-                        The 10 ailments are as follows : {', '.join(class_list)}
-                        You shall analyse this image closely for its attributes. 
+                        You shall analyse this image given that the patient has been diagnosed with {pred}.
                         Your output should be in the following format :
                         "Explanation" - A short passage describing the contents of the image with respect to the ailments above
                         Adhere to the output format strictly, and be concise.
@@ -118,24 +119,24 @@ def generate_report(
     elif llm == "medgpt":
         print("[INFO] Generating report using MiniGPT-Med")
 
+        # TODO: this logic needs to be refined
+        if prompt_args is None:
+            prompt_args = PromptArgs()
+
         valid_report = False
         while not valid_report:
             # TODO: Refine prompt.
-            report_prompt = f"""Describe the contents of the image
-             and diagnose the presence of the following diseases: {', '.join(class_list)},
-             and write a detailed report on the findings.
+            report_prompt = f"""Given that the patient has been diagnosed with {pred},
+             write a detailed report on the findings.
             """
-            report_mode = "caption"
-
+            prompt_args.mode = "caption"
             # get report from MiniGPTMed
-            report, _ = miniGPTclient(
+            report, _ = mini_gpt_client(
                 model_args,
                 model,
+                prompt_args,
                 image_path,
-                report_prompt,
-                mode=report_mode,
-                temperature=0.9,
-                top_p=prompt_args.top_p,
+                report_prompt
             )
 
             # TODO: Add conditions to validate the report
@@ -241,21 +242,23 @@ def generate_prediction(
     elif llm == "medgpt":
         print("[INFO] Generating predictions using MiniGPT-Med")
 
+        # TODO: this logic needs to be refined
+        if prompt_args is None:
+            prompt_args = PromptArgs()
+
         class_prompt = f"""Which diseases are the most likely to be present in the given Xray?
 
         {', '.join(class_list)}"""
 
         valid_prediction = False
         while not valid_prediction:
-            class_mode = "vqa"
-            label, _ = miniGPTclient(
+            prompt_args.mode = "vqa"
+            label, _ = mini_gpt_client(
                 model_args,
                 model,
+                prompt_args,
                 image_path,
                 class_prompt,
-                mode=class_mode,
-                temperature=0.9,
-                top_p=prompt_args.top_p,
             )
 
             # TODO: Add conditions to validate the prediction
