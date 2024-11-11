@@ -17,7 +17,7 @@ import torch.multiprocessing as mp
 from torch.utils.data import DataLoader
 from torch.nn.parallel import DistributedDataParallel as DDP
 
-from vision_FT.dataset import getDataLoadersFor5FoldCV
+from vis.dataset import getDataLoadersFor5FoldCV
 
 
 def setup(rank, world_size):
@@ -32,20 +32,23 @@ def cleanup():
     dist.destroy_process_group()
 
 
-def printAndLog(msg: str, logger: StringIO = None):
+def print_and_log(msg: str, logger: StringIO = None):
     """
     Utility function to print and log the message.
 
-    Args:
+    Args
+    ----
         msg (str): message to print and log, if logger is provided.
         logger (StringIO, optional): Logger file. Defaults to None.
+
+    Returns
+    -------
+        None
     """
     print(msg)
     if logger:
         msg = msg + "\n" if not msg.endswith("\n") else msg
         logger.write(msg)
-
-    return
 
 
 def customBCE(x: torch.Tensor, y: torch.Tensor, weight: Optional[torch.Tensor] = None) -> torch.Tensor:
@@ -72,7 +75,7 @@ class Trainer:
         self.device_check = not self.ddp or (self.ddp and self.device == 0)
 
         # data stuff
-        self.data_path = "/home/f20212582/git/radio-lm/data/train_data_small.csv"
+        self.data_path = "data/xray_data.csv"
         self.data_loaders = getDataLoadersFor5FoldCV(self.data_path, ddp=self.ddp)
         assert len(self.data_loaders) == 6, "Data loaders should be of length 5 + 1."
 
@@ -130,16 +133,30 @@ class Trainer:
         if ckpt_path:
             self.load_ckpt(ckpt_path)
 
-        printAndLog(f"Dataset Size: {len(self.data_loaders[-1]) * 8}")
+        print_and_log(f"Dataset Size: {len(self.data_loaders[-1]) * 8}")
         num_param1 = sum([p.numel() for p in self.model.parameters()])
         num_param2 = sum([p.numel() for p in self.backbone.parameters() if p.requires_grad])
-        printAndLog(f"Trainable Parameters: {(num_param1 + num_param2)/1e6:.2f}M = {num_param1/1e3:.3f}K + {num_param2/1e6:.3f}M")
-        printAndLog(f"RUN_NAME: {run_name}")
-        printAndLog(f"NUM_CLASSES: {num_classes}")
-        printAndLog(f"WITH_TRACKING: {with_tracking}")
-        printAndLog(f"FREEZE_BACKBONE: {freeze_backbone}")
+        print_and_log(f"Trainable Parameters: {(num_param1 + num_param2)/1e6:.2f}M = {num_param1/1e3:.3f}K + {num_param2/1e6:.3f}M")
+        print_and_log(f"RUN_NAME: {run_name}")
+        print_and_log(f"NUM_CLASSES: {num_classes}")
+        print_and_log(f"WITH_TRACKING: {with_tracking}")
+        print_and_log(f"FREEZE_BACKBONE: {freeze_backbone}")
 
     def save_ckpt(self, fold: int, epoch: int = 0):
+        """
+        Saves a checkpoint of the model, optimizer, and best metrics.
+
+        Args
+        ----
+            fold (int)
+                Current fold number.
+            epoch (int, optional)
+                Current epoch number. Defaults to 0.
+
+        Returns
+        -------
+            None
+        """
 
         model_state = self.model.state_dict() if not self.ddp else self.model.module.state_dict()
         backbone_state = self.backbone.state_dict()
@@ -154,11 +171,23 @@ class Trainer:
         }
 
         if self.device_check:
-            printAndLog(f"Saving checkpoint for fold {fold} at epoch {epoch}...", self.logger)
+            print_and_log(f"Saving checkpoint for fold {fold} at epoch {epoch}...", self.logger)
             save_path = self.expt_path + f"/{fold}_best.pt"
             torch.save(state, save_path)
 
     def load_ckpt(self, path: str):
+        """
+        Loads a checkpoint of the model, optimizer, and best metrics.
+
+        Args
+        ----
+            path (str)
+                Path to the checkpoint file.
+
+        Returns
+        -------
+            None
+        """
 
         state = torch.load(path)
         self.model.load_state_dict(state["model"])
@@ -169,6 +198,23 @@ class Trainer:
         self.epoch = state["epoch"]
 
     def step(self, img, label, weights) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
+        """
+        Take a step in the training loop.
+
+        Args
+        ----
+            img (torch.Tensor)
+                Image tensor.
+            label (torch.Tensor)
+                Label tensor.
+            weights (torch.Tensor)
+                Weight tensor. (Optional)
+
+        Returns
+        -------
+            Tuple[torch.Tensor, torch.Tensor, torch.Tensor]
+                Loss, accuracy, and predictions.
+        """
 
         img = img.to(self.device)
         label = label.to(self.device)
@@ -185,7 +231,20 @@ class Trainer:
 
         return loss, accuracy, preds
 
-    def train_epoch(self, loader: DataLoader):
+    def train_epoch(self, loader: DataLoader) -> dict:
+        """
+        Train the model for one epoch.
+
+        Args
+        ----
+            loader (DataLoader)
+                DataLoader for training data.
+
+        Returns
+        -------
+            dict
+                Training metrics (loss, accuracy, time).
+        """
 
         total_loss = []
         total_accuracy = []
@@ -213,7 +272,20 @@ class Trainer:
         return train_metrics
 
     @torch.no_grad()
-    def evaluate(self, loader: DataLoader):
+    def evaluate(self, loader: DataLoader) -> dict:
+        """
+        Evaluate the model on the validation set.
+
+        Args
+        ----
+            loader (DataLoader)
+                DataLoader for validation data.
+
+        Returns
+        -------
+            dict
+                Validation metrics (loss, accuracy, time).
+        """
 
         val_loss = []
         predictions, targets = [], []
@@ -252,6 +324,18 @@ class Trainer:
         return val_metrics
 
     def train(self, num_epochs: int = 20):
+        """
+        Trains the model in a 5-fold cross-validation manner.
+
+        Args
+        ----
+            num_epochs (int, optional)
+                Number of epochs to train per fold. Defaults to 20.
+
+        Returns
+        -------
+            None
+        """
 
         for fold_num, (train_loader, val_loader) in enumerate(self.data_loaders[self.fold:-1]):
 
@@ -273,8 +357,8 @@ class Trainer:
             end = time()
             self._on_fold_end(fold_num, end-start)
 
-        printAndLog("Training complete", self.logger)
-        printAndLog("Training on whole dataset to save overall model...", self.logger)
+        print_and_log("Training complete", self.logger)
+        print_and_log("Training on whole dataset to save overall model...", self.logger)
         self._on_fold_begin(6)
         for epoch in range(num_epochs):
             self._on_train_epoch_start()
@@ -283,14 +367,27 @@ class Trainer:
 
         self.save_ckpt(6, epoch=-1)
         avg_accuracy = sum([self.ovr_metrics[i]["accuracy"] for i in range(5)]) / 5
-        printAndLog("-"*88, self.logger)
-        printAndLog(f"Average accuracy over 5 folds: {avg_accuracy:.2f}", self.logger)
-        printAndLog("-"*88, self.logger)
+        print_and_log("-"*88, self.logger)
+        print_and_log(f"Average accuracy over 5 folds: {avg_accuracy:.2f}", self.logger)
+        print_and_log("-"*88, self.logger)
         self.logger.flush()
         self.logger.close()
-        return
 
     def _on_fold_begin(self, fold_num: int):
+        """
+        Stuff to do at the beginning of each fold.
+        Currently, it initializes the best_metrics if running from scratch,
+        resets model parameters after each fold, 
+        and initializes a new wandb run.
+
+        Args
+        ----
+            fold_num (int): Current fold number.
+
+        Returns
+        -------
+            None
+        """
 
         # initialize best_metrics if running from scratch
         if self.fold == 0:
@@ -308,7 +405,7 @@ class Trainer:
 
         # Initialize a new wandb run for each fold with a distinct name and group them under one group
         if self.device_check:
-            printAndLog(f"Starting fold {fold_num}...", self.logger)
+            print_and_log(f"Starting fold {fold_num}...", self.logger)
             if self.with_tracking:
                 wandb.init(
                     project="vision_FT", 
@@ -318,23 +415,60 @@ class Trainer:
                 )
 
     def _on_fold_end(self, fold_num: int, time_taken: float):
+        """
+        Stuff to do at the end of each fold.
+        Currently, it saves the best metrics for the fold,
+        prints the time taken,
+        and closes the wandb run.
+
+        Args
+        ----
+            fold_num (int)
+                Current fold number.
+            time_taken (float)
+                Time taken to complete the fold.
+
+        Returns
+        -------
+            None
+        """
 
         self.ovr_metrics[fold_num] = self.best_metrics
         if self.device_check:
-            printAndLog(f"Fold {self.fold} complete, took {time_taken/60:.2f}m", self.logger)
-            printAndLog("-"*88, self.logger)
+            print_and_log(f"Fold {self.fold} complete, took {time_taken/60:.2f}m", self.logger)
+            print_and_log("-"*88, self.logger)
             if self.with_tracking:
                 wandb.join()
 
     def _on_train_epoch_start(self):
+        """
+        Stuff to do on the start of each training epoch.
+        Not much here, just setting the model to train mode.
+        """
         self.model.train()
         # mayebmore?
 
     def _on_train_epoch_end(self, train_metrics: dict, epoch: int):
+        """
+        Stuff to do at the end of each training epoch.
+        Currently, it prints the training metrics,
+        logs the metrics to wandb if enabled.
+
+        Args
+        ----
+            train_metrics (dict)
+                Training metrics (loss, accuracy, time) for the epoch.
+            epoch (int)
+                Current epoch number.
+
+        Returns
+        -------
+            None
+        """
 
         if self.device_check:
-            printAndLog("-"*88)
-            printAndLog(f"Epoch: {epoch}, Train Loss: {train_metrics['loss']:.2f}, Train Accuracy: {train_metrics['accuracy']:.2f}, Time/epoch: {train_metrics['time']:.3f}s",
+            print_and_log("-"*88)
+            print_and_log(f"Epoch: {epoch}, Train Loss: {train_metrics['loss']:.2f}, Train Accuracy: {train_metrics['accuracy']:.2f}, Time/epoch: {train_metrics['time']:.3f}s",
                         self.logger)
             if self.with_tracking:
                 wandb.log({
@@ -343,10 +477,34 @@ class Trainer:
                     step=epoch)
 
     def _on_val_epoch_start(self):
+        """
+        Stuff to do at the start of each validation epoch.
+        Not much here, just setting the model to eval mode.
+        """
         self.model.eval()
         # maybemore?
 
     def _on_val_epoch_end(self, val_metrics: dict, fold: int, epoch: int):
+        """
+        Stuff to do at the end of each validation epoch.
+        Currently, it prints the validation metrics,
+        logs the metrics to wandb if enabled,
+        saves the checkpoint if the model is better than the previous best OR
+        after every 25 epochs.
+
+        Args
+        ----
+            val_metrics (dict)
+                Validation metrics (loss, accuracy, time) for the epoch.
+            fold (int)
+                Current fold number.
+            epoch (int)
+                Current epoch number.
+
+        Returns
+        -------
+            None
+        """
 
         if val_metrics["accuracy"] > self.best_metrics["accuracy"] and epoch > 10: 
             # note the epoch check, the starting model is quite random 
@@ -357,9 +515,9 @@ class Trainer:
         if self.device_check:
             if epoch % 25 == 0:
                 self.save_ckpt(fold, epoch)
-            printAndLog(f"Epoch: {epoch}, Val Loss: {val_metrics['loss']:.2f}, Val Accuracy: {val_metrics['accuracy']:.2f}, Time/epoch: {val_metrics['time']:.3f}s", 
+            print_and_log(f"Epoch: {epoch}, Val Loss: {val_metrics['loss']:.2f}, Val Accuracy: {val_metrics['accuracy']:.2f}, Time/epoch: {val_metrics['time']:.3f}s", 
                         self.logger)
-            printAndLog(f"Best Val Accuracy: {self.best_metrics['accuracy']:.2f}", self.logger)
+            print_and_log(f"Best Val Accuracy: {self.best_metrics['accuracy']:.2f}", self.logger)
             if self.with_tracking:
                 wandb.log({
                     "Val Loss": val_metrics["loss"], 
@@ -370,13 +528,36 @@ class Trainer:
 def DDP_launch(rank: int, world_size: int, run_name: str, num_classes: int, 
                with_tracking: bool = True, freeze_backbone: bool = True,
                ckpt_path: Optional[str] = None):
+    """
+    Wrapper to launch DDP training.
+
+    Args
+    ----
+        rank (int)
+            Device number.
+        world_size (int)
+            Number of devices.
+        run_name (str)
+            Name of the run set by the user.
+        num_classes (int)
+            Number of classes in the dataset.
+        with_tracking (bool, optional)
+            Enables wandb tracking. Defaults to True.
+        freeze_backbone (bool, optional)
+            Freezes ViT backbone. Defaults to True.
+        ckpt_path (Optional[str], optional)
+            Checkpoint to load if resuming. Defaults to None.
+
+    Returns
+    -------
+        None
+    """
 
     setup(rank, world_size)
     trainer = Trainer(run_name, rank, num_classes, 
                       with_tracking, freeze_backbone, ckpt_path)
     trainer.train(250)
     cleanup()
-    return
 
 
 if __name__ == "__main__":

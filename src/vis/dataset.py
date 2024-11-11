@@ -83,6 +83,7 @@ class XRayDataset(Dataset):
         label = F.one_hot(self.data.iloc[idx]["label1"], self.num_classes).to(torch.float32)
         label += F.one_hot(self.data.iloc[idx]["label2"], self.num_classes).to(torch.float32) if not np.isnan(self.data.iloc[idx]["label2"]) else 0
         label += F.one_hot(self.data.iloc[idx]["label3"], self.num_classes).to(torch.float32) if not np.isnan(self.data.iloc[idx]["label3"]) else 0
+        # TODO: add weights
         num_neg = self.num_classes - label.sum()
         weights = torch.tensor([1.0, 1.0, 1.0, 1.0, 1.0, 1.0])
         weights[label == 1] = 10.0
