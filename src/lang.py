@@ -29,7 +29,7 @@ CLIENT = OpenAI(
 
 
 def generate_report(
-    llm: str, x: str, pred,
+    llm: str, x: str, pred: str,
     model: Optional[MiniGPTv2] = None,
     prompt_args: Optional[PromptArgs] = None,
     model_args: Optional[MiniGPTArgs] = None
