@@ -1,0 +1,38 @@
+Case by : Frank Gaillard
+Diagnosis Certain
+Diagnosis: Tuberculosis - Right upper lobe cavitation
+
+Patient Data: 
+Age - 30
+Gender - Female
+
+Patient Presentation: Cough
+
+Description: Extensive cavitating nodular opacities in the right upper lobe, 
+with a large cavity measuring 4cm in diameter. There are multiple nodules 
+also seen in the left upper lobe. Wide right paratracheal stripe possibly 
+due to lymphadenopathy.
+
+The appearances are highly suspicious for pulmonary TB.
+
+Case Discussion: 
+The patient went on to have bronchial washings confirming pulmonary 
+tuberculosis. 
+
+Microscopy
+
+Auramine-Rhodamine Stain: +++ (> 10 Acid fast bacilli detected per HPF)
+Ziehl-Neelsen Stain: +++ (> 10 Acid fast bacilli detected per HPF)
+Microbiology
+
+Mycobacterial culture: Mycobacterium tuberculosis = isolated
+M.tuberculosis Complex PCR = detected
+MPT64 Antigen Identification Test: M.tuberculosis Complex = detected
+Sensitivities: 
+
+Ethambutol = sensitive
+Isoniazid = sensitive
+Pyrazinamide = sensitive
+Rifampin = sensitive
+
+Link: https://radiopaedia.org/cases/35747

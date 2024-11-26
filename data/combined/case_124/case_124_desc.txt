@@ -1,0 +1,30 @@
+Case by: Ian Bickle
+Diagnosis Certain
+Diagnosis: Pleural effusion
+
+
+Patient Data:
+Age - 55
+Gender - Female
+
+Patient Presentation: Progressive shortness of breath over the past week.
+
+Description: Large left sided pleural effusion.
+
+The meniscus is well demonstrated on the superolateral aspect indicating 
+fluid in the pleural space.
+
+The effusion is causing midline shift.
+
+Case Discussion: A simple x-ray of a common pathology with classical signs 
+and some sound teaching principles.
+
+One cause of opacification of the hemithorax is a pleural effusion.
+
+When large it will 'push' the mediastinum away from it.  
+
+It will also have meniscus indicating fluid in the pleural space.
+
+Consolidation, collapse and a pneumonectomy will not have these features.
+
+Link: https://radiopaedia.org/cases/32885

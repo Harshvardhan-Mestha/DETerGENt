@@ -1,0 +1,26 @@
+Case by : Jan Frank Gerstenmaier
+Diagnosis Certain
+Diagnosis: Primary peritoneal epithelioid mesothelioma
+
+Patient Data: 
+Age - 75
+Gender - Male
+
+Patient Presentation: Incidental finding on chest radiograph during AVR workup.
+
+Description: PA and lateral erect views have been obtained. 
+
+New mass like opacity right costophrenic angle, as well as nodular outline 
+of right diaphragm.
+
+The lungs and pleural spaces are clear. The cardiomediastinal contours are 
+within normal limits. Small right diaphragmatic eventration noted.
+
+Case Discussion: The differentiation between adenocarcinoma and mesothelioma 
+can be difficult at histology. In this case, the initial histological 
+diagnosis of metastatic adenocarcinoma was revised following review of 
+clinical and radiologal features, and the correct diagnosis was confirmed 
+with special stains (calretinin, CK5/6, mesothelin and WT1) which are 
+expressed in the majority of malignant mesotheliomas.
+
+Link: https://radiopaedia.org/cases/31361

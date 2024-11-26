@@ -1,0 +1,26 @@
+Case by: Leonardo Lustosa
+Diagnosis Certain
+Diagnosis: Pneumothorax
+-Passive atelecatsis
+
+Patient Data:
+Age - 60
+Gender - Male
+
+Patient Presentation: Motor vehicle accident. Under the influence of alcohol. 
+Polytrauma.
+
+Description:Chest radiograph revealed a right pneumothorax, marked by the 
+visible right pleural edge, the absence of lung vessels peripheral to the 
+pleural edge, and the increased peripheral space radiolucency when compared 
+to the left lung.
+
+The mediastinum is not shifted, indicating this is a simple pneumothorax, 
+with right lung volume loss due to passive atelecatsis.
+
+There is subcutaneous emphysema on the right chest wall.
+
+Case Discussion: Common radiographic appearance of a simple pneumothorax.
+
+Link: https://radiopaedia.org/cases/165489
+

@@ -1,0 +1,28 @@
+Case by : Ian Bickle
+Diagnosis Almost Certain
+Diagnosis: Mesothelioma
+
+Patient Data: 
+Age - 70
+Gender - Male
+
+Patient Presentation: Former shipyard worker, with progressive shortness of 
+breath and weight loss.
+
+Description: Circumferential pleural thickening in the right thoracic cavity, 
+with substantial volume loss within the right hemithorax.
+
+Case Discussion: A mesothelioma, in general, is an aggressive malignant 
+tumor, the vast majority arising from the pleural.
+
+It is strongly associated with asbestos exposure, therefore afflicting 
+those in industries with potential exposure, such as electricians and 
+shipbuilders.  A significant lag response is known, being up to 20-30 
+afters exposure.
+
+It typically causes circumferential thickening of the pleura, encasing the 
+lung with resultant volume loss.
+
+Treatment options are limited.  Prognosis is poor.
+
+Link: https://radiopaedia.org/cases/30112

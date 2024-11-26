@@ -1,0 +1,26 @@
+Case by : Andrew Dixon
+Diagnosis Certain
+Diagnosis: Sclerotic rib lesion simulating a pulmonary nodule
+
+Patient Data:
+Age - 85
+Gender - Male
+
+Patient Presentation: Recent TAVI (transcatheter aortic valve implantation)
+
+Description: Nodule projected in the left mid zone. Note how the nodule 
+"moves" relative to the lung but remains directly associated with the 
+anterior aspect of the left fourth rib on both the PA and AP projections. 
+This indicates that the lesion is associated with the rib which is 
+confirmed when looking back at the prior TAVI planning CT. 
+
+Case Discussion: Sclerotic rib lesions can mimic pulmonary nodules. The key 
+is to look back at any prior radiographs. If the nodule remains projected 
+over exactly the same rib site despite projectional differences then you 
+can be confident that the lesions is within the rib rather than the lung. 
+
+Link: https://radiopaedia.org/cases/72512
+
+
+
+

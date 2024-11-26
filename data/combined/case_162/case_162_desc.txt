@@ -1,0 +1,23 @@
+Case by: Ian Bickle
+Diagnosis Certain
+Diagnosis: Pneumothorax
+
+Patient Data:
+Age - 45
+Gender - Male
+
+Patient Presentation: Middle aged man involved in high impact trauma. Pain 
+right side of chest.
+
+Description: Moderate sized right sided pneumothorax.
+
+Multiple consecutive right sided rib fractures.
+
+Case Discussion: Pneumothorax may occur for a number of causes, one of which 
+is significant thoracic trauma in which case rib fractures are a common 
+association.
+
+Prompt identification and management is key - an x-ray is normally all that 
+is required in the first instance.
+
+Link: https://radiopaedia.org/cases/33228

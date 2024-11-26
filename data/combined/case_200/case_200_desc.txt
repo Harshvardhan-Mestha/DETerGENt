@@ -1,0 +1,26 @@
+Case by: Pawel Piotrowicz
+Diagnosis Almost Certain
+Diagnosis: Post-primary tuberculosis
+
+Patient Data:
+Age - 20
+Gender - Female
+
+Patient Presentation: Non-specific cough for last three months. Good social 
+status.
+
+Description: Diffuse reticular and micronodular pattern with a predilection 
+for upper and middle zones. There is a mass in the middle zone of the right 
+lung and two cavities in the middle and upper zones of the left lung.
+
+Case Discussion: Although tuberculosis is mainly a problem in developing 
+countries, there is a rising incidence in developed countries too. 
+Therefore it is important to use chest x-ray as a relatively low dose 
+clinical test which returns valuable results, especially in younger 
+patients with uncertain airway changes.
+
+Previous contact with tuberculosis was not reported in this case, and the 
+bronchial lavage smear for acid-fast bacilli was positive. The CT was 
+performed to exclude other thoracic pathologies.  
+
+Link: https://radiopaedia.org/cases/52295

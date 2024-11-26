@@ -1,0 +1,14 @@
+Case by : Augusto Cesar Vieira Teixeira 
+Diagnosis Certain
+Diagnosis: Pericardial calcification
+
+Patient Data: 
+Age - 60
+Gender - Male
+
+Patient Presentation: Patient with clinical diagnosis of diastolic heart 
+failure.
+
+Description: Left cardiac border calcification.
+
+Link: https://radiopaedia.org/cases/19754

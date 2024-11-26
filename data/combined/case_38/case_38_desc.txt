@@ -1,0 +1,16 @@
+Case by : Craig Hacking
+Diagnosis Certain
+Diagnosis: Benign breast calcifications - bilateral (chest x-ray)
+
+Patient Data: 
+Age - 95
+Gender - Female
+
+Patient Presentation: Minor car crasj
+
+Description: Numerous clumps of coarse calcifications in both breasts.
+
+Case Discussion: The patient had many years of active breast surveillance. 
+Mammograms confirmed the benign appearance as benign.
+
+Link: https://radiopaedia.org/cases/71668

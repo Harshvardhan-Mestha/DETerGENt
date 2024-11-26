@@ -1,0 +1,27 @@
+Case by: Taehoo Kim
+Diagnosis Certain
+Diagnosis: Dermatomyositis
+
+Patient Data:
+Age - 50
+Gender - Female
+
+Patient Presentation: Withheld
+
+Description: Massive bilateral conglomerate nodular calcifications 
+appearing localized to the thoracic wall. There is no evidence of pulmonary 
+fibrosis. Findings are long-term stable over 10 years.
+
+Case Study: There is a broad differential diagnosis for intrathoracic 
+calcifications. In order to narrow down the list, one must assess (1) the 
+location (parenchymal, pleural-based, mediastinal or chest wall) and (2) if 
+parenchymal, whether they are focal or diffuse. 
+
+In this particular case, intraparenchymal parasitic etiology was initially 
+considered based on the intrathoracic calcifications but over the years, 
+the patient developed symmetrical soft tissue dystrophic calcifications in 
+the bilateral upper and lower limbs. FDG-PET suggested active disease at 
+the sites of calcinosis without signs of malignancy. The patient finally 
+underwent a skin biopsy confirming dermatomyositis.
+
+Link: https://radiopaedia.org/cases/91038

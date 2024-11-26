@@ -1,0 +1,25 @@
+Case by: Ian Bickle
+Diagnosis Certain
+Diagnosis: Apical pneumothorax
+
+Patient Data: 
+Age - 20
+Gender - Male
+
+Patient Presentation: University student with shortness of breath and mild 
+left sided pleuritic chest pain. No trauma.
+
+Description: Thin left apical pneumothorax, with pleural edge evident and 
+no vascular markings peripheral to it.
+
+Right lung clear.
+
+Case Discussion: The apices of a chest x-ray are on of the key review areas 
+during methodical review of the film. The two key pathologies not to miss 
+being:
+
+apical pneumothorax
+apical lung cancer (Pancoast tumor)
+
+Link: https://radiopaedia.org/cases/46001
+

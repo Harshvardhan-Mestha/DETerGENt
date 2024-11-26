@@ -1,0 +1,44 @@
+Case by: Derek Smith
+Diagnosis Almost Certain
+Diagnosis: Tachycardia mediated cardiomyopathy
+-Small bi-basal pleural effusions
+Patient Data:
+Age - 25 
+Gender - Male
+
+Patient Presentation: Emergency admission with pleuritic chest pain, 
+shortness of breath, cough and leg swelling. Generally unwell over two weeks, 
+with significant weight loss over a few months. No known medical history. 
+Non-smoker. Vacation within the last month with three hour flight. No 
+medications. New fast AF (215 bpm).
+
+Description: Allowing for AP projection, marked cardiomegaly. Prominance of 
+central pulmonary vessels. Small bi-basal pleural effusions.
+
+Case Discussion: This patient presented with chest pain and breathlessness 
+on a background of weight loss and lethargy. Further history revealed a 
+sub-acute history of heat intolerance and fine tremor. There was a family 
+history of over-active thyroid.
+
+The main finding in this patient's blood tests was abnormal thyroid 
+function: free T4 (45), elevated free T3 and thyroid receptor antibodies and 
+fully suppressed TSH.
+
+This biochemical and clinical scenario was consistent with thyroid storm.
+
+There were a number of management steps this patient required in the 
+emergency setting:
+
+control of heart rate: the patient was in uncontrolled AF and was loaded 
+with digoxin and given thiazide diuretics and propranolol
+
+echocardiogram: severe left ventricular dysfunction, moderate mitral 
+regurgitation, ejection fraction 10%
+
+treatment of hyperthyroid state: commenced on propylthiouricil and 
+steroids
+
+When the heart rate was better controlled, a repeat echo confirmed the 
+above findings and the patient underwent DC cardioversion to good effect.
+
+Link: https://radiopaedia.org/cases/37004

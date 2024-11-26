@@ -1,0 +1,24 @@
+Case by : Stefan Tigges
+Diagnosis Certain
+Diagnosis: Lung cancer causing complete atelectasis
+
+Patient Data: 
+Age - 70
+Gender - Male
+
+Patient Presentation: Cough and SOB
+
+Description: There is complete opacification of the left hemithorax with 
+findings of volume loss such as shift of the mediastinum to the left and 
+elevation of the left hemidiaphragm, indicating that the left lung is 
+atelectatic. There is abrupt "cut off" of the left main bronchus, 
+suggesting that the bronchus is obstructed.
+
+Case Discussion: The two most common reasons for complete opacification of a 
+hemithorax are complete atelectasis of a lung and a massive pleural effusion. 
+This case illustrates characteristic features of "white out" due to 
+atelectasis, in this case due to lung cancer obstructing the left main 
+bronchus. Mediastinal shift toward the atelectatic lung and elevation of 
+the diaphragm are especially well seen on the coronal images.
+
+Link: https://radiopaedia.org/cases/96100

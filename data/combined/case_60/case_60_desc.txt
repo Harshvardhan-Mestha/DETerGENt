@@ -1,0 +1,30 @@
+Case by: Balint Botz
+Diagnosis Almost Certain
+Diagnosis: Cardiogenic lung edema (pediatric)
+
+Patient Data: 
+Age - 4 months
+Gender - Male
+
+Patient Presentation: Known Down syndrome and complete AV septal defect 
+verified by echocardiography. Fever, reduced blood oxygen saturation, 
+tachy-dyspnea.
+
+Description: Marked cardiomegaly as a consequence of the complete AV septal 
+defect. 
+
+Bilateral irregular, partially confluous, diffuse haziness showing a 
+perihilar and right-sided predominance.
+
+Partial effacement of the diaphragm contours. 
+
+Presence of air bronchograms. 
+
+Case Discussion: The observed marked cardiomegaly and perihilar (bat wing) 
+opacities are in line with cardiogenic lung edema, as a sequela of the 
+complete AV septal defect.
+
+Considering the clinical picture the more confluous areas of consolidations 
+also raise the possibility of superimposed pneumonia. 
+
+Link: https://radiopaedia.org/cases/73118

@@ -1,0 +1,27 @@
+Case by: James Harvey
+Diagnosis Certain
+Diagnosis: Pericardial calcification
+
+Patient Data:
+Age - 80
+Gender - Male
+
+Patient Presentation: Heart Failure
+
+Description: A geographic box-shaped area of calcification is projected over the heart.
+
+Pulmonary vascular markings are mildly prominent.
+
+Healed fractures of the right 4th-8th ribs laterally.
+
+Case Discussion: The patient underwent pericardiectomy in an attempt to 
+improve cardiac function.
+
+The cause for pericardial calcification remained unknown.
+The patient had a distant history of abdominal tuberculosis. He also had a 
+history of prior trauma with right-sided rib fractures - possible 
+hemopericardium at the time? Both are potential causes.
+
+There was no history of cardiac disease or cardiac surgery.
+
+Link: https://radiopaedia.org/cases/79051

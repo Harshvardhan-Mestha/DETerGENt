@@ -1,0 +1,22 @@
+Case by: Stefan Tigges
+Diagnosis Certain
+Diagnosis: Cicatricial atelectasis right middle lobe
+
+Patient Data: 
+Age - 80
+Gender - Female
+
+Patient Presentation: Chronic Cough
+
+Description: Pulmonary hyperinflation, right middle lobe atelectasis. 
+No edema, pneumonia or pleural effusion.
+
+Case Discussion: Atelectasis is the term used to describe deflated lung. 
+There are multiple different causes of atelectasis but in the absence of 
+endobronchial obstruction, surfactant deficiency, pneumothorax, or an 
+adjacent space-occupying lesion compressing the lung, the most likely cause 
+is scarring. Atelectasis due to scarring is called cicatricial or 
+cicatrisation atelectasis and is often due to prior infection, especially 
+mycobacterial.
+
+Link: https://radiopaedia.org/cases/171798

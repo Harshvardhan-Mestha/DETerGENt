@@ -1,0 +1,34 @@
+Case by: Henry Knipe
+Diagnosis Certain
+Diagnosis: Legionella pneumonia
+
+Patient Data:
+Age - 55 
+Gender - Female
+
+Patient Presentation: Fevers, Cough.
+
+Description: Predominantly mid to lower zone airspace opacity. No large 
+pleural effusion. 
+
+Legionella Multiplex PCR
+
+Specimen Type/Site:     Bronchial Washings
+
+       Legionella species:          Positive
+       Legionella pneumophila:   Negative
+
+Species:        Legionella longbeachae
+
+Case Discussion: The chest x-ray features of legionella pneumonia are 
+non-specific but include a mid-to-lower zone predominance of patchy 
+consolidation and the condition is sometimes associated with pleural 
+effusions (~ 30%). 
+
+Radiographic deterioration does not correlate well with clinical condition. 
+
+Legionella longbeachae is commonly found in potting mix (soil), more so in 
+Australia than in Europe. It is an increasingly common (compared to 
+Legionella pneumophila and other species) source of legionellosis. 
+
+Link: https://radiopaedia.org/cases/31816

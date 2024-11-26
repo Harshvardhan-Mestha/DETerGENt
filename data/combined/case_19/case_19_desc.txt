@@ -1,0 +1,32 @@
+Case by: Henry Knipe
+Diagnosis Certain
+Diagnosis: Basal pneumothorax and trapped lung post thoracentesis
+-Left upper and lower lobe atelectasis
+
+Patient Data: 
+Age - 80
+Gender - Male
+
+Patient Presentation: Chronic left pleural effusion. Post thoracocentesis.
+
+Description: Left basal pneumothorax with air-fluid level and mensiscus 
+indicating that this is actually a hydropneumothorax. Left chest wall 
+subcutaneous emphysema. Left upper and lower lobe atelectasis. Right upper 
+lobe granuloma. 
+
+Case Discussion: Most pneumothoraces post ultrasounded-guided thoracentesis 
+(which are uncommon in themselves) result from unavoidable stress-related 
+parenchymal-pleural fistulas that result from trapped (unexpandable) lung 
+rather than being procedure related (e.g. direct lung puncture, poor 
+technique). 
+
+Radiographic signs of trapped lung include:
+
+visceral pleural peel (thickening)
+basilar pneumothorax
+ipsilateral volume loss
+lobar atelectasis
+Often treatment of these pneumothoraces with chest tubes is unsuccessful 
+and most will slowly resolve in their own time. 
+
+Link: https://radiopaedia.org/cases/30898

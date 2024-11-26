@@ -1,0 +1,31 @@
+Case by: Joachim Feger
+Diagnosis Certain
+Diagnosis: Influenza A pneumonia
+
+Patient Data:
+Age - 60
+Gender - Female
+
+Patient Presentation: Admitted early March 2020, somewhere in the middle of
+nowhere in Germany with fever, dry cough, pleuritic pain, hypoxia, and hypocapnia.
+
+Description Frontal/Lateral: Midly increased cardiothoracic ratio(CTR): 52%
+Patchy, bilateral infiltrates, and airspace opacification predominantly in the mid
+and lower lung zones. No visible pleural effusions.
+
+Case Discussion: This case illustrates and shows the most common findings of influenza
+A pneumonia, a combination of multifocal ground-glass opacities(GGO) and irregular consolidations,
+mainly along and around the bronchovascular bundles.
+ 
+Real-time polymerase chain reaction(PCR) after respiratory swab was positive
+for influenza A virus RNA.
+
+The patient was put under isolation and recieved supportive and antiviral
+therapy(oseltamivir) and an antibiotic regimen covering gram-positive
+cocci for 7 days. After a hospital course of 8 days, the patient recovered
+and was released home in a vastly improved condition.
+
+Outpatient follow-up CT, 3 weeks later, was normal and showed complete resolution
+of the ground glass opacities and consolidations.
+
+Link: https://radiopaedia.org/cases/75217

@@ -1,0 +1,26 @@
+Case by: Ian Bickle
+Diagnosis Certain
+Diagnosis: Emphysema
+-COPD
+
+Patient data: 
+Age - 68
+Gender - Male
+
+Patient Presentation: Retired electrician with a history of 40 pack years 
+of smoking. Shortness of breath.
+
+Description: Hyperinflated lungs as indicated by flattened diaphragms.
+
+The upper lobes are relatively radiolucent compared to the lower lobes, in 
+particular the right upper lobe with less prominent bronchovascular markings.
+
+Case Discussion: Emphysema is one spectrum of COPD, a condition exclusively 
+related to a history of tobacco use.
+
+At its most extreme bullae are evident. Disease is normally pronounced 
+before appreciable on x-ray.
+
+HRCT chest illustrates even minor disease and aids characterization.  
+
+Link: https://radiopaedia.org/cases/33347

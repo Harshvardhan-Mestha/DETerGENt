@@ -1,0 +1,24 @@
+Case by: Craig Hacking
+Diagnosis Certain
+Diagnosis:Lung volume reduction surgery for emphysema
+-Apical pneumothorax
+-Small bilateral basal pleural effusions
+
+Patient Data: 
+Age - 70
+Gender - Male
+
+Patient Presentation: Day 5 post lung volume reduction surgery. Severe COPD.
+
+Description: There is a right intercostal pleural drain in place. Small right 
+apical pneumothorax which has not changed when compared to the most recent 
+post op CXR. Small bilateral basal pleural effusions. Postoperative lung 
+resection surgical suture lines in the right perihilar, right superior 
+paravertebral and left apical regions. The amount of lung volume has 
+decreased significantly from the pre op CXR. Longstanding bilateral lower 
+zone chronic interstitial thickening.
+
+Case Discussion: Apical lung resections performed to reduce lung volumes in 
+a patient with severe emphysema.
+
+Link: https://radiopaedia.org/cases/78728

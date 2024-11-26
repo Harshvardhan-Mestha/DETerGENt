@@ -1,0 +1,19 @@
+Case by: Ian Bickle
+Diagnosis Certain
+Diagnosis: Varicella pneumonia
+
+Patient Data:
+Age - 60
+Gender - Female
+
+Patient Presentation: SOB
+
+Description: Extensive high density nodules throughout both lungs in keeping 
+with previous varicella pneumonia.
+
+Heart size normal. Normal mediastinal contours.
+
+Case Discussion: Widespread small high density foci in the lungs most 
+commonly, but not exclusively, observed in prior varicella pneumonia.
+
+Link: https://radiopaedia.org/cases/180457

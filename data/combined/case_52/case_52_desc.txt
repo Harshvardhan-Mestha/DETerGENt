@@ -1,0 +1,24 @@
+Case by Vincent Tatco
+Diagnosis Certain
+Diagnosis: Truncus arteriosus
+-Cardiomegaly
+
+Patient Data:
+Age - 5
+Gender - Female
+
+Patient Presentation: Cyanosis since birth. Known case of truncus arteriosus.
+
+Description: There is cardiomegaly.
+
+Lungs are hyperinflated with increased pulmonary vascularity.
+
+Right-sided aortic arch is demonstrated.
+
+Case Discussion: This is a chest radiograph of a patient with truncus arteriosus 
+type I. The diagnosis was confirmed on echocardiography. Truncus arteriosus 
+is a common differential diagnosis in chest radiographs of cyanotic 
+patients presenting with cardiomegaly, pulmonary plethora and right-sided 
+aortic arch. 
+
+Link: https://radiopaedia.org/cases/43228

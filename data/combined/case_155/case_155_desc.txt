@@ -1,0 +1,27 @@
+Case by: Aws Hamid MD MS
+Diagnosis Certain
+Diagnosis: Cryptococcal pneumonia
+
+Patient Data:
+Age - 70
+Gender - Male
+
+Patient Presentation: Patient with past medical history of leukemia 
+presented with cough and fever.
+
+Description: Bibasilar patchy consolidation and right basilar nodular 
+opacities.
+
+Case Discussion: Cryptococcal pneumonia is a fungal infection cause by 
+Cryptococcus neoformans (as in this biospy-proven case) or Cryptococcus 
+gatti and predominantly affects the immunocompromised patients. 
+It can present with pulmonary nodules, masses +/- cavitations particularly 
+in immunocompromised patients.
+
+Link: https://radiopaedia.org/cases/97071
+
+
+
+
+
+

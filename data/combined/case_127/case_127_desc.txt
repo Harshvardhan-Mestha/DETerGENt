@@ -1,0 +1,29 @@
+Case by: Leonardo Lustosa
+Diagnosis Certain
+
+Patient data:
+Age - 40
+Gender - Male
+Diagnosis: Pleural effusion - small
+
+Patient Presentation: Asymptomatic
+
+Description: Blunting of the left costophrenic angle. A discrete meniscus 
+is visible on the left chest wall.
+
+Image w/ visuals: The blunting of the left costophrenic angle and the 
+meniscus are shown by the red line.
+
+Normal appearance of the costophrenic angle is seen on the right 
+hemithorax, as shown by the white line.
+
+Case Discussion: Pleural effusion represents the abnormal accumulation of 
+fluid in the pleural cavity. The characteristics of the fluid usually 
+cannot be determined by a simple radiograph and further clinical 
+correlation is necessary to properly identify it.
+
+As pleural effusion is a generic term to denote the abnormal presence of 
+fluid in the pleural cavity, it can be caused by many different conditions.
+
+Link: https://radiopaedia.org/cases/87524
+

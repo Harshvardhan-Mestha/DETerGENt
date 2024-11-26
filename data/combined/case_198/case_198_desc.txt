@@ -1,0 +1,16 @@
+Case by: Bruno Di Muzio
+Diagnosis Certain
+Diagnosis: Tuberculosis - left upper lobe
+
+Patient Data: 
+Age - 26
+Gender - Male
+
+Patient Presentation: Cough, fever, and weight loss
+
+Description: Chest x-ray demonstrates multifocal patchy opacities and 
+consolidation in the left upper lobe. 
+
+Case Discussion: Case confirmed as pulmonary TB by sputum culture.
+
+Link: https://radiopaedia.org/cases/34986

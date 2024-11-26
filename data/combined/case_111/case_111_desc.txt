@@ -1,0 +1,28 @@
+Case by : Maxime St - Amant
+Diagnosis Almost Certain
+Diagnosis: Sarcomatoid mesothelioma
+
+Patient Data: 
+Age - 65
+Gender - Female
+
+Patient Presentation: Cough. Known asbestos exposure
+
+Description: On the frontal chest X-ray, there is an extra-pulmonary 
+(pleural) rounded & well-defined mass in projection of the right upper lobe, 
+which is possibly calcified, and associated with a diaphragmatic peak sign.
+
+On the lateral view, there is actually possibly three calcified pleural mass. 
+The findings are atypical for mesothelioma, but this diagnosis should be 
+excluded in the presence of asbestos exposure. Pleural metastases would be 
+an alternate diagnosis. Loculated pleural effusion is less probable.
+
+Case Discussion: Biopsy revealed sarcomatoid mesothelioma, the rarest 
+subtype of mesothelioma (the others being epithelioid and biphasic). 
+Spindle-cell mesothelioma, sarcomatous and diffuse malignant fibrous 
+mesothelioma are other names for sarcomatoid mesothelioma. It accounts for 
+approximately 10 % of pulmonary mesothelioma. Histologically, the findings 
+are similar to histiocytoma. It contains spindle cells and must be 
+differentiated from sarcoma.
+
+Link: https://radiopaedia.org/cases/20730

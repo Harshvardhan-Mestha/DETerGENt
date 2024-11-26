@@ -1,0 +1,22 @@
+Case by: Hein Els
+Diagnosis Certain
+Diagnosis: Lung volume reduction coils
+-COPD 
+
+Patient Data: 
+Age - 52
+Gender - Female
+
+Patient Presentation: History of COPD
+
+Description: Background of COPD. The first CXR is performed after 
+bronchoscopic nitinol coil implantation in the right lung. Multiple nitinol 
+coils are present in the right mid and upper lung. The second CXR is 
+performed after treatment of the left lung and also shows multiple nitinol 
+coils in the left mid and upper lung.
+
+Case Discussion: Patients with severe COPD can benefit from bronchoscopic 
+lung volume reduction with nitinol coils. The coils are designed to reduce 
+hyperinflation and improve elastic recoil in severe emphysema. 
+
+Link: https://radiopaedia.org/cases/33248

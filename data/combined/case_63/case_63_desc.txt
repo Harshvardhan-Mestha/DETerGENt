@@ -1,0 +1,23 @@
+Case by : David Horvath
+Diagnosis Almost Certain
+Diagnosis: Chronic obstructive pulmonary disease (COPD)
+
+Patient Data: 
+Age - 75
+Gender - Male
+
+Patient Presentation: History of over 100 pack-years of cigarette smoking 
+presents with symptoms of an acute COPD exacerbation.
+
+Description: Enlarged right heart, flattened diaphragms, perihilar fullness, 
+and diffuse interstitial opacification. Peripheral vascular markings are 
+within normal limits.
+
+Case Discussion: Most cases of COPD are caused by cigarette smoking. However, some 
+cases are secondary to air pollution as seen in patients with occupational 
+exposure to dust and fumes. A COPD exacerbation is most commonly caused by 
+viruses. Viral etiology potentially explains why this patient has perihilar 
+fullness and diffuse interstitial opacification.
+
+Link: https://radiopaedia.org/cases/164283
+

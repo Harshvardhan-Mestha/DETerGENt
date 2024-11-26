@@ -1,0 +1,30 @@
+Case by: Hidayatullah Hamidi
+Diagnosis Certain
+Diagnosis: COVID-19 pneumonia
+
+Patient Data:
+Age - 75
+Gender - Male
+
+Patient Presentation: Acute cough, shortness of breath and fever for one 10 
+days.
+
+Description: multifocal hazy opacities in peripheries of right middle and 
+both lower zones.
+
+Mediastinum is centered and is of normal width. 
+
+Case Discussion: The x-ray features can be subtle but CT features are 
+striking and diagnostic of COVID-19 pneumonia.
+
+The PCR exam was positive of COVID-19 (COVID-19 virus RNA detected).
+
+WBC: 8000 (normal range: 4000-8000)
+
+Neutrophils: 86.6 % (normal range: 40-75%)
+
+ESR: 50 (normal range: 0-15)
+
+CRP: 7.5 (normal range 0-1)
+
+Link: https://radiopaedia.org/cases/84003

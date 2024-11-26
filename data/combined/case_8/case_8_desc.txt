@@ -1,0 +1,39 @@
+Case by : Kelvin Feng
+Diagnosis Certain
+Diagnosis: Right main bronchus intubation causing left lung atelectasis
+-Air bronochograms
+
+Patient Data:
+Age - 45
+Gender - Female
+
+Patient Presentation: Bradycardia and hypotension following induction of 
+anesthesia. Increasing airway pressures and progressive hypoxemia. 
+Cardiac arrest.
+
+Description: The ETT extends beyond the carina into the right main bronchus. 
+There is near-complete consolidation of the left lung with air bronchograms 
+present, representing resorptive atelectasis in this clinical context. No 
+significant mediastinal shift. Other possible causes for this appearance 
+can include, for example, pneumonia, pulmonary edema and pulmonary 
+hemorrhage.
+
+Right internal jugular CVL is appropriately positioned.
+
+Follow up: Following retraction of the ETT, there has been significant 
+re-aeration of the left lung. Persistent dense consolidation remains within 
+the left lower lobe. The right lung remains well expanded with no focal 
+consolidation.
+
+Case Discussion: This case represents a classic example of right main 
+bronchus intubation. The patient was intubated as part of induction of 
+anesthesia for an elective surgical procedure. Unfortunately, high airway 
+pressures were observed following intubation with the rapid development of 
+bradycardia, hypotension and hypoxemia with subsequent cardiac arrest. 
+Following a short period of cardiopulmonary resuscitation, return of 
+spontaneous circulation occurred. This radiograph was taken immediately on 
+admission to ICU. The etiology of this event may be secondary to the drugs 
+used during induction or as a result of excessive stimulation of vagal tone 
+with direct laryngoscopy, which has been reported in case studies
+
+Link: https://radiopaedia.org/cases/80399

@@ -1,0 +1,22 @@
+Case by: Zuhoor Ud Din
+Diagnosis Certain
+Diagnosis: Pneumothorax
+
+Patient Data:
+Age - 20
+Gender - Male
+
+Patient Presentation: Mild left sided chest pain for the last few weeks.
+
+Description: Plain radiograph of the chest reveals large left sided 
+pneumothorax with hypertransradiancy and mediastinal shift. No significant 
+tracheal deviation is noted. Note is also made of bilateral accessory 
+cervical ribs.
+
+Case Discussion: Pneumothorax occurs when air enters the pleural space, 
+leading to lung collapse. In radiographs, it typically appears as a visible 
+"white line" at the lung periphery, the visceral pleural line with absent 
+lung markings beyond it. This creates a sharp demarcation between the 
+collapsed lung and the pneumothorax.
+
+Link: https://radiopaedia.org/cases/188046

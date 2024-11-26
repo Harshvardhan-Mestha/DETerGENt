@@ -1,0 +1,22 @@
+Case by : Derek Smith
+Diagnosis Certain
+Diagnosis: Calcified anterior mediastinal nodes (post-radiotherapy)
+
+Patient Data:
+Age - 70
+Gender - Female
+
+Patient Presentation: Known cardiac dysfunction, worsening SOB and ankle 
+swelling, any features of pulmonary edema?
+
+Description: No overt pulmonary edema or focal consolidation / collapse. 
+Normal heart size.
+
+Densely calcified masses in the anterior mediastinum. No evidence on CXR of 
+previous pulmonary TB.
+
+Case Discussion: The patient had a history of Hodgkin lymphoma as a teenager, 
+treated with radiotherapy. The large calcifed mediastinal nodes are secondary 
+to this treatment.
+
+Link: https://radiopaedia.org/cases/67840

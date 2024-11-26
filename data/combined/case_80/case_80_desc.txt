@@ -1,0 +1,24 @@
+Case by: Ian Bickle
+Diagnosis Certain
+Diagnosis: Severe emphysema
+
+Patient Data: 
+Age - 65
+Gender - Male
+
+Patient Presentation: Known emphysema. Severe SOB.
+
+Description: Severe bilateral emphysema with large volume bullous disease 
+in the right upper and left lower lobes.
+
+Segmental collapse of the right middle lobe.
+
+Heart size normal.
+
+Case Discussion: This case illustrates a case of severe bullous emphysema.  
+
+The greatest merit of the case is in illustrating the impact that bullous 
+emphysema or other structural lung disease has on VQ scan appearances and 
+one's ability to interpret if a pulmonary embolism is present.
+
+Link: https://radiopaedia.org/cases/147856

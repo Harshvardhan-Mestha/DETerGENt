@@ -1,0 +1,48 @@
+Case by: Bruno Di Muzio
+Diagnosis Certain
+Diagnosis: Epithelioid mesothelioma
+
+Patient Data: 
+Age - 70
+Gender - Male
+
+Patient Presentation: Chest pain and shortness of breath
+
+Description: There is diffuse left hemithorax nodular pleural thickening 
+encasing the lung and with, perhaps, some left hemithorax volume loss. A 
+component of pleural effusion cannot be excluded. Three small coils projected 
+within the left hemithorax infer previous surgical intervention. The right 
+lung and pleural space are clear. Enlarged left paratracheal stripe either 
+represents lymphadenopathy or pleural mass component. 
+
+Chasing for previous imaging or further CT recommended. 
+
+Case Discussion: This patient was known to have confirmed pleural malignancy 
+followed up in another service. 
+
+He has previous left VATS: Macroscopy: Labeled "Left pleural rind biopsy".  
+2 fragments of fatty tissue bearing an incomplete smooth pale grey lining 8 
+x 5 x 3 mm and 14 x 9 x 5 mm.  Inked, serially sliced.
+
+Microscopy: The biopsy fragments show fibroadipose connective tissue with 
+surface fibrinous exudate. Within the submesothelial stroma, there is a 
+proliferation of atypical epithelioid mesothelial cells forming small nests, 
+trabeculae, and tight acinar arrangements. These cells have moderately 
+pleomorphic nuclei with prominent nucleoli and there are scattered mitotic 
+figures. A sclerotic stromal reaction is present. The surrounding pleural 
+tissue shows features of fibrous pleuritis with mild chronic inflammation. 
+No alveolated lung tissue is included. Atypical cells do not extend into the 
+adipose.
+Immunoperoxidase stains have been performed on the mesothelial cells show 
+positive staining for calretinin and CK 5/6, with no staining for EMA.
+The findings are suspicious for malignant mesothelioma, however, the presence 
+of adjacent fibrous pleurisy and the absence of invasion into the adipose 
+tissue precludes a definite diagnosis.
+
+Conclusion: Left pleural rind biopsy: Atypical mesothelial proliferation, 
+suspicious for but not diagnostic of mesothelioma.
+
+A second opinion from a different pathologist: features are in keeping with 
+malignant mesothelioma, epithelioid subtype. 
+
+Link: https://radiopaedia.org/cases/75229

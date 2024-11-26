@@ -1,0 +1,30 @@
+Case by: Ian Bickle
+Diagnosis Almost Certain
+Diagnosis: Solitary pulmonary nodule - lung cancer
+
+Patient Data: 
+Age - 65
+Gender - Male
+
+Patient presentation: Cough
+
+Description: 3 cm left upper lobe mass in the perihilar region.
+
+Heart size normal.  Right lung clear.  Normal mediastinal contours.
+
+Case Discussion: The typical appearance of a solitary pulmonary nodule with 
+some practical tips:
+
+there is a differential, but it is lung cancer until proven otherwise
+
+at 3 cm in size, this is a "mass", not a "nodule" (which measures < 3 cm)
+
+be sure to check there is only one nodule
+
+ensure there are no other clues, such as an AP window node
+
+always check prior imaging - unnecessary anxiety and cost through CT 
+scanning can be avoided if the mass has been there for years and has a 
+benign cause, such as a hamartoma
+
+Link: https://radiopaedia.org/cases/83778

@@ -1,0 +1,38 @@
+Case by: Jennifer Luna
+Diagnosis Certain
+Diagnosis: Metastatic pleural effusion due to lung adenocarcinoma
+
+Patient Data: 
+Age - 75
+Gender - Female
+
+Patient Presentation: Increasing shortness of breath and background of lung 
+cancer.
+
+Description: There is a large opacity of the right hilar, suprahilar and 
+upper zone region which is consistent with the known primary lung cancer. 
+The right lower zone is opacified which could represent right lower lobe 
+collapse with an elevated right hemi diaphragm. The opacity could 
+alternatively represent a soft tissue lesion or loculated pleural effusion.
+
+Case Discussion: This is an interesting case of abnormal chest x-ray which 
+can be mistaken for an elevated hemidiaphragm. The mediastinum is displaced 
+to the left and the right hemidiaphragm is displaced inferiorly because the 
+volume of the loculated pleural collection is greater than the loss of 
+volume in the right lung. 
+
+The patient had multiple previous pleural taps for pleural effusion. 
+The pleural fluid had previously been sent for cytology which had showed 
+malignant cells consistent with lung adenocarcinoma. The appearance of the 
+pleural effusion compared to previous had evolved from a simple pleural 
+effusion to a loculated effusion. This explains why the appearance on the 
+CXR no longer shows the typical meniscus sign and instead artificially 
+gives the impression of an elevated hemidiaphragm. 
+
+Regarding cancer staging the tumor size (>7cm) equates to T4, the 
+involvement of contralateral mediastinal lymph nodes equates to N3 and the 
+presence of malignant pleural effusion equates to M1a. The overall IASLC 
+8th edition staging being IVa.
+
+Link: https://radiopaedia.org/cases/95376
+

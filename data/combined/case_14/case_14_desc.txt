@@ -1,0 +1,21 @@
+Case by: Piotr Tomczyk
+Diagnosis Probable
+Diagnosis: Round atelectasis
+
+Patient Data:
+Age - 60
+Gender - Male
+
+Patient Presentation: Follow-up imaging for a patent with dyspnea and 
+recurrent pleural effusion. He underwent surgical management of aortic 
+dissection 2 years ago.
+
+Description: Left-sided pleural fluid collection.
+
+Irregular area of opacity adjacent to the pleura in the left lower zone.
+
+Case Discussion: This case demonstrates all typical features of round 
+atelectasis but differential diagnosis between other causes of lung mass 
+can often be difficult.
+
+Link:  https://radiopaedia.org/cases/73107

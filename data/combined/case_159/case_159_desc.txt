@@ -1,0 +1,33 @@
+Case by: Yune Kwong
+Diagnosis Certain
+Diagnosis: Klebsiella pneumonia
+
+Patient Data: 
+Age - 60
+Gender - Female
+
+Patient Presentation: Tachypneic and febrile
+
+Description: Extensive right upper lobe consolidation, with bulging of the 
+horizontal fissure.
+
+Sputum analysis grew Klebsiella pneumoniae.
+
+Case Discussion: Klebsiella pneumoniae is a gram negative organism that 
+usually affects people with alcoholism or chronic debilitating diseases 
+(similar to other gram -ve pneumonias). On CXR, consolidation is lobar and 
+resembles streptococcus pneumonia. Lobar expansion (e.g. bulging of the 
+horizontal fissure in this case) is less common nowadays with modern 
+antibiotic treatment. Also, lobar expansion is not specific for Klebsiella 
+infection.
+
+A helpful feature which may help to distinguish from pneumococcal pneumonia 
+is that Klebsiella pneumonia develops cavitation in 30-50% of cases. 
+This occurs early and progresses quickly. Massive necrosis (pulmonary 
+gangrene) is a recognized complication. In comparison, cavitation is rare 
+in pneumococcal pneumonia.
+
+Link: https://radiopaedia.org/cases/29375
+
+
+

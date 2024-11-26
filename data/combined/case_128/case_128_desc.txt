@@ -1,0 +1,21 @@
+Case by: RMH Core Conditions
+Diagnosis Certain
+Diagnosis: Subpulmonic pleural effusion
+-Mild cardiomegaly
+
+Patient Data: 
+Age - 50
+Gender - Male
+
+Patient Presentation: End-stage kidney disease. Fluid overload.
+
+Description: There is a moderate-sized right basal and right subpulmonic 
+pleural effusion. Sternotomy wires and loop recorder noted. Moderate 
+cardiomegaly.
+
+Case Discussion: Subpulmonic effusion is a pleural effusion that can be 
+seen only on an erect projection. Rather than layering laterally and 
+blunting the costophrenic angle, the pleural fluid lies almost exclusively 
+between the lung base and the diaphragm. 
+
+Link: https://radiopaedia.org/cases/34412

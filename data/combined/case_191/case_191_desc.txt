@@ -1,0 +1,26 @@
+Case by : Ryan Thibodeau
+Diagnosis Certain
+Diagnosis: Progressive primary pulmonary tuberculosis
+-Pneumonia
+
+Patient Data: 
+Age - 12
+Gender - Female
+
+Patient Presentation: Recently immigrated to the US. Chronic productive 
+cough for the past 3 months.
+
+Description: There is an air-filled cavitary lesion with thick walls in the 
+right lower lobe just above the level of the diaphragm. Streaky and patchy 
+opacification is seen adjacent to this lesion within the right middle and 
+lower lobes.
+
+Case Discussion: This is a case of progressive primary pulmonary tuberculosis 
+with lower lobe destructive cavitating pneumonia and endobronchial spread.
+
+The patient was seen by pediatric pulmonary who initially performed an 
+interferon gamma release assay, which was positive. Sputum samples were 
+then tested which revealed acid-fast organisms, consistent with tuberculosis. 
+No complications arose during her treatment course.
+
+Link: https://radiopaedia.org/cases/183789

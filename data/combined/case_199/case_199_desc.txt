@@ -1,0 +1,18 @@
+Case by: Frank Gaillard
+Diagnosis Certain
+Diagnosis: Tuberculosis - left upper lobe
+
+Patient Data: 
+Age - 25
+Gender - Female
+
+Patient Presentation: Cough
+
+Description: Chest x-ray demonstrates consolidation in the left upper lobe. 
+Two densely calcified granulomas are also present on the left, one near the 
+hilum and the second in the left lower lobe. No convincing lymph node 
+enlargement. 
+
+Case Discussion: Sputum microscopy and culture confirmed pulmonary TB. 
+
+Link: https://radiopaedia.org/cases/12569

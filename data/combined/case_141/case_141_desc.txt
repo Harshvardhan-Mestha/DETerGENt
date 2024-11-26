@@ -1,0 +1,22 @@
+Case by Frank Gaillard:
+Diagnosis Certain
+Diagnosis: Pneumonia
+
+Patient symptoms: Acutely unwell
+
+Patient Data:
+Age - 30
+Gender - Female
+
+Description:Extensive consolidation and air bronchograms with loss of the right
+hemidiaphragm in keeping with right lower lope consolidation. In this setting
+most likely community-aquired pneumonia. Whether or not there is an associated 
+small pleural effusion is uncertain. Minor patchy airspace opacity is also in 
+the left midzone.
+
+Case Discussion: Chest x-ray demonstrates extensive consolidation and air
+bronchograms. Patient treated in ICU for numerous days.
+Streptococcus pneumoniae isolated.
+
+Link: https://radiopaedia.org/cases/11009
+

@@ -1,0 +1,52 @@
+Case by: Yair Glick
+Diagnosis Certain
+Diagnosis: Atelectasis
+
+Patient Data: 
+Age - 20
+Gender - Male
+
+Patient Presentation: Drowned in the sea
+
+Description: Properly placed ventilation tube. Coarse bilateral perihilar 
+nodulointerstitial opacities.
+
+1 day later: Subclavian line on right, its tip projected over the SVC. 
+Mild interstitial thickening - considerable improvement.
+
+3 days later: There is a large opacity in the right hemithorax. 
+The mediastinum and the heart are pulled to the right. Most probably 
+collapse of both right lower lobe and right middle lobe.
+
+4 days later: CXR 1 day later after respiratory physioRx
+
+Beside the properly placed double-lumen right subclavian line, there is a 
+right jugular single-lumen line that ends adjacent to the 2nd rib.
+
+Bilateral interstitial edema but the right lung atelectasis has cleared.
+
+Case Discussion: Young male, history remarkable for thalassemia minor and 
+heavy smoking. The lifeguard reported that the patient had been submerged 
+for about 3 minutes. Pulled out of the water unconscious, not breathing and 
+pulseless. Received prompt CPR on the spot for 10 minutes till return of 
+pulse. Ventilated on the spot. Taken to nearby hospital. At the ER: 
+unconscious, tachycardic, ventilated, pupils unresponsive to light, 
+recurring seizures. Very severe metabolic and respiratory acidosis: pH 6.58, 
+pCO2 92 mmHg, base excess -26 mmol/L, bicarbonate 3.8 mmol/L. Treated with 
+toxoid and transferred to the ICU in critical condition, APACHE II score of 
+28.
+
+On admission to the ICU: GCS 3TS, narrow pupils unresponsive to light, no 
+corneal reflex, no oculocephalic reflex. Received pressure-controlled 
+ventilation (PCV) and treated with IV fluids, nutrition via NGT, ranitidine, 
+ enoxaparin (to prevent DVT), and empiric ceftriaxone. Treated for status 
+epilepticus with midazolam, propofol, phenytoin, and even required 
+thiopentone. The seizures stopped. Received norepinephrine for hypotension. 
+Two days later, sedation was discontinued.
+
+RLL atelectasis: Deterioration in ventilatory status 6 days into admission. 
+Chest x ray showed complete RLL atelectasis. Significant clinical and 
+radiological improvement after receiving high PEEP and respiratory 
+physiotherapy.
+
+Link: https://radiopaedia.org/cases/91903

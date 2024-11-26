@@ -1,0 +1,16 @@
+Case by: RMH Core Conditions
+Diagnosis Certain
+Diagnosis: Cardiomegaly (mild)
+
+Patient Data: 
+Age - 40
+Gender - Male
+
+Patient Presentation: Pre-op chest x-ray
+
+Description: Mild cardiomegaly. Lungs and pleural spaces are normal.
+
+Case Discussion: This case demonstrates a nice example of LUL and RUL 
+bronchi on the lateral projection. 
+
+Link: https://radiopaedia.org/cases/27923

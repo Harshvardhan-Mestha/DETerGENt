@@ -1,0 +1,18 @@
+Case by: Stefan Tigges
+Diagnosis Almost Certain
+Diagnosis: Lung cancer metastatic to brain
+
+Patient Data:
+Age - 65
+Gender - Female
+
+Patient Presentation: Left facial droop, rule out stroke.
+
+Description: 4 cm mass posterior segment right upper lobe, lungs otherwise 
+clear.
+
+Case Discussion: The combination of findings (enhancing intra-axial masses 
+with vasogenic edema) is characteristic of metastases, especially in a 
+patient with a lung mass.
+
+Link: https://radiopaedia.org/cases/159761

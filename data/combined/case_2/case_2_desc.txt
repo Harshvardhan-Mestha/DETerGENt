@@ -1,0 +1,20 @@
+Case by: Andrew Murphy
+Diagnosis Certain
+Diagnosis: Bilateral atelectasis
+
+Patient Data: 
+Age - 35
+Gender - Male
+
+Patient Presentation: Left chest pain, 1 week post splenectomy
+
+Description: Bilateral symmetrical curvilinear opacities extending 
+superolaterally from the lower mediastinum. They are separate from the 
+oblique fissure on the lateral projection, most likely to be atelectasis.
+
+Case Discussion: Atelectasis is common after large surgical procedures, 
+patients will often present with chest pain native to the side of collapse. 
+Subsegmental atelectasis like this is often best visualized on computed 
+tomography.
+
+Link: https://radiopaedia.org/cases/48666

@@ -1,0 +1,31 @@
+Case by: Stefan Tigges
+Diagnosis Almost Certain
+Diagnosis: Right lung atelactasis due to endobronchial cancer
+
+
+Patient Data: 
+Age - 60 
+Gender - Male
+
+Patient Presentation: Cough
+
+Description: Complete opacification of the right hemithorax with tracheal 
+shift to the right, indicating complete atelectasis within the right lung. 
+The left main bronchus is normally aerated, while the right bronchus is 
+invisible and likely filled with soft tissue. Soft tissue projects into the 
+distal trachea at the level of the carina. The left lung is hyperinflated.
+
+Case Discussion: The 2 most common causes of hemithorax opacification 
+(white-out) are complete atelectasis of a lung and a massive pleural 
+effusion, but they can often be easily distinguished. Remember that the 
+lung is basically a balloon: normally inflated air-filled lung has normal 
+volume and is black, but deflated (atelectatic) lung has low volume and is 
+opaque (white, soft tissue density). Volume loss results in shift of the 
+mediastinum (heart and trachea) to the side of the white-out. When a 
+massive effusion (usually due to pleural metastases) causes white-out, 
+the additional "stuff" pushes the mediastinum away from the opacified 
+hemithorax. In our case, there is shift of the heart and trachea to the 
+side of the white-out in this patient with lung cancer obstructing the 
+right main bronchus resulting in right lung atelectasis. 
+
+Link: https://radiopaedia.org/cases/98431

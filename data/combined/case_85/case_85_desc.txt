@@ -1,0 +1,28 @@
+Case by: Ian Bickle
+Diagnosis Certian
+Diagnosis: Lung metastases
+
+Patient data:
+Age - 65
+
+Patient Presentation: Previous head and neck malignancy. Night sweats 
+and dyspnea.
+
+Description: Multiple lung nodules and masses in both lungs of variable size. 
+ No internal cavitation.
+
+Normal mediastinal contours.
+
+Heart size normal.
+
+Surgical clips in the left axilla.
+
+Case Discussion: Multiple nodules in both lungs of variable size with a 
+prior history of malignancy are virtually always metastases.
+
+Remember a lung nodule is termed a mass when 3 cm or greater.
+
+Head and neck malignancies are typically squamous cell carcinomas and often 
+cavitate when metastatic, although not in this case.
+
+Link: https://radiopaedia.org/cases/72076

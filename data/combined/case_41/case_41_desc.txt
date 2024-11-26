@@ -1,0 +1,24 @@
+Case by: Sarmad Aslam
+Diagnosis Certain
+Diagnosis: Cardiomegaly
+
+Patient Data: 
+Age - 80
+Gender - Female
+
+Patient Presentation: SOB and bilateral pitting edema
+
+Description: Marked cardiomegaly. 
+
+Clear lungs and pleural spaces.
+
+Mild splaying of the carina indicating left atrium enlargement.
+
+Case Discussion: Cardiomegaly may show double heart border on the right side 
+where the medial contour corresponds to the left atrium whilst the lateral 
+contour corresponds to the right atrium when the case is due to mitral 
+valve disease. These findings are not seen in this case.
+
+Despite the markedly enlarged heart, there is no evidence of cardiac failure.
+
+Link: https://radiopaedia.org/cases/79296

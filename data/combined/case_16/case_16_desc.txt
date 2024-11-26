@@ -1,0 +1,24 @@
+Case by: Yi-Jin Kuok
+Diagnosis Almost Certain
+Diagnosis: Cicatrisation collapse
+-Lobar collapse(Subtype of atelectasis)
+
+Patient Data:
+Age - 40
+Gender - Female
+
+Patient Presentation: Cough and fever
+
+Description: Left lower lobe consolidation congruent with the patient's 
+infective symptoms.
+
+3 years later: Retrocardiac density in keeping with left lower lobe collapse. 
+Splaying of the left upper lobe vessels (compared to the right) suggesting 
+hyperexpansion - this is subtle.
+
+Case Discussion: Lobar collapse refers to collapse of an entire lobe of the 
+lung. As such it is a subtype of atelectasis, which is a more generic term 
+for 'incomplete expansion'. Individual lobes of the lung may collapse due 
+to obstruction of the supplying bronchus. 
+
+Link: https://radiopaedia.org/cases/17405

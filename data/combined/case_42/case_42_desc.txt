@@ -1,0 +1,31 @@
+Case by: Frank Gaillard
+Diagnosis Certain
+Diagnosis: Cardiomegaly
+
+Patient Data:
+Age - 85
+Gender - Female
+
+Patient Presentation: Poor exercise tolerance
+
+Description: PA and lateral chest x-rays demonstrate markedly enlarged 
+cardiac silhouette. There is a double contour to the right heart border and 
+splaying of the carina. 
+
+The aorta is somewhat ectatic. There are no overt features of congestive 
+cardiac failure at this time.  
+
+Annotated: Contours - Splayed carina (red), and double contour. When 
+correlated to the CT it is evident that the most lateral contour is due to 
+the right atrium (blue) and the more medial contour due to the left atrium 
+(orange).
+
+Cardiothoracic Ratio: Figure 1: annotated x-ray of this same patient
+
+Cardiothoracic ratio is measured on a PA chest x-ray, and is the ratio of:
+
+maximal horizontal cardiac diameter
+maximal horizontal thoracic diameter (inner edge of ribs / edge of pleura)
+Figure 2: A normal measurement should be less than 0.5. 
+
+Link: https://radiopaedia.org/cases/12334

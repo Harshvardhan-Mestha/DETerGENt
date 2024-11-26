@@ -1,0 +1,37 @@
+Case by: Sajoscha A Sorrentino
+Diagnosis Certain
+Diagnosis: Mitral annular calcification
+
+Patient Data: 
+Age - 70
+Gender - Female
+
+Patient Presentation: Pre-op Screening
+
+Description: There is a band of coarse calcification projected over the 
+expected location of the mitral valve, to the left of midline. Prominence 
+of the left atrial appendage, but no gross evidence of left atrial 
+enlargement. The pulmonary trunk is clearly demonstrated and not enlarged. 
+Normal cardiac size.
+
+The lungs are clear although there are coarsened bronchovascular markings.
+
+Annotated Images: Heavy nodular calcification (yellow) is noted projecting 
+over the cardiac silhouette. 
+
+Approximate locations of the 4 heart valves are noted on the second image:
+
+aortic valve (red)
+pulmonary valve (blue)
+mitral valve (yellow)
+tricuspid valve (orange)
+
+Case Discussion: This case demonstrates calcification of the mitral valve 
+annulus (not to be confused with mitral valve leaflet calcification which 
+is the result of, and can cause, mitral valve disease).
+
+Coarse calcification is seen in the expected location of the mitral valve, 
+to the left of midline.  It is associated with conduction defects and 
+coronary artery disease.
+
+Link: https://radiopaedia.org/cases/16473

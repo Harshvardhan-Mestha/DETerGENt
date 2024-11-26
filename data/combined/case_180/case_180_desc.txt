@@ -1,0 +1,22 @@
+Case by: Leonardo Lustosa
+Diagnosis Certain
+Diagnosis: Pneumothorax - post chest tube removal
+
+Patient Data: 
+Age - 16
+Gender - Male
+
+Patient Presentation: Control radiograph after chest tube removal.
+
+Description: Chest radiograph revealed a right pneumothorax, marked by the 
+visible right pleural edge, the absence of lung vessels peripheral to the 
+pleural, and the increased peripheral space radiolucency when compared to 
+the other lung.
+
+The mediastinum is not shifted, indicating this is a simple pneumothorax.
+
+Case Discussion: Removal of a chest tube may cause pneumothorax, which 
+happened in this present case.
+
+Link: https://radiopaedia.org/cases/99292
+

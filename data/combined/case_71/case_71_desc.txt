@@ -1,0 +1,30 @@
+Case by: Ian Bickle
+Diagnosis Almost Certain
+Diagnosis: Emphysema
+-COPD
+
+Patient Data: 
+Age - 66
+Gender - Female
+
+Patient Presentation: Retired female, heavy smoker. Shortness of breath on
+exertion.
+
+Description: The lungs are markedly hyperinflated.
+
+Flattening of the diaphragm.
+
+Bullous change in the left upper lobe.
+
+The heart has an elongated appearance.
+
+Case Discussion: Emphysema is one end of the spectrum of findings in COPD. 
+The disease is usually quite pronounced by the time the typical appearances 
+are evidence on a plain radiograph.
+
+In this case the hyperinflated nature of the lungs is very readily 
+apparent. The lucency and sparsity of bronchovascular markings in the upper 
+left hemithorax indicates the disease is most pronounced in the left upper 
+lobe.
+
+Link: https://radiopaedia.org/cases/50326

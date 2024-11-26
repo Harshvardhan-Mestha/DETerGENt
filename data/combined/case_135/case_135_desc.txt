@@ -1,0 +1,29 @@
+Case by: Wayland Wang
+Diagnosis Almost Certain
+Diagnosis: Pleural tumor and effusion
+
+Patient Data:
+Age - 80
+Gender - Male
+
+Patient Presentation : Chest pain
+
+Description: There is extensive pleural opacity on the left encasing the 
+lung and extending onto the mediastinal surface typical for malignant 
+pleural disease. The opacity extends to the mid thorax level with a 
+meniscus indicating at least some fluid however the relative amounts of 
+solid tumor vs pleural fluid cannot be determined by plain film. 
+Interstitial opacity is seen in the remaining aerated lung in the left 
+upper zone. The right lung and pleural space are clear. The 
+cardiomediastinal contours are obscured on the left.
+
+Case Discussion: On further questioning of the patient's history it was 
+discovered that there is a past history of mesothelioma, which would fit 
+with this appearance of pleural tumor encasing the left lung. Pleural 
+thickening that extends onto the mediastinum should always be regarded with 
+suspicion. Other clues that may be helpful include calcified pleural 
+plaques indicating asbestos exposure, missing ribs indicating either 
+metastases or previous surgery, and surgical clues such as an absent breast 
+shadow, axillary surgical clips, etc.
+
+Link: https://radiopaedia.org/cases/50751

@@ -1,0 +1,28 @@
+Case by: Balint Botz
+Diagnosis Certain
+Diagnosis: Left lung atelectasis caused by right main bronchus intubation
+
+Patient Data: 
+Age - 40
+Gender -Female
+
+Patient Presentation: In ICU after an MVA sustained a few days earlier. 
+Reduced oxygenation.
+
+Description: The ETT tip arches into the right main bronchus. As a 
+consequence the transparency of the left hemithorax is markedly reduced, 
+due to resultant atelectasis. For a supine CXR like this pleural effusion 
+is an important differential diagnosis. The marked shift of the mediastinum 
+to the left confirms that air space collapse is the main contributor to the 
+reduced transparency. 
+Other findings:
+
+Diffuse bilateral air space opacities represent prior lung contusion
+Multiple rib fractures (right), bilateral clavicle and right scapular 
+fracture.
+Right subclavian CVC in a normal position.
+
+Case Discussion: Typical presentation of endobronchial intubation and its 
+sequelae. 
+
+Link: https://radiopaedia.org/cases/63575

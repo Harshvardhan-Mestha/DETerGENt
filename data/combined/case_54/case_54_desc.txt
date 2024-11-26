@@ -1,0 +1,23 @@
+Case by: Ian Bickle
+Diagnosis Almost Certain
+Diagnosis: Water bottle heart
+-Small bilateral pleural effusions
+-Massive cardiomegaly
+
+Patient Data: 
+Age - 75
+Gender - Female
+
+Patient Presentation: SOB. Fluid Overload?
+
+Description: 'Water bottle heart' of gross globular cardiomegaly.
+
+Small bilateral pleural effusions. Lungs clear.
+
+Case Discussion: Massive cardiomegaly with a globular appearance of the 
+heart, which may be termed a 'water bottle heart' as the shape represents 
+the traditional water bottle.
+
+It is typically described in the context of pericardial effusion.
+
+Link: https://radiopaedia.org/cases/89721

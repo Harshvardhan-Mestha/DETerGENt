@@ -1,0 +1,23 @@
+Case by: Brijesh Bhesaniya
+Diagnosis Certain
+Diagnosis: Pneumonia
+-COPD
+
+Patient Symptoms: 2-day history of pleuritic chest pain, cough and fever with
+a background of COPD.
+
+Patient Data:
+Age - 65
+Gender - Female
+
+Description: Situs inversus totalis. There is a large rounded mass in the left
+mid lower zone.
+
+6 Week follow up -- Complete resolution of the left mid-lower zone mass.
+
+Case Discussion: This is a case of situs inversus totalis and rounded pneumonia.
+Subsequently the patient was diagnosed with pneumococcal pneumonia(positive
+pneumococcal urinary antigens). A follow-up chest X-ray 6 weeks later showed
+radiological resolution of the mass-like consolidation.
+
+Link: https://radiopaedia.org/cases/167650

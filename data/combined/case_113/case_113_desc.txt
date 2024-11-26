@@ -1,0 +1,25 @@
+Case by : Craig Hacking
+Diagnosis Almost Certain
+Diagnosis: Malignant pleural mesothelioma
+
+Patient Data: 
+Age - 85-90
+Gender - Female
+
+Patient Presentation: Worsening SOB
+
+Description: Extensive pleural thickening/fluid on the right laterally, 
+which could represent an empyema or malignancy. Patchy consolidation in the 
+right lower zone is likely within the middle and lower lobes. The left lung 
+is clear. The heart is enlarged.
+
+CT recommended.
+
+Case Discussion: Biopsy proven mesothelioma.
+
+The patient's husband worked with asbestos.
+
+The patient elected for conservative management given significant 
+co-morbidities.
+
+Link: https://radiopaedia.org/cases/40143

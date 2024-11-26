@@ -1,0 +1,30 @@
+Case by: Jeffrey P Kanne
+Diagnosis Certain
+Diagnosis: Tularemia
+
+Patient Data: 
+Age - 50
+Gender - Female
+
+Patient Presentation: Fever and cough. Recent trip to the zoo.
+
+Description: AP chest radiograph shows a small right basal lung nodule and 
+right hilar lymph node enlargement.
+
+Case Discussion: Diagnosis is made by serological detection of antibodies by 
+ELISA, PCR, or indirect fluorescent antibody testing of suppurative material. 
+Warn laboratory staff as handling precautions are necessary.
+
+Tularemia is a rare zoonosis caused by the bacterium Francisella tularensis. 
+Skin, eyes, lymph nodes, and lungs are most commonly affected.
+
+The chest imaging findings are variable but lymphadenopathy is the most 
+common. Lung nodules, masses, and consolidation can also be present.
+
+The primary differential diagnosis, in this case, is histoplasmosis. A 
+detailed history of exposure, especially to wild animals, can help consider 
+tularemia. Her only known exposure to animals was a recent trip to a zoo 
+(unlikely to be the source in the author's opinion). Tularemia is considered 
+a reportable disease in many jurisdictions.
+
+Link: https://radiopaedia.org/cases/98465

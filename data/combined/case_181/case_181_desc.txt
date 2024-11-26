@@ -1,0 +1,28 @@
+Case by: Mark Holland
+Diagnosis Certain
+Diagnosis: Miliary tuberculosis
+
+Patient Data:
+Age - 20
+Gender - Male
+
+Patient Presentation: Generally unwell with lethargy, night sweats and 
+hemoptysis.
+
+Description: Chest x-ray demonstrates very widespread randomly distributed 
+innumerable tiny nodules in both lungs. There is no consolidation or 
+pleural fluid and no mediastinal or hilar nodal enlargement. 
+
+Close up description: Zoomed cropped image from the left upper zone 
+demonstrates innumerable well defined ~2mm nodules.
+
+Case Discussion: This patient has presented with constitutional symptoms 
+and an abnormal chest radiograph with multiple, well-defined, tiny (2 mm) 
+nodules throughout both lungs with no zonal predilection. By far the most 
+likely diagnosis here is of tuberculosis, which was subsequently confirmed. 
+
+Miliary tuberculosis represents hematogenous spread of uncontrolled TB 
+infection.
+
+Link: https://radiopaedia.org/cases/20025
+

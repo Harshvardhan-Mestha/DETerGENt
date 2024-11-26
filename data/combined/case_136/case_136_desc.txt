@@ -1,0 +1,38 @@
+Case by: Leonardo Lustosa
+Diagnosis Certain
+Diagnosis: Pneumoperitoneum - small
+
+Patient Data:
+Age - 30
+Gender - Male
+
+Patient Presentation: Thoracic tube removal follow-up
+
+Description: Thorax radiograph revealed a small pneumoperitoneum, shown by 
+a small amount of gas below the diaphragm bilaterally.
+
+Also, blunting of the left costophrenic angle is noted, indicating a small 
+pleural effusion.
+
+Annotated Images: Pneumoperitoneum is shown by the white arrowheads.
+
+Blunting of the left costophrenic angle is shown by the red dotted line, 
+the right costophrenic angle is preserved and highlighted by the green 
+dotted line for comparison.
+
+Case Discussion: Pneumoperitoneum is the presence of gas within the peritoneal cavity, which can have many causes.
+
+Pleural effusion represents the abnormal accumulation of fluid in the pleural 
+cavity. The characteristics of the fluid usually cannot be determined by a 
+simple radiograph and further clinical correlation is necessary to properly 
+identify it.
+
+As pleural effusion is a generic term to denote the abnormal presence of 
+fluid in the pleural cavity, it can be caused by many different conditions.
+
+In the present case, the patient suffered multiple knife injuries which led 
+to the placement of a thoracic tube. The left chest wall and the diaphragm 
+were perforated. Both radiographic findings can be related to the known 
+trauma.
+
+Link: https://radiopaedia.org/cases/98910

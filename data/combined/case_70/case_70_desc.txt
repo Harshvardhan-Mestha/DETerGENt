@@ -1,0 +1,36 @@
+Case by: Manuela Weilbach
+Diagnosis Certain
+Diagnosis: Malpositioned Angelchik Antireflux Prosthesis
+-COPD
+
+Patient Data:
+Age - 90
+Gender - Male
+
+Patient Presentation: Nursing home patient with worsening cough and dyspnea
+
+Description: Doughnut-shaped surgical device (Angelchik prosthesis) visible 
+on CXR as well. The prosthesis is rotated vertically, rather than laying 
+horizontally under the diaphragm.
+
+Case Discussion: As per Burhenne et al1, the Angelchik Antireflux device was 
+a commonly used simpler surgical alternative to gastropexy and 
+fundoplication in the 1980s. It is a doughnut shaped prosthesis made of 
+silicone with a radio-opaque outer margin. Post-operatively, it should sit 
+sub-diaphragmatically around the abdominal part of the esophagus. Ideally, 
+above the hepatic branch of the anterior vagus nerve.1  Unfortunately, 
+dislodgment of the device into the chest or abdominal cavity over time has 
+been reported1-3 and many patients have required removal of these devices 
+as a result. By 1990 the use of the Angelchik prosthesis was uncommon as 
+the Open Nissen's fundoplication became the accepted technique for the 
+treatment of GERD, followed by laparoscopic surgery.
+
+On first inspection of these images, a gastric lap band device had been a 
+differential. However, the patient was known to have had an Angelchik 
+procedure done over 20 years ago.
+
+Although the Angelchik prosthesis is mispositioned in this patient, it is 
+likely an incidental finding. The likely cause for the patient's symptoms 
+are likely related to an exacerbation of his COPD and heart failure.
+
+Link: https://radiopaedia.org/cases/90440

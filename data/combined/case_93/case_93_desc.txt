@@ -1,0 +1,21 @@
+Case by: Ian Bickle
+Diagnosis Certain
+Diagnosis: Canonball metastases
+
+Patient Data:
+Age - 55
+Gender - Male
+
+Patient Presentation: Dyspnea. Prior renal lesion.
+
+Description:Well demarcated lung nodules in both lungs.
+
+No pleural effusion.
+
+Case Discussion: This patient had prior CT imaging suggesting a renal cell 
+malignancy.
+
+The lung nodules are typical of cannon ball metastases, most commonly 
+associated with renal cell carcinoma. 
+
+Link: https://radiopaedia.org/cases/87419

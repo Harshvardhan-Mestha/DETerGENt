@@ -1,0 +1,44 @@
+Case by: Ian Bickle
+Diagnosis Almost Certain
+Diagnosis: Lung nodule - film edge
+
+Patient Data: 
+Age - 65
+Gender - Female
+
+Patient Presentation: Left shoulder pain. No history of trauma. 
+Joint abnormality?
+
+Description: 2 cm well defined opacity in the right upper lobe between the 
+1 and 2nd rib ends.
+
+Minor left apical fibrosis.
+
+Normal mediastinal contours.
+
+Heart size normal.
+
+Case Discussion: A good case to highlight one's approach to plain 
+radiography reporting.
+
+Basic, but for a purpose: yes it is now considered a basic investigation, 
+but give the radiograph respect. They do herald pathology.
+
+Clinical query blindness: do not just focus on the immediate clinical query.
+Check all that is given. 
+
+Film edge: ignoring the film edge is potentially dangerous. Images have to 
+start and stop somewhere.
+
+Projection bias: Yes it's not a film to look at the chest. Yes, this could 
+potentially be an artifact from positioning, but don't ignore it. Do 
+something to prove or repute concerns, like an appropriate projection for 
+clarification.
+
+Gut instinct: If it makes you feel uncomfortable on first sight it probably 
+is something.
+
+Satisfaction of search error: one identifies shoulder OA and left apical 
+fibrosis, and then stops actively reviewing the image
+
+Link: https://radiopaedia.org/cases/59006

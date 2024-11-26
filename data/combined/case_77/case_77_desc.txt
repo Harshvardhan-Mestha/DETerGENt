@@ -1,0 +1,27 @@
+Case by: Naeem Jagirdar
+Diagnosis Almost Certain
+Diagnosis: Aspergilloma
+-COPD
+
+Patient Data: 
+Age - 85
+Gender - Female
+
+Patient Presentation: Smoker with a history of breast cancer, presenting 
+with fever and increasing breathlessness on a background of chronic 
+obstructive airway disease.
+
+Description: Elevated left hemidiaphragm with crowding of the left ribs are 
+in keeping with decreased left lung volume. Air crescent sign over the left 
+upper lobe.
+
+Case Discussion: Features are consistent with an aspergilloma, presumably 
+occupying a pre-existing cavity due to COPD or prior tuberculosis.
+
+Aspergillosis is commonly seen in immunocompromised patients. On CT, 
+aspergilloma is characterized by a mass with soft-tissue attenuation within 
+a lung cavity. The mass is typically separated from the cavity wall by an 
+airspace - air crescent sign and is often associated with thickening of the 
+wall and adjacent pleura.
+
+Link: https://radiopaedia.org/cases/12842

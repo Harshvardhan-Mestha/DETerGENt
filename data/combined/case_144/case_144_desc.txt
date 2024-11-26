@@ -1,0 +1,25 @@
+Case by: Mohammad Osama Hussein Yonso
+Diagnosis almost certain
+Diagnosis: Pneumonia
+
+Patient data:
+Age - 45
+Gender - Male
+
+Patient Presentation: The patient came for right lower chest pain for 3 days,
+fever, cough, and dyspnea, no loss of weight, no contact with the covid-19 case,
+nonsmoker, no chronic disease before.
+
+Description Initial Image: Mildy elevated right hemidiaphragm is noted.
+Patchy consolidation is seen in the right lower zone, erasing the edge of the heart.
+Air bronchogram sign is noted.
+
+After 10 days of Rx: There is an improvement in the chest x-ray compared with the last
+test. The right lower lung zone shows a haziness area with a band-like opacity
+(sequelae of previous pneumonia). Both CP angles are free.
+
+Case Discussion: The improvement of the radiographic appearance after treatment
+and the clarity of the right heart edge indicates that the pneumonia was in the right
+middle lobe of the lung.
+
+Link: https://radiopaedia.org/cases/87716

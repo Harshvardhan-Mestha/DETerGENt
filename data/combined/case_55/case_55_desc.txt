@@ -1,0 +1,21 @@
+Case by Henry Knipe
+Diagnosis Almost Certain
+Diagnosis: Ventricular septal defect
+
+Patient Data: 
+Age - 30
+Gender - Male
+
+Patient Presentation: SOB
+
+Description: Cardiomegaly with prominence of the main pulmonary trunk. 
+Dilated central pulmonary arteries with peripheral pruning. Pediatric type 
+sternotomy wires with the most inferior one fractured.
+
+Case Discussion: This patient has a history of a ventricular septal defect, 
+which when untreated can result in pulmonary arterial hypertension and 
+cardiomegaly. Given the patient's symptoms, consideration can be given to 
+Eisenmenger syndrome, where there is reversal of the left-to-right shunt 
+and cyanosis develops (but this is not proven in this patient). 
+
+Link: https://radiopaedia.org/cases/44978

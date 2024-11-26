@@ -1,0 +1,19 @@
+Case by: Sarmad Aslam
+Diagnosis Certain
+Diagnosis: Pleural effusion
+
+Patient Data:
+Age - 50
+Gender - Female
+
+Patient Presentation: Progressive SOB over a few weeks.
+
+Description: Large left sided pleural effusion with mediastinal shift.
+
+Right lung clear
+
+Case Discussion: Light's criteria are used to distinguish between 
+transudative and exudative causes of pleural effusions.
+
+Link: https://radiopaedia.org/cases/82413
+

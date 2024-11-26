@@ -1,0 +1,17 @@
+Case by: Stefan Tigges
+Diagnosis Certain
+Diagnosis: Carcinoid tumor causing complete atelectasis left lung
+
+Patient Data:
+Age - 45
+Gender - Female
+
+Patient Presentation: Cough and SOB
+
+Description: Complete atelectasis left lung with right lung hyperexpansion.
+
+Case Discussion: Carcinoid tumors often occur within bronchi, causing 
+bronchial obstruction and subsequent atelectasis. In this case, there was 
+marked hyperinflation of the right lung.
+
+Link: https://radiopaedia.org/cases/99728

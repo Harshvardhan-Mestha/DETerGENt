@@ -1,0 +1,28 @@
+Case by: Pranav Sharma
+Diagnosis Certain
+Diagnosis: Varicella pneumonia
+-COPD
+
+Patient Data:
+Age - 60 
+Gender - Female
+
+Patient Presentation: Worsening dyspnea in a smoker with a history of COPD and
+varicella pneumonia.
+
+Description: 
+Findings - There are multiple oval calcific densities through both lungs in 
+keeping with old varicella pneumonia. Heart size is normal. Mediastinal 
+structures are normal. Central lung vascularity is normal. The lungs are 
+over-inflated in keeping with COPD. Lungs are otherwise clear. No pleural 
+collections.
+
+Conclusion - Extensive calcific densities through both lungs consistent with 
+old varicella pneumonia. Lungs are over-inflated in keeping with COPD. Lungs 
+are otherwise clear. No definite pneumonia or atelectasis. No pleural collection.
+
+Case Discussion: Multiple small calcific lesions are seen on chest 
+radiograph and CT scan consistent with a documented history of 
+varicella pneumonia.
+
+Link: https://radiopaedia.org/cases/87543

@@ -1,0 +1,34 @@
+Case by: Mohd Radhwan Bin Abidin
+Diagnosis Certain
+Diagnosis: Patent ductus arteriosus
+
+Patient Data:
+Age - 30
+Gender - Female
+
+Patient Presentation: Supraventricular tachycardia on ECG for investigation
+
+Description: Heart size is enlarged. Bilateral pulmonary arteries are 
+enlarged.
+
+Patchy opacities at both lung fields.
+
+Case Discussion: This patient present with cardiomegaly and large bilateral 
+pulmonary arteries on chest radiograph. It was further investigated for 
+pulmonary embolism, in which CTPA was performed. CTPA shows poor contrast 
+opacification of pulmonary vessels (likely due to mixture of contrasted and 
+non-contrasted blood). There is also suspicious communication at aorta and 
+pulmonary arteries. CTA thoracic aorta was performed which confirm the 
+presence of patent ductus arteriosus. The contrast from the aorta clearly 
+flow into the pulmonary artery system, in which opacifies the pulmonary 
+arteries.
+
+The arterial circulation is still higher pressure compared to pulmonary 
+arterial circulation in this case. Eisenmenger phenomenon still did not 
+occur in this patient (which pulmonary artery circulation is higher 
+pressure compared to arterial circulation).
+
+This patient likely have Krichenko classification type B (window, short and 
+wide ductus with blending of pulmonary artery).
+
+Link: https://radiopaedia.org/cases/88570

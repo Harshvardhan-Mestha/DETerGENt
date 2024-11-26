@@ -1,0 +1,27 @@
+Case by: Daniel Patti
+Diagnosis Certain
+Diagnosis: Endobronchial valves for emphysema
+-Atelectasis
+-COPD
+
+Patient Data: 
+Age - 50
+Gender - Female
+
+Patient Presentation: Increased work of breathing and cough, decreased air 
+entry bilaterally with expiratory wheeze loudest over the right base. Known 
+severe COPD on home oxygen, FEV1 0.75L (25% predicted), DLCO 55% predicted.
+
+Description: The lungs are severely emphysematous but no consolidation or 
+pleural collection is demonstrated. Right lower lobe endobronchial valves 
+are noted. Bilateral lower zone atelectasis or scarring. Heart size and 
+cardiomediastinal contours are normal.
+
+Case Discussion: Endobronchial valves reduce the flow of air into the 
+treated lobe during inspiration whilst allowing secretions and air to be 
+expelled from that region during expiration. Its intention is to cause 
+localized atelectasis in the target lobe, matching the size of the lungs to 
+the size of the thorax containing them, thereby causing improvement in lung 
+function, exercise tolerance, dyspnea, and quality of life​.
+
+Link: https://radiopaedia.org/cases/62056

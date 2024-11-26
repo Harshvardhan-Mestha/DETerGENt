@@ -1,0 +1,31 @@
+Case by: Liter Nguri
+Diagnosis Almost certain
+Diagnosis: Cardiomegaly - mitral regurgitation
+
+Patient Data:
+Age - 55
+Gender - Female
+
+Patient Presentation: Complain of breathing difficulty
+
+Description: Frontal chest radiograph reveals cardiomegaly with splaying of 
+the carina. Lung zones are clear. Both hila are normal. There is no pleural 
+effusion. The domes of the diaphragm are normal in position and show a 
+smooth outline. The bony thorax is normal.
+
+Case Discussion: Mitral regurgitation is a common valvular disorder in 
+which blood flows back from the left ventricle to the left atrium during 
+ventricular contraction.
+This case demonstrates cardiomegaly with dilated left atrial and 
+ventricular shadows as evidenced by double right heart border sign and 
+downward projection of cardiac apex respectively.
+
+Echocardiography of the same patient revealed;
+
+Moderate to severe mitral regurgitation
+Dilated left atrium and left ventricle
+Severe left ventricle systolic dysfunction,
+Left ventricular ejection fraction of 25 to 30%
+No clot/embolism or vegetation seen.
+
+Link: https://radiopaedia.org/cases/72729

@@ -1,0 +1,29 @@
+Case by : Stefan Tigges
+Diagnosis Certain
+Diagnosis: Right main bronchial intubation
+-Atelectasis
+
+Patient Data:
+Age - 60
+Gender - Female
+
+Patient Presentation: Recent endotracheal tube placement 
+
+Description: Initial chest x-ray shows an endotracheal tube in the right 
+main bronchus/bronchus intermedius with complete opacification left 
+hemithorax and shift of the mediastinum to the left indicating complete 
+atelectasis left lung.
+
+After retraction: Subsequent chest x-ray after retraction of the 
+endotracheal tube shows tube tip appropriately positioned above the carina 
+and partial reexpansion left lung. Both studies show a nasogastric tube 
+coiled in the pharynx/proximal esophagus. 
+
+Case Discussion: The tip of an endotracheal tube should be positioned above 
+the carina. If positioned too far distally, the tip most often ends up in 
+the right bronchus because the right bronchus has a more direct origin from 
+the trachea than the left bronchus. Tube placement into the right bronchus 
+often results in atelectasis of the left lung which can be "cured" by 
+retracting the tube proximal to the carina. 
+
+Link: https://radiopaedia.org/cases/97865

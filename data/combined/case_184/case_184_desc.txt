@@ -1,0 +1,21 @@
+Case by: Aditya Shetty
+Diagnosis Certain
+Diagnosis: Chronic tuberculosis
+
+Patient Data: 
+Age - 45
+Gender - Male
+
+Patient Presentation: Dry cough, fever, and weight loss diagnosed with TB 
+and anti-koch's therapy was initiated; follow up case.
+
+Description: Bilateral upper lobe fibrosis with pleural thickening
+The remainder of the lung fields show increased broncho-vascular markings
+
+Case Discussion: Case of chronic tuberculosis on AKT.
+
+Patient is responding well to therapy.
+
+Fibrosis suggests healing.
+
+Link: https://radiopaedia.org/cases/28211

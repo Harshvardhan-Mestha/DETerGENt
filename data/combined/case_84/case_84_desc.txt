@@ -1,0 +1,25 @@
+Case by: Dai Roberts
+Diagnosis Almost Certain
+Diagnosis: Retrocardiac lung nodules (chest radiograph)
+-Atelectasis
+Patient Data:
+Age - 65
+Gender - Female
+
+Patient Presentation: Cough and weight loss
+
+Description: Multiple nodules are evident behind the heart in the left lower 
+lobe, concerning for metastasis.  Additionally, there is linear atelectasis 
+in the left lower zone.  The right lung is clear.  Normal heart and 
+mediastinal contours.  
+
+Inverted: Inverting the image can aid in interpretation and can make 
+nodules more apparent.
+
+Case Discussion: Behind the heart is one of the review areas which should 
+be checked when interpretating chest radiographs. Pulmonary nodules have a 
+wide differential diagnosis, and multiple rounded nodules should raise 
+alarm for lung metastasis.  
+
+Link: https://radiopaedia.org/cases/80860
+

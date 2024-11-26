@@ -1,0 +1,31 @@
+Case by: Matthew Lukies
+Diagnosis Certain
+Diagnosis: Round atelectasis
+
+Patient Data: 
+Age - 60
+Gender - Female
+
+
+Patient Presentation: Follow-up imaging for a patient with a recent past 
+history of hydropneumothorax and chronic liver disease.
+
+Description: Right-sided pleural fluid collection with fluid tracking into 
+the oblique fissure.
+Round area of opacity adjacent to the pleura in the right lower zone.
+CT of the chest was recommended to further characterize the round opacity.
+
+Case Discussion: Although the CT features were characteristic of round 
+atelectasis, the area of hyperdensity was biopsied in this case. This is 
+not typical, since cases with the characteristic CT features of round 
+atelectasis are generally not biopsied and managed conservatively with 
+follow-up imaging. A biopsy of round atelectasis will inevitably contain 
+scant lung parenchymal tissue and may lead to clinician uncertainty and 
+repeated unnecessary invasive procedures. As such, a biopsy should only be
+performed where imaging findings are indeterminate.
+
+The histopathology report in this case described limited tissue containing 
+pneumocytes with patchy mild interstitial chronic inflammation, and no 
+features of malignancy.
+
+Link: https://radiopaedia.org/cases/45643

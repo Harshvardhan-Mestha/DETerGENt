@@ -1,0 +1,21 @@
+Case by: Konstantin Benno Brautigam
+Diagnosis Probable
+Diagnosis: Pericardial effusion
+
+Patient Data: 
+Age - 75
+Gender - Male
+
+Patient Presentation: ICU Patient
+
+Description: Massive cardiomegaly. Drainage catheter of a known pericardial 
+effusion. Bilateral lung opacities. 
+
+Case Discussion: Cardiac silhouette enlargement can be simply a result of 
+supine AP projection. However, in this case the cardiac silhouette is 
+massively enlarged, most commonly from cardiomegaly, however, a pericardial 
+effusion was echographically diagnosed. Note the pericardial drainage 
+catheter on the x-ray, which seems to drain insufficiently. The patient is 
+at high risk for cardiac tamponade.
+
+Link: https://radiopaedia.org/cases/58321

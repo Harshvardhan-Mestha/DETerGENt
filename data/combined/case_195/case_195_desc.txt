@@ -1,0 +1,16 @@
+Case by : David Cuete
+Diagnosis Almost Certain
+Diagnosis: Pulmonary tuberculosis
+
+Patient Data: 
+Age - 30 
+Gender - Male
+
+Patient Presentation: Symptoms of five days evolution characterized by 
+hemoptysis associated with dyspnea and fever
+
+Description: Chest x-ray demonstrates consolidation in the left upper lobe. 
+
+Case Discussion: Sputum microscopy and culture confirmed pulmonary TB.
+
+Link: https://radiopaedia.org/cases/33983

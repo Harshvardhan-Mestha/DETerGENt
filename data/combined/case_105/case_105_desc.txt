@@ -1,0 +1,26 @@
+Case by: Paul Leong
+Diagnosis Almost Certain
+Diagnosis: Mesothelioma
+
+Patient Data:
+Age - 80
+Gender - Male
+
+Patient Presentation: Fall. Query rib fracture.
+
+Description: Lobulated pleural opacity encasing the right lung, with 
+associated volume loss.
+
+No definite bony erosion / destruction or calcified pleural plaques seen.
+
+Case Discussion: Appearances are typical of pleural mesothelioma, especially 
+given the evidence of underlying asbestos-related pleural disease.
+
+Differentials to consider would be pleural metastasis or invasive thymoma 
+with pleural spread (although these would be much less likely in this 
+particular case).
+
+CT guided biopsy of the pleural mass was performed, confirming malignant 
+mesothelioma. 
+
+Link: https://radiopaedia.org/cases/26805

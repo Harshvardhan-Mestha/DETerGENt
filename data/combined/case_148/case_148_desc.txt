@@ -1,0 +1,28 @@
+Case by: Mohammad Osama Hussein Yonso
+Diagnosis Certain
+Diagnosis: Round pneumonia
+
+Patient Data:
+Age - 50
+Gender - Female
+
+Patient Presentation: Fever, shortness of breath, sweats, cough, and left chest pain.
+
+Description:Rounded opacity is adjacent to the left hilum.
+
+Air bronchograms traverse the lesion, features are typical of round pneumonia.
+
+Follow up - Follow-up X-ray after 6 days of treatment demonstrating rapid improvement.
+
+Case Discussion: These features are consistent with round pneumonia. 
+
+Round pneumonia is a type of pneumonia usually only seen in pediatric patients. 
+They are well defined, rounded opacities that represent regions of infected 
+consolidation, it often indicates streptococcal pneumonia.
+
+Round pneumonias are well-circumscribed parenchymal opacities, they tend to 
+have irregular margins. They most commonly occur in superior segments of 
+lower lobes and in the majority of cases (98%), they are solitary. 
+Air bronchograms are often present.
+
+Link: https://radiopaedia.org/cases/24574

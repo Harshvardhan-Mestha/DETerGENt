@@ -1,0 +1,24 @@
+Case by : Sarmad Aslam
+Diagnosis Certain
+Diagnosis: Emphysema
+-COPD
+
+Patient Data: 
+Age- 50
+Gender - Male
+
+Patient Presentation: Known COPD. Worsening SOB and cough for a week.
+
+Description: Marked upper lobe emphysema bilaterally evidenced by reduced 
+broncho vascular markings and the relative crowding of the vessels in the 
+mid zones.
+
+Heart size normal.
+
+Case Discussion: Pulmonary emphysema defines permanent dilatation of 
+airspaces due to destruction of alveolar walls. It is one end of the 
+spectrum of COPD, resulting from the smoking of tobacco.
+
+It typically affects the upper lobes first and most profoundly. 
+
+Link: https://radiopaedia.org/cases/80475

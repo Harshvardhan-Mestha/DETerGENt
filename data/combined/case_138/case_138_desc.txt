@@ -1,0 +1,33 @@
+Case by: Kevan English
+Diagnosis Almost Certain
+Diagnosis: Pleural effusion
+
+Patient Data: 
+Age - 90
+Gender - Female
+
+Patient Presentation: Shortness of breath with a medical history of 
+congestive heart failure, diabetes, and hypertension.
+
+Description: Moderate atherosclerotic disease at the aortic arch.
+
+Large cardiac silhouette. Right lower lobe interstitial opacity. Blunted 
+right costophrenic angle may represent pleural effusion. Left lung shows 
+linear opacities at the bases may represent atelectasis.
+
+Right lower lobe infiltration with right pleural effusion suspicious for 
+pneumonia.
+
+Case Discussion: This represents a case of pleural effusion (PF), defined as 
+the accumulation of fluid between the parietal and visceral pleura.
+
+PF may be due to several underlying diseases, including heart failure, 
+cancer, pulmonary embolism, and infection.
+
+In this case, laboratory findings revealed an elevated white count 
+(13.5 x103/mcL).
+
+A combination of cefepime and azithromycin used for treatment improved her 
+condition.
+
+Link: https://radiopaedia.org/cases/182020

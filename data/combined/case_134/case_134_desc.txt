@@ -1,0 +1,40 @@
+Case by: Roberto Schubert
+Diagnosis Almost Certain
+Diagnosis: Right hemithorax white-out: pleural effusion
+
+Patient Data: 
+Age - 65
+Gender - Female
+
+Patient Presentation: Dyspnea
+
+Description: Frontal and lateral radiographs of the chest demonstrate 
+complete white out of the right hemithorax. There is evidence of positive 
+mass effect upon the mediastinum which is shifted towards the left 
+(including the trachea), with leftward bowing of the azygo-esophageal 
+recess. The right ribs are also splayed. 
+
+On lateral projection only one pleural cavity is visible (the left one).
+
+
+Annotated Images;  Signs of positive mass effect on the right include: 
+
+shift of the mediastinum and trachea (blue) to the left
+leftward bowing of the azygo-esophageal recess (yellow)
+splaying of the ribs on the right (red)
+On the lateral film one knows that the affected side is the right because: 
+
+the aortic arch is visible (orange)
+the visible hemidiaphragm and pleural surface (green) abuts the posterior 
+border of the heart (IVC)
+gastric air bubble (purple) abuts the visible hemidiaphragm
+Note that the film has been obtained with the right side against the film 
+(opposite to normal) and thus it is the left hemidiaphragm which is 
+magnified. 
+
+Case Discussion: This case illustrates the typical appearance of a very 
+large pleural effusion (in this case due to a pulmonary malignancy) and 
+demonstrates the signs which enable it to be confidently distinguished from 
+collapse or consolidation of the right lung. 
+
+Link: https://radiopaedia.org/cases/16075

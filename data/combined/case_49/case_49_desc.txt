@@ -1,0 +1,24 @@
+Case by: Michael Lousick
+Diagnosis Certain
+Diagnosis: Pericardial effusion
+-Globular cardiomegaly
+
+Patient Data:
+Age - 40
+Gender - Male
+
+Patient Presentation: 1 week of cardiac chest pain
+
+Description: Globular cardiomegaly and left-sided pleural effusion.
+
+Case Discussion: A pericardial effusion should be suspected when a chest 
+radiograph shows globular cardiomegaly which was not present on prior 
+radiographs. They can also be associated with pleural effusions which 
+typically affect the left lung more than the right 1,2.
+
+Note that in the case presented, the CT occurred one month after the chest 
+radiograph, explaining the smaller than expected pericardial effusion which 
+appeared much larger on the original chest radiograph. This patient had ECG 
+findings typical for pericarditis.
+
+Link: https://radiopaedia.org/cases/72213

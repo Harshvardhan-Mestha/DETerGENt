@@ -1,0 +1,55 @@
+Case by: Bruno Di Muzio
+Diagnosis Certain
+Diagnosis: Epithelioid mesothelioma
+-Round Atelectasis
+
+Patient Data: 
+Age - 70
+Gender - Male
+
+Patient Presentation: History of thoracic aortic aneurysm on surveillance. 
+Presenting with new AF.
+
+Description: Cardiomediastinal contour is normal. When compared to prior 
+imaging (not shown), persistent blunting of the right costophrenic recess 
+is in keeping with longstanding pleural thickening. Ill-defined opacities 
+in the right mid to lower zone with known round atelectasis.  No evidence 
+of acute pulmonary edema. The left pleural space is clear.
+
+Case Discussion: This patient has a known background of previous asbestos 
+exposure and longstanding calcified and soft tissue pleural plaques. He had 
+previous imaging in the past showing chronic round atelectasis in the right 
+lung base and was under surveillance at vascular surgery due to an aortic 
+arch aneurysm.
+
+CTA showed a pleural mass and thoracic and extra-thoracic lymphadenopathy. 
+Given the location of the mass and previous exposure to asbestos, the 
+possibility of mesothelioma was raised. 
+
+US-guided core biopsy was performed: 
+
+Macroscopy: Labeled "Right pleural lesion 16G core biopsy". Core biopsy 19 
+mm.
+
+Microscopy: The biopsy core consists entirely of malignant tumor formed by 
+partly necrotic sheets of atypical epithelioid cells. Tumor cells have 
+moderately pleomorphic nuclei with prominent nucleoli and a moderate amount 
+of eosinophilic cytoplasm. No glandular or papillary arrangements are seen 
+and there is no keratinization.
+Immunostains have been performed and the tumor cells have the following 
+immune profile:
+Positive: HBME1, CK5/6 (patchy), calretinin (weak and focal), CK7 
+(a small minority of cells only).
+Negative: TTF1.
+
+Additional immunostains have been performed and the tumor cells show strong 
+positive staining for mesothelial markers EMA and WT1 and do not stain with 
+the squamous marker p40. These findings support the original diagnosis of 
+malignant mesothelioma. 
+
+Conclusion: Right pleural lesion, core biopsy: Epithelioid mesothelioma.
+
+After MDM discussion (Stage IV T2 cN1 M1 (extra-thoracic lymph node), this 
+patient was offered chemotherapy (Carboplatin/pemetrexed). 
+
+Link: https://radiopaedia.org/cases/64658
