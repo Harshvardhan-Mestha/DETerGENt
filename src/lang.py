@@ -32,8 +32,8 @@ CLIENT = OpenAI(
 def generate_report(
     llm: str, x: str, pred: str,
     model: Optional[MiniGPTv2] = None,
-    prompt_args: Optional[PromptArgs] = None,
-    model_args: Optional[MiniGPTArgs] = None
+    prompt_args: Optional[PromptArgs] = PromptArgs(),
+    model_args: Optional[MiniGPTArgs] = MiniGPTArgs()
 ) -> str:
     """
     Generate Report for the given X-ray image
@@ -157,8 +157,8 @@ def generate_report(
 def generate_prediction(
     llm: str, x: str,
     model: Optional[MiniGPTv2] = None,
-    prompt_args: Optional[PromptArgs] = None,
-    model_args: Optional[MiniGPTArgs] = None
+    prompt_args: Optional[PromptArgs] = PromptArgs(),
+    model_args: Optional[MiniGPTArgs] = MiniGPTArgs()
 ) -> str:
 
     """
@@ -191,7 +191,6 @@ def generate_prediction(
 
     else:
         image_path = x
-
 
 
     if llm == "gpt":
