@@ -49,19 +49,11 @@ def main(config, D: list) -> Optional[pd.DataFrame]:
 
     # create MiniGPTv2Args, MiniGPTArgs, and PromptArgs
     if pred["model"] == "medgpt" or expl["model"] == "medgpt":
-        model_args = MiniGPTArgs(
-            options=config["medgpt"]["options"],
-            cfg_path=config["medgpt"]["cfg_path"],
-            gpu_id=config["medgpt"]["gpu_id"]
-        )
+        model_args = MiniGPTArgs(**config["medgpt"]["model_args"])
+        prompt_args = PromptArgs(**config["medgpt"]["prompt_args"])
 
-        prompt_args = PromptArgs(
-            temperature=config["medgpt"]["temperature"],
-            top_p=config["medgpt"]["top_p"],
-            mode=config["medgpt"]["mode"],
-        )
         device = torch.device(model_args.gpu_id) if torch.cuda.is_available() else torch.device("cpu")
-        conf = Config(args)
+        conf = Config(model_args)
         model = MiniGPTv2.from_config(conf.model_cfg).to(device=device)
     else:
         model_args = None

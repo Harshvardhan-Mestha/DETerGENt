@@ -3,9 +3,11 @@ model:
   model_type: pretrain
   max_txt_len: 500
   end_sym: "</s>"
-  low_resource: True
+  low_resource: False
+  vit_precision: "fp16"
+  llama_precision: "fp16"
   prompt_template: '[INST] {} [/INST]'
-  ckpt: "miniGPT-Med/checkpoints/checkpoint_stage3.pth"
+  ckpt: "medgpt/weights/miniGPT_Med.pth"
   lora_r: 64
   lora_alpha: 16
 
