@@ -1,15 +1,26 @@
 exp_name: test
 evaluate: true
 pred:
-    model: gpt
+    model: medgpt
     generate: true
     from_file: false
     path: /path/to/predictions.csv
-    out_path: /path/to/output.csv
+    out_path: output.csv
 
 expl:
-    model: gpt
+    model: medgpt
     generate: true
     from_file: false
     path: /path/to/predictions.csv
-    out_path: /path/to/output.csv
+    out_path: output.csv
+
+medgpt:
+    model_args:
+        cfg_path: configs/medgpt/minigptv2_fp16_eval.yaml
+        gpu_id: 0
+        options: None
+    prompt_args:
+        temperature: 0.6
+        top_p: 0.9
+        mode: caption
+        

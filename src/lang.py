@@ -12,9 +12,9 @@ from src.utils import (
     mini_gpt_client,
     PromptArgs,
     MiniGPTArgs,
-    MiniGPTv2,
     class_list
 )
+from minigpt4.models.minigpt_v2 import MiniGPTv2
 
 openai_org = os.getenv("OPENAI_ORG")
 openai_project = os.getenv("OPENAI_PROJECT")
@@ -32,8 +32,8 @@ CLIENT = OpenAI(
 def generate_report(
     llm: str, x: str, pred: str,
     model: Optional[MiniGPTv2] = None,
-    prompt_args: Optional[PromptArgs] = PromptArgs(),
-    model_args: Optional[MiniGPTArgs] = MiniGPTArgs()
+    prompt_args: Optional[PromptArgs] = None,
+    model_args: Optional[MiniGPTArgs] = None
 ) -> str:
     """
     Generate Report for the given X-ray image
@@ -157,10 +157,9 @@ def generate_report(
 def generate_prediction(
     llm: str, x: str,
     model: Optional[MiniGPTv2] = None,
-    prompt_args: Optional[PromptArgs] = PromptArgs(),
-    model_args: Optional[MiniGPTArgs] = MiniGPTArgs()
+    prompt_args: Optional[PromptArgs] = None,
+    model_args: Optional[MiniGPTArgs] = None
 ) -> str:
-
     """
     Get the prediction for the given X-ray image
     Args

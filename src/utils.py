@@ -9,7 +9,6 @@ from time import time
 from typing import Tuple, List
 from dataclasses import dataclass
 from argparse import ArgumentParser
-from typing import Tuple, List, Optional
 import yaml
 import torch
 import pandas as pd

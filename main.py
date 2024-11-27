@@ -7,9 +7,18 @@ import sys
 from typing import Optional
 from argparse import ArgumentParser
 
+import torch
 import pandas as pd
 from src.lang import generate_report, generate_prediction
-from src.utils import load_config, load_data, match, agree
+from src.utils import (
+    load_config, 
+    load_data, 
+    match, 
+    agree, 
+    MiniGPTArgs, 
+    PromptArgs)
+from minigpt4.common.config import Config
+from minigpt4.models.minigpt_v2 import MiniGPTv2
 
 
 sys.path.append('./')
@@ -38,6 +47,27 @@ def main(config, D: list) -> Optional[pd.DataFrame]:
     if expl["from_file"]:
         assert os.path.exists(expl["path"]), "[INFO] Path to explanations does not exist."
 
+    # create MiniGPTv2Args, MiniGPTArgs, and PromptArgs
+    if pred["model"] == "medgpt" or expl["model"] == "medgpt":
+        model_args = MiniGPTArgs(
+            options=config["medgpt"]["options"],
+            cfg_path=config["medgpt"]["cfg_path"],
+            gpu_id=config["medgpt"]["gpu_id"]
+        )
+
+        prompt_args = PromptArgs(
+            temperature=config["medgpt"]["temperature"],
+            top_p=config["medgpt"]["top_p"],
+            mode=config["medgpt"]["mode"],
+        )
+        device = torch.device(model_args.gpu_id) if torch.cuda.is_available() else torch.device("cpu")
+        conf = Config(args)
+        model = MiniGPTv2.from_config(conf.model_cfg).to(device=device)
+    else:
+        model_args = None
+        prompt_args = None
+        model = None
+
     # get predictions
     if pred["from_file"]:
         print(f"[INFO] Loading predictions from file {pred['path']}.")
@@ -54,7 +84,7 @@ def main(config, D: list) -> Optional[pd.DataFrame]:
         }
         for c in D:
             for pt in c:
-                pred = generate_prediction(pred["model"], pt[0])
+                pred = generate_prediction(pred["model"], pt[0], model, prompt_args, model_args)
                 preds["img_path"].append(pt[0])
                 preds["pred"].append(pred)
                 
@@ -76,7 +106,7 @@ def main(config, D: list) -> Optional[pd.DataFrame]:
         for _, row in preds.iterrows():
             # TODO: remove this print statement
             print(row["img_path"])
-            expl = generate_report(expl["model"], row["img_path"], row["pred"])
+            expl = generate_report(expl["model"], row["img_path"], row["pred"], model, prompt_args, model_args)
             expls["img_path"].append(row["img_path"])
             expls["explanation"].append(expl)
             expls["case"].append(row["case"])
