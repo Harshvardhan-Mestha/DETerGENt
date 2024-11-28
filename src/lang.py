@@ -60,6 +60,9 @@ def generate_report(
     else:
         image_path = x
 
+    if not os.path.exists(image_path):
+        return None
+
     if llm == "gpt":
         print("[INFO] Generating report using GPT-4o")
 
@@ -116,27 +119,19 @@ def generate_report(
             prompt_args = PromptArgs(temperature=0.9,
                                      top_p=0.9)
 
-        valid_report = False
-        while not valid_report:
-            # TODO: Refine prompt.
-            report_prompt = f"""You are a radiologist.
-             The patient has been diagnosed with {pred}.
-             Given the X-ray image, write a detailed report on the findings.
-            """
-            prompt_args.mode = "caption"
-            # get report from MiniGPTMed
-            report, _ = mini_gpt_client(
-                model_args,
-                model,
-                prompt_args,
-                image_path,
-                report_prompt
-            )
-
-            # TODO: Add conditions to validate the report
-            valid_report = True
-            if not valid_report:
-                print("Retrying...")
+        report_prompt = f"""
+        Given the prediction {pred}, please write a detailed report for the given Xray.
+        """
+        prompt_args.mode = "caption"
+        # get report from MiniGPTMed
+        report, _ = mini_gpt_client(
+            model_args,
+            model,
+            prompt_args,
+            image_path,
+            report_prompt
+        )
+        report = report[0]
 
     else:
         print("[ERROR] Invalid LLM")
@@ -181,6 +176,9 @@ def generate_prediction(
         image_path = os.getcwd() + f"/data/{x}/" + image_name
     else:
         image_path = x
+
+    if not os.path.exists(image_path):
+        return None, None
 
     if llm == "gpt":
         print("[INFO] Generating predictions using GPT-4o")
@@ -247,23 +245,22 @@ def generate_prediction(
             prompt_args = PromptArgs(temperature=0.0,
                                      top_p=1.0)
 
-        class_prompt = f"""Which diseases are the most likely to be present in the given Xray?
-         {', '.join(CLASS_LIST)}"""
-
-        valid_prediction = False
-        while not valid_prediction:
-            prompt_args.mode = "vqa"
+        prompt = "Diagnose the given XRay for the presence of {ailment}. Reply in a yes/no manner."
+        prompt_args.mode = "vqa"
+        y = []
+        for ailment in CLASS_LIST:
             label, _ = mini_gpt_client(
                 model_args,
                 model,
                 prompt_args,
                 image_path,
-                class_prompt,
+                prompt.format(ailment=ailment)
             )
 
-            # TODO: Add conditions to validate the prediction
-            valid_prediction = True
-            y = label[0]
+            if label[0].lower() == "yes" or "yes" in label[0].lower():
+                y += [ailment]
+
+        y = ", ".join(y)
 
     else:
         print("[ERROR] Invalid LLM")

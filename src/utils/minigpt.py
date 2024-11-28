@@ -86,8 +86,6 @@ def mini_gpt_client(model_args: MiniGPTArgs,
     
     [INST] <Img><ImageHere></Img>{mode}{text} [/INST]
 
-    TODO: add support for logits?
-
     Args:
         args: MiniGPTArgs
             The arguments to load the model (config file, gpu_id, etc.)

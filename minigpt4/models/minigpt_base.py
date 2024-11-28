@@ -25,7 +25,7 @@ class MiniGPTBase(BaseModel):
         vit_precision="fp16",
         freeze_vit=True,
         llama_model="",
-        max_txt_len=32,
+        max_txt_len=300,
         max_context_len=3800,
         prompt_template="",
         end_sym='\n',
@@ -320,7 +320,7 @@ class MiniGPTBase(BaseModel):
         images,
         texts,
         num_beams=1,
-        max_new_tokens=20,
+        max_new_tokens=500,
         min_length=1,
         top_p=0.9,
         repetition_penalty=1,
@@ -366,7 +366,7 @@ class MiniGPTBase(BaseModel):
                 min_length=min_length,
                 top_p=top_p,
                 repetition_penalty=repetition_penalty,
-                # stopping_criteria=stopping_criteria,
+                stopping_criteria=stopping_criteria,
             )
 
         answers = []

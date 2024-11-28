@@ -87,7 +87,7 @@ def load_data():
     """
 
     D = pd.read_csv("data/xray_data.csv", index_col=False)
-    D.drop(["Unnamed: 0", "desc_path", "diagnosis", "certainty", "label_short"], axis=1, inplace=True)
+    D.drop(["Unnamed: 0", "desc_pth", "diagnosis", "certainty", "label_short"], axis=1, inplace=True)
 
     D = [
         list(D["img_dir"]),
@@ -95,6 +95,9 @@ def load_data():
         list(D["desc"]),
         list(D["case"]),
     ]
+    data = []
+    for i in range(len(D[0])):
+        data.append((D[0][i], D[1][i], D[2][i], D[3][i]))
 
     print("[INFO] Data processed.")
-    return D
+    return data

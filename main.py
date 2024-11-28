@@ -37,8 +37,8 @@ def main(config, D: list) -> Optional[pd.DataFrame]:
     expl = config["expl"]
 
     # validate config
-    assert hasattr(pred, "out_path"), "[ERROR] Output path for predictions not found."
-    assert hasattr(expl, "out_path"), "[ERROR] Output path for explanations not found."
+    assert "out_path" in pred.keys(), "[ERROR] Output path for predictions not found."
+    assert "out_path" in expl.keys(), "[ERROR] Output path for explanations not found."
     assert pred["from_file"] != pred["generate"], "[INFO] Can either load predictions from file or generate them, not both."
     assert expl["from_file"] != expl["generate"], "[INFO] Can either load explanations from file or generate them, not both."
     if pred["from_file"]:
@@ -71,9 +71,9 @@ def main(config, D: list) -> Optional[pd.DataFrame]:
             "case": []
         }
         for pt in D:
-            pred, img_path = generate_prediction(pred["model"], pt[0], model, prompt_args, model_args)
+            prediction, img_path = generate_prediction(pred["model"], pt[0], model, prompt_args, model_args)
             preds["img_path"].append(img_path)
-            preds["prediction"].append(pred)
+            preds["prediction"].append(prediction)
             preds["label"].append(pt[1])
             preds["case"].append(pt[3])
 
@@ -89,15 +89,12 @@ def main(config, D: list) -> Optional[pd.DataFrame]:
         expls = {
             "img_path": [],
             "explanation": [],
-            "ground_truth": [],
             "case": []
         }
-        for pt in D:
-            # TODO: remove this print statement
-            print(pt["img_path"])
-            expl = generate_report(expl["model"], pt[0], pt["pred"], model, prompt_args, model_args)
+        for _, pt in preds.iterrows():
+            explanation = generate_report(expl["model"], pt["img_path"], pt["prediction"], model, prompt_args, model_args)
             expls["img_path"].append(pt["img_path"])
-            expls["explanation"].append(expl)
+            expls["explanation"].append(explanation)
             expls["case"].append(pt["case"])
 
         expls = pd.DataFrame(expls)
@@ -181,7 +178,7 @@ def evaluate(preds, expls, ys, es) -> pd.DataFrame:
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument("--p", "--path", type=str, default="./configs/test.yaml")
+    parser.add_argument("--p", "--path", type=str, default="./configs/medgpt_base.yaml")
     args = parser.parse_args()
 
     CONFIG = load_config(args.p)
