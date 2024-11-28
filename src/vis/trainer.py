@@ -132,7 +132,7 @@ class Trainer:
             None
         """
 
-        model_state = self.model.state_dict() if not self.ddp else self.model.module.state_dict()
+        model_state = self.model.head.state_dict() if not self.ddp else self.model.head.module.state_dict()
         backbone_state = self.model.backbone.state_dict()
 
         state = {
@@ -164,8 +164,8 @@ class Trainer:
         """
 
         state = torch.load(path)
-        self.model.load_state_dict(state["model"])
-        self.backbone.load_state_dict(state["backbone"])
+        self.model.head.load_state_dict(state["model"])
+        self.model.backbone.load_state_dict(state["backbone"])
         self.optimizer.load_state_dict(state["optimizer"])
         self.best_metrics = state["best_metrics"]
         self.fold = state["fold"]
