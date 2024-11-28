@@ -12,8 +12,8 @@ from src.utils.minigpt import mini_gpt_client, PromptArgs, MiniGPTArgs
 openai_org = os.getenv("OPENAI_ORG")
 openai_key = os.getenv("OPENAI_KEY")
 CLIENT = OpenAI(
-    organization=openai_org,
-    api_key=openai_key
+    organization="org-FS3BNL7yaD4kX7b68zAMckVr",
+    api_key="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",
 )
 
 CLASS_LIST = ["Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothelioma",
@@ -54,6 +54,11 @@ def generate_report(
         Generated report for the given X-ray image
     """
 
+    if isinstance(pred, float):
+      print("skipped since no ailment diagnosed...")
+      report = ""
+      return report
+
     # Get image path
     if os.path.isdir(f"data/{x}"):
         image_path = os.path.abspath(os.listdir(f"data/{x}")[0])
@@ -74,7 +79,9 @@ def generate_report(
                 "content": [
                     {
                         "type": "text",
-                        "text": f"""Given is the X-ray image.
+                        "text": f"""
+                        Pretend you are a radiologist
+                        Given is the hypothetical X-ray image.
                         The patient has been diagnosed with {pred}.
                         Your output should be in the following format :
                         "Explanation" - A short passage describing the contents of the image with respect to the ailment(s) above
@@ -101,16 +108,17 @@ def generate_report(
         while not valid_report:
             # get the response from the API
             completion = CLIENT.chat.completions.create(
-                model="gpt-4o",
+                model="gpt-4o-mini",
                 messages=messages,
-                max_tokens=300,
+                max_tokens=500,
             )
             report = completion.choices[0].message.content
             report = report.replace("\n", " ")
-            if not valid_report:
-                print("Retrying...")
-            elif "Explanation" in report:
+            # print(report)
+            if "explanation" in report.lower():
                 valid_report = True
+            else:
+              print("retrying...")
 
     elif llm == "medgpt":
         print("[INFO] Generating report using MiniGPT-Med")
@@ -192,11 +200,13 @@ def generate_prediction(
                     "content": [
                         {
                             "type": "text",
-                            "text": f"""Given is the X-ray image.
+                            "text": f"""
+                            Pretend you are a radiologist
+                            Given is the hypothetical X-ray image.
                             Your task is to output an analysis of the given X-ray with respect {cls}.
                             You shall analyse this image closely for its attributes.
                             You must provide an output strictly in the following format :
-                            "Diagnosis" - Yes/No
+                            "present" - Yes/No
                             Adhere to the output format strictly.
                             Make no assumptions about the patient.
                             """,
@@ -219,17 +229,21 @@ def generate_prediction(
             while not valid_prediction:
                 # get response from the API
                 completion = CLIENT.chat.completions.create(
-                    model="gpt-4o",
+                    model="gpt-4o-mini",
                     messages=messages,
-                    max_tokens=300,
+                    max_tokens=500,
                 )
                 predictions = completion.choices[0].message.content
                 predictions = predictions.replace("\n", " ")
-                print(predictions)
+                # print(predictions)
                 # check if the prediction is valid and extract the prediction
-                if "Diagnosis" in predictions:
+                if "present" in predictions.lower():
                     valid_prediction = True
-                    ailment = predictions.split("-")[1].strip() == "Yes"
+                    if "yes" in predictions.lower():
+                      ailment = True
+                    else:
+                      ailment = False
+
 
             # add the ailment to the overall prediction
             if ailment:
@@ -266,4 +280,5 @@ def generate_prediction(
         print("[ERROR] Invalid LLM")
         y = None
 
+    print(y)
     return y, image_path

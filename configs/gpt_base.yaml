@@ -2,8 +2,9 @@ exp_name: vanilla_GPT
 evaluate: false
 pred:
     model: gpt
-    generate: true
-    from_file: false
+    generate: false
+    from_file: true
+    path: gen_pred_gpt.csv
     out_path: gen_pred_gpt.csv
 
 expl:

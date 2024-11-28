@@ -96,6 +96,7 @@ def main(config, D: list) -> Optional[pd.DataFrame]:
             expls["img_path"].append(pt["img_path"])
             expls["explanation"].append(explanation)
             expls["case"].append(pt["case"])
+            print(pt["case"])
 
         expls = pd.DataFrame(expls)
         expls.to_csv(expl["out_path"])
