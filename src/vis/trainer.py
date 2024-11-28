@@ -72,6 +72,7 @@ class Trainer:
         self.ddp = isinstance(self.device, int)
         print(f"Using DDP? {'yes' if self.ddp else 'no'}")
         self.device_check = not self.ddp or (self.ddp and self.device == 0)
+        self.num_classes = num_classes
 
         # data stuff
         self.data_path = "data/xray_data.csv"
@@ -425,6 +426,7 @@ class Trainer:
             cases = case_num.tolist()
             cases = [f"case_{x}" for x in cases]
             _, _, pred = self.step(imgs, labels, weights)
+            pred = pred.reshape(-1, self.num_classes)
             if self.ddp:
                 ovr_pred = [torch.zeros_like(pred, device=self.device) for _ in range(dist.get_world_size())]
                 dist.all_gather(ovr_pred, pred)
@@ -555,7 +557,7 @@ def DDP_launch(rank: int, world_size: int, run_name: str, num_classes: int,
     setup(rank, world_size)
     trainer = Trainer(run_name, rank, num_classes, 
                       with_tracking, freeze_backbone, ckpt_path)
-    trainer.train(10)
+    trainer.train(75)
     cleanup()
 
 
@@ -575,4 +577,4 @@ if __name__ == "__main__":
         device = "cuda" if torch.cuda.is_available() else "cpu"
         trainer = Trainer(run_name, device, num_classes, with_tracking, 
                           freeze_backbone, ckpt_path)
-        trainer.train(10)
+        trainer.train(75)

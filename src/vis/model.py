@@ -26,7 +26,7 @@ class ResNetAndHead(nn.Module):
             nn.BatchNorm1d(18),
             nn.Linear(18, num_classes)
         )
-        self.reset_model_state = deepcopy(self.state_dict())
+        self.reset_model_state = deepcopy(self.head.state_dict())
 
     def _reset_backbone(self):
         """
