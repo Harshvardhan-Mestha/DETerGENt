@@ -563,9 +563,9 @@ def DDP_launch(rank: int, world_size: int, run_name: str, num_classes: int,
 if __name__ == "__main__":
 
     world_size = torch.cuda.device_count()
-    run_name = "better"
+    run_name = "base"
     num_classes = 11
-    with_tracking = True
+    with_tracking = False
     ckpt_path = None
     freeze_backbone = False
     if world_size > 1:
