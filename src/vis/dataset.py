@@ -54,7 +54,11 @@ class XRayDataset(Dataset):
         else:
             assert isinstance(data, pd.DataFrame), "data should be either path to CSV file or pandas DataFrame"
             self.data = data
-        
+
+        # drop erroneous rows (45, 147, 158)
+        mask = self.data["case"].isin(["case_46", "case_148", "case_159"])
+        self.data = self.data[~mask]
+
         # Split the 'labels' column into separate columns
         split_labels = data['label'].str.split(',', expand=True)
 
@@ -67,8 +71,6 @@ class XRayDataset(Dataset):
 
         # Concatenate the original DataFrame with the new columns
         self.data = pd.concat([data, split_labels], axis=1)
-
-
 
         self.data['label1'] = self.data['label1'].map(label2int)
         self.data['label2'] = self.data['label2'].map(label2int)
@@ -100,7 +102,6 @@ class XRayDataset(Dataset):
             image = image.mean(2)
         image = torch.from_numpy(image)[None, ...] # (1, 512, 512)
         image = self.transforms(image)
-
         
         label = F.one_hot(self.data.iloc[idx]["label1"], self.num_classes).to(torch.float32)
         label += F.one_hot(self.data.iloc[idx]["label2"], self.num_classes).to(torch.float32) if not np.isnan(self.data.iloc[idx]["label2"]) else 0
@@ -109,7 +110,7 @@ class XRayDataset(Dataset):
         if self.training:
             return image, label, weights
         else:
-            return image, label, weights, self.data.iloc[idx]["case"]
+            return image, label, weights, torch.tensor(self.data.iloc[idx]["case"])
 
 
 def getDataLoadersFor5FoldCV(data: str, batch_size: int = 8, ddp: bool = True) -> List:

@@ -133,7 +133,7 @@ class Trainer:
         """
 
         model_state = self.model.state_dict() if not self.ddp else self.model.module.state_dict()
-        backbone_state = self.backbone.state_dict()
+        backbone_state = self.model.backbone.state_dict()
 
         state = {
             "model": model_state,
@@ -194,8 +194,7 @@ class Trainer:
         label = label.to(self.device)
         weights = weights.to(self.device)
 
-        features = self.model.backbone.features(img)
-        out = self.model(features)
+        out = self.model(img)
         logits = torch.sigmoid(out)
 
         loss = self.loss_fn(logits, label, weight=weights)
@@ -264,7 +263,7 @@ class Trainer:
         val_loss = []
         predictions, targets = [], []
         start = time()
-        for imgs, labels, weights, case_num in loader:
+        for imgs, labels, weights, _ in loader:
             labels = labels.to(self.device)
             loss, _, pred = self.step(imgs, labels, weights)
 
@@ -286,7 +285,6 @@ class Trainer:
             val_loss += [loss.item()]
             predictions.extend(pred)
             targets.extend(target)
-            # TODO: Add case and predictions
 
         val_loss = sum(val_loss) / len(val_loss)
         accuracy = (torch.tensor(predictions) == torch.tensor(targets)).float().mean().item()
@@ -296,7 +294,6 @@ class Trainer:
             "time": time() - start
         }
 
-        # TODO: return predictions
         return val_metrics
 
     def train(self, num_epochs: int = 20):
@@ -327,7 +324,7 @@ class Trainer:
 
                 # validate
                 self._on_val_epoch_start()
-                val_metrics, *_ = self.evaluate(val_loader)
+                val_metrics = self.evaluate(val_loader)
                 self._on_val_epoch_end(val_metrics, fold_num, epoch)
 
             end = time()
@@ -413,6 +410,11 @@ class Trainer:
             if self.with_tracking:
                 wandb.join()
 
+        # load best model for predictions
+        print_and_log("Loading best model for predictions...", self.logger)
+        self.load_ckpt(f"{fold_num}_best.pt")
+
+        # save predictions
         all_predictions = {
             "predictions": [],
             "case": [],
