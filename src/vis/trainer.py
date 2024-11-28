@@ -373,6 +373,10 @@ class Trainer:
         if fold_num != 0:
             self.model._reset_head()
             self.model._reset_backbone()
+            if self.ddp:
+                self.model = DDP(self.model, device_ids=[self.device])
+            else:
+                self.model.to(self.device)
 
         # Initialize a new wandb run for each fold with a distinct name and group them under one group
         if self.device_check:
