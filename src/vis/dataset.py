@@ -54,6 +54,9 @@ class XRayDataset(Dataset):
             assert isinstance(data, pd.DataFrame), "data should be either path to CSV file or pandas DataFrame"
             self.data = data
 
+        # remove "case_" from case names
+        self.data['case'] = self.data['case'].apply(lambda x: x[5:])
+
         self.data['label1'] = self.data['label1'].map(label2int_small)
         self.data['label2'] = self.data['label2'].map(label2int_small)
         self.data['label3'] = self.data['label3'].map(label2int_small)

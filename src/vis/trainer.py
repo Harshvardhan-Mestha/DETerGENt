@@ -1,6 +1,6 @@
-import re
 import os
 import wandb
+import pandas as pd
 from time import time
 from io import StringIO
 from typing import Union, Optional, Tuple
@@ -411,7 +411,30 @@ class Trainer:
             if self.with_tracking:
                 wandb.join()
 
-        # TODO: Validation predictions
+        all_predictions = {
+            "predictions": [],
+            "case": [],
+            "label": [],
+        }
+        for imgs, labels, weights, case_num in loader:
+            labels = labels.tolist()
+            cases = case_num.tolist()
+            cases = [f"case_{x}" for x in cases]
+            _, _, pred = self.step(imgs, labels, weights)
+            if self.ddp:
+                ovr_pred = [torch.zeros_like(pred, device=self.device) for _ in range(dist.get_world_size())]
+                dist.all_gather(ovr_pred, pred)
+                pred = torch.cat(ovr_pred, dim=0).reshape(-1).cpu().detach().tolist()
+            else:
+                pred = pred.reshape(-1).cpu().detach().tolist()
+
+            all_predictions["predictions"].extend(pred)
+            all_predictions["case"].extend(cases)
+            all_predictions["label"].extend(labels)
+
+        print_and_log(f"Saving predictions for fold {fold_num}...", self.logger)
+        pred_df = pd.DataFrame(all_predictions)
+        pred_df.to_csv(f"{fold_num}_predictions.csv", index=False)
 
     def _on_train_epoch_start(self):
         """
