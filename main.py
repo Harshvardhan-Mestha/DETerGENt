@@ -16,8 +16,8 @@ from src.utils.common import match, agree
 from src.lang import generate_report, generate_prediction
 from src.utils.minigpt import load_model, MiniGPTArgs, PromptArgs
 
-bertscore = load("bertscore")
-nubia = Nubia()
+NUBIA = Nubia()
+BERTSCORE = load("bertscore")
 
 sys.path.append('./')
 sys.path.append('minigpt4/')
@@ -153,7 +153,6 @@ def evaluate(preds, expls, ys, es) -> pd.DataFrame:
         "nub_logical_agreement":[],
         "nub_grammar_ref":[],
         "nub_grammar_hyp":[]
-
     }
 
     for k, _ in enumerate(preds):
@@ -162,9 +161,8 @@ def evaluate(preds, expls, ys, es) -> pd.DataFrame:
         # Check if predictions and explanations are correct
         predict_ok = match(y_pred, y)
         explain_ok = agree(e_pred, e)
-        bertscores = bertscore.compute(predictions=e_pred, references=e, model_type="distilbert-base-uncased")
-        nubia = nubia.score(ref=e,hyp=e_pred, verbose=False, get_features=True)
-
+        nubia = NUBIA.score(ref=e,hyp=e_pred, verbose=False, get_features=True)
+        bertscore = BERTSCORE.compute(predictions=e_pred, references=e, model_type="distilbert-base-uncased")
 
         # Append to final dataframe
         final_df["Predictions"].append(y_pred)
@@ -173,9 +171,9 @@ def evaluate(preds, expls, ys, es) -> pd.DataFrame:
         final_df["Ground Truth Explanation"].append(e)
         final_df["predict_ok"].append(predict_ok)
         final_df["explain_ok"].append(explain_ok)
-        final_df["bert_sc_f1"].append(bertscores["f1"])
-        final_df["bert_sc_precision"].append(bertscores["precision"])
-        final_df["bert_sc_recall"].append(bertscores["recall"])
+        final_df["bert_sc_f1"].append(bertscore["f1"])
+        final_df["bert_sc_precision"].append(bertscore["precision"])
+        final_df["bert_sc_recall"].append(bertscore["recall"])
         final_df["nub_score"].append(nubia["nubia_score"])
         final_df["nub_semantic_rel"].append(nubia["features"]["semantic_relation"])
         final_df["nub_contradiction"].append(nubia["features"]["contradiction"])
@@ -183,8 +181,6 @@ def evaluate(preds, expls, ys, es) -> pd.DataFrame:
         final_df["nub_logical_agreement"].append(nubia["features"]["logical_agreement"])
         final_df["nub_grammar_ref"].append(nubia["features"]["grammar_ref"])
         final_df["nub_grammar_hyp"].append(nubia["features"]["grammar_hyp"])
-
-
 
         if predict_ok and explain_ok:
             # Correct
