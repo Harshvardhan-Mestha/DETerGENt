@@ -58,6 +58,7 @@ class XRayDataset(Dataset):
         # drop erroneous rows (45, 147, 158)
         mask = self.data["case"].isin(["case_46", "case_148", "case_159"])
         self.data = self.data[~mask]
+        self.data["case"] = self.data["case"].apply(lambda x: int(x.split("_")[1]))
 
         # Split the 'labels' column into separate columns
         split_labels = self.data['label'].str.split(',', expand=True)
@@ -67,7 +68,7 @@ class XRayDataset(Dataset):
             split_labels[i] = ''
 
         # Rename the new columns (optional)
-        split_labels.columns = ["label1","label2","label3"]
+        split_labels.columns = ["label1", "label2", "label3"]
 
         # Concatenate the original DataFrame with the new columns
         self.data = pd.concat([self.data, split_labels], axis=1)
