@@ -60,7 +60,7 @@ def generate_report(
     else:
         image_path = x
 
-    if not os.path.exists(image_path):
+    if isinstance(image_path, float) or not os.path.exists(image_path):
         return None
 
     if llm == "gpt":
