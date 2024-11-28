@@ -49,10 +49,11 @@ def print_and_log(msg: str, logger: StringIO = None):
 
 def customBCE(x: torch.Tensor, y: torch.Tensor, weight: Optional[torch.Tensor] = None) -> torch.Tensor:
 
-    x_full = torch.stack((x, 1-x), dim=-1) # (B, 11) || (B, 11) => (B, 11, 2)
-    y_full = torch.stack((y, 1-y), dim=-1)
-    w_full = torch.stack((weight, weight), dim=-1) if weight is not None else None
-    loss = nn.functional.binary_cross_entropy(x_full, y_full, weight=w_full)
+    # x_full = torch.stack((x, 1-x), dim=-1) # (B, 11) || (B, 11) => (B, 11, 2)
+    # y_full = torch.stack((y, 1-y), dim=-1)
+    # w_full = torch.stack((weight, weight), dim=-1) if weight is not None else None
+    # loss = nn.functional.binary_cross_entropy(x_full, y_full, weight=w_full)
+    loss = nn.functional.binary_cross_entropy(x, y, weight=weight)
 
     return loss
 
@@ -261,7 +262,7 @@ class Trainer:
         val_loss = []
         predictions, targets = [], []
         start = time()
-        for imgs, labels, weights in loader:
+        for imgs, labels, weights, case_num in loader:
             labels = labels.to(self.device)
             loss, _, pred = self.step(imgs, labels, weights)
 
@@ -283,15 +284,17 @@ class Trainer:
             val_loss += [loss.item()]
             predictions.extend(pred)
             targets.extend(target)
+            # TODO: Add case and predictions
 
         val_loss = sum(val_loss) / len(val_loss)
         accuracy = (torch.tensor(predictions) == torch.tensor(targets)).float().mean().item()
         val_metrics = {
             "loss": val_loss,
             "accuracy": accuracy,
-            "time": time() - start,
+            "time": time() - start
         }
 
+        # TODO: return predictions
         return val_metrics
 
     def train(self, num_epochs: int = 20):
@@ -322,11 +325,11 @@ class Trainer:
 
                 # validate
                 self._on_val_epoch_start()
-                val_metrics = self.evaluate(val_loader)
+                val_metrics, *_ = self.evaluate(val_loader)
                 self._on_val_epoch_end(val_metrics, fold_num, epoch)
 
             end = time()
-            self._on_fold_end(fold_num, end-start)
+            self._on_fold_end(fold_num, end-start, val_loader)
 
         print_and_log("Training complete", self.logger)
         print_and_log("Training on whole dataset to save overall model...", self.logger)
@@ -382,7 +385,7 @@ class Trainer:
                     name=f"fold_{fold_num}", # Unique name for each fold
                 )
 
-    def _on_fold_end(self, fold_num: int, time_taken: float):
+    def _on_fold_end(self, fold_num: int, time_taken: float, loader: DataLoader):
         """
         Stuff to do at the end of each fold.
         Currently, it saves the best metrics for the fold,
@@ -407,6 +410,8 @@ class Trainer:
             print_and_log("-"*88, self.logger)
             if self.with_tracking:
                 wandb.join()
+
+        # TODO: Validation predictions
 
     def _on_train_epoch_start(self):
         """
@@ -544,4 +549,4 @@ if __name__ == "__main__":
         device = "cuda" if torch.cuda.is_available() else "cpu"
         trainer = Trainer(run_name, device, num_classes, with_tracking, 
                           freeze_backbone, ckpt_path)
-        trainer.train(250)
+        trainer.train(100)

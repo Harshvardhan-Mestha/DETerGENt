@@ -7,18 +7,12 @@ import sys
 from typing import Optional
 from argparse import ArgumentParser
 
-import torch
 import pandas as pd
+from src.utils.data import load_data
+from src.utils.config import load_config
+from src.utils.common import match, agree
 from src.lang import generate_report, generate_prediction
-from src.utils import (
-    load_config, 
-    load_data, 
-    match, 
-    agree, 
-    MiniGPTArgs, 
-    PromptArgs)
-from minigpt4.common.config import Config
-from minigpt4.models.minigpt_v2 import MiniGPTv2
+from src.utils.minigpt import load_model, MiniGPTArgs, PromptArgs
 
 
 sys.path.append('./')
@@ -37,9 +31,14 @@ def main(config, D: list) -> Optional[pd.DataFrame]:
         Optional[pd.DataFrame]: Dataframe with the overall evaluation (if evaluation is set to True in the config).
     """
 
-    # checks for config
+    # prediction config
     pred = config["pred"]
+    # explanation config
     expl = config["expl"]
+
+    # validate config
+    assert hasattr(pred, "out_path"), "[ERROR] Output path for predictions not found."
+    assert hasattr(expl, "out_path"), "[ERROR] Output path for explanations not found."
     assert pred["from_file"] != pred["generate"], "[INFO] Can either load predictions from file or generate them, not both."
     assert expl["from_file"] != expl["generate"], "[INFO] Can either load explanations from file or generate them, not both."
     if pred["from_file"]:
@@ -51,10 +50,7 @@ def main(config, D: list) -> Optional[pd.DataFrame]:
     if pred["model"] == "medgpt" or expl["model"] == "medgpt":
         model_args = MiniGPTArgs(**config["medgpt"]["model_args"])
         prompt_args = PromptArgs(**config["medgpt"]["prompt_args"])
-
-        device = torch.device(model_args.gpu_id) if torch.cuda.is_available() else torch.device("cpu")
-        conf = Config(model_args)
-        model = MiniGPTv2.from_config(conf.model_cfg).to(device=device)
+        model = load_model(model_args)
     else:
         model_args = None
         prompt_args = None
@@ -68,21 +64,21 @@ def main(config, D: list) -> Optional[pd.DataFrame]:
     else:
         print("[INFO] Generating predictions on the fly.")
         print("[INFO] This is only recommended for LLMs and not the Vision models.")
-        # TODO: This logic needs rework, need to add some of identification of the case to be predicted
         preds = {
             "img_path": [],
-            "pred": [],
+            "prediction": [],
+            "label": [],
             "case": []
         }
-        for c in D:
-            for pt in c:
-                pred = generate_prediction(pred["model"], pt[0], model, prompt_args, model_args)
-                preds["img_path"].append(pt[0])
-                preds["pred"].append(pred)
-                
+        for pt in D:
+            pred, img_path = generate_prediction(pred["model"], pt[0], model, prompt_args, model_args)
+            preds["img_path"].append(img_path)
+            preds["prediction"].append(pred)
+            preds["label"].append(pt[1])
+            preds["case"].append(pt[3])
 
         preds = pd.DataFrame(preds)
-        preds.to_csv(pred["path"])
+        preds.to_csv(pred["out_path"])
 
     # get explanations
     if expl["from_file"]:
@@ -93,18 +89,19 @@ def main(config, D: list) -> Optional[pd.DataFrame]:
         expls = {
             "img_path": [],
             "explanation": [],
+            "ground_truth": [],
             "case": []
         }
-        for _, row in preds.iterrows():
+        for pt in D:
             # TODO: remove this print statement
-            print(row["img_path"])
-            expl = generate_report(expl["model"], row["img_path"], row["pred"], model, prompt_args, model_args)
-            expls["img_path"].append(row["img_path"])
+            print(pt["img_path"])
+            expl = generate_report(expl["model"], pt[0], pt["pred"], model, prompt_args, model_args)
+            expls["img_path"].append(pt["img_path"])
             expls["explanation"].append(expl)
-            expls["case"].append(row["case"])
+            expls["case"].append(pt["case"])
 
         expls = pd.DataFrame(expls)
-        expls.to_csv(expl["path"])
+        expls.to_csv(expl["out_path"])
 
     # evaluate
     if config["evaluate"]:

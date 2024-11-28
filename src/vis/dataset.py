@@ -5,10 +5,10 @@ from skimage.io import imread
 from torch.nn import functional as F
 from typing import Union, List, Tuple
 from torchvision import transforms as T
+from sklearn.model_selection import KFold
 from torchxrayvision.datasets import normalize
 from torch.utils.data import DistributedSampler
 from torch.utils.data import Dataset, DataLoader
-from sklearn.model_selection import StratifiedKFold
 
 
 label2int = {
@@ -84,14 +84,10 @@ class XRayDataset(Dataset):
         label = F.one_hot(self.data.iloc[idx]["label1"], self.num_classes).to(torch.float32)
         label += F.one_hot(self.data.iloc[idx]["label2"], self.num_classes).to(torch.float32) if not np.isnan(self.data.iloc[idx]["label2"]) else 0
         label += F.one_hot(self.data.iloc[idx]["label3"], self.num_classes).to(torch.float32) if not np.isnan(self.data.iloc[idx]["label3"]) else 0
-        # TODO: add weights
-        num_neg = self.num_classes - label.sum()
-        weights = torch.tensor([1.0, 1.0, 1.0, 1.0, 1.0, 1.0])
-        weights[label == 1] = 10.0
         if self.training:
-            return image, label, weights, self.data.iloc[idx]["case"]
+            return image, label, None
         else:
-            return image, label, weights
+            return image, label, None, self.data.iloc[idx]["case"]
 
 
 def getDataLoadersFor5FoldCV(data: str, batch_size: int = 8, ddp: bool = True) -> List:
@@ -110,7 +106,7 @@ def getDataLoadersFor5FoldCV(data: str, batch_size: int = 8, ddp: bool = True) -
     data['kfold'] = -1
     data = data.sample(frac=1).reset_index(drop=True)
     y = data.label1.values
-    kf = StratifiedKFold(n_splits=5)
+    kf = KFold(n_splits=5)
     for f, (t_, v_) in enumerate(kf.split(X=data, y=y)):
         data.loc[v_, 'kfold'] = f
     dataloaders = []

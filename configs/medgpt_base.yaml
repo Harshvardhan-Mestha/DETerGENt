@@ -1,22 +1,20 @@
-exp_name: test
-evaluate: true
+exp_name: vanilla_MedGPT
+evaluate: false
 pred:
     model: medgpt
     generate: true
     from_file: false
-    path: /path/to/predictions.csv
-    out_path: output.csv
+    out_path: gen_pred_med.csv
 
 expl:
     model: medgpt
     generate: true
     from_file: false
-    path: /path/to/predictions.csv
-    out_path: output.csv
+    out_path: gen_expl_med.csv
 
 medgpt:
     model_args:
-        cfg_path: configs/minigpt_default.yaml
+        cfg_path: configs/minigpt/default.yaml
         gpu_id: 0
         options: None
     prompt_args:

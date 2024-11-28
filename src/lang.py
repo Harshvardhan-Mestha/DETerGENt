@@ -3,31 +3,23 @@ Interacts with both LLMs. Generates reports and predictions using GPT-4o and Min
 """
 
 import os
-from typing import Optional
-
 from openai import OpenAI
-
-from src.utils import (
-    encode_image,
-    mini_gpt_client,
-    PromptArgs,
-    MiniGPTArgs,
-    class_list
-)
+from typing import Optional, Tuple
+from src.utils.common import encode_image
 from minigpt4.models.minigpt_v2 import MiniGPTv2
+from src.utils.minigpt import mini_gpt_client, PromptArgs, MiniGPTArgs
 
 openai_org = os.getenv("OPENAI_ORG")
-openai_project = os.getenv("OPENAI_PROJECT")
 openai_key = os.getenv("OPENAI_KEY")
-# CLIENT = OpenAI(
-#     organization=openai_org,
-#     api_key=openai_key,
-# )
-
 CLIENT = OpenAI(
-    organization="org-FS3BNL7yaD4kX7b68zAMckVr",
-    api_key="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",
+    organization=openai_org,
+    api_key=openai_key
 )
+
+CLASS_LIST = ["Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothelioma",
+              "Cardiomegaly", "Plueral Effusion", "Pneumonia", "Pneumothorax",
+              "Tuberculosis"]
+
 
 def generate_report(
     llm: str, x: str, pred: str,
@@ -159,7 +151,7 @@ def generate_prediction(
     model: Optional[MiniGPTv2] = None,
     prompt_args: Optional[PromptArgs] = None,
     model_args: Optional[MiniGPTArgs] = None
-) -> str:
+) -> Tuple[str, str]:
     """
     Get the prediction for the given X-ray image
     Args
@@ -187,16 +179,14 @@ def generate_prediction(
     if os.path.isdir(f"data/{x}"):
         image_name = os.listdir(f"data/{x}")[0]
         image_path = os.getcwd() + f"/data/{x}/" + image_name
-
     else:
         image_path = x
-
 
     if llm == "gpt":
         print("[INFO] Generating predictions using GPT-4o")
 
         ovr_y = ""
-        for cls in class_list:
+        for cls in CLASS_LIST:
             # TODO: refine prompt.
             messages = [
                 {
@@ -258,7 +248,7 @@ def generate_prediction(
                                      top_p=1.0)
 
         class_prompt = f"""Which diseases are the most likely to be present in the given Xray?
-         {', '.join(class_list)}"""
+         {', '.join(CLASS_LIST)}"""
 
         valid_prediction = False
         while not valid_prediction:
@@ -279,4 +269,4 @@ def generate_prediction(
         print("[ERROR] Invalid LLM")
         y = None
 
-    return y
+    return y, image_path
