@@ -412,7 +412,7 @@ class Trainer:
 
         # load best model for predictions
         print_and_log("Loading best model for predictions...", self.logger)
-        self.load_ckpt(f"{fold_num}_best.pt")
+        self.load_ckpt(self.expt_path + f"/{fold_num}_best.pt")
 
         # save predictions
         all_predictions = {
@@ -556,7 +556,7 @@ def DDP_launch(rank: int, world_size: int, run_name: str, num_classes: int,
     setup(rank, world_size)
     trainer = Trainer(run_name, rank, num_classes, 
                       with_tracking, freeze_backbone, ckpt_path)
-    trainer.train(250)
+    trainer.train(10)
     cleanup()
 
 
@@ -576,4 +576,4 @@ if __name__ == "__main__":
         device = "cuda" if torch.cuda.is_available() else "cpu"
         trainer = Trainer(run_name, device, num_classes, with_tracking, 
                           freeze_backbone, ckpt_path)
-        trainer.train(100)
+        trainer.train(10)
