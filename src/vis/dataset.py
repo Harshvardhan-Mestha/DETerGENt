@@ -60,7 +60,7 @@ class XRayDataset(Dataset):
         self.data = self.data[~mask]
 
         # Split the 'labels' column into separate columns
-        split_labels = data['label'].str.split(',', expand=True)
+        split_labels = self.data['label'].str.split(',', expand=True)
 
         for i in range(3):  # Add missing columns if they don't exist
           if i >= split_labels.shape[1]:
@@ -70,7 +70,7 @@ class XRayDataset(Dataset):
         split_labels.columns = ["label1","label2","label3"]
 
         # Concatenate the original DataFrame with the new columns
-        self.data = pd.concat([data, split_labels], axis=1)
+        self.data = pd.concat([self.data, split_labels], axis=1)
 
         self.data['label1'] = self.data['label1'].map(label2int)
         self.data['label2'] = self.data['label2'].map(label2int)
