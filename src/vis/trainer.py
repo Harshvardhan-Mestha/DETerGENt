@@ -1,3 +1,5 @@
+import sys
+sys.path.append(".")
 import os
 import wandb
 import pandas as pd
@@ -84,9 +86,9 @@ class Trainer:
         # loss and optimizer
         self.loss_fn = customBCE # nn.CrossEntropyLoss()
         if freeze_backbone:
-            params = self.model.parameters()
+            params = self.model.head.parameters()
         else:
-            params = list(self.model.parameters()) + list(self.backbone.parameters())
+            params = list(self.model.parameters()) + list(self.model.backbone.parameters())
         self.optimizer = torch.optim.AdamW(params, lr=5e-4, weight_decay=1e-4)
         self.fold = 0
         self.epoch = 0
@@ -106,8 +108,8 @@ class Trainer:
             self.load_ckpt(ckpt_path)
 
         print_and_log(f"Dataset Size: {len(self.data_loaders[-1]) * 8}")
-        num_param1 = sum([p.numel() for p in self.model.parameters()])
-        num_param2 = sum([p.numel() for p in self.backbone.parameters() if p.requires_grad])
+        num_param1 = sum([p.numel() for p in self.model.head.parameters()])
+        num_param2 = sum([p.numel() for p in self.model.backbone.parameters() if p.requires_grad])
         print_and_log(f"Trainable Parameters: {(num_param1 + num_param2)/1e6:.2f}M = {num_param1/1e3:.3f}K + {num_param2/1e6:.3f}M")
         print_and_log(f"RUN_NAME: {run_name}")
         print_and_log(f"NUM_CLASSES: {num_classes}")
@@ -192,7 +194,7 @@ class Trainer:
         label = label.to(self.device)
         weights = weights.to(self.device)
 
-        features = self.backbone.features(img)
+        features = self.model.backbone.features(img)
         out = self.model(features)
         logits = torch.sigmoid(out)
 
@@ -560,7 +562,7 @@ if __name__ == "__main__":
 
     world_size = torch.cuda.device_count()
     run_name = "better"
-    num_classes = 6
+    num_classes = 11
     with_tracking = True
     ckpt_path = None
     freeze_backbone = False

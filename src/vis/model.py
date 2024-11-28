@@ -63,7 +63,8 @@ class ResNetAndHead(nn.Module):
         Args:
             x (torch.Tensor): input tensor of shape (B, C, H, W) / Images
         """
-
+        # print(x.shape)
+      
         x = self.backbone(x)
         x = self.head(x)
 

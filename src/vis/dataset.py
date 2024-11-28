@@ -1,3 +1,4 @@
+import os
 import torch
 import numpy as np
 import pandas as pd
@@ -53,14 +54,26 @@ class XRayDataset(Dataset):
         else:
             assert isinstance(data, pd.DataFrame), "data should be either path to CSV file or pandas DataFrame"
             self.data = data
+        
+        # Split the 'labels' column into separate columns
+        split_labels = data['label'].str.split(',', expand=True)
 
-        # remove "case_" from case names
-        self.data['case'] = self.data['case'].apply(lambda x: x[5:])
+        for i in range(3):  # Add missing columns if they don't exist
+          if i >= split_labels.shape[1]:
+            split_labels[i] = ''
 
-        self.data['label1'] = self.data['label1'].map(label2int_small)
-        self.data['label2'] = self.data['label2'].map(label2int_small)
-        self.data['label3'] = self.data['label3'].map(label2int_small)
-        self.num_classes = len(label2int_small) - 1
+        # Rename the new columns (optional)
+        split_labels.columns = ["label1","label2","label3"]
+
+        # Concatenate the original DataFrame with the new columns
+        self.data = pd.concat([data, split_labels], axis=1)
+
+
+
+        self.data['label1'] = self.data['label1'].map(label2int)
+        self.data['label2'] = self.data['label2'].map(label2int)
+        self.data['label3'] = self.data['label3'].map(label2int)
+        self.num_classes = len(label2int) 
         self.training = training
 
         transform_list = [
@@ -78,19 +91,25 @@ class XRayDataset(Dataset):
         return len(self.data)
 
     def __getitem__(self, idx) -> Tuple[torch.Tensor, torch.Tensor]:
-        image = self.data.iloc[idx]["path"]
+        
+        x = self.data.iloc[idx]["img_dir"]
+        image_path = f"./data/" + x + "/" + os.listdir(f"./data/" + x)[0]
+        image = image_path
         image = normalize(imread(image), 255)
         if image.ndim > 2:
             image = image.mean(2)
         image = torch.from_numpy(image)[None, ...] # (1, 512, 512)
         image = self.transforms(image)
+
+        
         label = F.one_hot(self.data.iloc[idx]["label1"], self.num_classes).to(torch.float32)
         label += F.one_hot(self.data.iloc[idx]["label2"], self.num_classes).to(torch.float32) if not np.isnan(self.data.iloc[idx]["label2"]) else 0
         label += F.one_hot(self.data.iloc[idx]["label3"], self.num_classes).to(torch.float32) if not np.isnan(self.data.iloc[idx]["label3"]) else 0
+        weights = torch.ones_like(label)
         if self.training:
-            return image, label, None
+            return image, label, weights
         else:
-            return image, label, None, self.data.iloc[idx]["case"]
+            return image, label, weights, self.data.iloc[idx]["case"]
 
 
 def getDataLoadersFor5FoldCV(data: str, batch_size: int = 8, ddp: bool = True) -> List:
@@ -108,9 +127,9 @@ def getDataLoadersFor5FoldCV(data: str, batch_size: int = 8, ddp: bool = True) -
     data = pd.read_csv(data)
     data['kfold'] = -1
     data = data.sample(frac=1).reset_index(drop=True)
-    y = data.label1.values
+    # y = data["label1"].values
     kf = KFold(n_splits=5)
-    for f, (t_, v_) in enumerate(kf.split(X=data, y=y)):
+    for f, (t_, v_) in enumerate(kf.split(X=data)):
         data.loc[v_, 'kfold'] = f
     dataloaders = []
     for i in range(5):
