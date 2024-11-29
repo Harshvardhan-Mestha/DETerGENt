@@ -100,12 +100,6 @@ def main(config, D: list) -> Optional[pd.DataFrame]:
         expls = pd.DataFrame(expls)
         expls.to_csv(expl["out_path"])
 
-    # # evaluate
-    # if config["evaluate"]:
-    #     print("[INFO] Evaluating predictions and explanations.")
-    #     out_csv = evaluate_fn(list(preds["pred"]), list(expls["explanation"]), D[1], D[2])
-    #     return out_csv
-
     print("[INFO] Skipping evaluation.")
     return None
 

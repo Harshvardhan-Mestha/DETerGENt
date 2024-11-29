@@ -68,7 +68,7 @@ def generate_report(
 
     # Get image path
     if os.path.isdir(f"data/{x}"):
-        image_path = os.path.abspath(os.listdir(f"data/{x}")[0])
+        image_path = f"data/{x}" + os.listdir(f"data/{x}")[0]
     else:
         image_path = x
 

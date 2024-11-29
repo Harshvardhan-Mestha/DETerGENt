@@ -1,4 +1,4 @@
-,case,label,label_short,img_dir,desc_pth,certainty,diagnosis,desc
+Unnamed: 0,case,label,label_short,img_dir,desc_pth,certainty,diagnosis,desc,report
 0,case_1,Atelectasis,ATCS,combined/case_1/img,combined/case_1/case_1_desc.txt,Certain,Round atelectasis,"Case by: Matthew Lukies
 Diagnosis Certain
 Diagnosis: Round atelectasis
@@ -29,7 +29,7 @@ The histopathology report in this case described limited tissue containing
 pneumocytes with patchy mild interstitial chronic inflammation, and no 
 features of malignancy.
 
-Link: https://radiopaedia.org/cases/45643"
+Link: https://radiopaedia.org/cases/45643","The findings of the imaging study in this patient showed a right-sided pleural fluid collection with fluid tracking into the oblique fissure. There was also a round area of opacity adjacent to the pleura in the right lower zone, which raised the suspicion of round atelectasis. Although the features on the CT scan were consistent with round atelectasis, a biopsy was conducted in this case, which is not a standard practice for cases with clear CT characteristics of round atelectasis. The biopsy showed limited tissue containing pneumocytes with mild interstitial chronic inflammation and no signs of malignancy. It is noted that biopsies for round atelectasis should be reserved for cases where imaging findings are inconclusive to avoid unnecessary invasive procedures."
 1,case_2,Atelectasis,ATCS,combined/case_2/img,combined/case_2/case_2_desc.txt,Certain,Bilateral atelectasis,"Case by: Andrew Murphy
 Diagnosis Certain
 Diagnosis: Bilateral atelectasis
@@ -49,7 +49,7 @@ patients will often present with chest pain native to the side of collapse.
 Subsegmental atelectasis like this is often best visualized on computed 
 tomography.
 
-Link: https://radiopaedia.org/cases/48666"
+Link: https://radiopaedia.org/cases/48666","Bilateral symmetrical curvilinear opacities are seen extending superolaterally from the lower mediastinum, separate from the oblique fissure on the lateral projection, indicating bilateral atelectasis. The patient presents with left chest pain, one week post splenectomy. Atelectasis is common after large surgical procedures, often presenting with chest pain on the affected side. Subsegmental atelectasis like this is best visualized on computed tomography."
 2,case_3,Atelectasis,ATCS,combined/case_3/img,combined/case_3/case_3_desc.txt,Certain,Left lower lobe atelectasis,"Case by: Guillermo Cesar Velez Parra
 Diagnosis Certain
 Diagnosis: Left lower lobe atelectasis
@@ -70,7 +70,7 @@ elevated and the heart is shifted to the left.
 Case Discussion: This is a typical appearance of left lower lobe atelectasis 
 later confirmed by CT.
 
-Link: https://radiopaedia.org/cases/187417"
+Link: https://radiopaedia.org/cases/187417","The patient, a 30-year-old male, had a thoracostomy for a stab wound. The imaging shows left lower lobe atelectasis, indicated by increased left lower zone attenuation and an air-filled bronchus. The atelectasis obscures the descending aorta and left hemidiaphragm, leading to an elevated diaphragm and leftward shift of the heart. This scenario is consistent with left lower lobe atelectasis, further confirmed by CT imaging."
 3,case_4,Atelectasis,ATCS,combined/case_4/img,combined/case_4/case_4_desc.txt,Certain,Cicatricial atelectasis right middle lobe,"Case by: Stefan Tigges
 Diagnosis Certain
 Diagnosis: Cicatricial atelectasis right middle lobe
@@ -92,7 +92,7 @@ is scarring. Atelectasis due to scarring is called cicatricial or
 cicatrisation atelectasis and is often due to prior infection, especially 
 mycobacterial.
 
-Link: https://radiopaedia.org/cases/171798"
+Link: https://radiopaedia.org/cases/171798","The patient, an 80-year-old female, presented with a chronic cough. The radiology report indicates cicatricial atelectasis in the right middle lobe without evidence of edema, pneumonia, or pleural effusion. Cicatricial atelectasis refers to atelectasis caused by scarring, often due to past infections like mycobacterial. The report rules out other common causes like endobronchial obstruction or pneumothorax."
 4,case_5,Atelectasis,ATCS,combined/case_5/img,combined/case_5/case_5_desc.txt,Certain,Lung cancer causing complete atelectasis,"Case by : Stefan Tigges
 Diagnosis Certain
 Diagnosis: Lung cancer causing complete atelectasis
@@ -116,7 +116,7 @@ atelectasis, in this case due to lung cancer obstructing the left main
 bronchus. Mediastinal shift toward the atelectatic lung and elevation of 
 the diaphragm are especially well seen on the coronal images.
 
-Link: https://radiopaedia.org/cases/96100"
+Link: https://radiopaedia.org/cases/96100","The report indicates a diagnosis of lung cancer causing complete atelectasis in the left hemithorax. The patient presented with a cough and shortness of breath. Imaging shows opacification of the left hemithorax with signs of volume loss and the left lung being atelectatic. There is an abrupt cut off of the left main bronchus, suggesting obstruction. The mediastinum is shifted to the left, and the left hemidiaphragm is elevated due to the atelectasis. These findings are indicative of complete atelectasis secondary to lung cancer obstructing the left main bronchus."
 5,case_6,Atelectasis,ATCS,combined/case_6/img,combined/case_6/case_6_desc.txt,Certain,Total atelectasis from obstructing central bronchial carcinoma,"Case by : Sajoscha A sorrentino
 Diagnosis Certain
 Diagnosis: Total atelectasis from obstructing central bronchial carcinoma
@@ -134,7 +134,7 @@ bronchogenic carcinoma.
 Case Discussion: Known central bronchogenic carcinoma on the left side.
 Total atelectasis from obstructing central bronchial carcinoma.
 
-Link:  https://radiopaedia.org/cases/15636"
+Link:  https://radiopaedia.org/cases/15636","The radiology report indicates a certain diagnosis of total atelectasis caused by an obstructing central bronchial carcinoma. The patient, a 95-year-old female, presented with progressive shortness of breath. The report describes complete white-out of the left hemithorax, with a large mass surrounding the left hilus, indicative of a known bronchogenic carcinoma. The discussion confirms the presence of a known central bronchogenic carcinoma on the left side, leading to total atelectasis due to obstruction."
 6,case_7,Atelectasis,ATCS,combined/case_7/img,combined/case_7/case_7_desc.txt,Certain,Carcinoid tumor causing complete atelectasis left lung,"Case by: Stefan Tigges
 Diagnosis Certain
 Diagnosis: Carcinoid tumor causing complete atelectasis left lung
@@ -151,7 +151,7 @@ Case Discussion: Carcinoid tumors often occur within bronchi, causing
 bronchial obstruction and subsequent atelectasis. In this case, there was 
 marked hyperinflation of the right lung.
 
-Link: https://radiopaedia.org/cases/99728"
+Link: https://radiopaedia.org/cases/99728","The report confirms the presence of a carcinoid tumor leading to complete atelectasis in the left lung of a female patient aged 45. Symptoms included cough and shortness of breath. The left lung exhibited complete atelectasis, while the right lung showed hyperexpansion, a common feature in such cases. Carcinoid tumors typically cause bronchial obstruction, resulting in atelectasis."
 7,case_8,Atelectasis,ATCS,combined/case_8/img,combined/case_8/case_8_desc.txt,Certain,Right main bronchus intubation causing left lung atelectasis,"Case by : Kelvin Feng
 Diagnosis Certain
 Diagnosis: Right main bronchus intubation causing left lung atelectasis
@@ -190,7 +190,7 @@ admission to ICU. The etiology of this event may be secondary to the drugs
 used during induction or as a result of excessive stimulation of vagal tone 
 with direct laryngoscopy, which has been reported in case studies
 
-Link: https://radiopaedia.org/cases/80399"
+Link: https://radiopaedia.org/cases/80399","The radiology report indicates a diagnosis of right main bronchus intubation causing left lung atelectasis. This is evidenced by the ETT extending beyond the carina into the right main bronchus, resulting in near-complete consolidation of the left lung with air bronchograms present. Following retraction of the ETT, there has been significant re-aeration of the left lung, although persistent dense consolidation remains within the left lower lobe. The patient experienced complications such as bradycardia, hypotension, hypoxemia, and cardiac arrest following induction of anesthesia. The case discussion suggests that the patient's condition may have been caused by the induction drugs or excessive stimulation of vagal tone during intubation."
 8,case_9,Atelectasis,ATCS,combined/case_9/img,combined/case_9/case_9_desc.txt,Almost Certain,Right upper lobe atelectasis - intubated neonate,"Case by : Abdelazziz Ibrahim
 Diagnosis Almost Certain
 Diagnosis: Right upper lobe atelectasis - intubated neonate
@@ -225,7 +225,7 @@ the RUL bronchus during the procedure resulting in RUL collapse.
 Similar findings can be seen in neonates with infection although the right 
 upper lobe would be an unusual location.
 
-Link: https://radiopaedia.org/cases/93368"
+Link: https://radiopaedia.org/cases/93368","The radiology report indicates a case of right upper lobe atelectasis in an intubated neonate with increased work of breathing on mechanical ventilation. The report describes right upper lobe opacification with volume loss, and the endotracheal tube tip is noted just above the carina. Additionally, a peripherally inserted central catheter (PICC) tip is positioned over the right atrium, and a nasogastric tube tip is visualized in the stomach. Following adjustments to the endotracheal tube tip, the resolution of the right upper lobe atelectasis is observed, although bronchovascular prominence persists. The discussion highlights that right upper lobe collapse is not uncommon in neonates who have been intubated, and the positioning of the tube on the X-ray may not reflect its position during intubation, potentially contributing to the atelectasis seen in this case."
 9,case_10,Atelectasis,ATCS,combined/case_10/img,combined/case_10/case_10_desc.txt,Certain,Left lung atelectasis caused by right main bronchus intubation,"Case by: Balint Botz
 Diagnosis Certain
 Diagnosis: Left lung atelectasis caused by right main bronchus intubation
@@ -253,7 +253,7 @@ Right subclavian CVC in a normal position.
 Case Discussion: Typical presentation of endobronchial intubation and its 
 sequelae. 
 
-Link: https://radiopaedia.org/cases/63575"
+Link: https://radiopaedia.org/cases/63575","The report indicates left lung atelectasis caused by right main bronchus intubation due to the ETT tip arching into the right main bronchus. The transparency of the left hemithorax is significantly reduced as a result. There is a marked shift of the mediastinum to the left, confirming the air space collapse as the primary factor contributing to reduced transparency. Additionally, diffuse bilateral air space opacities suggestive of prior lung contusion are noted. Furthermore, the patient has multiple rib fractures on the right side, as well as bilateral clavicle and right scapular fractures. It is mentioned that a right subclavian central venous catheter (CVC) is positioned normally. The report discusses the typical presentation of endobronchial intubation and its effects."
 10,case_11,Atelectasis,ATCS,combined/case_11/img,combined/case_11/case_11_desc.txt,Certain,Right main bronchial intubation,"Case by : Stefan Tigges
 Diagnosis Certain
 Diagnosis: Right main bronchial intubation
@@ -282,7 +282,7 @@ the trachea than the left bronchus. Tube placement into the right bronchus
 often results in atelectasis of the left lung which can be ""cured"" by 
 retracting the tube proximal to the carina. 
 
-Link: https://radiopaedia.org/cases/97865"
+Link: https://radiopaedia.org/cases/97865","The chest x-ray revealed an endotracheal tube in the right main bronchus, leading to complete atelectasis of the left lung. After retraction of the tube, partial reexpansion of the left lung was observed. The positioning of the tube above the carina is crucial to prevent complications such as atelectasis."
 11,case_12,Atelectasis,ATCS,combined/case_12/img,combined/case_12/case_12_desc.txt,Almost Certain,Right lung atelactasis due to endobronchial cancer,"Case by: Stefan Tigges
 Diagnosis Almost Certain
 Diagnosis: Right lung atelactasis due to endobronchial cancer
@@ -313,7 +313,9 @@ hemithorax. In our case, there is shift of the heart and trachea to the
 side of the white-out in this patient with lung cancer obstructing the 
 right main bronchus resulting in right lung atelectasis. 
 
-Link: https://radiopaedia.org/cases/98431"
+Link: https://radiopaedia.org/cases/98431","The report indicates a nearly certain diagnosis of right lung atelactasis due to endobronchial cancer in a 60-year-old male patient presenting with a cough. Complete opacification of the right hemithorax with tracheal shift to the right is noted, suggesting complete atelectasis within the right lung. The left main bronchus appears aerated, while the right bronchus is invisible and likely filled with soft tissue. Further soft tissue is observed projecting into the distal trachea at the level of the carina. The left lung is hyperinflated.
+
+The discussion highlights the distinction between complete atelectasis of a lung and a massive pleural effusion, with specific reference to white-out on imaging. The case emphasizes that lung volume loss results in mediastinal shift towards the side of the atelectatic lung. In this instance, the mediastinum is shifted due to lung cancer obstructing the right main bronchus, leading to right lung atelectasis."
 12,case_13,"Atelectasis,Plueral Effusion","ATCS,PLEF",combined/case_13/img,combined/case_13/case_13_desc.txt,Almost Certain,Round atelectasis,"Case by: Andrea Molinari
 Diagnosis Almost Certain
 Diagnosis: Round atelectasis
@@ -336,7 +338,7 @@ round atelectasis.
 
 Posterior lower lobes are the most affected part of the lung.
 
-Link: https://radiopaedia.org/cases/152509"
+Link: https://radiopaedia.org/cases/152509","The chest x-ray shows a right inferior lobe perihilar well-defined opacity along with blunting of the right costophrenic angle, indicating a small basal pleural effusion. These findings are consistent with round atelectasis. Posterior lower lobes are most affected in this condition."
 13,case_14,Atelectasis,ATCS,combined/case_14/img,combined/case_14/case_14_desc.txt,Probable,Round atelectasis,"Case by: Piotr Tomczyk
 Diagnosis Probable
 Diagnosis: Round atelectasis
@@ -357,7 +359,7 @@ Case Discussion: This case demonstrates all typical features of round
 atelectasis but differential diagnosis between other causes of lung mass 
 can often be difficult.
 
-Link:  https://radiopaedia.org/cases/73107"
+Link:  https://radiopaedia.org/cases/73107","The patient, a 60-year-old male, presented with dyspnea and recurrent pleural effusion following surgical management of aortic dissection 2 years ago. The imaging shows left-sided pleural fluid collection and an irregular area of opacity adjacent to the pleura in the left lower zone. The diagnosis of round atelectasis is considered probable, given the typical features observed. Discriminating it from other lung masses can pose a challenge."
 14,case_15,Atelectasis,ATCS,combined/case_15/img,combined/case_15/case_15_desc.txt,certain,Left upper lobe atelectasis with luftsichel sign,"Case by Yair Glick
 Diagnosis certain
 Diagnosis: Left upper lobe atelectasis with luftsichel sign
@@ -373,7 +375,7 @@ contralateral lung superimposed on the aortic knob - luftsichel sign.
 
 The sign can be seen more clearly on the image with exaggerated contrast.
 
-Link: https://radiopaedia.org/cases/73251"
+Link: https://radiopaedia.org/cases/73251","The report indicates a diagnosis of left upper lobe atelectasis with luftsichel sign. There is suspicion of peanut aspiration leading to this condition. The report mentions LUL atelectasis with compensatory hyperinflation of the contralateral lung superimposed on the aortic knob, demonstrating the luftsichel sign, which is more evident on an image with exaggerated contrast."
 15,case_16,Atelectasis,ATCS,combined/case_16/img,combined/case_16/case_16_desc.txt,Almost Certain,Cicatrisation collapse,"Case by: Yi-Jin Kuok
 Diagnosis Almost Certain
 Diagnosis: Cicatrisation collapse
@@ -397,7 +399,15 @@ lung. As such it is a subtype of atelectasis, which is a more generic term
 for 'incomplete expansion'. Individual lobes of the lung may collapse due 
 to obstruction of the supplying bronchus. 
 
-Link: https://radiopaedia.org/cases/17405"
+Link: https://radiopaedia.org/cases/17405","Diagnosis: Cicatrisation collapse - Lobar collapse (Subtype of atelectasis)
+
+Patient Presentation: Cough and fever
+
+Description: Left lower lobe consolidation congruent with the patient's infective symptoms.
+
+3 years later: Retrocardiac density in keeping with left lower lobe collapse. Splaying of left upper lobe vessels suggesting hyperexpansion - subtle.
+
+Case Discussion: Lobar collapse is collapse of an entire lobe of the lung, a subtype of atelectasis. Obstruction of the supplying bronchus can cause collapse of individual lobes."
 16,case_17,Atelectasis,ATCS,combined/case_17/img,combined/case_17/case_17_desc.txt,Certain,Atelectasis,"Case by: Yair Glick
 Diagnosis Certain
 Diagnosis: Atelectasis
@@ -449,7 +459,7 @@ Chest x ray showed complete RLL atelectasis. Significant clinical and
 radiological improvement after receiving high PEEP and respiratory 
 physiotherapy.
 
-Link: https://radiopaedia.org/cases/91903"
+Link: https://radiopaedia.org/cases/91903","The patient, a 20-year-old male who drowned in the sea, presented with coarse bilateral perihilar nodulointerstitial opacities indicating atelectasis. Over the course of admission, there was considerable improvement with properly placed ventilation and a subclavian line on the right. However, the right hemithorax showed a large opacity, suggesting collapse of the right lower lobe and right middle lobe. Follow-up imaging revealed bilateral interstitial edema, but the right lung atelectasis had cleared. The patient's history included thalassemia minor and heavy smoking, and he received prompt CPR after being found unconscious and pulseless. Treatment in the ICU involved mechanical ventilation, medications, and management of status epilepticus and hypotension. With interventions like high PEEP and respiratory physiotherapy, there was significant clinical and radiological improvement in the right lower lobe atelectasis."
 17,case_18,"Atelectasis,Pneumothorax","ATCS,PNTX",combined/case_18/img,combined/case_18/case_18_desc.txt,Certain,Atelectasis,"Case by: Edward McDermott
 Diagnosis Certain
 Diagnosis: Atelectasis
@@ -483,7 +493,7 @@ These cases are often treated with wide-bore surgical drains. Most slowly
 resolve over time, however some cases require surgical intervention with 
 pleurectomy and decortication. In this instance, a PleurX drain was placed 
 by the cardiothoracic team. Due to the patient’s co-morbidities, surgical 
-intervention is not considered at this time."
+intervention is not considered at this time.","The patient with a history of ANCA vasculitis, end-stage renal disease, and heart failure presented with dyspnea. The chest radiograph revealed a loculated left basal hydropneumothorax with pleural thickening in the left lower zone. Subsequent imaging showed no significant change post-pleural drain insertion, indicating a persistent hydropneumothorax. Features of a trapped lung including hydropneumothorax, visceral pleural thickening, and lobar atelectasis were noted. The condition did not improve with drain placement, and surgical intervention may be required in the future."
 18,case_19,"Atelectasis,Pneumothorax","ATCS,PNTX",combined/case_19/img,combined/case_19/case_19_desc.txt,Certain,Basal pneumothorax and trapped lung post thoracentesis,"Case by: Henry Knipe
 Diagnosis Certain
 Diagnosis: Basal pneumothorax and trapped lung post thoracentesis
@@ -515,7 +525,12 @@ lobar atelectasis
 Often treatment of these pneumothoraces with chest tubes is unsuccessful 
 and most will slowly resolve in their own time. 
 
-Link: https://radiopaedia.org/cases/30898"
+Link: https://radiopaedia.org/cases/30898","Diagnosis: Basal pneumothorax and trapped lung post thoracentesis 
+-Left upper and lower lobe atelectasis
+
+Description: Left basal pneumothorax with air-fluid level and mensiscus 
+indicating that this is actually a hydropneumothorax. Left chest wall 
+subcutaneous emphysema. Left upper and lower lobe atelectasis."
 19,case_20,"Atelectasis,Pneumothorax","ATCS,PNTX",combined/case_20/img,combined/case_20/case_20_desc.txt,Certain,Large pneumothorax,"Case By: Daniel Hyeong Seok Kim
 Diagnosis Certain
 Diagnosis: Large pneumothorax
@@ -545,7 +560,7 @@ tube placement. With no tension present it is referred to as simple
 pneumothorax. Causes of pneumothorax varies and can be categorized into 
 primary, secondary, and iatrogenic or traumatic.
 
-Link: https://radiopaedia.org/cases/153714"
+Link: https://radiopaedia.org/cases/153714","Large right-sided pneumothorax with complete collapse of the right lung without significant mediastinal shift. Minimal left lower lung zone atelectasis. No discrete focal consolidation, effusion, or pneumothorax on the left. The heart and central pulmonary vascularity appear normal."
 20,case_21,Calcifications,CLFS,combined/case_21/img,combined/case_21/case_21_desc.txt,Certain,Pleural calcification,"Case by: Mohamed Mahmoud Elthokapy
 Diagnosis Certain
 Diagnosis: Pleural calcification
@@ -567,7 +582,7 @@ pleural calcification points more to local causes such as previous
 hemothorax and pleural infection (empyema) than to calcification of 
 asbestos-related plaques.
 
-Link: https://radiopaedia.org/cases/98996"
+Link: https://radiopaedia.org/cases/98996",The radiograph shows left lower hemithorax dense irregular linear calcifications deep to the left lateral rib cage associated with tenting of the left diaphragm. The lungs appear clear. The presence of unilateral pleural calcification suggests possible local causes such as previous hemothorax and pleural infection (empyema) rather than asbestos-related plaque calcification.
 21,case_22,Calcifications,CLFS,combined/case_22/img,combined/case_22/case_22_desc.txt,Certain,Pericardial calcification,"Case by: James Harvey
 Diagnosis Certain
 Diagnosis: Pericardial calcification
@@ -594,7 +609,7 @@ hemopericardium at the time? Both are potential causes.
 
 There was no history of cardiac disease or cardiac surgery.
 
-Link: https://radiopaedia.org/cases/79051"
+Link: https://radiopaedia.org/cases/79051","The radiological findings reveal the presence of pericardial calcification in an elderly male patient presenting with heart failure. A distinct area of calcification is observed over the heart, with mildly prominent pulmonary vascular markings noted. Additionally, healed fractures of the right 4th-8th ribs are seen laterally. The patient previously underwent pericardiectomy in an effort to enhance cardiac function. The cause of the pericardial calcification remains uncertain, with potential associations with a history of abdominal tuberculosis and prior right-sided rib fractures suggested. There was no reported history of cardiac disease or surgery in the patient."
 22,case_23,Calcifications,CLFS,combined/case_23/img,combined/case_23/case_23_desc.txt,Certain,Pleural calcification,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: Pleural calcification
@@ -615,7 +630,7 @@ Case Discussion: This is a profound example of pleural calcification with
 the radiograph giving the impression the lungs are almost restricted from 
 expanding due to being encased with calcified thickened pleura.
 
-Link: https://radiopaedia.org/cases/82581"
+Link: https://radiopaedia.org/cases/82581","The radiographic findings reveal intense pleural thickening and calcification in both thorax cavities, hindering lung assessment due to the substantial volume of pleural disease. This case demonstrates profound pleural calcification, suggesting a restriction in lung expansion as a result of encasement by calcified thickened pleura."
 23,case_24,Calcifications,CLFS,combined/case_24/img,combined/case_24/case_24_desc.txt,Certain,Mitral annular calcification,"Case by: Sajoscha A Sorrentino
 Diagnosis Certain
 Diagnosis: Mitral annular calcification
@@ -652,7 +667,7 @@ Coarse calcification is seen in the expected location of the mitral valve,
 to the left of midline.  It is associated with conduction defects and 
 coronary artery disease.
 
-Link: https://radiopaedia.org/cases/16473"
+Link: https://radiopaedia.org/cases/16473","The report indicates the presence of heavy nodular calcification projected over the cardiac silhouette, particularly over the expected location of the mitral valve. The calcification is associated with conduction defects and coronary artery disease. The lungs appear clear with coarsened bronchovascular markings noted. The mitral annular calcification is not to be confused with mitral valve leaflet calcification."
 24,case_25,Calcifications,CLFS,combined/case_25/img,combined/case_25/case_25_desc.txt,Certain,Tuberculous pericardial calcifications,"Case by: Doralice Ferreira 
 Diagnosis Certain
 Diagnosis: Tuberculous pericardial calcifications
@@ -697,7 +712,16 @@ radiation
 connective tissue disorders
 malignancy
 
-Link: https://radiopaedia.org/cases/59772"
+Link: https://radiopaedia.org/cases/59772","Final Impression:
+- Tuberculous pericardial calcifications with stable right upper lobe scarring and mild diffuse bilateral peribronchial thickening.
+- No evidence of active tuberculosis noted on the current imaging.
+- No new focal pneumonia, effusion, or pneumothorax detected.
+- The heart remains normal in size without pulmonary vascular congestion.
+
+Case Discussion:
+- Tuberculous pericarditis is a rare finding in the Western world, with large calcific pericardial deposits indicating ""burnt-out"" pericardial tuberculosis.
+- Detecting pericardial calcification on radiography is crucial for a definitive diagnosis.
+- The differential diagnosis for pericardial calcifications includes idiopathic, viral, TB, trauma, cardiac surgery, radiation, connective tissue disorders, and malignancy."
 25,case_26,"Atelectasis,Calcifications","ATCS,CLFS",combined/case_26/img,combined/case_26/case_26_desc.txt,Almost Certain,Pleural calcification,"Case by: Mohammad Taghi Niknejad
 Diagnosis Almost Certain
 Diagnosis: Pleural calcification
@@ -721,7 +745,7 @@ and calcified pleural plaques from asbestos exposure.
 
 
 Link: https://radiopaedia.org/cases/150861
-"
+","The radiology report indicates significant pleural thickening and calcification in the right hemithorax, particularly at the inferolateral aspect. Atelectatic opacities are observed in the lung bases, more prominently on the right side. Pleural calcification may be associated with various pathologies, including pyothorax/empyema, tuberculous pleuritis, hemothorax, and asbestos exposure. The patient presented with complaints of prolonged standing breath shortness and cough."
 26,case_27,Calcifications,CLFS,combined/case_27/img,combined/case_27/case_27_desc.txt,Certain,Mitral annular calcification,"Case by: Jeremy Jones
 Diagnosis Certain
 Diagnosis: Mitral annular calcification
@@ -748,7 +772,7 @@ angiography confirmed significant 3 vessel disease.
 He was transferred to the local cardiac unit for three vessel CABG and 
 mitral valve replacement. His post surgical recovery was uneventful. 
 
-Link: https://radiopaedia.org/cases/2631"
+Link: https://radiopaedia.org/cases/2631","The patient, a 72-year-old male with a history of hypertension, ischemic heart disease, and valvular heart disease, presented with breathlessness and cardiac chest pain. Mitral annular calcification was found on the chest x-ray, with dense, amorphous calcification within the cardiac silhouette in the location of the annulus of the mitral valve. Following appropriate treatment for cardiac chest pain, myocardial necrosis was confirmed. Subsequent tests showed significant mitral stenosis and three-vessel disease, leading to the patient undergoing three vessel CABG and mitral valve replacement with uneventful post-surgical recovery."
 27,case_28,"Calcifications,Plueral Effusion","CLFS,PLEF",combined/case_28/img,combined/case_28/case_28_desc.txt,Almost Certain,Pericardial calcification,"Case by: Ammar Haouimi
 Diagnosis Almost Certain
 Diagnosis: Pericardial calcification
@@ -767,7 +791,7 @@ the right with air space opacification.
 
 Case Discussion: Radiological features of pericardial calcification.
 
-Link: https://radiopaedia.org/cases/68870"
+Link: https://radiopaedia.org/cases/68870","Pericardial calcification is observed, with pronounced calcification along the heart borders and right atrium dilation. Additionally, bilateral pleural effusion is evident, more prominently on the right side. The patient, a 75-year-old female with a history of ischemic cardiomyopathy, presented with cough and shortness of breath. The radiological features primarily focus on pericardial calcification and pleural effusion."
 28,case_29,Calcifications,CLFS,combined/case_29/img,combined/case_29/case_29_desc.txt,Almost Certain,Pleural calcification,"Case by : Vikas Shah
 Diagnosis Almost Certain
 Diagnosis:  Pleural calcification
@@ -785,7 +809,7 @@ Case Discussion: The presence of a solitary, albeit large, unilateral focus
 of pleural calcification points more to causes such as previous hemothorax 
 and pleural infection than to calcification of asbestos-related plaques.
 
-Link: https://radiopaedia.org/cases/65448"
+Link: https://radiopaedia.org/cases/65448",Patient presented with cough. Unfolded aorta noted. Presence of a large unilateral focus of pleural calcification suggests previous hemothorax or pleural infection as likely causes.
 29,case_30,Calcifications,CLFS,combined/case_30/img,combined/case_30/case_30_desc.txt,Certain,Calciphylaxis and metastatic pulmonary calcification,"Case by: Alexandra Stanislavsky
 Diagnosis Certain
 Diagnosis: Calciphylaxis and metastatic pulmonary calcification
@@ -818,7 +842,7 @@ Further changes included wide spread pulmonary metastatic calcification.
 Renal changes were end stage.  She also had a splenic infarct and acute 
 bronchopeunomia, with the latter being the presumed cause of death.
 
-Link: https://radiopaedia.org/cases/10887"
+Link: https://radiopaedia.org/cases/10887","The radiology report reveals findings of widespread calcified infiltrates throughout both lung fields. The patient had an intercostal catheter due to a recent lung biopsy. Autopsy findings show evidence of calciphylaxis involving various vessels including arm, aorta, and pulmonary vessels. Additionally, there was diffuse calcification of both brachial arteries and widespread pulmonary metastatic calcification. Other changes include end-stage renal disease, splenic infarct, and acute bronchopeunomia as the presumed cause of death."
 30,case_31,Calcifications,CLFS,combined/case_31/img,combined/case_31/case_31_desc.txt,Certain,Multiple Calcified adenopathies,"Case by: Albert Prat Matifoll
 Diagnosis Certain
 Diagnosis: Multiple Calcified adenopathies
@@ -858,7 +882,9 @@ calcified lymph nodes in tuberculosis tend to affect the mediastinum
 asymmetrically and unilaterally
 diffuse bilateral lymph node involvement is more common in sarcoidosis
 silicosis: the patient usually has a history of a silica-exposure related 
-job (as in this case)"
+job (as in this case)","Multiple calcified adenopathies are seen in the bilateral hila and retrocardiac space on the frontal view, along with right costophrenic angle blunting. On the lateral view, ""eggshell"" calcification of multiple adenopathies is noted in the mediastinum and bilateral pulmonary hila. The patient with a 50-year smoking history was referred for a pre-operative chest radiograph before surgery for urethral stenosis. Considering the findings and the patient's history of silica exposure, silicosis is a significant consideration along with other benign and malignant causes of lymph node calcification like tuberculosis, histoplasmosis, sarcoidosis, and lymphoma or metastases.
+
+A differential diagnosis to consider includes distinguishing between silicosis, sarcoidosis, and tuberculosis based on the pattern of lymph node involvement and the patient's occupational history. Silicosis is particularly relevant given the patient's history of silica-exposure related job."
 31,case_32,"Calcifications,Plueral Effusion","CLFS,PLEF",combined/case_32/img,combined/case_32/case_32_desc.txt,Certain,Mitral annulus calcification,"Case by: Frank Gaillard
 Diagnosis Certain
 Diagnosis: Mitral annulus calcification
@@ -876,7 +902,7 @@ left, are again demonstrated.
 
 Case Discussion: Mitral annular calcification
 
-Link: https://radiopaedia.org/cases/23707"
+Link: https://radiopaedia.org/cases/23707",Mitral annulus calcification and bilateral pleural effusions noted on imaging. Heart enlargement and prominent calcification of the mitral annulus observed. Pleural effusions more significant on the left side. Incidental findings in a 90-year-old female presenting with shortness of breath.
 32,case_33,Calcifications,CLFS,combined/case_33/img,combined/case_33/case_33_desc.txt,Certain,Calcification of mitral valve and left ventricle,"Case by : Daniel Hyeong Seok Kim
 Diagnosis Certain
 Diagnosis: Calcification of mitral valve and left ventricle
@@ -910,7 +936,7 @@ mostly remain asymptomatic. However, if associated with mitral valvular
 dysfunction like in this case the condition might require subsequent mitral 
 valve replacement.
 
-Link: https://radiopaedia.org/cases/151750"
+Link: https://radiopaedia.org/cases/151750","The radiology report indicates extensive and dense calcifications in the region of the mitral valve and left ventricle, with a mitral valve prosthesis in the appropriate position. There is no discrete focal pneumonia, effusion, or pneumothorax observed. Mild bilateral bronchial wall thickening is noted. The heart appears at upper limits normal without pulmonary vascular congestion. The case discussion highlights the multifactorial etiology of mitral valve and annular calcification, commonly associated with mitral valve regurgitation. Mitral annular calcifications are often asymptomatic but may require mitral valve replacement in cases of valvular dysfunction."
 33,case_34,Calcifications,CLFS,combined/case_34/img,combined/case_34/case_34_desc.txt,Certain,Pulmonary sarcoidosis with lymph node calcification,"Case by: Muhammad Bilal Fayyaz
 Diagnosis Certain
 Diagnosis: Pulmonary sarcoidosis with lymph node calcification
@@ -944,7 +970,23 @@ Nodal calcification may occur over time, occurring in less than a quarter
 of patients.
 
 Link: https://radiopaedia.org/cases/76644
-"
+","Diagnosis: Pulmonary sarcoidosis with lymph node calcification
+
+Patient Presentation: Chronic cough wheeze, clinically suspecting autoimmune disease.
+
+Description: Bilateral hilar enlargement, with filling in of the pulmonary angle, consistent with lymphadenopathy.
+
+Minor widening of the distal right paratracheal stripe, likely to reflect further nodal enlargement.
+
+Years later: Multiple calcified bilateral hilar and right paratracheal lymph nodes.
+
+The lungs are clear. Heart size normal.
+
+Case Discussion: Interval imaging of a sarcoidosis patient with mediastinal lymphadenopathy, which subsequently calcified.
+
+In the absence of parenchymal lung disease, this is a stage 2 sarcoidosis.
+
+Nodal calcification may occur over time, occurring in less than a quarter of patients."
 34,case_35,Calcifications,CLFS,combined/case_35/img,combined/case_35/case_35_desc.txt,Certain,Pericardial calcification,"Case by : Augusto Cesar Vieira Teixeira 
 Diagnosis Certain
 Diagnosis: Pericardial calcification
@@ -958,7 +1000,8 @@ failure.
 
 Description: Left cardiac border calcification.
 
-Link: https://radiopaedia.org/cases/19754"
+Link: https://radiopaedia.org/cases/19754","Diagnosis: Pericardial calcification
+Description: Left cardiac border calcification."
 35,case_36,Calcifications,CLFS,combined/case_36/img,combined/case_36/case_36_desc.txt,Almost Certain,Pericardial calcification,"Case by: Henry Knipe
 Diagnosis Almost Certain
 Diagnosis: Pericardial calcification
@@ -976,7 +1019,13 @@ Case Discussion: Trans-thoracic echocardiography confirmed calcification is
 pericardial rather than myocardial and also demonstrated constrictive 
 pericarditis. The cause was not determined in this case. 
 
-Link: https://radiopaedia.org/cases/31830"
+Link: https://radiopaedia.org/cases/31830","Diagnosis: Pericardial calcification
+
+Patient Presentation: Shortness of breath (SOB)
+
+Description: Pericardial calcification noted inferiorly and posteriorly. Sternotomy wires observed.
+
+Case Discussion: Pericardial calcification confirmed by trans-thoracic echocardiography. Constrictive pericarditis also noted. Cause undetermined in this case."
 36,case_37,Calcifications,CLFS,combined/case_37/img,combined/case_37/case_37_desc.txt,Almost Certain,Tracheo-bronchial calcification,"Case by: Yasith Abeysekera
 Diagnosis Almost Certain
 Diagnosis: Tracheo-bronchial calcification
@@ -1004,7 +1053,7 @@ cartilage and connective tissue 1-3.
 Other causes of calcification can be distinguished by appearance and 
 clinical features.
 
-Link: https://radiopaedia.org/cases/182746"
+Link: https://radiopaedia.org/cases/182746","Incidental finding of calcification of the tracheal and bronchial cartilage. Large hiatus hernia noted. Physiological tracheal and bronchial cartilage calcification typically affects women over 40, progressing with age. Generalized calcification of airway cartilage can also be seen in end-stage renal disease and in individuals taking warfarin. Other causes of calcification can be distinguished by appearance and clinical features."
 37,case_38,Calcifications,CLFS,combined/case_38/img,combined/case_38/case_38_desc.txt,Certain,Benign breast calcifications - bilateral (chest x-ray),"Case by : Craig Hacking
 Diagnosis Certain
 Diagnosis: Benign breast calcifications - bilateral (chest x-ray)
@@ -1020,7 +1069,7 @@ Description: Numerous clumps of coarse calcifications in both breasts.
 Case Discussion: The patient had many years of active breast surveillance. 
 Mammograms confirmed the benign appearance as benign.
 
-Link: https://radiopaedia.org/cases/71668"
+Link: https://radiopaedia.org/cases/71668","Bilateral benign breast calcifications noted on a chest X-ray. Numerous clumps of coarse calcifications seen in both breasts. Patient with a history of active breast surveillance, mammograms show a benign appearance."
 38,case_39,Calcifications,CLFS,combined/case_39/img,combined/case_39/case_39_desc.txt,Certain,Dermatomyositis,"Case by: Taehoo Kim
 Diagnosis Certain
 Diagnosis: Dermatomyositis
@@ -1047,7 +1096,7 @@ the bilateral upper and lower limbs. FDG-PET suggested active disease at
 the sites of calcinosis without signs of malignancy. The patient finally 
 underwent a skin biopsy confirming dermatomyositis.
 
-Link: https://radiopaedia.org/cases/91038"
+Link: https://radiopaedia.org/cases/91038","The radiology report reveals massive bilateral conglomerate nodular calcifications localized to the thoracic wall. No evidence of pulmonary fibrosis is noted, and the findings have remained stable over 10 years. The differential diagnosis for such calcifications is broad, considering the location and nature of the calcifications. In this case, the initial concern was intraparenchymal parasitic etiology, but the patient eventually exhibited calcifications in the bilateral upper and lower limbs, along with indications of active disease on FDG-PET. A confirmed skin biopsy led to the diagnosis of dermatomyositis."
 39,case_40,Calcifications,CLFS,combined/case_40/img,combined/case_40/case_40_desc.txt,Certain,Calcified anterior mediastinal nodes (post-radiotherapy),"Case by : Derek Smith
 Diagnosis Certain
 Diagnosis: Calcified anterior mediastinal nodes (post-radiotherapy)
@@ -1069,7 +1118,7 @@ Case Discussion: The patient had a history of Hodgkin lymphoma as a teenager,
 treated with radiotherapy. The large calcifed mediastinal nodes are secondary 
 to this treatment.
 
-Link: https://radiopaedia.org/cases/67840"
+Link: https://radiopaedia.org/cases/67840","The report shows no overt pulmonary edema or focal consolidation/collapse and a normal heart size. Densely calcified masses are observed in the anterior mediastinum, attributed to previous radiotherapy for Hodgkin lymphoma."
 40,case_41,Cardiomegaly,CRDM,combined/case_41/img,combined/case_41/case_41_desc.txt,Certain,Cardiomegaly,"Case by: Sarmad Aslam
 Diagnosis Certain
 Diagnosis: Cardiomegaly
@@ -1093,7 +1142,7 @@ valve disease. These findings are not seen in this case.
 
 Despite the markedly enlarged heart, there is no evidence of cardiac failure.
 
-Link: https://radiopaedia.org/cases/79296"
+Link: https://radiopaedia.org/cases/79296","The radiology report indicates a marked cardiomegaly in an 80-year-old female patient presenting with shortness of breath and bilateral pitting edema. Mild splaying of the carina suggests left atrium enlargement. Despite the significant heart enlargement, there is no evidence of cardiac failure."
 41,case_42,Cardiomegaly,CRDM,combined/case_42/img,combined/case_42/case_42_desc.txt,Certain,Cardiomegaly,"Case by: Frank Gaillard
 Diagnosis Certain
 Diagnosis: Cardiomegaly
@@ -1124,7 +1173,7 @@ maximal horizontal cardiac diameter
 maximal horizontal thoracic diameter (inner edge of ribs / edge of pleura)
 Figure 2: A normal measurement should be less than 0.5. 
 
-Link: https://radiopaedia.org/cases/12334"
+Link: https://radiopaedia.org/cases/12334","The chest x-rays show a markedly enlarged cardiac silhouette with a double contour to the right heart border and splaying of the carina, consistent with cardiomegaly. The aorta appears somewhat ectatic without overt signs of congestive cardiac failure at present. The annotated images indicate the specific contours related to the right and left atria. The cardiothoracic ratio is elevated, signifying cardiomegaly."
 42,case_43,Cardiomegaly,CRDM,combined/case_43/img,combined/case_43/case_43_desc.txt,Certain,Huge cardiomegaly,"Case by Mohamed Mahmoud Elthokapy
 Diagnosis Certain
 Diagnosis: Huge cardiomegaly
@@ -1152,7 +1201,15 @@ Case Discussion: A known cardiac patient with past history of valvular
 replacement presented by flask-shaped heart on plain radiography, CT 
 confirmed huge cardiomegaly rather than pericardial effusion.
 
-Link: https://radiopaedia.org/cases/92179"
+Link: https://radiopaedia.org/cases/92179","Diagnosis: Huge cardiomegaly
+
+History of previous open-heart surgery and valve replacement. Presenting complaints of shortness of breath, poor exercise tolerance, and pitting lower limb edema.
+
+Markedly increased cardio-thoracic ratio with flask-shaped heart noted on imaging.
+
+Splaying of the carina suggesting atrial enlargement. Additionally, changes related to open-heart surgery and mitral valve repair observed, including metallic prosthesis.
+
+CT confirmed huge cardiomegaly, ruling out pericardial effusion."
 43,case_44,Cardiomegaly,CRDM,combined/case_44/img,combined/case_44/case_44_desc.txt,Certain,Cardiomegaly with left atrium enlargement,"Case by: Mohammad Osama Hussein Yonso
 Diagnosis Certain
 Diagnosis: Cardiomegaly with left atrium enlargement
@@ -1175,7 +1232,7 @@ Mild mediastinum widening.
 Case Discussion: This patient was complaining of dorsal pain, by chance, 
 cardiomegaly is seen.
 
-Link: https://radiopaedia.org/cases/84873"
+Link: https://radiopaedia.org/cases/84873","The patient is a 55-year-old male presenting with right side upper back pain for 3 days. Radiology findings indicate mild to moderate cardiomegaly with left atrium enlargement, characterized by a double density sign and increased carina angle. Additionally, there is unfolding of the aorta and mild mediastinum widening noted. The dorsal pain complaint coincidentally revealed the cardiomegaly."
 44,case_45,Cardiomegaly,CRDM,combined/case_45/img,combined/case_45/case_45_desc.txt,Certain,Cardiomegaly with plethora and edema,"Case by: Jeremy Jones
 Diagnosis Certain
 Diagnosis: Cardiomegaly with plethora and edema
@@ -1189,7 +1246,7 @@ Patient Presentation: Increased work of breathing. Rule out consolidation.
 Description: There is cardiomegaly with pulmonary plethora and airspace 
 shadowing suggesting secondary pulmonary edema.
 
-Link: https://radiopaedia.org/cases/24086"
+Link: https://radiopaedia.org/cases/24086","Cardiomegaly with pulmonary plethora and edema noted on imaging, with airspace shadowing indicative of secondary pulmonary edema. Presentation includes increased work of breathing with concern for consolidation."
 45,case_46,Cardiomegaly,CRDM,combined/case_46/img,combined/case_46/case_46_desc.txt,Certain,Cardiomegaly (mild),"Case by: RMH Core Conditions
 Diagnosis Certain
 Diagnosis: Cardiomegaly (mild)
@@ -1205,7 +1262,7 @@ Description: Mild cardiomegaly. Lungs and pleural spaces are normal.
 Case Discussion: This case demonstrates a nice example of LUL and RUL 
 bronchi on the lateral projection. 
 
-Link: https://radiopaedia.org/cases/27923"
+Link: https://radiopaedia.org/cases/27923",Mild cardiomegaly noted on pre-op chest x-ray. Lungs and pleural spaces appear normal.
 46,case_47,Cardiomegaly,CRDM,combined/case_47/img,combined/case_47/case_47_desc.txt,Almost certain,Cardiomegaly - mitral regurgitation,"Case by: Liter Nguri
 Diagnosis Almost certain
 Diagnosis: Cardiomegaly - mitral regurgitation
@@ -1236,7 +1293,7 @@ Severe left ventricle systolic dysfunction,
 Left ventricular ejection fraction of 25 to 30%
 No clot/embolism or vegetation seen.
 
-Link: https://radiopaedia.org/cases/72729"
+Link: https://radiopaedia.org/cases/72729","The patient, presenting with breathing difficulty, shows cardiomegaly with splaying of the carina on frontal chest radiograph, indicative of mitral regurgitation. The report highlights the presence of dilated left atrial and ventricular shadows and the downward projection of cardiac apex. Echocardiography confirms moderate to severe mitral regurgitation, dilated left atrium and ventricle, severe left ventricle systolic dysfunction, and a left ventricular ejection fraction of 25 to 30%, with no clot/embolism observed."
 47,case_48,Cardiomegaly,CRDM,combined/case_48/img,combined/case_48/case_48_desc.txt,Almost Certain,Cardiomegaly - atrial septal defect,"Case by: Liter Nguri
 Diagnosis Almost Certain
 Diagnosis: Cardiomegaly - atrial septal defect
@@ -1267,7 +1324,7 @@ encountered in adulthood. ​This case demonstrates the typical features of
 the atrial septal defect with consequent dilatation of right atrium and 
 right ventricle leading to pulmonary hypertension.
 
-Link: https://radiopaedia.org/cases/69641"
+Link: https://radiopaedia.org/cases/69641","The chest radiograph of the patient reveals findings of cardiomegaly with prominent pulmonary conus and enlargement of bilateral hilar pulmonary vessels. Echocardiography showed ostium secundum type atrial septal defect with left to right shunting of blood, dilated right atrium, right ventricle, and left atrium, preserved left ventricular systolic function, and moderate pulmonary artery hypertension. This case demonstrates typical features of atrial septal defect leading to pulmonary hypertension."
 48,case_49,"Cardiomegaly,Plueral Effusion","CRDM,PLEF",combined/case_49/img,combined/case_49/case_49_desc.txt,Certain,Pericardial effusion,"Case by: Michael Lousick
 Diagnosis Certain
 Diagnosis: Pericardial effusion
@@ -1291,7 +1348,7 @@ radiograph, explaining the smaller than expected pericardial effusion which
 appeared much larger on the original chest radiograph. This patient had ECG 
 findings typical for pericarditis.
 
-Link: https://radiopaedia.org/cases/72213"
+Link: https://radiopaedia.org/cases/72213","The radiology report indicates a case of pericardial effusion with globular cardiomegaly, observed in a 40-year-old male presenting with cardiac chest pain for one week. Additionally, left-sided pleural effusion was noted. The report mentions that a pericardial effusion should be suspected when a chest radiograph shows globular cardiomegaly not present on previous images and can be associated with pleural effusions, typically affecting the left lung more than the right. The CT scan, conducted a month after the initial chest radiograph, depicted a smaller pericardial effusion than expected, which appeared larger on the original radiograph. ECG findings were also typical for pericarditis in this instance."
 49,case_50,Cardiomegaly,CRDM,combined/case_50/img,combined/case_50/case_50_desc.txt,Certain,Patent ductus arteriosus,"Case by: Mohd Radhwan Bin Abidin
 Diagnosis Certain
 Diagnosis: Patent ductus arteriosus
@@ -1325,7 +1382,7 @@ pressure compared to arterial circulation).
 This patient likely have Krichenko classification type B (window, short and 
 wide ductus with blending of pulmonary artery).
 
-Link: https://radiopaedia.org/cases/88570"
+Link: https://radiopaedia.org/cases/88570","The radiology report indicates cardiomegaly and enlarged bilateral pulmonary arteries on the chest radiograph. The CTPA revealed poor contrast opacification of pulmonary vessels, along with a suspicious communication between the aorta and pulmonary arteries. The CTA thoracic aorta confirmed the presence of patent ductus arteriosus, with contrast flow from the aorta into the pulmonary artery system. The report also mentions the absence of Eisenmenger phenomenon in this case, where pulmonary artery circulation remains lower pressure compared to arterial circulation. The patient is likely classified as Krichenko type B with a short and wide ductus with blending of the pulmonary artery."
 50,case_51,Cardiomegaly,CRDM,combined/case_51/img,combined/case_51/case_51_desc.txt,Certain,Mitral heart,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: Mitral heart
@@ -1353,7 +1410,7 @@ prominent left atrial appendage
 severe splaying of the subcarinal angle (150 degrees) - due to compression 
 from the enlarged left atrium
 
-Link: https://radiopaedia.org/cases/46087"
+Link: https://radiopaedia.org/cases/46087","The radiology report indicates findings suggestive of a Mitral heart condition in the patient. The report describes an enlarged heart visible on the projection, with a double right heart border caused by left atrium enlargement. Additionally, a prominent left atrial appendage and severe splaying of the subcarinal angle are noted, indicative of compression from the enlarged left atrium. These findings collectively point towards cardiomegaly and signify a 'full house' of signs of a mitral heart condition."
 51,case_52,Cardiomegaly,CRDM,combined/case_52/img,combined/case_52/case_52_desc.txt,Certain,Truncus arteriosus,"Case by Vincent Tatco
 Diagnosis Certain
 Diagnosis: Truncus arteriosus
@@ -1377,7 +1434,7 @@ is a common differential diagnosis in chest radiographs of cyanotic
 patients presenting with cardiomegaly, pulmonary plethora and right-sided 
 aortic arch. 
 
-Link: https://radiopaedia.org/cases/43228"
+Link: https://radiopaedia.org/cases/43228","The chest radiograph of the patient shows cardiomegaly with hyperinflated lungs and increased pulmonary vascularity. The presence of a right-sided aortic arch is demonstrated, consistent with the diagnosis of truncus arteriosus type I. Truncus arteriosus is confirmed by echocardiography and is a common differential diagnosis in cyanotic patients with cardiomegaly, pulmonary plethora, and right-sided aortic arch."
 52,case_53,Cardiomegaly,CRDM,combined/case_53/img,combined/case_53/case_53_desc.txt,Certain,Hypertrophic cardiomyopathy - neonatal,"Case by: Priya Parikh
 Diagnosis Certain
 Diagnosis:Hypertrophic cardiomyopathy - neonatal
@@ -1432,7 +1489,7 @@ findings include left ventricular outflow tract obstruction and reduced
 stroke volume 4. Septal enlargement and hypertrophy are secondary to fetal 
 hyperinsulinemia.
 
-Link: https://radiopaedia.org/cases/63314"
+Link: https://radiopaedia.org/cases/63314","Initial XR chest evaluation demonstrates moderately severe cardiomegaly with mild to moderate diffuse pulmonary vascular congestion and mild to moderate pulmonary interstitial edema. Slight asymmetric increased opacification of the left lung field likely due to dependent edema noted. No definite effusion or pneumothorax observed. Orogastric tube courses into the stomach. ETT terminates at T1 level, UVC seen terminating in the low right atrium. Mild improved bilateral lung aeration. Increased diffuse haziness mainly in the left upper and midzone, likely due to asymmetric pulmonary edema. Stable moderately severe cardiomegaly and pulmonary interstitial edema. Full-term infant of a diabetic mother born via C-section with respiratory distress and a systolic murmur. Echocardiogram confirmed marked biventricular hypertrophy, hypertrophied interventricular septum, dilated coronary arteries, and narrowed aortic isthmus. Infants of diabetic mothers at increased risk for cardiac valvular and septal lesions, including hypertrophic cardiomyopathy. Prevalence of cardiovascular malformations in infants of diabetic mothers approached 4%. Incidence of symptomatic hypertrophic cardiomyopathy reported to be as high as 12.1% in infants with diabetic mothers. Associated findings include left ventricular outflow tract obstruction and reduced stroke volume. Septal enlargement and hypertrophy due to fetal hyperinsulinemia."
 53,case_54,"Cardiomegaly,Plueral Effusion","CRDM,PLEF",combined/case_54/img,combined/case_54/case_54_desc.txt,Almost Certain,Water bottle heart,"Case by: Ian Bickle
 Diagnosis Almost Certain
 Diagnosis: Water bottle heart
@@ -1455,7 +1512,7 @@ the traditional water bottle.
 
 It is typically described in the context of pericardial effusion.
 
-Link: https://radiopaedia.org/cases/89721"
+Link: https://radiopaedia.org/cases/89721",Diagnosis: Water bottle heart with small bilateral pleural effusions and massive cardiomegaly noted. Patient presenting with shortness of breath. Lungs clear with no reported abnormalities.
 54,case_55,Cardiomegaly,CRDM,combined/case_55/img,combined/case_55/case_55_desc.txt,Almost Certain,Ventricular septal defect,"Case by Henry Knipe
 Diagnosis Almost Certain
 Diagnosis: Ventricular septal defect
@@ -1476,7 +1533,7 @@ cardiomegaly. Given the patient's symptoms, consideration can be given to
 Eisenmenger syndrome, where there is reversal of the left-to-right shunt 
 and cyanosis develops (but this is not proven in this patient). 
 
-Link: https://radiopaedia.org/cases/44978"
+Link: https://radiopaedia.org/cases/44978",Cardiomegaly noted with prominence of the main pulmonary trunk and dilated central pulmonary arteries. Patient has a history of ventricular septal defect. Consideration for Eisenmenger syndrome due to symptoms.
 55,case_56,Cardiomegaly,CRDM,combined/case_56/img,combined/case_56/case_56_desc.txt,Almost Certain,Pulmonary atresia with intact interventricular septum,"Case by: Henry Knipe
 Diagnosis Almost Certain
 Diagnosis: Pulmonary atresia with intact interventricular septum
@@ -1496,7 +1553,11 @@ congenital heart disease. Echocardiography demonstrated pulmonary atresia
 with intact interventricular septum as the underlying cause for cardiomegaly. 
 Not in this case but there is sometimes pulmonary plethora. 
 
-Link: https://radiopaedia.org/cases/41392"
+Link: https://radiopaedia.org/cases/41392","Diagnosis: Pulmonary atresia with intact interventricular septum
+
+Description: Marked enlargement of the cardiac silhouette. No pulmonary plethora. No focal consolidation, collapse or pleural effusion. Nasogastric tube tip projects in the region of the gastro-esophageal junction.
+
+Case Discussion: Echocardiography demonstrated pulmonary atresia with intact interventricular septum as the underlying cause for cardiomegaly."
 56,case_57,Cardiomegaly,CRDM,combined/case_57/img,combined/case_57/case_57_desc.txt,Almost Certain,Chronic Chagas cardiomyopathy,"Case by: Bruno Di Muzio
 Diagnosis Almost Certain
 Diagnosis: Chronic Chagas cardiomyopathy
@@ -1518,7 +1579,7 @@ manifestations of Chagas disease.
 
 Link: https://radiopaedia.org/cases/38872
 
-"
+","Patient presents with severe heart failure at rest, history of being bitten by triatomine bugs in rural Brazil. Global cardiomegaly noted on chest x-ray with no signs of pulmonary congestion. Diagnosis of chronic Chagas cardiomyopathy."
 57,case_58,Cardiomegaly,CRDM,combined/case_58/img,combined/case_58/case_58_desc.txt,Probable,Pericardial effusion,"Case by: Konstantin Benno Brautigam
 Diagnosis Probable
 Diagnosis: Pericardial effusion
@@ -1539,7 +1600,7 @@ effusion was echographically diagnosed. Note the pericardial drainage
 catheter on the x-ray, which seems to drain insufficiently. The patient is 
 at high risk for cardiac tamponade.
 
-Link: https://radiopaedia.org/cases/58321"
+Link: https://radiopaedia.org/cases/58321",The radiology report indicates findings of massive cardiomegaly with a known pericardial effusion and a drainage catheter in place. There are bilateral lung opacities present. The report highlights the risk of cardiac tamponade due to insufficient drainage of the pericardial effusion.
 58,case_59,"Cardiomegaly,Plueral Effusion","CRDM,PLEF",combined/case_59/img,combined/case_59/case_59_desc.txt,Almost Certain,Tachycardia mediated cardiomyopathy,"Case by: Derek Smith
 Diagnosis Almost Certain
 Diagnosis: Tachycardia mediated cardiomyopathy
@@ -1583,7 +1644,7 @@ steroids
 When the heart rate was better controlled, a repeat echo confirmed the 
 above findings and the patient underwent DC cardioversion to good effect.
 
-Link: https://radiopaedia.org/cases/37004"
+Link: https://radiopaedia.org/cases/37004","Patient presented with chest pain, shortness of breath, and leg swelling. Radiological findings include marked cardiomegaly and small bi-basal pleural effusions. Additional history revealed a family history of over-active thyroid. Blood tests showed abnormal thyroid function consistent with thyroid storm. Management steps included heart rate control, echocardiogram showing severe left ventricular dysfunction, and treatment for hyperthyroid state. Post cardioversion, the patient had a positive response."
 59,case_60,Cardiomegaly,CRDM,combined/case_60/img,combined/case_60/case_60_desc.txt,Almost Certain,Cardiogenic lung edema (pediatric),"Case by: Balint Botz
 Diagnosis Almost Certain
 Diagnosis: Cardiogenic lung edema (pediatric)
@@ -1613,7 +1674,7 @@ complete AV septal defect.
 Considering the clinical picture the more confluous areas of consolidations 
 also raise the possibility of superimposed pneumonia. 
 
-Link: https://radiopaedia.org/cases/73118"
+Link: https://radiopaedia.org/cases/73118","The patient, a 4-month-old male with known Down syndrome and complete AV septal defect, presented with fever, reduced blood oxygen saturation, and tachy-dyspnea. The radiology report shows marked cardiomegaly due to the complete AV septal defect, along with bilateral irregular diffuse haziness with perihilar and right-sided predominance. Additionally, partial effacement of diaphragm contours and the presence of air bronchograms were noted. These findings are indicative of cardiogenic lung edema as a consequence of the complete AV septal defect. There is also a possibility of superimposed pneumonia based on the clinical presentation and the observed consolidations."
 60,case_61,COPD,COPD,combined/case_61/img,combined/case_61/case_61_desc.txt,Certain,Severe COPD and pectus excavatum,"Case by: Henry Knipe
 Diagnosis Certain
 Diagnosis: Severe COPD and pectus excavatum
@@ -1637,7 +1698,7 @@ Pectus excavatum is a great mimicker of right middle lobe collapse or
 consolidation. The shift of the heart to the left and horizontally oriented 
 ribs are good clues, and a lateral projection will confirm the diagnosis. 
 
-Link: https://radiopaedia.org/cases/39471"
+Link: https://radiopaedia.org/cases/39471","The patient with severe COPD presented with increasing shortness of breath and is on home oxygen. The lungs appear hyperexpanded, with obscuration of the right heart border. A prominent main pulmonary trunk raises suspicion of pulmonary arterial hypertension. Pectus excavatum, a great mimicker of right middle lobe collapse or consolidation, is also noted in this case."
 61,case_62,"Calcifications,COPD","CLFS,COPD",combined/case_62/img,combined/case_62/case_62_desc.txt,Certain,Very large bulla on background of COPD,"Case by: Andrew Mark
 Diagnosis Certain
 Diagnosis: Very large bulla on background of COPD
@@ -1663,7 +1724,7 @@ COPD exacerbation. Treated with steroids, antibiotics, and nebulizer
 treatments. He was subsequently discharged after about a week. His stay was 
 largely uncomplicated despite the impressive chest x-ray on admission.
 
-Link: https://radiopaedia.org/cases/48598"
+Link: https://radiopaedia.org/cases/48598","Very large bulla on background of COPD. Active smoker with 200 pack year history. Severe COPD on home oxygen. Presents with 2 weeks increased dyspnea, increased sputum production, cough. Hyperinflated lungs with diffuse reticular changes. Large (25 cm) right lung bulla. No infiltrate noted. No pneumothorax. No effusion noted. Aortic knob shows calcifications. Compared to previous imaging, this bulla has been stable since 2010. Patient admitted to ICU for management of COPD exacerbation. Treated with steroids, antibiotics, and nebulizer treatments. Discharged after about a week."
 62,case_63,COPD,COPD,combined/case_63/img,combined/case_63/case_63_desc.txt,Almost Certain,Chronic obstructive pulmonary disease (COPD),"Case by : David Horvath
 Diagnosis Almost Certain
 Diagnosis: Chronic obstructive pulmonary disease (COPD)
@@ -1687,7 +1748,7 @@ fullness and diffuse interstitial opacification.
 
 Link: https://radiopaedia.org/cases/164283
 
-"
+","The radiology report indicates an enlarged right heart, flattened diaphragms, perihilar fullness, and diffuse interstitial opacification in a patient presenting with symptoms of an acute COPD exacerbation. The patient has a history of over 100 pack-years of cigarette smoking. The report discusses the association of COPD with cigarette smoking and air pollution, and suggests a viral etiology for the exacerbation based on the imaging findings."
 63,case_64,COPD,COPD,combined/case_64/img,combined/case_64/case_64_desc.txt,Certain,Hyperinflation of the lungs,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: Hyperinflation of the lungs
@@ -1713,7 +1774,13 @@ In addition, the very flattened diaphragm is well illustrated.
 
 These are very hyperinflated lungs from COPD.
 
-Link: https://radiopaedia.org/cases/86475"
+Link: https://radiopaedia.org/cases/86475","Diagnosis: COPD with lung hyperinflation.
+
+Presentation: Shortness of breath.
+
+Description: Markedly hyperinflated lungs without bullae. Normal heart size.
+
+Discussion: 8 anterior ribs and 11 posterior ribs above the diaphragm level in the midclavicular line, indicative of significant hyperinflation due to COPD."
 64,case_65,COPD,COPD,combined/case_65/img,combined/case_65/case_65_desc.txt,Almost Certain,Chronic obstructive airways disease - increased lung volume,"Case by: Guillermo Cesar Velez Parra
 Diagnosis Almost Certain
 Diagnosis: Chronic obstructive airways disease - increased lung volume
@@ -1741,7 +1808,7 @@ spirometry.
 
 Link: https://radiopaedia.org/cases/180067
 
-"
+","The radiology report indicates findings consistent with chronic obstructive airways disease, including increased lung volume, evidenced by lung hyperexpansion, flattened diaphragms, and an increased retrosternal space diameter. These observations are indicative of COPD, with the diagnosis relying on clinical assessment and spirometry for confirmation."
 65,case_66,COPD,COPD,combined/case_66/img,combined/case_66/case_66_desc.txt,Certain,Lung volume reduction coils,"Case by: Hein Els
 Diagnosis Certain
 Diagnosis: Lung volume reduction coils
@@ -1764,7 +1831,7 @@ lung volume reduction with nitinol coils. The coils are designed to reduce
 hyperinflation and improve elastic recoil in severe emphysema. 
 
 Link: https://radiopaedia.org/cases/33248
-"
+",The report indicates a diagnosis of lung volume reduction coils for COPD in a female patient aged 52. The CXR after nitinol coil implantation in the right lung shows multiple coils in the right mid and upper lung. A subsequent CXR following treatment of the left lung also shows multiple coils in the left mid and upper lung. This treatment approach aims to benefit patients with severe COPD by reducing hyperinflation and improving elastic recoil in severe emphysema.
 66,case_67,"COPD,Plueral Effusion","COPD,PLEF",combined/case_67/img,combined/case_67/case_67_desc.txt,Certain,Pulmonary pseudotumor,"Case by: Ashesh Ishwarlal Ranchod
 Diagnosis Certain
 Diagnosis: Pulmonary pseudotumor
@@ -1819,7 +1886,7 @@ therapy (HAART).
 
 Link: https://radiopaedia.org/cases/176701
 
-"
+","The radiology report describes a case of a large, left pleural pseudotumor with bibasal effusions in a known HIV-positive patient with COPD. The patient presented with hemoptysis and septicemia and had a history of pulmonary tuberculosis. The pseudotumor progressively resorbed over time without drainage, and there was improvement in the bibasal pleural effusions. The report also notes the presence of a tracheostomy, apical bronchovascular distortion from previous tuberculosis, and a left subclavian access CVP with ECG leads. The cardiomedastinal contour was found to be normal, indicating no cardiomegaly."
 67,case_68,COPD,COPD,combined/case_68/img,combined/case_68/case_68_desc.txt,Certain,Saber sheath trachea,"Case by: Andrew Dixon
 Diagnosis Certain
 Diagnosis: Saber sheath trachea
@@ -1840,7 +1907,7 @@ Case Discussion: Narrowing of the tracheal width on frontal chest
 radiograph with preserved width on the lateral image consistent with saber 
 sheath trachea in a patient with COPD.
 
-Link: https://radiopaedia.org/cases/39969"
+Link: https://radiopaedia.org/cases/39969","The radiograph indicates narrowing of the tracheal width on the PA image to approximately 7mm with distortion of bronchovascular markings, suggestive of COPD with saber sheath trachea. The lateral image shows preserved width measuring around 22mm. These findings are characteristic of this condition in patients with COPD."
 68,case_69,"Cardiomegaly,COPD","CRDM,COPD",combined/case_69/img,combined/case_69/case_69_desc.txt,Certain,Cor pulmonale,"Case by: Karen Machang'a
 Diagnosis Certain
 Diagnosis: Cor pulmonale
@@ -1882,7 +1949,7 @@ hypertension.
 Echocardiographic evaluation is an important tool in the diagnosis and the 
 prognostic stratification of patients with cor pulmonale.
 
-Link: https://radiopaedia.org/cases/165886"
+Link: https://radiopaedia.org/cases/165886","The report indicates cardiomegaly and cor pulmonale in the patient, with symptoms including hemoptysis, dyspnea, and syncope. Findings include an enlarged heart, abnormal pulmonary vessels, pulmonary opacity in the left lower zone, and left retro-cardiac opacification. The report also notes the presence of thoracic spondylotic changes and scoliosis concave to the left. Cor pulmonale is discussed as a consequence of respiratory disorders affecting the right ventricle. Further evaluation through echocardiography is recommended for diagnosis and prognosis."
 69,case_70,COPD,COPD,combined/case_70/img,combined/case_70/case_70_desc.txt,Certain,Malpositioned Angelchik Antireflux Prosthesis,"Case by: Manuela Weilbach
 Diagnosis Certain
 Diagnosis: Malpositioned Angelchik Antireflux Prosthesis
@@ -1918,7 +1985,9 @@ Although the Angelchik prosthesis is mispositioned in this patient, it is
 likely an incidental finding. The likely cause for the patient's symptoms 
 are likely related to an exacerbation of his COPD and heart failure.
 
-Link: https://radiopaedia.org/cases/90440"
+Link: https://radiopaedia.org/cases/90440","The radiology report indicates the presence of a malpositioned Angelchik Antireflux Prosthesis in a nursing home patient presenting with a worsening cough and dyspnea. The Angelchik prosthesis is described as being rotated vertically instead of lying horizontally under the diaphragm. It is noted that the patient had undergone this procedure over 20 years ago.
+
+The report discusses the Angelchik device, its historical use, and the complications associated with its displacement into the chest or abdominal cavity over time. However, the mispositioning of the prosthesis in this case is considered an incidental finding, with the patient's symptoms attributed to an exacerbation of COPD and heart failure."
 70,case_71,COPD,COPD,combined/case_71/img,combined/case_71/case_71_desc.txt,Almost Certain,Emphysema,"Case by: Ian Bickle
 Diagnosis Almost Certain
 Diagnosis: Emphysema
@@ -1949,7 +2018,13 @@ left hemithorax indicates the disease is most pronounced in the left upper
 lobe.
 
 Link: https://radiopaedia.org/cases/50326
-"
+","Diagnosis: Emphysema - COPD
+
+Patient Presentation: Retired female, heavy smoker. Shortness of breath on exertion.
+
+Description: Markedly hyperinflated lungs, flattening of the diaphragm. Bullous change in the left upper lobe. Elongated appearance of the heart.
+
+Case Discussion: Emphysema is one end of the spectrum of findings in COPD. The disease is usually quite pronounced by the time the typical appearances are evidence on a plain radiograph. In this case, the hyperinflated nature of the lungs is very readily apparent. The lucency and sparsity of bronchovascular markings in the upper left hemithorax indicate the disease is most pronounced in the left upper lobe."
 71,case_72,COPD,COPD,combined/case_72/img,combined/case_72/case_72_desc.txt,Certain,COPD,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: COPD
@@ -1989,7 +2064,7 @@ The most useful thing for any radiologist is old imaging studies. Not
 looking for them or at them at your peril.
 Satisfaction of search - don't be happy with spotting one abnormality. Look 
 for more and it may take you further down the diagnostic pathway.
-This was a histologically proven lung cancer."
+This was a histologically proven lung cancer.","The radiology report indicates an ill-defined 2.5 cm opacity in the lower right paratracheal space, along with a 2 cm opacity at the right hilum causing in-filling of the right hilar angle in a patient diagnosed with COPD. The background lungs show emphysematous changes, specifically in both upper lobes. The report highlights the challenge in radiographic imaging of COPD patients due to the size of the thorax. Additionally, it emphasizes the importance of reviewing old imaging studies and thorough evaluation for multiple abnormalities. Finally, it mentions a histologically proven lung cancer in this case."
 72,case_73,COPD,COPD,combined/case_73/img,combined/case_73/case_73_desc.txt,Certain,Emphysema,"Case by : Sarmad Aslam
 Diagnosis Certain
 Diagnosis: Emphysema
@@ -2013,7 +2088,7 @@ spectrum of COPD, resulting from the smoking of tobacco.
 
 It typically affects the upper lobes first and most profoundly. 
 
-Link: https://radiopaedia.org/cases/80475"
+Link: https://radiopaedia.org/cases/80475","The patient, a 50-year-old male with known COPD, presented with worsening shortness of breath and cough for a week. The radiology report indicates marked upper lobe emphysema bilaterally with reduced bronchovascular markings and crowding of vessels in the mid zones. The heart size is normal. Emphysema is characterized by the permanent dilatation of airspaces due to alveolar wall destruction, often associated with smoking tobacco. It primarily affects the upper lobes."
 73,case_74,COPD,COPD,combined/case_74/img,combined/case_74/case_74_desc.txt,Certain,Emphysema,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: Emphysema
@@ -2040,7 +2115,7 @@ before appreciable on x-ray.
 HRCT chest illustrates even minor disease and aids characterization.  
 
 Link: https://radiopaedia.org/cases/33347
-"
+","The patient, a retired electrician with a history of heavy smoking, presented with shortness of breath. Radiographic findings revealed hyperinflated lungs with flattened diaphragms. The upper lobes, particularly the right upper lobe, appeared more radiolucent compared to the lower lobes. Emphysema, a type of COPD linked to tobacco use, was diagnosed, with bullae visible at an extreme stage. High-resolution CT of the chest is crucial for assessing the extent and nature of the disease."
 74,case_75,COPD,COPD,combined/case_75/img,combined/case_75/case_75_desc.txt,Almost Certain,COPD,"Case by: Hidayatullah Hamidi
 Diagnosis Almost Certain
 Diagnosis: COPD
@@ -2057,7 +2132,7 @@ Case Discussion: On a plain radiograph, pulmonary emphysema manifests as
 lung hyperinflation, flattened hemidiaphragms, and small heart; all 
 findings present in current cases.
 
-Link: https://radiopaedia.org/cases/79884"
+Link: https://radiopaedia.org/cases/79884","The chest radiograph shows manifestations consistent with COPD, including lung hyperinflation, flattened hemidiaphragms, and a small heart. The patient presented with a history of productive cough and green colored sputum. There is no evidence of pulmonary infiltrate noted on the imaging."
 75,case_76,"COPD,Plueral Effusion,Pneumothorax","COPD,PLEF,PNTX",combined/case_76/img,combined/case_76/case_76_desc.txt,Certain,Lung volume reduction surgery for emphysema,"Case by: Craig Hacking
 Diagnosis Certain
 Diagnosis:Lung volume reduction surgery for emphysema
@@ -2082,7 +2157,7 @@ Case Discussion: Apical lung resections performed to reduce lung volumes in
 a patient with severe emphysema.
 
 Link: https://radiopaedia.org/cases/78728
-"
+","Lung volume reduction surgery for emphysema, with findings of apical pneumothorax and small bilateral basal pleural effusions post-surgery. Right intercostal pleural drain in place, small right apical pneumothorax persisting. Small bilateral basal pleural effusions observed. Lung volume decreased significantly from pre op CXR. Chronic interstitial thickening in bilateral lower zones noted."
 76,case_77,COPD,COPD,combined/case_77/img,combined/case_77/case_77_desc.txt,Almost Certain,Aspergilloma,"Case by: Naeem Jagirdar
 Diagnosis Almost Certain
 Diagnosis: Aspergilloma
@@ -2109,7 +2184,7 @@ a lung cavity. The mass is typically separated from the cavity wall by an
 airspace - air crescent sign and is often associated with thickening of the 
 wall and adjacent pleura.
 
-Link: https://radiopaedia.org/cases/12842"
+Link: https://radiopaedia.org/cases/12842","The radiology report indicates an almost certain diagnosis of aspergilloma in a female patient with a history of chronic obstructive airway disease. The findings include an elevated left hemidiaphragm, crowding of left ribs, decreased left lung volume, and an air crescent sign over the left upper lobe. These features are consistent with an aspergilloma occupying a pre-existing cavity likely due to COPD or prior tuberculosis. Aspergillosis commonly presents in immunocompromised patients and on CT appears as a mass with soft-tissue attenuation within a lung cavity, displaying characteristics such as the air crescent sign indicating separation from the cavity wall and thickening of the wall and adjacent pleura."
 77,case_78,"Atelectasis,COPD","ATCS,COPD",combined/case_78/img,combined/case_78/case_78_desc.txt,Certain,Endobronchial valves for emphysema,"Case by: Daniel Patti
 Diagnosis Certain
 Diagnosis: Endobronchial valves for emphysema
@@ -2136,7 +2211,7 @@ localized atelectasis in the target lobe, matching the size of the lungs to
 the size of the thorax containing them, thereby causing improvement in lung 
 function, exercise tolerance, dyspnea, and quality of life​.
 
-Link: https://radiopaedia.org/cases/62056"
+Link: https://radiopaedia.org/cases/62056","The report describes severe emphysema in the lungs with no consolidation or pleural collection. It notes the presence of endobronchial valves in the right lower lobe. Additionally, bilateral lower zone atelectasis or scarring is observed. The heart size and cardiomediastinal contours are normal. The patient has increased work of breathing, cough, and decreased air entry bilaterally with expiratory wheeze loudest over the right base. The patient also has known severe COPD and is on home oxygen. The report mentions that the endobronchial valves are intended to cause localized atelectasis in the target lobe to improve lung function and quality of life."
 78,case_79,COPD,COPD,combined/case_79/img,combined/case_79/case_79_desc.txt,Certain,Saber sheath trachea,"Case by: Andrew Dixon
 Diagnosis Certain
 Diagnosis: Saber sheath trachea
@@ -2157,7 +2232,9 @@ Case Discussion: Narrowing of the tracheal width on frontal chest
 radiograph with preserved width on the lateral image consistent with saber 
 sheath trachea in a patient with COPD.
 
-Link: https://radiopaedia.org/cases/39969"
+Link: https://radiopaedia.org/cases/39969","Diagnosis: Saber sheath trachea
+-COPD
+Description: Tracheal narrowing on PA image down to approximately 7mm, preserved width on lateral image measuring around 22mm, distorted bronchovascular markings. Appearance consistent with COPD with saber sheath trachea."
 79,case_80,COPD,COPD,combined/case_80/img,combined/case_80/case_80_desc.txt,Certain,Severe emphysema,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: Severe emphysema
@@ -2181,7 +2258,7 @@ The greatest merit of the case is in illustrating the impact that bullous
 emphysema or other structural lung disease has on VQ scan appearances and 
 one's ability to interpret if a pulmonary embolism is present.
 
-Link: https://radiopaedia.org/cases/147856"
+Link: https://radiopaedia.org/cases/147856",The patient has severe bilateral emphysema with large volume bullous disease in the right upper and left lower lobes. There is also segmental collapse of the right middle lobe. The heart size is normal. This case illustrates the impact of bullous emphysema on VQ scan appearances and one's ability to interpret the presence of a pulmonary embolism.
 80,case_81,Lung Nodules,LNGN,combined/case_81/img,combined/case_81/case_81_desc.txt,Certain,Metastatic lung nodules,"Case by: Daniel Hyeong Seok Kim
 Diagnosis Certain
 Diagnosis: Metastatic lung nodules
@@ -2224,7 +2301,7 @@ Link: https://radiopaedia.org/cases/153711
 
 
 
-"
+","Metastatic lung nodules are observed in the patient with a history of gestational trophoblastic disease and choriocarcinoma. The lung metastases are consistent with choriocarcinoma metastasis. No pneumonic consolidation, effusion, or pneumothorax is identified. The cardiac size and central pulmonary vascularity appear normal, with no suspicious osseous lesions or free air in the upper abdomen. Choriocarcinoma is known to metastasize early to various organs such as the lungs, vagina, brain, and liver."
 81,case_82,Lung Nodules,LNGN,combined/case_82/img,combined/case_82/case_82_desc.txt,Almost Certain,Lung nodule - film edge,"Case by: Ian Bickle
 Diagnosis Almost Certain
 Diagnosis: Lung nodule - film edge
@@ -2269,7 +2346,7 @@ Satisfaction of search error: one identifies shoulder OA and left apical
 fibrosis, and then stops actively reviewing the image
 
 Link: https://radiopaedia.org/cases/59006
-"
+","The radiology report reveals a 2 cm well-defined opacity in the right upper lobe between the 1st and 2nd rib ends, indicating a lung nodule. Additionally, minor left apical fibrosis is noted. The report emphasizes the importance of thorough analysis in plain radiography reporting, highlighting the significance of not overlooking radiographic elements such as film edges. The discussion advises against clinical query blindness and projection bias, suggesting a comprehensive approach to interpreting the images. Lastly, the report cautions against satisfaction of search error, pointing out the need for a diligent review of all findings."
 82,case_83,Lung Nodules,LNGN,combined/case_83/img,combined/case_83/case_83_desc.txt,Almost Certain,Solitary pulmonary nodule - lung cancer,"Case by: Ian Bickle
 Diagnosis Almost Certain
 Diagnosis: Solitary pulmonary nodule - lung cancer
@@ -2299,7 +2376,7 @@ always check prior imaging - unnecessary anxiety and cost through CT
 scanning can be avoided if the mass has been there for years and has a 
 benign cause, such as a hamartoma
 
-Link: https://radiopaedia.org/cases/83778"
+Link: https://radiopaedia.org/cases/83778","The patient presents with a cough and a 3 cm left upper lobe mass in the perihilar region. The diagnosis indicates a solitary pulmonary nodule suspected to be lung cancer. The report emphasizes the need to consider lung cancer until proven otherwise, differentiating between a mass (>3 cm) and a nodule, and checking for the presence of only one nodule and any additional findings like an AP window node. Prior imaging is recommended to avoid unnecessary CT scans if the mass has benign characteristics."
 83,case_84,"Atelectasis,Lung Nodules","ATCS,LNGN",combined/case_84/img,combined/case_84/case_84_desc.txt,Almost Certain,Retrocardiac lung nodules (chest radiograph),"Case by: Dai Roberts
 Diagnosis Almost Certain
 Diagnosis: Retrocardiac lung nodules (chest radiograph)
@@ -2325,7 +2402,7 @@ alarm for lung metastasis.
 
 Link: https://radiopaedia.org/cases/80860
 
-"
+","The chest radiograph shows multiple nodules behind the heart in the left lower lobe, indicative of retrocardiac lung nodules. Linear atelectasis is also noted in the left lower zone. The presence of multiple rounded nodules raises concern for lung metastasis. Inversion of the image may aid in better visualization of the nodules. Close monitoring and further assessment are recommended."
 84,case_85,Lung Nodules,LNGN,combined/case_85/img,combined/case_85/case_85_desc.txt,Certian,Lung metastases,"Case by: Ian Bickle
 Diagnosis Certian
 Diagnosis: Lung metastases
@@ -2353,7 +2430,19 @@ Remember a lung nodule is termed a mass when 3 cm or greater.
 Head and neck malignancies are typically squamous cell carcinomas and often 
 cavitate when metastatic, although not in this case.
 
-Link: https://radiopaedia.org/cases/72076"
+Link: https://radiopaedia.org/cases/72076","Diagnosis: Lung metastases
+
+Description: Multiple lung nodules and masses in both lungs of variable size. 
+ No internal cavitation.
+
+Normal mediastinal contours.
+
+Heart size normal.
+
+Surgical clips in the left axilla.
+
+Case Discussion: Multiple nodules in both lungs of variable size with a 
+prior history of malignancy are virtually always metastases."
 85,case_86,"Calcifications,Lung Nodules","CLFS,LNGN",combined/case_86/img,combined/case_86/case_86_desc.txt,Certain,Nodular pulmonary amyloidosis,"Case by: R Mannava
 Diagnosis Certain
 Diagnosis: Nodular pulmonary amyloidosis
@@ -2383,7 +2472,7 @@ progression.
 Link: https://radiopaedia.org/cases/43564
 
 
-"
+","The radiology report reveals multiple differently sized pulmonary nodules, some of which are calcified, indicative of nodular pulmonary amyloidosis. The nodules have shown slow progression in size, number, and degree of calcification over the past seven years. Biopsy confirmed the presence of amyloidosis in one of the lung nodules, consistent with the diagnosis. Differential diagnoses such as calcifying metastases, granulomatous disease, or inhalational lung disease are not consistent with the findings and slow progression. The patient is asymptomatic, and the nodules were incidentally discovered on a chest radiograph."
 86,case_87,Lung Nodules,LNGN,combined/case_87/img,combined/case_87/case_87_desc.txt,Certain,Thyroid cancer metastasis to bone,"Case by: Safwat Mohammad Almoghazy
 Diagnosis Certain
 Diagnosis:Thyroid cancer metastasis to bone
@@ -2405,7 +2494,7 @@ Radiological work-up, including thyroid FNAC, confirmed the diagnosis of
 metastatic thyroid cancer.
 
 
-Link: https://radiopaedia.org/cases/54419"
+Link: https://radiopaedia.org/cases/54419","Thyroid cancer metastasis to bone, as evidenced by a large destructive osteolytic lesion in the distal right clavicle along with a soft tissue mass measuring 8 x 6 cm. Case discussion highlights the confirmation of metastatic thyroid cancer through radiological work-up, including thyroid FNAC, due to a known metastatic thyroid carcinoma to lungs and bones."
 87,case_88,Lung Nodules,LNGN,combined/case_88/img,combined/case_88/case_88_desc.txt,Certain,Tularemia,"Case by: Jeffrey P Kanne
 Diagnosis Certain
 Diagnosis: Tularemia
@@ -2435,7 +2524,7 @@ tularemia. Her only known exposure to animals was a recent trip to a zoo
 (unlikely to be the source in the author's opinion). Tularemia is considered 
 a reportable disease in many jurisdictions.
 
-Link: https://radiopaedia.org/cases/98465"
+Link: https://radiopaedia.org/cases/98465","The patient presented with fever and cough post a recent trip to the zoo. Chest radiograph revealed a small right basal lung nodule and right hilar lymph node enlargement. Tularemia, caused by Francisella tularensis, was diagnosed. Imaging findings typically include lymphadenopathy, lung nodules, masses, and consolidation. Differential diagnosis includes histoplasmosis, with exposure history crucial for accurate diagnosis. Prioritizing handling precautions is crucial due to detection methods involving serological testing and culture."
 88,case_89,Lung Nodules,LNGN,combined/case_89/img,combined/case_89/case_89_desc.txt,Almost Certain,Sarcoidosis,"Case by: Oliver Hennessy
 Diagnosis Almost Certain
 Diagnosis: Sarcoidosis
@@ -2464,7 +2553,7 @@ TB can be associated with upper lobe fibrosis as can silicosis.
 
 Lung nodules are usually present in cases of pneumoconiosis.
 
-Link: https://radiopaedia.org/cases/34388"
+Link: https://radiopaedia.org/cases/34388","The radiograph displays a coarse predominantly reticular infiltrate in both upper lobes with associated significant volume loss on both sides. No definite mediastinal or hilar abnormality is present. Heart size and shape are normal, and both pleural spaces are clear. The combination of calcified mediastinal nodes, lung fibrosis, nodules in a subpleural and along the fissures point towards sarcoidosis as the most likely diagnosis in a middle-aged woman."
 89,case_90,Lung Nodules,LNGN,combined/case_90/img,combined/case_90/case_90_desc.txt,Certain,Pulmonary hamartoma,"Case by : Abdallah AL Khateeb
 Diagnosis Certain
 Diagnosis: Pulmonary hamartoma
@@ -2482,7 +2571,9 @@ Case Discussion: A lung nodule with benign features containing popcorn like
 calcifications and fat density material is virtually diagnostic of a 
 pulmonary hamartoma.
 
-Link: https://radiopaedia.org/cases/44121"
+Link: https://radiopaedia.org/cases/44121","Diagnosis: Pulmonary hamartoma
+
+Description: A well-defined round opacity seen at the right lower lung zone, containing popcorn-like calcifications and fat density material."
 90,case_91,Lung Nodules,LNGN,combined/case_91/img,combined/case_91/case_91_desc.txt,Almost Certain,Lung cancer metastatic to brain,"Case by: Stefan Tigges
 Diagnosis Almost Certain
 Diagnosis: Lung cancer metastatic to brain
@@ -2500,7 +2591,7 @@ Case Discussion: The combination of findings (enhancing intra-axial masses
 with vasogenic edema) is characteristic of metastases, especially in a 
 patient with a lung mass.
 
-Link: https://radiopaedia.org/cases/159761"
+Link: https://radiopaedia.org/cases/159761","The report mentions a 4 cm mass in the posterior segment of the right upper lobe, lungs are otherwise clear. The combination of findings suggests metastases, especially in a patient with a lung mass."
 91,case_92,Lung Nodules,LNGN,combined/case_92/img,combined/case_92/case_92_desc.txt,Certain,Pulmonary blastoma,"Case by: Sophie Gregory
 Diagnosis Certain
 Diagnosis: Pulmonary blastoma
@@ -2526,7 +2617,7 @@ before proceeding to have a right middle and lower lobe lobectomy (histology
 below). Following surgery they then received adjuvant chemotherapy with 4 
 cycles of carboplatin and etoposide.
 
-Link: https://radiopaedia.org/cases/157970"
+Link: https://radiopaedia.org/cases/157970","The report indicates a large mass in the right lower lung zone, potentially malignant in nature, obstructing the right hemidiaphragm. Additionally, there are findings of hilar/mediastinal lymphadenopathy. The presence of a right lung biphasic pulmonary blastoma was confirmed through imaging and bronchoscopy biopsy. Treatment involved neoadjuvant chemo/radiotherapy followed by a right middle and lower lobe lobectomy and subsequent adjuvant chemotherapy."
 92,case_93,Lung Nodules,LNGN,combined/case_93/img,combined/case_93/case_93_desc.txt,Certain,Canonball metastases,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: Canonball metastases
@@ -2547,7 +2638,7 @@ malignancy.
 The lung nodules are typical of cannon ball metastases, most commonly 
 associated with renal cell carcinoma. 
 
-Link: https://radiopaedia.org/cases/87419"
+Link: https://radiopaedia.org/cases/87419","The patient has presented with dyspnea and a prior renal lesion. A well-demarcated lung nodules are observed in both lungs, suggestive of cannonball metastases commonly associated with renal cell carcinoma. No pleural effusion is noted. Further imaging from prior CT scans indicated a renal cell malignancy."
 93,case_94,Lung Nodules,LNGN,combined/case_94/img,combined/case_94/case_94_desc.txt,Certain,Healed varicella pneumonia,"Case by : Jayanth Keshavamurthy
 Diagnosis Certain
 Diagnosis: Healed varicella pneumonia
@@ -2577,7 +2668,11 @@ healed varicella pneumonia should be considered.  The patient has had prior
 varicella pneumonia in the past with extensive workup.
 
 Link: https://radiopaedia.org/cases/44612
-"
+","Diagnosis: Healed varicella pneumonia
+
+Description: Miliary lung nodules consistent with prior and healed varicella pneumonia.
+
+Case Discussion: The patient had prior varicella pneumonia in the past with extensive workup. No further tests were ordered based on this history, as the chest radiograph showed abnormal findings related to healed varicella pneumonia. Differential for miliary lung nodules should include calcified lymph nodes and other granulomas in the liver or spleen. If these features are absent, consider healed varicella pneumonia even without an accurate history."
 94,case_95,Lung Nodules,LNGN,combined/case_95/img,combined/case_95/case_95_desc.txt,Almost Certain,AIDS-related Kaposi sarcoma,"Case by: Rayyan Mardhiyah
 Diagnosis Almost Certain
 Diagnosis: AIDS-related Kaposi sarcoma
@@ -2654,7 +2749,7 @@ may be present in PJP.
 
 Link: https://radiopaedia.org/cases/85247
 
-"
+","Patient with AIDS-related Kaposi sarcoma presented with fever, cough, weight loss, and purple-brown papules on skin. Chest radiograph showed lung nodules and reticular opacities, initially suspected as pneumocystis jiroveci pneumonia. Histopathology confirmed disseminated Kaposi Sarcoma involving lungs. CT findings in thoracic region included flame-shaped nodules and ground glass opacities. Liver and spleen had hypo-attenuating nodules, distinct on ultrasound. Gastrointestinal involvement seen with submucosal lesions. Patient treated with chemotherapy and succumbed to complications."
 95,case_96,Lung Nodules,LNGN,combined/case_96/img,combined/case_96/case_96_desc.txt,Almost Certain,Excipient lung disease,"Case by : Stefan Tigges
 Diagnosis Almost Certain
 Diagnosis: Excipient lung disease
@@ -2677,7 +2772,7 @@ likely diagnosis. The nodules are a granulomatous response to the inert
 
 Link: https://radiopaedia.org/cases/95882
 
-"
+",A female patient with a 2-week history of dyspnea. CT scan shows innumerable small well-defined nodules in both lungs with confluent lingular nodules. No pneumothorax or pleural effusion observed. Likely diagnosis is excipient lung disease due to the patient's history of intravenous drug use involving crushed pills. Nodules are believed to be a granulomatous response to pill fillers.
 96,case_97,Lung Nodules,LNGN,combined/case_97/img,combined/case_97/case_97_desc.txt,Almost Certain,Miliary nodules,"Case by: Pir Abdul Ahad Aziz Qureshi
 Diagnosis Almost Certain
 Diagnosis: Miliary nodules
@@ -2697,7 +2792,15 @@ mm pulmonary nodules scattered throughout the lungs.
 Link:  https://radiopaedia.org/cases/84374
 
 
-"
+","Diagnosis Almost Certain
+Diagnosis: Miliary nodules
+
+Complaints of cough, weight loss, and low-grade fever.
+
+Innumerable tiny nodules dispersed in both lungs. 
+No mass, cavitation, or collapse noted.
+
+Miliary opacities are defined as innumerable, tiny 1 to 4 mm pulmonary nodules scattered throughout the lungs."
 97,case_98,Lung Nodules,LNGN,combined/case_98/img,combined/case_98/case_98_desc.txt,Almost Certain,Pulmonary hamartoma,"Case by: Hani M. Al Salam
 Diagnosis Almost Certain
 Diagnosis: Pulmonary hamartoma
@@ -2719,7 +2822,7 @@ and 6% of solitary pulmonary nodules.
 
 
 Link: https://radiopaedia.org/cases/45689
-"
+","The patient, a 70-year-old male, presented with an incidental finding of a left lower lobe nodule on routine chest radiography. The diagnosis almost certain is a pulmonary hamartoma, which is a benign neoplasm consisting of various tissue types. This type of tumor is common in the lung, representing around 8% of all lung neoplasms and 6% of solitary pulmonary nodules."
 98,case_99,Lung Nodules,LNGN,combined/case_99/img,combined/case_99/case_99_desc.txt,Certain,Septic emboli,"Case by: Stefan Tigges
 Diagnosis Certain
 Diagnosis: Septic emboli
@@ -2741,7 +2844,7 @@ Link: https://radiopaedia.org/cases/90393
 
 
 
-"
+","The patient, a 35-year-old female IV drug user, presents with fever. Imaging reveals multiple bilateral pulmonary nodules, some cavitary, indicative of septic pulmonary emboli. The distribution of the nodules suggests hematogenous spread of the pathology."
 99,case_100,Lung Nodules,LNGN,combined/case_100/img,combined/case_100/case_100_desc.txt,Certain,Sclerotic rib lesion simulating a pulmonary nodule,"Case by : Andrew Dixon
 Diagnosis Certain
 Diagnosis: Sclerotic rib lesion simulating a pulmonary nodule
@@ -2768,7 +2871,7 @@ Link: https://radiopaedia.org/cases/72512
 
 
 
-"
+","The radiology report describes a sclerotic rib lesion that simulates a pulmonary nodule in an 85-year-old male patient who recently underwent TAVI. A nodule is observed in the left mid zone, appearing to move relative to the lung but remaining connected to the anterior aspect of the left fourth rib on both PA and AP projections. This association with the rib is confirmed on prior TAVI planning CT scans. Sclerotic rib lesions can imitate pulmonary nodules, and comparing previous radiographs can help differentiate lesions within the rib from those in the lung."
 100,case_101,"Calcifications,Mesothelioma,Plueral Effusion","CLFS,MSTL,PLEF",combined/case_101/img,combined/case_101/case_101_desc.txt,Certain,Mesothelioma,"Case by : Davina Bates
 Diagnosis Certain
 Diagnosis: Mesothelioma
@@ -2800,7 +2903,7 @@ TTF1 negative
 
 Conclusion: Epithelioid Mesothelioma
 
-Link: https://radiopaedia.org/cases/90059"
+Link: https://radiopaedia.org/cases/90059","The radiology report shows an 80-year-old male presenting with increasing exertional dyspnea and chest tightness. Imaging reveals a large left pleural effusion with bilateral calcified pleural plaques. A surgical left pleural biopsy indicates the presence of invasive epithelioid mesothelioma. The tumor is characterized by atypical epithelioid mesothelial cells forming solid nests, with positive findings for CK5/6, Calretinin, and HBME1, and negative for TTF1."
 101,case_102,Mesothelioma,MSTL,combined/case_102/img,combined/case_102/case_102_desc.txt,Certain,Mesothelioma,"Case by: Frank Gaillard
 Diagnosis Certain
 Diagnosis: Mesothelioma
@@ -2829,7 +2932,7 @@ pleural plaques.
 
 DIAGNOSIS: malignant mesothelioma.
 
-Link: https://radiopaedia.org/cases/14237"
+Link: https://radiopaedia.org/cases/14237","The chest x-ray of the patient shows opacification in the right costophrenic angle, thickening of the right paratracheal stripe, and evidence of previous thoracotomy with partial resection of the right posterior 7th rib. The findings indicate the presence of malignant mesothelioma with aggressive behavior, extending into the chest wall and liver. Histological analysis confirms the diagnosis of malignant mesothelioma, including organizing fibrinous pleurisy, epithelioid malignant mesothelioma, sarcomatoid malignant mesothelioma, and fibrous pleural plaques."
 102,case_103,"Mesothelioma,Plueral Effusion","MSTL,PLEF",combined/case_103/img,combined/case_103/case_103_desc.txt,Certain,Mesothelioma,"Case by : Mohammad Osama Hussein yonso
 Diagnosis Certain
 Diagnosis: Mesothelioma
@@ -2851,7 +2954,7 @@ Description: The left apical lung zone demonstrates pleural thickening.
 Case Discussion: Conclusion of the pathological study: malignant 
 mesothelioma, epithelial type, grade II.
 
-Link: https://radiopaedia.org/cases/27752"
+Link: https://radiopaedia.org/cases/27752","The radiology report indicates a diagnosis of Mesothelioma with associated Pleural Effusion in a 65-year-old male patient presenting with left shoulder pain, weight loss, and loss of appetite. The report describes pleural thickening in the left apical lung zone and notes the development of moderate left pleural effusion following a biopsy attempt. Additionally, there is mentioned an air-fluid level post a left pleural peeling operation resulting in hydropneumothorax. Pathological study findings suggest malignant mesothelioma of epithelial type, grade II."
 103,case_104,Mesothelioma,MSTL,combined/case_104/img,combined/case_104/case_104_desc.txt,Almost Certain,Mesothelioma,"Case by: Vikas Shah
 Diagnosis Almost Certain
 Diagnosis: Mesothelioma
@@ -2872,7 +2975,7 @@ type of encasing pleural thickening is almost pathognomonic of mesothelioma,
 and the biopsies confirmed this to be the case. Lymphoma and pleural 
 metastases from breast and lung cancer can also cause this pattern.
 
-Link: https://radiopaedia.org/cases/57005"
+Link: https://radiopaedia.org/cases/57005","The radiology report indicates findings suggestive of Mesothelioma in a 65-year-old male patient with a history of progressive shortness of breath. The right lung shows nodular tissue encasing, particularly along the lateral thoracic margin and medial mediastinal surface, with no indication of bone destruction. The report considers the patient's previous ship-building occupation and exposure to asbestos as significant factors in diagnosing Mesothelioma, noting that findings of pleural thickening support this diagnosis. Additionally, the report mentions that other conditions like lymphoma and pleural metastases from breast and lung cancer can also present similarly."
 104,case_105,Mesothelioma,MSTL,combined/case_105/img,combined/case_105/case_105_desc.txt,Almost Certain,Mesothelioma,"Case by: Paul Leong
 Diagnosis Almost Certain
 Diagnosis: Mesothelioma
@@ -2898,7 +3001,7 @@ particular case).
 CT guided biopsy of the pleural mass was performed, confirming malignant 
 mesothelioma. 
 
-Link: https://radiopaedia.org/cases/26805"
+Link: https://radiopaedia.org/cases/26805","The patient presented with a fall and a query for rib fracture. The radiology report shows a lobulated pleural opacity encasing the right lung, with associated volume loss. The findings are indicative of pleural mesothelioma, likely due to underlying asbestos-related pleural disease. Further testing through a CT-guided biopsy confirmed malignant mesothelioma."
 105,case_106,"Atelectasis,Mesothelioma","ATCS,MSTL",combined/case_106/img,combined/case_106/case_106_desc.txt,Certain,Epithelioid mesothelioma,"Case by: Bruno Di Muzio
 Diagnosis Certain
 Diagnosis: Epithelioid mesothelioma
@@ -2953,7 +3056,23 @@ Conclusion: Right pleural lesion, core biopsy: Epithelioid mesothelioma.
 After MDM discussion (Stage IV T2 cN1 M1 (extra-thoracic lymph node), this 
 patient was offered chemotherapy (Carboplatin/pemetrexed). 
 
-Link: https://radiopaedia.org/cases/64658"
+Link: https://radiopaedia.org/cases/64658","Diagnosis: Epithelioid mesothelioma
+- Round Atelectasis
+
+Description:
+- Persistent blunting of the right costophrenic recess due to longstanding pleural thickening.
+- Ill-defined opacities in the right mid to lower zone with known round atelectasis.
+- No evidence of acute pulmonary edema.
+
+Case Discussion:
+- Patient with previous asbestos exposure and chronic round atelectasis.
+- CTA revealed pleural mass and lymphadenopathy, raising suspicion of mesothelioma.
+- US-guided core biopsy showed malignant tumor of atypical epithelioid cells.
+- Immunostains confirmed diagnosis of malignant mesothelioma.
+
+Conclusion: Epithelioid mesothelioma.
+
+Treatment: Chemotherapy (Carboplatin/pemetrexed)."
 106,case_107,Mesothelioma,MSTL,combined/case_107/img,combined/case_107/case_107_desc.txt,Almost Certain,Mesothelioma,"Case by : Ian Bickle
 Diagnosis Almost Certain
 Diagnosis: Mesothelioma
@@ -2981,7 +3100,7 @@ lung with resultant volume loss.
 
 Treatment options are limited.  Prognosis is poor.
 
-Link: https://radiopaedia.org/cases/30112"
+Link: https://radiopaedia.org/cases/30112","The patient, a former shipyard worker, presents with progressive shortness of breath and weight loss. The radiology findings show circumferential pleural thickening in the right thoracic cavity with substantial volume loss within the right hemithorax, indicative of Mesothelioma. Mesothelioma is an aggressive malignant tumor associated with asbestos exposure, commonly affecting individuals in industries like shipbuilding. The thickening of the pleura encases the lung, leading to poor prognosis and limited treatment options."
 107,case_108,Mesothelioma,MSTL,combined/case_108/img,combined/case_108/case_108_desc.txt,Almost Certain,Mesothelioma,"Case by : Evangeline Collins
 Diagnosis Almost Certain
 Diagnosis: Mesothelioma
@@ -3005,7 +3124,17 @@ biopsy was performed.
 
 Histology confirmed sarcomatoid mesothelioma.
 
-Link: https://radiopaedia.org/cases/182519"
+Link: https://radiopaedia.org/cases/182519","Diagnosis: Mesothelioma
+
+Patient Presentation: Ex-smoker, right-sided chest pain with cough and shortness of breath.
+
+Description: Right-sided lobulated and nodular pleural thickening, with volume loss.
+
+Features highly suspicious for pleural malignancy. 
+
+CT Thorax with contrast for further evaluation advised.
+
+Ultrasound-guided biopsy of right-sided pleura confirmed sarcomatoid mesothelioma."
 108,case_109,Mesothelioma,MSTL,combined/case_109/img,combined/case_109/case_109_desc.txt,Certain,Epithelioid mesothelioma,"Case by: Bruno Di Muzio
 Diagnosis Certain
 Diagnosis: Epithelioid mesothelioma
@@ -3053,7 +3182,7 @@ suspicious for but not diagnostic of mesothelioma.
 A second opinion from a different pathologist: features are in keeping with 
 malignant mesothelioma, epithelioid subtype. 
 
-Link: https://radiopaedia.org/cases/75229"
+Link: https://radiopaedia.org/cases/75229","The radiology report indicates diffuse left hemithorax nodular pleural thickening with a component of pleural effusion that cannot be excluded. Previous surgical intervention is noted with three small coils in the left hemithorax. Enlarged left paratracheal stripe suggests lymphadenopathy or pleural mass component. The patient had a left pleural rind biopsy showing atypical mesothelial proliferation suspicious for mesothelioma, epithelioid subtype. A second opinion confirms features consistent with malignant mesothelioma. Further imaging or CT scan recommended."
 109,case_110,Mesothelioma,MSTL,combined/case_110/img,combined/case_110/case_110_desc.txt,Certain,Mesothelioma - sarcomatoid,"Case by : Frank Gaillard
 Diagnosis Certain
 Diagnosis: Mesothelioma - sarcomatoid
@@ -3075,7 +3204,7 @@ osteosarcoma.
 
 The clinical and radiological impression strongly favors a mesotheliom.
 
-Link: https://radiopaedia.org/cases/8705"
+Link: https://radiopaedia.org/cases/8705","The radiology findings reveal a right ""white lung"" causing displacement of the heart to the left and diaphragm downward, indicative of a sarcomatoid tumor involving both the parietal and visceral pleura. The histology shows a sarcomatoid tumor with osteoid and calcification, with a possible differential diagnosis of carcinosarcoma, sarcomatoid mesothelioma with osteoid formation, or osteosarcoma. The clinical and radiological impression strongly suggests mesothelioma."
 110,case_111,Mesothelioma,MSTL,combined/case_111/img,combined/case_111/case_111_desc.txt,Almost Certain,Sarcomatoid mesothelioma,"Case by : Maxime St - Amant
 Diagnosis Almost Certain
 Diagnosis: Sarcomatoid mesothelioma
@@ -3103,7 +3232,7 @@ approximately 10 % of pulmonary mesothelioma. Histologically, the findings
 are similar to histiocytoma. It contains spindle cells and must be 
 differentiated from sarcoma.
 
-Link: https://radiopaedia.org/cases/20730"
+Link: https://radiopaedia.org/cases/20730","A well-defined mass in projection of the right upper lobe is seen on the frontal chest X-ray, possibly calcified, and associated with a diaphragmatic peak sign. The lateral view shows potentially three calcified pleural masses. Biopsy confirmed sarcomatoid mesothelioma, the rarest subtype of mesothelioma, accounting for approximately 10% of cases. Histologically, it resembles histiocytoma and contains spindle cells."
 111,case_112,Mesothelioma,MSTL,combined/case_112/img,combined/case_112/case_112_desc.txt,Certain,Primary peritoneal epithelioid mesothelioma,"Case by : Jan Frank Gerstenmaier
 Diagnosis Certain
 Diagnosis: Primary peritoneal epithelioid mesothelioma
@@ -3129,7 +3258,7 @@ clinical and radiologal features, and the correct diagnosis was confirmed
 with special stains (calretinin, CK5/6, mesothelin and WT1) which are 
 expressed in the majority of malignant mesotheliomas.
 
-Link: https://radiopaedia.org/cases/31361"
+Link: https://radiopaedia.org/cases/31361","The chest radiograph shows a new mass-like opacity in the right costophrenic angle with a nodular outline of the right diaphragm. The lungs and pleural spaces are clear, and the cardiomediastinal contours are normal. A small right diaphragmatic eventration is noted. The initial histological diagnosis of metastatic adenocarcinoma was revised to primary peritoneal epithelioid mesothelioma based on clinical, radiological features, and special stains."
 112,case_113,Mesothelioma,MSTL,combined/case_113/img,combined/case_113/case_113_desc.txt,Almost Certain,Malignant pleural mesothelioma,"Case by : Craig Hacking
 Diagnosis Almost Certain
 Diagnosis: Malignant pleural mesothelioma
@@ -3154,7 +3283,7 @@ The patient's husband worked with asbestos.
 The patient elected for conservative management given significant 
 co-morbidities.
 
-Link: https://radiopaedia.org/cases/40143"
+Link: https://radiopaedia.org/cases/40143","The radiology report reveals extensive pleural thickening and fluid on the right side, potentially indicating empyema or malignancy. There is also patchy consolidation in the right lower zone, likely in the middle and lower lobes. The heart is noted to be enlarged. A biopsy confirmed the diagnosis of malignant pleural mesothelioma. The patient's history suggests a possible link to asbestos exposure. Conservative management was chosen due to significant co-morbidities. Additionally, a CT scan is recommended for further evaluation."
 113,case_114,"Mesothelioma,Plueral Effusion","MSTL,PLEF",combined/case_114/img,combined/case_114/case_114_desc.txt,Certain,Mesothelioma - subtle nodular thickening of the interlobar fissures,"Case by: Bruno Di Muzio
 Diagnosis Certain
 Diagnosis: Mesothelioma - subtle nodular thickening of the interlobar fissures
@@ -3179,7 +3308,7 @@ radiograph and cytology showed some malignant cells, a further pleural
 biopsy confirmed mesothelioma. Note that there are no calcified pleural 
 plaques. 
 
-Link: https://radiopaedia.org/cases/60153"
+Link: https://radiopaedia.org/cases/60153","The radiology report indicates the presence of Mesothelioma with subtle nodular thickening of the interlobar fissures and a small right pleural effusion. Imaging shows faint airspace opacities in the base of the right lung, with the left lung appearing clear. The patient's cardiomediastinal contours are normal. Recurrent pleural effusion is noted on the right side. Early CT findings of mesothelioma in the right hemithorax show micronodules covering the hemidiaphragm and thickening of the fissures. A pleural tap and subsequent biopsy confirmed the presence of mesothelioma without calcified pleural plaques."
 114,case_115,Mesothelioma,MSTL,combined/case_115/img,combined/case_115/case_115_desc.txt,Probable,Mesothelioma,"Case by: Jeremy Jones
 Diagnosis Probable
 Diagnosis: Mesothelioma
@@ -3198,7 +3327,7 @@ investigation or treatment.
 
 Link: https://radiopaedia.org/cases/13336
 
-"
+","The patient, a male, presented with shortness of breath and left chest wall pain. A rapid growth of the left pleural mass was observed, along with associated chest pain. Imaging findings on the chest x-ray were consistent with mesothelioma. Despite the diagnosis, the patient declined further investigation or treatment."
 115,case_116,"Calcifications,Mesothelioma,Plueral Effusion","CLFS,MSTL,PLEF",combined/case_116/img,combined/case_116/case_116_desc.txt,Probable,Pleural mesothelioma - metastatic,"Case by: Henry Knipe
 Diagnosis Probable
 Diagnosis: Pleural mesothelioma - metastatic
@@ -3227,7 +3356,7 @@ presentation x-ray and on the post-thoracentesis x-ray incomplete expansion
 of the left apex with the peripherally density represents lung entrapment. 
 Histology results are not available for this patient.
 
-Link: https://radiopaedia.org/cases/153156"
+Link: https://radiopaedia.org/cases/153156","The radiology report suggests a probable diagnosis of pleural mesothelioma with metastasis, indicated by calcification and pleural effusion. The patient presented with breathlessness. Imaging shows a white-out in the left hemi-thorax, tracheal and mediastinal deviation to the right, and calcified pleural plaques on the right. Left pleural effusion was partially drained, revealing a small left pneumothorax with incomplete re-expansion of the left upper lobe. Peripheral increased density in the left upper lobe suggests lung entrapment. The CT scan indicates metastatic disease centered on the left pleural space, pointing towards mesothelioma as the likely primary condition. Histology results are pending."
 116,case_117,Mesothelioma,MSTL,combined/case_117/img,combined/case_117/case_117_desc.txt,Almost Certain,Mesothelioma,"Case by: Ian Bickle
 Diagnosis Almost Certain
 Diagnosis: Mesothelioma
@@ -3248,7 +3377,7 @@ radiograph appearances are evident with circumferential pleural thickening
 extending onto the mediastinal surface with volume loss as the hemithorax 
 is encased by the pleural thickening.
 
-Link: https://radiopaedia.org/cases/63133"
+Link: https://radiopaedia.org/cases/63133","Patient presents with shortness of breath and weight loss. Left hemithorax shows reduced volume and circumferential pleural thickening, consistent with mesothelioma. Right lung appears clear. Case discussion indicates known mesothelioma with characteristic radiograph findings."
 117,case_118,Mesothelioma,MSTL,combined/case_118/img,combined/case_118/case_118_desc.txt,Almost Certain,Mesothelioma,"Case by: Ahmed Abdrabou
 Diagnosis Almost Certain
 Diagnosis: Mesothelioma
@@ -3266,7 +3395,7 @@ contralateral pulmonary metastasis (pathologically proved)
 
 Differential diagnosis includes: pleural metastases
 
-Link: https://radiopaedia.org/cases/22607"
+Link: https://radiopaedia.org/cases/22607","The patient, a 55-year-old female, presented with dyspnea and expectoration. The radiology findings show an opaque right hemithorax sparing a small central area of aerated lung. The diagnosis is almost certain to be Pleural mesothelioma with lymph nodes and contralateral pulmonary metastasis, as pathologically proved. Differential diagnosis includes pleural metastases."
 118,case_119,"Mesothelioma,Plueral Effusion","MSTL,PLEF",combined/case_119/img,combined/case_119/case_119_desc.txt,Almost Certain,Mesothelioma,"Case by: Hani M Al Salam
 Diagnosis Almost Certain
 Diagnosis: Mesothelioma
@@ -3301,7 +3430,9 @@ thickening.
 Left pleural biopsy reveled invasive malignant neoplasm consistent with 
 mesothelioma, epithelioid type.
 
-Link: https://radiopaedia.org/cases/39099"
+Link: https://radiopaedia.org/cases/39099","- Large left sided pleural effusion
+- Very subtle left sided pleural thickening noted
+- Left pleural biopsy revealed invasive malignant neoplasm consistent with mesothelioma, epithelioid type"
 119,case_120,"Mesothelioma,Plueral Effusion","MSTL,PLEF",combined/case_120/img,combined/case_120/case_120_desc.txt,Certain,Malignant pleural mesothelioma,"Case by : Reem Yassine
 Diagnosis Certain
 Diagnosis: Malignant pleural mesothelioma
@@ -3332,7 +3463,7 @@ atelectasis of the lower lobes, pleural plaques and pleural fibrosis.
 
 Link: https://radiopaedia.org/cases/182677
 
-"
+","The patient presented with a cough and was diagnosed with malignant pleural mesothelioma with a right-sided pleural effusion. The chest imaging revealed a dense lower zone opacity with lobulated peripheral soft-tissue encasing the lung. The findings of unilateral diffuse or nodular pleural thickening, unilateral pleural effusion, and pleural studding were consistent with MPM. Radiation features suggestive of asbestos exposure included round atelectasis of the lower lobes, pleural plaques, and pleural fibrosis."
 120,case_121,Plueral Effusion,PLEF,combined/case_121/img,combined/case_121/case_121_desc.txt,Certain,Pleural effusion,"Case by: Mohammad Osama Hussein Yonso
 Diagnosis Certain
 Diagnosis: Pleural effusion
@@ -3366,7 +3497,7 @@ Fever and cough with no improvement by an antibiotic, TB infection should
 be considered as a cause. 
 
 Link: https://radiopaedia.org/cases/87760
-"
+","Patient presents with fever and cough, showing mild improvement with previous medication. On examination, decreased air entry in the left lower zone. Radiology findings reveal mild bilateral hilar prominence with left-sided mild pleural effusion. Normal cardiac size and configuration also noted. Pleural effusion described as excess fluid accumulation in the pleural space. Consideration of TB infection as a potential cause due to persistent symptoms."
 121,case_122,Plueral Effusion,PLEF,combined/case_122/img,combined/case_122/case_122_desc.txt,Certain,Pleural effusion,"Case by: Vivek Pai
 Diagnosis Certain
 Diagnosis: Pleural effusion
@@ -3421,7 +3552,7 @@ less prominent or even absent in the presence of underlying lung pathology
 (eg, atelectasis) or contralateral hemithorax abnormality.
 
 Link: https://radiopaedia.org/cases/27112
-"
+","The radiological findings indicate a homogenous opacification in the right lower zone with tracking along the lateral chest wall, leading to obliteration of the right costophrenic angle, consistent with a right-sided pleural effusion. Additionally, fibrotic opacities in the right apical zone suggest an old healed infective etiology. The effusion is causing slight elevation of the hemidiaphragm and spilling over into the most dependent costophrenic sulci. Blunting of the lateral costophrenic angle is seen, indicative of the presence of a minimal amount of fluid. Further accumulation of pleural fluid can lead to a meniscus-shaped contour and partial or complete obliteration of the diaphragmatic contour, known as the silhouette sign. In severe cases, a large free pleural effusion can cause an opaque hemithorax with mediastinal shift."
 122,case_123,Plueral Effusion,PLEF,combined/case_123/img,combined/case_123/case_123_desc.txt,Certain,Pleural effusion,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: Pleural effusion
@@ -3453,7 +3584,7 @@ circumstances.
 
 Link: https://radiopaedia.org/cases/26730
 
-"
+","The patient presents with shortness of breath and dullness over the left thoracic cavity. Radiological findings show almost complete opacification of the left hemithorax with a meniscus laterally. The trachea is markedly pushed to the right due to mass effect, confirming a large pleural effusion. The report emphasizes the importance of recognizing the white out of the hemithorax in pleural effusion cases. Ultrasound may be used for assessment and guided drainage, while CT can offer further investigation into the underlying cause, depending on clinical circumstances."
 123,case_124,Plueral Effusion,PLEF,combined/case_124/img,combined/case_124/case_124_desc.txt,Certain,Pleural effusion,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: Pleural effusion
@@ -3483,7 +3614,7 @@ It will also have meniscus indicating fluid in the pleural space.
 
 Consolidation, collapse and a pneumonectomy will not have these features.
 
-Link: https://radiopaedia.org/cases/32885"
+Link: https://radiopaedia.org/cases/32885","The radiology report reveals a large left-sided pleural effusion in a 55-year-old female presenting with progressive shortness of breath over the past week. The presence of a well-demonstrated meniscus on the superolateral aspect indicates fluid in the pleural space, causing midline shift. The report emphasizes the classic signs of a pleural effusion, including the 'pushing' of the mediastinum away from it and the presence of a meniscus. Other differential diagnoses like consolidation, collapse, and pneumonectomy are ruled out due to the specific features observed in the imaging."
 124,case_125,"Atelectasis,Cardiomegaly,Plueral Effusion","ATCS,CRDM,PLEF",combined/case_125/img,combined/case_125/case_125_desc.txt,Certain,Pleural effusion,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: Pleural effusion
@@ -3509,7 +3640,13 @@ aspect.
 In the erect position, this meniscus is the characteristic feature of an 
 effusion. 
 
-Link: https://radiopaedia.org/cases/50364"
+Link: https://radiopaedia.org/cases/50364","Diagnosis: Pleural effusion, Mild Cardiomegaly, Right basal compressive atelectasis.
+
+Patient Presentation: Short history of progressive shortness of breath.
+
+Description: Mild cardiomegaly. Moderate right-sided pleural effusion. Right basal compressive atelectasis. Left lung clear.
+
+Case Discussion: A very nice example of a meniscus observed in pleural effusions, with the edge of the effusion tapering upwards at the lateral aspect. In the erect position, this meniscus is the characteristic feature of an effusion."
 125,case_126,Plueral Effusion,PLEF,combined/case_126/img,combined/case_126/case_126_desc.txt,Certain,Pleural effusion,"Case by: Sarmad Aslam
 Diagnosis Certain
 Diagnosis: Pleural effusion
@@ -3529,7 +3666,7 @@ transudative and exudative causes of pleural effusions.
 
 Link: https://radiopaedia.org/cases/82413
 
-"
+",The radiology report indicates a diagnosis of pleural effusion in a 50-year-old female presenting with progressive shortness of breath over a few weeks. The report describes a large pleural effusion on the left side with mediastinal shift. The right lung appears clear. Light's criteria are recommended for determining the etiology of the pleural effusions.
 126,case_127,Plueral Effusion,PLEF,combined/case_127/img,combined/case_127/case_127_desc.txt,Certain,,"Case by: Leonardo Lustosa
 Diagnosis Certain
 
@@ -3559,7 +3696,7 @@ fluid in the pleural cavity, it can be caused by many different conditions.
 
 Link: https://radiopaedia.org/cases/87524
 
-"
+","The report confirms a diagnosis of pleural effusion, specifically mentioning a small effusion. The left costophrenic angle shows blunting with a visible meniscus on the left chest wall. Pleural effusion is defined as an abnormal buildup of fluid in the pleural cavity. Further clinical correlation is essential to identify the specific characteristics of the fluid and to determine the underlying cause."
 127,case_128,"Cardiomegaly,Plueral Effusion","CRDM,PLEF",combined/case_128/img,combined/case_128/case_128_desc.txt,Certain,Subpulmonic pleural effusion,"Case by: RMH Core Conditions
 Diagnosis Certain
 Diagnosis: Subpulmonic pleural effusion
@@ -3580,7 +3717,7 @@ seen only on an erect projection. Rather than layering laterally and
 blunting the costophrenic angle, the pleural fluid lies almost exclusively 
 between the lung base and the diaphragm. 
 
-Link: https://radiopaedia.org/cases/34412"
+Link: https://radiopaedia.org/cases/34412","The radiology report confirms the presence of a moderate-sized right basal and right subpulmonic pleural effusion in a male patient with end-stage kidney disease and fluid overload. Additionally, there is noted mild cardiomegaly. Subpulmonic effusion is described as pleural fluid located between the lung base and the diaphragm, visible only on an erect projection."
 128,case_129,Plueral Effusion,PLEF,combined/case_129/img,combined/case_129/case_129_desc.txt,Certain,Lamellar pleural effusion,"Case by: Keshaw Kumar
 Diagnosis Certain
 Diagnosis: Lamellar pleural effusion
@@ -3602,7 +3739,7 @@ pleural effusion on the left. Chest ultrasound confirmed the pleural
 effusion, and US-guided diagnostic aspiration was suggestive of tuberculous 
 effusion.
 
-Link: https://radiopaedia.org/cases/173326"
+Link: https://radiopaedia.org/cases/173326","The patient, a 35-year-old male, presented with left chest pain. Intrathoracic soft-tissue attenuation was observed paralleling the left rib cage, extending around the left lung base to the left paraspinal region. The lungs were clear. The chest X-ray finding suggests lamellar pleural effusion on the left, confirmed by chest ultrasound. US-guided diagnostic aspiration indicated a tuberculous effusion."
 129,case_130,Plueral Effusion,PLEF,combined/case_130/img,combined/case_130/case_130_desc.txt,Certain,Massive pleural effusion with mediastinal shift,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: Massive pleural effusion with mediastinal shift
@@ -3622,7 +3759,7 @@ Case Discussion: This image is of a huge malignant pleural effusion to
 illustrate the mediastinal shift that occurs from a large volume of pleural 
 fluid.
 
-Link: https://radiopaedia.org/cases/88288"
+Link: https://radiopaedia.org/cases/88288","Massive pleural effusion with mediastinal shift observed in a patient with lung cancer presenting with shortness of breath. Significant left-sided pleural effusion noted, causing displacement of tracheal and mediastinal structures to the right. Emphysematous changes seen in the right lung. Findings consistent with a large malignant pleural effusion leading to mediastinal shift."
 130,case_131,Plueral Effusion,PLEF,combined/case_131/img,combined/case_131/case_131_desc.txt,Certain,Metastatic pleural effusion due to lung adenocarcinoma,"Case by: Jennifer Luna
 Diagnosis Certain
 Diagnosis: Metastatic pleural effusion due to lung adenocarcinoma
@@ -3661,7 +3798,13 @@ presence of malignant pleural effusion equates to M1a. The overall IASLC
 
 Link: https://radiopaedia.org/cases/95376
 
-"
+","Diagnosis: Metastatic pleural effusion due to lung adenocarcinoma
+
+Description: Large opacity of the right hilar, suprahilar and upper zone region consistent with primary lung cancer. Right lower zone opacified suggesting right lower lobe collapse or a loculated pleural effusion.
+
+Case Discussion: Chest x-ray shows mediastinal shift and inferior displacement of right hemidiaphragm due to loculated pleural effusion. Pleural taps revealed malignant cells consistent with lung adenocarcinoma. Evolution from simple pleural effusion to a loculated effusion observed.
+
+Cancer staging: Tumor size (>7cm) corresponds to T4, contralateral mediastinal lymph nodes involvement to N3, and presence of malignant pleural effusion to M1a. Overall staging as per IASLC 8th edition - IVa."
 131,case_132,Plueral Effusion,PLEF,combined/case_132/img,combined/case_132/case_132_desc.txt,Almost Certain,Bilateral pleural effusion,"Case by: Mohammad Osama Hussein Yonso
 Diagnosis Almost Certain
 Diagnosis: Bilateral pleural effusion
@@ -3690,7 +3833,17 @@ The patient was referred to HMC and diagnosed to have extrapulmonary TB
 A control chest X-ray was done after 2 months and showed improvement in the 
 pleural effusion
 
-Link: https://radiopaedia.org/cases/176785"
+Link: https://radiopaedia.org/cases/176785","Diagnosis Almost Certain: Bilateral pleural effusion
+
+Description: Mild bilateral pleural effusion noted
+
+After Control Image: Minimal blunting of the RT CP angle indicates minimal RT pleural effusion
+
+Case Discussion: Chest X-ray showing mild bilateral pleural effusion
+
+Extrapulmonary TB diagnosed after referral to HMC (ongoing treatment)
+
+Control chest X-ray after 2 months showed improvement in the pleural effusion"
 132,case_133,Plueral Effusion,PLEF,combined/case_133/img,combined/case_133/case_133_desc.txt,Almost Certain,Pleural effusion - metastatic breast cancer,"Case by: Bruno Di Muzio
 Diagnosis Almost Certain
 Diagnosis: Pleural effusion - metastatic breast cancer
@@ -3716,7 +3869,20 @@ This patient had known history of left-sided mastectomy due to breast
 carcinoma and CT chest confirmed pulmonary and pleural metastases 
 (not shown).
 
-Link: https://radiopaedia.org/cases/165724"
+Link: https://radiopaedia.org/cases/165724","Diagnosis: Pleural effusion - metastatic breast cancer
+
+Patient Presentation: SOB
+
+Description: Large right-sided effusion, mild deviation of the mediastinal 
+structures towards the left.
+
+Port-a-Cath in situ.
+
+Evidence of unilateral mastectomy and breast implant on the left.
+
+Case Discussion: Large right-sided pleural effusion in a patient with 
+evidence of unilateral mastectomy and central line. These features concern 
+for metastatic disease to chest as the probable cause of the effusion."
 133,case_134,Plueral Effusion,PLEF,combined/case_134/img,combined/case_134/case_134_desc.txt,Almost Certain,Right hemithorax white-out: pleural effusion,"Case by: Roberto Schubert
 Diagnosis Almost Certain
 Diagnosis: Right hemithorax white-out: pleural effusion
@@ -3756,7 +3922,7 @@ large pleural effusion (in this case due to a pulmonary malignancy) and
 demonstrates the signs which enable it to be confidently distinguished from 
 collapse or consolidation of the right lung. 
 
-Link: https://radiopaedia.org/cases/16075"
+Link: https://radiopaedia.org/cases/16075","The radiographic findings reveal a complete white-out of the right hemithorax, indicating a pleural effusion. There are signs of positive mass effect on the mediastinum, with leftward shift of the trachea and azygo-esophageal recess, along with splaying of the right ribs. The lateral projection shows visibility of only the left pleural cavity. These features are consistent with a very large pleural effusion, potentially due to a pulmonary malignancy, distinguishing it from other lung conditions like collapse or consolidation."
 134,case_135,Plueral Effusion,PLEF,combined/case_135/img,combined/case_135/case_135_desc.txt,Almost Certain,Pleural tumor and effusion,"Case by: Wayland Wang
 Diagnosis Almost Certain
 Diagnosis: Pleural tumor and effusion
@@ -3785,7 +3951,7 @@ plaques indicating asbestos exposure, missing ribs indicating either
 metastases or previous surgery, and surgical clues such as an absent breast 
 shadow, axillary surgical clips, etc.
 
-Link: https://radiopaedia.org/cases/50751"
+Link: https://radiopaedia.org/cases/50751","The radiological findings reveal extensive pleural opacity on the left side encasing the lung and extending onto the mediastinal surface, typical for malignant pleural disease. There is an interstitial opacity in the remaining aerated lung in the left upper zone. The cardiomediastinal contours are obscured on the left. The report indicates the presence of a pleural tumor and effusion due to past history of mesothelioma, as seen with the appearance of pleural thickening encasing the left lung. The right lung and pleural space appear clear. Further investigation and attention are advised due to the suspicious findings of the pleural opacity."
 135,case_136,Plueral Effusion,PLEF,combined/case_136/img,combined/case_136/case_136_desc.txt,Certain,Pneumoperitoneum - small,"Case by: Leonardo Lustosa
 Diagnosis Certain
 Diagnosis: Pneumoperitoneum - small
@@ -3823,7 +3989,7 @@ to the placement of a thoracic tube. The left chest wall and the diaphragm
 were perforated. Both radiographic findings can be related to the known 
 trauma.
 
-Link: https://radiopaedia.org/cases/98910"
+Link: https://radiopaedia.org/cases/98910","The thorax radiograph of the patient revealed a small pneumoperitoneum, with a small amount of gas below the diaphragm bilaterally. Additionally, there was noted blunting of the left costophrenic angle, indicating a small pleural effusion. The pneumoperitoneum is highlighted by white arrowheads in the images, while the blunting of the left costophrenic angle is marked by a red dotted line. The patient had multiple knife injuries resulting in the placement of a thoracic tube, indicating trauma as the likely cause of these findings."
 136,case_137,Plueral Effusion,PLEF,combined/case_137/img,combined/case_137/case_137_desc.txt,Certain,Azygos fissure effusion,"Case by: Pir Abdul Ahad Aziz Qureshi
 Diagnosis Certain
 Diagnosis: Azygos fissure effusion
@@ -3849,7 +4015,7 @@ ultrasound-guided pleural tap. No further imaging was done.
 
 Link: https://radiopaedia.org/cases/47713
 
-"
+","The radiology report indicates the presence of pleural effusion on the right side, obscuring the right hemidiaphragm and extending into the azygos fissure. The patient presented with shortness of breath. The azygos lobe can be visualized on the chest x-ray, appearing as a fine, convex line with a teardrop shape. The effusion led to the performance of an ultrasound-guided pleural tap. No additional imaging was conducted."
 137,case_138,Plueral Effusion,PLEF,combined/case_138/img,combined/case_138/case_138_desc.txt,Almost Certain,Pleural effusion,"Case by: Kevan English
 Diagnosis Almost Certain
 Diagnosis: Pleural effusion
@@ -3883,7 +4049,7 @@ A combination of cefepime and azithromycin used for treatment improved her
 condition.
 
 Link: https://radiopaedia.org/cases/182020
-"
+","The radiology report indicates a large cardiac silhouette, right lower lobe interstitial opacity, and a blunted right costophrenic angle, suggestive of pleural effusion. There is also mention of linear opacities at the bases of the left lung, possibly indicating atelectasis. Furthermore, there is a suspicion of pneumonia in the right lower lobe due to infiltration and right pleural effusion. The report suggests that the pleural effusion may be a result of various underlying conditions such as heart failure, cancer, pulmonary embolism, or infection. Treatment with a combination of cefepime and azithromycin was successful in improving the patient's condition."
 138,case_139,"Calcifications,Plueral Effusion","CLFS,PLEF",combined/case_139/img,combined/case_139/case_139_desc.txt,Almost Certain,Subpulmonic pleural effusion,"Case by: James Kirkland
 Diagnosis Almost Certain
 Diagnosis: Subpulmonic pleural effusion
@@ -3914,7 +4080,7 @@ posteriorly located with the patient supine.
 Link: https://radiopaedia.org/cases/97659
 
 
-"
+","The radiology report indicates a diagnosis of subpulmonic pleural effusion with calcification in an elderly female patient presenting increased work of breathing and decreased air entry in the right lung base. The findings include an elevation of the right lung base, lateralization of the diaphragmatic apex, increased cardio-thoracic ratio, and C-shaped mitral annular calcification. The report discusses the x-ray appearance of a right-sided subpulmonic pleural effusion, noting the lateral displacement of the diaphragmatic apex suggesting this diagnosis. Subsequent CT imaging confirmed the presence of a posteriorly located pleural effusion when the patient was supine."
 139,case_140,Plueral Effusion,PLEF,combined/case_140/img,combined/case_140/case_140_desc.txt,Almost Certain,Massive pleural effusion,"Case by: Ali Shareef Fadhil Fadhil
 Diagnosis Almost Certain
 Diagnosis: Massive pleural effusion
@@ -3940,7 +4106,7 @@ In this case, the appearance suggests a massive right pleural effusion with
 collapse of the right lung.
 
 Link: https://radiopaedia.org/cases/178882
-"
+","The report indicates a right-sided pleural effusion leading to total white-out of the right hemithorax and minor mediastinal shift to the left. Additionally, a minor left-sided pleural effusion is also noted. The right pleural effusion is described as massive, causing collapse of the right lung. The patient presented with increasing dyspnea, dry cough, poor appetite, fatigue, and lethargy. Unilateral white-out can be caused by collapse, consolidation, effusion, or a combination, with the position of the mediastinum being crucial for diagnosis. The presence of a massive pleural effusion results in contralateral shift, varying based on accompanying pulmonary collapse."
 140,case_141,Pneumonia,PNUM,combined/case_141/img,combined/case_141/case_141_desc.txt,Certain,Pneumonia,"Case by Frank Gaillard:
 Diagnosis Certain
 Diagnosis: Pneumonia
@@ -3963,7 +4129,7 @@ Streptococcus pneumoniae isolated.
 
 Link: https://radiopaedia.org/cases/11009
 
-"
+","The radiology report indicates extensive consolidation and air bronchograms with loss of the right hemidiaphragm, suggestive of right lower lobe consolidation, most likely due to community-acquired pneumonia. The presence of a small pleural effusion is uncertain. Additionally, minor patchy airspace opacity is noted in the left midzone. Patient, a 30-year-old female, presented acutely unwell and was treated in the ICU for multiple days. Streptococcus pneumoniae was isolated as the causative organism."
 141,case_142,"COPD,Pneumonia","COPD,PNUM",combined/case_142/img,combined/case_142/case_142_desc.txt,Certain,Pneumonia,"Case by: Brijesh Bhesaniya
 Diagnosis Certain
 Diagnosis: Pneumonia
@@ -3987,7 +4153,7 @@ pneumococcal urinary antigens). A follow-up chest X-ray 6 weeks later showed
 radiological resolution of the mass-like consolidation.
 
 Link: https://radiopaedia.org/cases/167650
-"
+","Report mentions a diagnosis of Pneumonia in a patient with a 2-day history of pleuritic chest pain, cough, and fever. The patient has COPD. Significant finding of situs inversus totalis and a large rounded mass in the left mid-lower zone. Follow-up after 6 weeks shows complete resolution of the mass. Additionally, the patient was diagnosed with pneumococcal pneumonia based on positive pneumococcal urinary antigens."
 142,case_143,Pneumonia,PNUM,combined/case_143/img,combined/case_143/case_143_desc.txt,Certain,Influenza A pneumonia,"Case by: Joachim Feger
 Diagnosis Certain
 Diagnosis: Influenza A pneumonia
@@ -4018,7 +4184,7 @@ and was released home in a vastly improved condition.
 Outpatient follow-up CT, 3 weeks later, was normal and showed complete resolution
 of the ground glass opacities and consolidations.
 
-Link: https://radiopaedia.org/cases/75217"
+Link: https://radiopaedia.org/cases/75217","Influenza A pneumonia was diagnosed in the patient admitted with fever, dry cough, pleuritic pain, hypoxia, and hypocapnia in early March 2020. The imaging revealed mildly increased cardiothoracic ratio with patchy, bilateral infiltrates, and airspace opacification in the mid and lower lung zones, without visible pleural effusions. The findings included multifocal ground-glass opacities and irregular consolidations mainly along the bronchovascular bundles. Positive real-time PCR for influenza A virus RNA was reported. The patient received antiviral therapy and antibiotics and showed recovery after 8 days of hospitalization. Follow-up CT after 3 weeks showed complete resolution of the opacities and consolidations."
 143,case_144,Pneumonia,PNUM,combined/case_144/img,combined/case_144/case_144_desc.txt,almost certain,Pneumonia,"Case by: Mohammad Osama Hussein Yonso
 Diagnosis almost certain
 Diagnosis: Pneumonia
@@ -4044,7 +4210,7 @@ and the clarity of the right heart edge indicates that the pneumonia was in the 
 middle lobe of the lung.
 
 Link: https://radiopaedia.org/cases/87716
-"
+","Patient presented with right lower chest pain, fever, cough, and dyspnea with no weight loss. Chest X-ray showed patchy consolidation in the right lower zone, erasing the edge of the heart with an air bronchogram sign, suggestive of pneumonia. Follow-up X-ray after 10 days of treatment showed improvement with haziness and band-like opacity in the right lower lung zone, indicating sequelae of previous pneumonia. The pneumonia was localized to the right middle lobe based on radiographic appearance."
 144,case_145,Pneumonia,PNUM,combined/case_145/img,combined/case_145/case_145_desc.txt,almost certain,Pneumonia,"Case by: Mohammed Osama Hussein Yonso
 Diagnosis almost certain
 Diagnosis: Pneumonia
@@ -4076,7 +4242,7 @@ This patient should be follow-up by X-ray after 2 weeks of treatment.
 Link: https://radiopaedia.org/cases/152974
 
 
-"
+","The radiology report indicates a diagnosis of pneumonia in a 25-year-old male patient who presented with throat pain, body ache, fever, and left-sided chest pain. The X-ray shows patchy opacity in the left middle lung zone consistent with pneumonia. The heart size is normal, with no mediastinal shift noted. Both cardiophrenic angles are clear, and both diaphragm domes appear normal. The patient is advised to have a follow-up X-ray after two weeks of treatment."
 145,case_146,Pneumonia,PNUM,combined/case_146/img,combined/case_146/case_146_desc.txt,Certain,COVID-19 pneumonia,"Case by: Hidayatullah Hamidi
 Diagnosis Certain
 Diagnosis: COVID-19 pneumonia
@@ -4106,7 +4272,7 @@ ESR: 50 (normal range: 0-15)
 
 CRP: 7.5 (normal range 0-1)
 
-Link: https://radiopaedia.org/cases/84003"
+Link: https://radiopaedia.org/cases/84003","The patient, a 75-year-old male, presented with acute cough, shortness of breath, and fever for ten days. The X-ray shows multifocal hazy opacities in the peripheries of the right middle and both lower lung zones suggestive of COVID-19 pneumonia. CT findings are more definitive for COVID-19 pneumonia. Additionally, the PCR exam confirmed the presence of COVID-19 virus RNA. Laboratory results indicated elevated WBC count, neutrophils, ESR, and CRP levels."
 146,case_147,"COPD,Pneumonia","COPD,PNUM",combined/case_147/img,combined/case_147/case_147_desc.txt,Certain,Varicella pneumonia,"Case by: Pranav Sharma
 Diagnosis Certain
 Diagnosis: Varicella pneumonia
@@ -4134,7 +4300,7 @@ Case Discussion: Multiple small calcific lesions are seen on chest
 radiograph and CT scan consistent with a documented history of 
 varicella pneumonia.
 
-Link: https://radiopaedia.org/cases/87543"
+Link: https://radiopaedia.org/cases/87543","The radiology report reveals multiple oval calcific densities in both lungs, indicative of old varicella pneumonia. The patient also has a history of COPD, with over-inflated lungs. No signs of current pneumonia, atelectasis, or pleural collections are noted. The findings are in line with the documented history of varicella pneumonia and COPD in the patient."
 147,case_148,Pneumonia,PNUM,combined/case_148/img,combined/case_148/case_148_desc.txt,Certain,Round pneumonia,"Case by: Mohammad Osama Hussein Yonso
 Diagnosis Certain
 Diagnosis: Round pneumonia
@@ -4162,7 +4328,7 @@ have irregular margins. They most commonly occur in superior segments of
 lower lobes and in the majority of cases (98%), they are solitary. 
 Air bronchograms are often present.
 
-Link: https://radiopaedia.org/cases/24574"
+Link: https://radiopaedia.org/cases/24574","The patient, a 50-year-old female, presented with fever, shortness of breath, sweats, cough, and left chest pain. The X-ray showed a rounded opacity adjacent to the left hilum with air bronchograms traversing the lesion, typical of round pneumonia. Follow-up X-ray after 6 days showed rapid improvement, consistent with round pneumonia. Round pneumonia is a well-defined, rounded opacity representing infected consolidation, often indicating streptococcal pneumonia. Typically seen in pediatric patients, round pneumonias have irregular margins and are solitary in the majority of cases."
 148,case_149,Pneumonia,PNUM,combined/case_149/img,combined/case_149/case_149_desc.txt,Certain,Cavitating pneumonia,"Case by: Henry Knipe
 Diagnosis Certain
 Diagnosis: Cavitating pneumonia
@@ -4211,7 +4377,7 @@ also in keeping with infection rather than malignancy.
 Link: https://radiopaedia.org/cases/45998
 
 
-"
+","Patient presented with cough and weight loss over five weeks. Radiological findings show a large cavitating right upper lobe mass with cavitation observed. Normal cardiomediastinal contour. Follow-up imaging after treatment shows a significant decrease in the size of the cavitating right upper lobe mass. Culture results indicate Streptococcus agalactiae infection. Cytology findings reveal acute inflammation without malignancy. Overall, the diagnosis is cavitating pneumonia with a resolving area of infection, as evidenced by the reduction in mass size post-treatment."
 149,case_150,Pneumonia,PNUM,combined/case_150/img,combined/case_150/case_150_desc.txt,Certain,Legionella pneumonia,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: Legionella pneumonia
@@ -4245,7 +4411,15 @@ It is atypical pneumonia typically acquired from aerosolized water and
 outbreaks may occur from air conditioning units in large buildings such as 
 factories or apartment blocks.
 
-Link: https://radiopaedia.org/cases/80644"
+Link: https://radiopaedia.org/cases/80644","Diagnosis: Legionella pneumonia
+
+Patient Presentation: Unwell. Low saturations. Pyrexic. Tachypneic. Right basal rhonchi. Dry cough 1 week ago. Green productive cough few days ago.
+
+Description: Dense right upper lobe pneumonia. Right lower lobe consolidation and round pneumonia in the apical segment of the left lower lobe.
+
+Case discussion: Microbiologically confirmed case of Legionella pneumonia with multifocal and bilateral radiological appearances.
+
+(Note: All other details have been omitted as they are not directly related to the diagnosed ailment.)"
 150,case_151,Pneumonia,PNUM,combined/case_151/img,combined/case_151/case_151_desc.txt,Certain,Varicella pneumonia,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: Varicella pneumonia
@@ -4264,7 +4438,7 @@ Heart size normal. Normal mediastinal contours.
 Case Discussion: Widespread small high density foci in the lungs most 
 commonly, but not exclusively, observed in prior varicella pneumonia.
 
-Link: https://radiopaedia.org/cases/180457"
+Link: https://radiopaedia.org/cases/180457","Extensive high density nodules throughout both lungs concerning for varicella pneumonia, consistent with patient history. No cardiomegaly or pleural effusion noted. Widespread small high density pulmonary foci typical of prior varicella pneumonia."
 151,case_152,Pneumonia,PNUM,combined/case_152/img,combined/case_152/case_152_desc.txt,Certain,Multilobar pneumonia,"Case by: Henry Knipe
 Diagnosis Certain
 Diagnosis: Multilobar pneumonia
@@ -4286,7 +4460,13 @@ Case Discussion: This is a case of multilobar community acquired pneumonia.
 No causative agent was isolated and the patient had a good response to 
 empirical antibiotic therapy. 
 
-Link: https://radiopaedia.org/cases/49681"
+Link: https://radiopaedia.org/cases/49681","Diagnosis: Multilobar pneumonia
+
+Patient Presentation: Fever and cough
+
+Description: Complete airspace consolidation with air bronchograms of the right upper lobe, with further consolidation within the medial right middle lobe. Small right parapneumonic effusion.
+
+Case Discussion: This is a case of multilobar community-acquired pneumonia. No causative agent was isolated, and the patient had a good response to empirical antibiotic therapy."
 152,case_153,Pneumonia,PNUM,combined/case_153/img,combined/case_153/case_153_desc.txt,Certain,Retrocardiac pneumonia,"Case By: Mark Pringle
 Diagnosis Certain
 Diagnosis: Retrocardiac pneumonia
@@ -4308,7 +4488,7 @@ normal - this localizes the pathology to the left lower lobe.
 At first glance, retrocardiac consolidation can be difficult to visualize 
 and therefore it is an important review area.
 
-Link: https://radiopaedia.org/cases/164439"
+Link: https://radiopaedia.org/cases/164439","Patient presents with fever and cough, showing retrocardiac (left lower lobe) consolidation on the radiograph. Left hemidiaphragm not visualized, indicating pneumonia in the left lower lobe. Left heart border is normal, and the right lung appears clear. Presence of silhouette sign aids in localizing the pathology. Retrocardiac consolidation may be challenging to visualize initially, emphasizing the need for careful review."
 153,case_154,Pneumonia,PNUM,combined/case_154/img,combined/case_154/case_154_desc.txt,Certain,Eosinophilic pneumonia,"Case by: Tom Elswood
 Diagnosis Certain
 Diagnosis: Eosinophilic pneumonia
@@ -4342,7 +4522,7 @@ A subsequent bronchoscopic alveolar lavage revealed abundant eosinophils,
 
 The patient responded well to oral corticosteroids.
 
-Link: https://radiopaedia.org/cases/74170"
+Link: https://radiopaedia.org/cases/74170","The patient presented with increased shortness of breath, cough, and increased inflammatory markers, suggestive of lower respiratory tract infection. The chest x-ray showed patchy consolidation in both upper lung zones, indicative of infectious or inflammatory changes. Subsequent imaging showed clear lungs two months post. Further investigation revealed a classic 'reverse bat's wing' pattern of eosinophilic pneumonia on imaging, confirmed by CT scan. Bronchoscopic evaluation showed abundant eosinophils in alveolar lavage fluid, with no malignant cells. The patient responded well to oral corticosteroids."
 154,case_155,"Lung Nodules,Pneumonia","LNGN,PNUM",combined/case_155/img,combined/case_155/case_155_desc.txt,Certain,Cryptococcal pneumonia,"Case by: Aws Hamid MD MS
 Diagnosis Certain
 Diagnosis: Cryptococcal pneumonia
@@ -4370,7 +4550,7 @@ Link: https://radiopaedia.org/cases/97071
 
 
 
-"
+","The patient with a history of leukemia presented with cough and fever. The radiology report shows bibasilar patchy consolidation and right basilar nodular opacities, indicating a diagnosis of Cryptococcal pneumonia. This fungal infection, caused by Cryptococcus neoformans, primarily affects immunocompromised individuals and can manifest as pulmonary nodules and cavitations."
 155,case_156,Pneumonia,PNUM,combined/case_156/img,combined/case_156/case_156_desc.txt,Certain,Pneumococcal pneumonia,"Case by: Guillermo Cesar Velez Parra
 Diagnosis Certain
 Diagnosis: Pneumococcal pneumonia
@@ -4392,7 +4572,11 @@ proven with serologic testing.
 Link: https://radiopaedia.org/cases/187414
  
 
-"
+","Diagnosis: Pneumococcal pneumonia
+
+Patient Presentation: 6 days of cough, fever, and malaise.
+
+Description: Alveolar opacities in the right upper lobe."
 156,case_157,Pneumonia,PNUM,combined/case_157/img,combined/case_157/case_157_desc.txt,Certain,Lymphocytic interstitial pneumonia,"Case by: Nur Ahida Md Ahir
 Diagnosis Certain
 Diagnosis: Lymphocytic interstitial pneumonia
@@ -4423,7 +4607,7 @@ After treatment, follow up CXR showed marked improvement of the findings.
 
 Link: https://radiopaedia.org/cases/51003
 
-"
+","Lymphocytic interstitial pneumonia presenting with chronic cough, whitish sputum, weight loss, and appetite loss. Chest radiograph reveals multiple patches of alveolar opacities in both lung fields, with the largest mass in the right lower zone. Follow-up shows improvement with reduction in size of opacities. No pleural effusion seen. Lung biopsy performed due to concerns of primary lung carcinoma, but histopathology identifies interstitial lymphoid pneumonia. Marked improvement noted on follow-up CXR after treatment."
 157,case_158,"Atelectasis,Pneumonia","ATCS,PNUM",combined/case_158/img,combined/case_158/case_158_desc.txt,Certain,Multilobar pneumonia - pediatric,"Case by: Michelle P
 Diagnosis Certain
 Diagnosis: Multilobar pneumonia - pediatric
@@ -4454,7 +4638,7 @@ Link: https://radiopaedia.org/cases/63910
 
 
 
-"
+","The report confirms a diagnosis of multilobar pneumonia in a pediatric patient, specifically affecting the right middle and lower lung zones with associated atelectasis. Clinical symptoms include fevers, cough, abdominal pain, and tachycardia. The patient's immunizations were up to date. Patchy air space opacification is noted in the right lung, more prominently in the mentioned zones. The initial suspicion of a urinary tract infection was ruled out upon observing the pneumonia on chest x-ray. Treatment with empirical antibiotics was successful, with no identified causative agent. The left lung and pleural space appear clear in comparison."
 158,case_159,Pneumonia,PNUM,combined/case_159/img,combined/case_159/case_159_desc.txt,Certain,Klebsiella pneumonia,"Case by: Yune Kwong
 Diagnosis Certain
 Diagnosis: Klebsiella pneumonia
@@ -4488,7 +4672,7 @@ Link: https://radiopaedia.org/cases/29375
 
 
 
-"
+","The radiology report indicates extensive right upper lobe consolidation with bulging of the horizontal fissure in a patient diagnosed with Klebsiella pneumonia. The sputum analysis confirmed the growth of Klebsiella pneumoniae, a gram-negative organism. Klebsiella pneumonia typically affects individuals with alcoholism or chronic debilitating diseases. On the chest X-ray, the consolidation appears lobar and similar to streptococcus pneumonia. Lobar expansion, such as bulging of the horizontal fissure in this case, is less common due to modern antibiotic treatment and is not specific to Klebsiella infection. Klebsiella pneumoniae tends to develop cavitation in 30-50% of cases, early and progressing rapidly, with a recognized complication of massive necrosis. In contrast, cavitation is rare in pneumococcal pneumonia."
 159,case_160,Pneumonia,PNUM,combined/case_160/img,combined/case_160/case_160_desc.txt,Certain,Legionella pneumonia,"Case by: Henry Knipe
 Diagnosis Certain
 Diagnosis: Legionella pneumonia
@@ -4523,7 +4707,7 @@ Australia than in Europe. It is an increasingly common (compared to
 Legionella pneumophila and other species) source of legionellosis. 
 
 Link: https://radiopaedia.org/cases/31816
-"
+","The report indicates a diagnosis of Legionella pneumonia in a 55-year-old female presenting with fevers and cough. The chest x-ray shows predominantly mid to lower zone airspace opacity without a large pleural effusion. Legionella species testing on bronchial washings revealed Legionella longbeachae, with Legionella pneumophila testing negative. Features of Legionella pneumonia on x-ray include mid-to-lower zone patchy consolidation, sometimes associated with pleural effusions. Legionella longbeachae is commonly found in potting mix and is an increasingly common source of legionellosis. Radiographic deterioration may not correlate well with the clinical condition."
 160,case_161,"Atelectasis,Pneumothorax","ATCS,PNTX",combined/case_161/img,combined/case_161/case_161_desc.txt,Certain,Pneumothorax,"Case by: Kevan English
 Diagnosis Certain
 Diagnosis: Pneumothorax
@@ -4554,7 +4738,7 @@ chest tube was placed, and a subsequent chest x-ray showed improvement.
 Link: https://radiopaedia.org/cases/186028
 
 
-"
+","The patient, an 80-year-old female, presented with sudden onset of chest pain and shortness of breath. The radiology report confirmed the presence of bilateral interstitial opacities with bibasilar subsegmental atelectasis. Additionally, there was an interval development of a right apical pneumothorax measuring up to 2.4 cm from the apex, with no mediastinal shift observed. The right costophrenic angle was noted to be sharp. Notably, no left pneumothorax was detected. The patient's medical history included coronary artery disease, atrial fibrillation, and mitral regurgitation. Following a complicated hospital course, a pneumothorax developed in the intensive care unit, for which a chest tube was placed, leading to subsequent improvement as seen on a chest x-ray."
 161,case_162,Pneumothorax,PNTX,combined/case_162/img,combined/case_162/case_162_desc.txt,Certain,Pneumothorax,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: Pneumothorax
@@ -4578,7 +4762,11 @@ Prompt identification and management is key - an x-ray is normally all that
 is required in the first instance.
 
 Link: https://radiopaedia.org/cases/33228
-"
+","Patient: Middle-aged male involved in high impact trauma presenting with pain on the right side of the chest.
+
+Findings: Moderate-sized right-sided pneumothorax with multiple consecutive right-sided rib fractures.
+
+Discussion: Pneumothorax likely secondary to significant thoracic trauma, commonly associated with rib fractures. Prompt identification and management essential, typically requiring an initial x-ray for diagnosis."
 162,case_163,Pneumothorax,PNTX,combined/case_163/img,combined/case_163/case_163_desc.txt,Certain,Pneumothorax,"Case by: Abdulmajid Bawazeer
 Diagnosis Certain
 Diagnosis: Pneumothorax
@@ -4602,7 +4790,7 @@ Primary causes are highly suggestive at this group age.
 Link: https://radiopaedia.org/cases/66377
 
 
-"
+","The patient, a 25-year-old male, presented with sudden onset of left chest pain without a history of trauma or previous images. The left hemithorax appears hyperlucent with a medial deviation of the visceral pleural edge, indicating a collapsed left lung. The patient also had low oxygen saturation. The primary cause is highly suggestive for pneumothorax in this age group."
 163,case_164,"Atelectasis,Pneumothorax","ATCS,PNTX",combined/case_164/img,combined/case_164/case_164_desc.txt,Certain,Pneumothorax,"Case by: Leonardo Lustosa
 Diagnosis Certain
 Diagnosis: Pneumothorax
@@ -4629,7 +4817,7 @@ Case Discussion: Common radiographic appearance of a simple pneumothorax.
 
 Link: https://radiopaedia.org/cases/165489
 
-"
+","Pneumothorax diagnosis certain in a male patient involved in a motor vehicle accident. Chest radiograph shows a right pneumothorax with visible right pleural edge, absence of lung vessels peripheral to the pleural edge, and increased peripheral space radiolucency compared to the left lung. No mediastinal shift noted, indicating a simple pneumothorax with right lung volume loss due to passive atelectasis. Subcutaneous emphysema present on the right chest wall. Common radiographic appearance of a simple pneumothorax reported."
 164,case_165,Pneumothorax,PNTX,combined/case_165/img,combined/case_165/case_165_desc.txt,Certain,Pneumothorax,"Case by: Zuhoor Ud Din
 Diagnosis Certain
 Diagnosis: Pneumothorax
@@ -4651,7 +4839,7 @@ leading to lung collapse. In radiographs, it typically appears as a visible
 lung markings beyond it. This creates a sharp demarcation between the 
 collapsed lung and the pneumothorax.
 
-Link: https://radiopaedia.org/cases/188046"
+Link: https://radiopaedia.org/cases/188046",The plain radiograph of the chest reveals a large left-sided pneumothorax with hypertransradiancy and mediastinal shift. No significant tracheal deviation is noted.
 165,case_166,Pneumothorax,PNTX,combined/case_166/img,combined/case_166/case_166_desc.txt,Certain,Pneumothorax,"Case by: Mohamed Mahmoud Elthokapy
 Diagnosis Certain
 Diagnosis: Pneumothorax
@@ -4683,7 +4871,7 @@ Link: https://radiopaedia.org/cases/99759
 
 
 
-"
+","The report indicates a case of Pneumothorax in a 40-year-old male patient who presented with sudden right chest pain. The right hemithorax appears hyperlucent with a collapsed right lung. Following tube insertion, the right lung re-inflated, and the pneumothorax regressed. This spontaneous pneumothorax was managed successfully with a chest tube and underwater seal."
 166,case_167,Pneumothorax,PNTX,combined/case_167/img,combined/case_167/case_167_desc.txt,Certain,Pneumothorax,"Case by: Frank Gaillard
 Diagnosis Certain
 Diagnosis: Pneumothorax
@@ -4706,7 +4894,7 @@ perform is a needle thoracostomy inserted in the 2nd intercostal space in
 the midclavicular line you may well save a life as you gain valuable time 
 before a larger underwater drain can be inserted.
 
-Link: https://radiopaedia.org/cases/33269"
+Link: https://radiopaedia.org/cases/33269","The report confirms the diagnosis of a very large right-sided pneumothorax in a male patient presenting with right-sided chest pain. There is also a suggestion of minimal shift of the cardiomediastinal contents towards the left, indicating a developing tension. The report emphasizes the need for rapid recognition and decompression of the pneumothorax, particularly if there are concerns about tension pneumothorax. Mention is made of the potential life-saving impact of a needle thoracostomy in such cases before a larger underwater drain can be inserted."
 167,case_168,Pneumothorax,PNTX,combined/case_168/img,combined/case_168/case_168_desc.txt,Certain,Pneumothorax,"Case by: Sarmad Aslam
 Diagnosis Certain
 Diagnosis: Pneumothorax
@@ -4727,7 +4915,7 @@ Link: https://radiopaedia.org/cases/82445
 
 
 
-"
+","The patient, a 65-year-old male with a history of COPD, presented with acute shortness of breath. The radiology report indicates a large left pneumothorax with a slight mediastinal shift towards the right. The right lung appears clear. It is noted that an emphysematous lung can lead to bullous formation, which may rupture and cause a pneumothorax, as suspected in this case."
 168,case_169,Pneumothorax,PNTX,combined/case_169/img,combined/case_169/case_169_desc.txt,Certain,Pneumothorax,"Case by: Andrew Kirby
 Diagnosis Certain
 Diagnosis: Pneumothorax
@@ -4750,7 +4938,7 @@ Link: https://radiopaedia.org/cases/151170
 
 
 
-"
+","The radiology report indicates a definite diagnosis of pneumothorax in a male patient presenting with a one-week history of cough, coryza, and sudden onset of shortness of breath after a coughing episode. The X-ray shows a subtle left apical pneumothorax with the lung edge visible just above the left 3rd rib. The rest of the lungs appear clear. The report highlights the challenge in identifying this type of pneumothorax due to the lung edge being parallel to the 3rd rib. Mention is made of the importance of reviewing the lung apices when assessing a chest X-ray."
 169,case_170,Pneumothorax,PNTX,combined/case_170/img,combined/case_170/case_170_desc.txt,Certain,Pneumothorax,"Case by: Frank Gaillard
 Diagnosis Certain
 Diagnosis: Pneumothorax
@@ -4777,7 +4965,7 @@ Link: https://radiopaedia.org/cases/12568
 
 
 
-"
+","The radiology report indicates a large left-sided pneumothorax with almost complete collapse of the left lung in a 15-year-old male patient presenting with left sided pleuritic chest pain. Following the insertion of a left intercostal catheter, the left lung re-inflated with a residual left apical pneumothorax. There is no evidence of tension in this spontaneous pneumothorax, which is believed to have originated from a subpleural bleb or bullae, with pleural inflammation as a potential cause."
 170,case_171,Pneumothorax,PNTX,combined/case_171/img,combined/case_171/case_171_desc.txt,Certain,Pneumothorax,"Case by: Muhammad Imran Khan
 Diagnosis Certain
 Diagnosis: Pneumothorax
@@ -4800,7 +4988,7 @@ This patient presented with a spontaneous right sided pneumothorax.
 
 Link: https://radiopaedia.org/cases/65158
 
-"
+",Pneumothorax is noted measuring 2.1 cm in right upper zone. Right sided pneumothorax is noted. Both CP angles are not included. Patient presented with a spontaneous right sided pneumothorax.
 171,case_172,"Plueral Effusion,Pneumothorax","PLEF,PNTX",combined/case_172/img,combined/case_172/case_172_desc.txt,Certain,Apical pneumothorax,"Case by: Derek Smith
 Diagnosis Certain
 Diagnosis: Apical pneumothorax
@@ -4848,7 +5036,7 @@ In the absence of trauma, bullous disease is the most likely root of the
 pneumothorax, especially in patients with underlying emphysema or asthma.
 
 Link: https://radiopaedia.org/cases/42217
-"
+","Diagnosis: Apical pneumothorax noted with small bilateral pleural effusions. Patient presents with a history of COPD and worsening breathlessness. Hyperinflated lungs with upper and mid-zone emphysema. Enlarged heart with signs of pulmonary congestion observed. No displaced rib fractures. Following acute deterioration, a right-sided intercostal tube was placed for decompression, resulting in marked increase in subcutaneous emphysema. Importance stressed on examining apex of radiograph to avoid missing small pneumothorax, especially in patients with bullous disease or underlying lung conditions."
 172,case_173,Pneumothorax,PNTX,combined/case_173/img,combined/case_173/case_173_desc.txt,certain,Tension pneumothorax,"Case by: Derek Smith
 Diagnosis certain
 Diagnosis: Tension pneumothorax
@@ -4880,7 +5068,7 @@ insertion of an intercostal chest drain. This is appropriately oriented to
 the apex of the lung.
 
 Link: https://radiopaedia.org/cases/40127
-"
+","There is a large right sided pneumothorax with mediastinal shift to the left and rib splaying on the right, indicating tension pneumothorax. The patient presented with sudden onset pleuritic chest pain, dyspnea, reduced air entry on the right side, and reduced saturations. An intercostal chest drain was inserted, leading to re-expansion of the lung with normal volume."
 173,case_174,Pneumothorax,PNTX,combined/case_174/img,combined/case_174/case_174_desc.txt,Certain,Neonatal pneumothorax,"Case by: Jeremy Jones
 Diagnosis Certain
 Diagnosis: Neonatal pneumothorax
@@ -4903,7 +5091,11 @@ reported - a telephone call to the team and subsequent manipuation of the
 tube saved the child from another intervention and the pneumothorax was 
 drained successfully.
 
-Link: https://radiopaedia.org/cases/27206"
+Link: https://radiopaedia.org/cases/27206","Diagnosis: Neonatal pneumothorax
+
+Description: Large right pneumothorax with a pig-tail catheter in situ with its tip at the apex.
+
+Case discussion: Large right supine pneumothorax with a drain in situ. The lateral radiograph demonstrates why the drain isn't working. In a neonate, the anterior (and not apical) chest is anti-dependant and that is where the collection of gas in the hemithorax is."
 174,case_175,Pneumothorax,PNTX,combined/case_175/img,combined/case_175/case_175_desc.txt,Certain,Basal pneumothorax,"Case by: Amanda Er
 Diagnosis Certain
 Diagnosis: Basal pneumothorax
@@ -4946,7 +5138,7 @@ Link: https://radiopaedia.org/cases/95838
 
 
 
-"
+","Basal pneumothorax is noted on the right side with a maximum interpleural distance measuring 4.6 cm. No mediastinal shift, consolidation, or pleural effusion observed. The pneumothorax increased in size on the following day and required interval insertion of a right-sided intercostal catheter. Reduction of the pneumothorax was achieved with the catheter in place, showing a maximal pleural separation of 1.2 cm. Conservative management was initially attempted but unsuccessful, requiring intervention with an intercostal catheter placement for resolution. The case highlights a rare occurrence of a basal pneumothorax in the right lung, requiring timely medical intervention."
 175,case_176,Pneumothorax,PNTX,combined/case_176/img,combined/case_176/case_176_desc.txt,Certain,Apical pneumothorax,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: Apical pneumothorax
@@ -4972,7 +5164,7 @@ apical lung cancer (Pancoast tumor)
 
 Link: https://radiopaedia.org/cases/46001
 
-"
+","The radiology report shows a thin left apical pneumothorax with visible pleural edge and no vascular markings peripheral to it. The patient, a male university student, presented with shortness of breath and mild left-sided pleuritic chest pain without any trauma history. The right lung appears clear. The key discussion highlights the importance of reviewing the apices of a chest x-ray for pathologies like apical pneumothorax and apical lung cancer (Pancoast tumor)."
 176,case_177,Pneumothorax,PNTX,combined/case_177/img,combined/case_177/case_177_desc.txt,Certain,Large pneumothorax,"Case by: Ian Bickle
 Diagnosis Certain
 Diagnosis: Large pneumothorax
@@ -4994,7 +5186,15 @@ opportunity to save a life with a plain radiograph.
 
 Link: https://radiopaedia.org/cases/74629
 
-"
+","Diagnosis: Large pneumothorax
+
+Patient Presentation: Sudden shortness of breath
+
+Description: Large right sided pneumothorax with collapse of the right lung. 
+
+Minor mediastinal shift. 
+
+Left lung clear."
 177,case_178,Pneumothorax,PNTX,combined/case_178/img,combined/case_178/case_178_desc.txt,Certain,Pneumothorax due to rib fractures,"Case by: Jens Christian Fischer
 Diagnosis Certain
 Diagnosis: Pneumothorax due to rib fractures
@@ -5032,7 +5232,26 @@ Link: https://radiopaedia.org/cases/12821
 
 
 
-"
+","Diagnosis: Pneumothorax due to rib fractures
+
+Description: Fractures of the right ribs 3-8 with obvious displacement of 
+the 5th and 6th ribs. The thin pleural line and the lack of the pulmonary 
+vessels in the right apex are clearly visible reflecting a pneumothorax. 
+Subcutaneous emphysema of the thoracic wall.
+
+Zoomed view: The zoomed view clearly demonstrates the thin pleural line and 
+the lack of the pulmonary vessels in the right apex.
+
+After thoracic drain: After insertion of a thoracic drain, there is partial 
+resolution of the pneumothorax. Additionally, there is a small pleural 
+effusion and progressive subcutaneous emphysema of the thoracic wall.
+
+Case Discussion: The first x-rays taken in the ED reveal multiple, 
+partially displaced rib fractures and a pneumothorax on the right side.
+
+After insertion of a thoracic drain, felt necessary due to the multiple 
+fractures, progressive shortness of breath and the presence of pleural 
+space air, the pneumothorax has partially resolved."
 178,case_179,Pneumothorax,PNTX,combined/case_179/img,combined/case_179/case_179_desc.txt,Certain,Pneumothorax with mediastinal shift,"Case by: Sajoscha A. Sorrentino
 Diagnosis Certain
 Diagnosis: Pneumothorax with mediastinal shift
@@ -5054,7 +5273,7 @@ Link: https://radiopaedia.org/cases/15754
 
 
 
-"
+","The radiology report indicates a large left-sided pneumothorax leading to near-complete collapse of the left lung and a mediastinal shift towards the right, suggesting a tension pneumothorax. It is highlighted as a life-threatening condition necessitating urgent intervention. The patient presented with dyspnea following the implantation of a cardiac pacemaker."
 179,case_180,Pneumothorax,PNTX,combined/case_180/img,combined/case_180/case_180_desc.txt,Certain,Pneumothorax - post chest tube removal,"Case by: Leonardo Lustosa
 Diagnosis Certain
 Diagnosis: Pneumothorax - post chest tube removal
@@ -5077,7 +5296,19 @@ happened in this present case.
 
 Link: https://radiopaedia.org/cases/99292
 
-"
+","Diagnosis: Pneumothorax - post chest tube removal
+
+Patient Presentation: Control radiograph after chest tube removal.
+
+Description: Chest radiograph revealed a right pneumothorax, marked by the 
+visible right pleural edge, the absence of lung vessels peripheral to the 
+pleural, and the increased peripheral space radiolucency when compared to 
+the other lung.
+
+The mediastinum is not shifted, indicating this is a simple pneumothorax.
+
+Case Discussion: Removal of a chest tube may cause pneumothorax, which 
+happened in this present case."
 180,case_181,Tuberculosis,TUBC,combined/case_181/img,combined/case_181/case_181_desc.txt,Certain,Miliary tuberculosis,"Case by: Mark Holland
 Diagnosis Certain
 Diagnosis: Miliary tuberculosis
@@ -5106,7 +5337,7 @@ infection.
 
 Link: https://radiopaedia.org/cases/20025
 
-"
+","The X-ray shows widespread randomly distributed innumerable tiny nodules in both lungs, with no consolidation or pleural fluid present. A close-up image from the left upper zone shows well-defined ~2mm nodules. The findings are indicative of Miliary tuberculosis, confirmed in the patient, who presented with lethargy, night sweats, and hemoptysis. Miliary tuberculosis represents hematogenous spread of uncontrolled TB infection."
 181,case_182,Tuberculosis,TUBC,combined/case_182/img,combined/case_182/case_182_desc.txt,Certain,Pulmonary tuberculosis,"Case by: Mohammad Osama Hussein Yonso
 Diagnosis Certain
 Diagnosis: Pulmonary tuberculosis
@@ -5135,7 +5366,7 @@ People with active TB can spread the bacteria through the air. After the
 patient is diagnosed, they should hence not be in contact with others 
 before undergoing treatment.
 
-Link: https://radiopaedia.org/cases/96212"
+Link: https://radiopaedia.org/cases/96212","The radiology report indicates findings consistent with pulmonary tuberculosis in a 50-year-old male patient. The patient presented with breathing difficulty, dry cough, night sweats, and weight loss. Radiographic findings include diffuse reticulonodular opacities in the bilateral upper and middle lung zones, cavitary lesions in both apical lung zones, mild mediastinal widening, mildly upward attracted hila, and mildly blunted left costophrenic angle. These manifestations align with symptoms of pulmonary tuberculosis such as chest pain, breathlessness, and severe coughing. Treatment with antibiotics is crucial to cure pulmonary TB and prevent its spread to others."
 182,case_183,Tuberculosis,TUBC,combined/case_183/img,combined/case_183/case_183_desc.txt,Certain,Pulmonary tuberculosis,"Case by: Prashant Mudgal
 Diagnosis Certain
 Diagnosis: Pulmonary tuberculosis
@@ -5157,7 +5388,7 @@ tuberculosis, from this patient, who is on anti-tuberculous treatment and
 responding to therapy.
 
 Link: https://radiopaedia.org/cases/51361
-"
+","The radiology report indicates a thick-walled cavity in the left lower zone with adjacent ground glass nodules and opacities, confirming the diagnosis of pulmonary tuberculosis. The patient presented with a cough for 4 weeks, mild chest pain, anorexia, and weight loss. Sputum microscopy and culture revealed Mycobacterium tuberculosis, and the patient is responding well to anti-tuberculous treatment."
 183,case_184,Tuberculosis,TUBC,combined/case_184/img,combined/case_184/case_184_desc.txt,Certain,Chronic tuberculosis,"Case by: Aditya Shetty
 Diagnosis Certain
 Diagnosis: Chronic tuberculosis
@@ -5179,7 +5410,7 @@ Patient is responding well to therapy.
 Fibrosis suggests healing.
 
 Link: https://radiopaedia.org/cases/28211
-"
+","Patient presented with dry cough, fever, and weight loss, diagnosed with chronic tuberculosis. Anti-koch's therapy was initiated, and the patient is on follow-up. Radiological findings include bilateral upper lobe fibrosis with pleural thickening and increased broncho-vascular markings in the remaining lung fields. The patient is responding well to therapy, and the fibrosis suggests healing."
 184,case_185,"Plueral Effusion,Tuberculosis","PLEF,TUBC",combined/case_185/img,combined/case_185/case_185_desc.txt,Certain,Pulmonary tuberculosis,"Case by: Sarah Aljahdali
 Diagnosis Certain
 Diagnosis: Pulmonary tuberculosis
@@ -5206,7 +5437,7 @@ was not on isolation precautions.
 Link: https://radiopaedia.org/cases/77748
 
 
-"
+","The findings indicate heterogeneous consolidation and acinar opacification with cavitation in both mid lung zones, suggestive of bronchopneumonia and possible active TB. Contiguous hilar opacification is also noted. The presence of these features highly suggests an infectious process like active/post primary TB, which was later confirmed on sputum culture. Prompt notification to the referring physician and technologist is crucial, especially if the patient was not on isolation precautions."
 185,case_186,Tuberculosis,TUBC,combined/case_186/img,combined/case_186/case_186_desc.txt,Certain,Miliary tuberculosis,"Case by: David Wang
 Diagnosis Certain
 Diagnosis: Miliary tuberculosis
@@ -5237,7 +5468,7 @@ MYCOBACTERIAL CULTURE 1.Acid Fast Bacilli ISOLATED CULTURE
 
 Link: https://radiopaedia.org/cases/39994
 
- "
+ ","The radiology report indicates a diagnosis of miliary tuberculosis with innumerable tiny pulmonary nodules and a small left pleural effusion. Additionally, there are enlarged right paratracheal, aortopulmonary, and subcarinal lymph nodes. The mycobacterial investigations show a positive Mycobacterium culture from the sputum specimen."
 186,case_187,Tuberculosis,TUBC,combined/case_187/img,combined/case_187/case_187_desc.txt,Certain,Disseminated tuberculosis,"Case by : Aaron Ow
 Diagnosis Certain
 Diagnosis: Disseminated tuberculosis
@@ -5262,7 +5493,7 @@ confirmed as the cause.
 
 Link: https://radiopaedia.org/cases/37356
 
-"
+","The radiology report indicates findings of a right paraspinal opacity extending below the hemidiaphragmatic border, along with fine, bilateral miliary opacities in both lungs. Upon further evaluation with CT and MRI, the right paraspinal opacity was determined to be a paraspinal abscess, which was aspirated, confirming tuberculosis as the cause."
 187,case_188,Tuberculosis,TUBC,combined/case_188/img,combined/case_188/case_188_desc.txt,Certain,Miliary tuberculosis,"Case by : Dr Nilay Singh Shinde
 Diagnosis Certain
 Diagnosis: Miliary tuberculosis
@@ -5286,7 +5517,7 @@ antituberculous treatment.
 
 Link: https://radiopaedia.org/cases/84804
 
-"
+","The radiology report indicates evidence of multiple tiny nodular opacities of average size 1-3 mm noted diffusely in bilateral lung fields, suggestive of miliary tuberculosis. Additionally, bilateral hypoplastic cervical ribs were incidentally found. Miliary TB represents only 1-3% of all cases of TB and can spread via the hematogenous route. The patient's diagnosis was confirmed by lab reports, and antituberculous treatment was initiated."
 188,case_189,Tuberculosis,TUBC,combined/case_189/img,combined/case_189/case_189_desc.txt,Certain,Pulmonary tuberculosis,"Case by : Hani M. Al Salam
 Diagnosis Certain
 Diagnosis: Pulmonary tuberculosis
@@ -5304,7 +5535,7 @@ Week later: Left midzone cavity is virtually unchanged at one week follow-up
 Case Discussion: Sputum staining for acid-fast bacilli was positive and 
 culture grew Mycobacterium tuberculosis.
 
-Link: https://radiopaedia.org/cases/12437"
+Link: https://radiopaedia.org/cases/12437","The patient presents with a history of chronic productive cough and weight loss. The radiology report indicates a left midzone cavitary lesion consistent with pulmonary tuberculosis. Imaging at a one-week follow-up shows no significant change in the left midzone cavity. Sputum staining for acid-fast bacilli was positive, and culture confirmed the presence of Mycobacterium tuberculosis."
 189,case_190,Tuberculosis,TUBC,combined/case_190/img,combined/case_190/case_190_desc.txt,Almost Certain,Pulmonary tuberculosis,"Case by : Ashish Mohan Bhattarai
 Diagnosis Almost Certain
 Diagnosis: Pulmonary tuberculosis
@@ -5333,7 +5564,7 @@ nodules distributed throughout the bilateral lungs.
 
 Link: https://radiopaedia.org/cases/92819
 
-"
+","The radiology report indicates findings consistent with pulmonary tuberculosis in a 40-year-old female patient. The report describes homogenous opacity with air bronchograms in the right upper and middle zones, multiple nodular opacities in the lungs (predominantly in the right lung), elevation of the right hemidiaphragm indicative of partial collapse/consolidation of the right lung, and slight blunting of the right costophrenic angle suggesting pleural effusion. The discussion mentions that pulmonary tuberculosis can manifest with various HRCT findings, including consolidation, tree-in-bud opacity, and multiple nodules distributed throughout the bilateral lungs."
 190,case_191,"Pneumonia,Tuberculosis","PNUM,TUBC",combined/case_191/img,combined/case_191/case_191_desc.txt,Certain,Progressive primary pulmonary tuberculosis,"Case by : Ryan Thibodeau
 Diagnosis Certain
 Diagnosis: Progressive primary pulmonary tuberculosis
@@ -5359,7 +5590,7 @@ interferon gamma release assay, which was positive. Sputum samples were
 then tested which revealed acid-fast organisms, consistent with tuberculosis. 
 No complications arose during her treatment course.
 
-Link: https://radiopaedia.org/cases/183789"
+Link: https://radiopaedia.org/cases/183789","Patient with chronic productive cough for 3 months, recently immigrated to the US, demonstrates air-filled cavitary lesion with thick walls in the right lower lobe just above the diaphragm. Streaky and patchy opacification in the right middle and lower lobes, indicative of progressive primary pulmonary tuberculosis with lower lobe destructive cavitating pneumonia and endobronchial spread. Positive interferon gamma release assay and sputum samples confirmed tuberculosis diagnosis. No treatment complications reported."
 191,case_192,Tuberculosis,TUBC,combined/case_192/img,combined/case_192/case_192_desc.txt,Certain,TB,"Case bhy : Hani M. Al Salam
 Diagnosis Certain
 Diagnosis: TB
@@ -5374,7 +5605,7 @@ Description: Central opacity at upper chest zone on frontal view with
 corresponding soft tissue swelling involving anterior chest wall on the 
 lateral view.
 
-Case Discussion: Pathologically proven tuberculous abscess."
+Case Discussion: Pathologically proven tuberculous abscess.",The report describes central opacity at the upper chest zone on the frontal view with corresponding soft tissue swelling involving the anterior chest wall on the lateral view in a 20-year-old female patient with right anterior chest wall swelling. Pathologically proven tuberculous abscess is the discussed diagnosis.
 192,case_193,Tuberculosis,TUBC,combined/case_193/img,combined/case_193/case_193_desc.txt,Certain,Cavitating lung lesion - tuberculosis,"Case by : Henry Knipe
 Diagnosis Certain
 Diagnosis: Cavitating lung lesion - tuberculosis
@@ -5392,7 +5623,7 @@ lungs are also noted.
 Case Discussion: Sputum was positive for acid fast bacilli on microscopy 
 and M. tuberculosis was subsequently cultured. 
 
-Link: https://radiopaedia.org/cases/30280"
+Link: https://radiopaedia.org/cases/30280","The radiology report indicates a cavitating lung lesion in the apical segment of the left lower lobe, measuring 3.9 centimeters. Additionally, patchy airspace opacities and nodules are present in both lungs. The sputum tested positive for acid-fast bacilli on microscopy, and the culture confirmed the presence of M. tuberculosis. The diagnosis of tuberculosis is certain based on these findings."
 193,case_194,Tuberculosis,TUBC,combined/case_194/img,combined/case_194/case_194_desc.txt,Almost Certain,Active pulmonary tuberculosis,"Case by : Mohammad Osama Hussein Yonso
 Diagnosis Almost Certain
 Diagnosis: Active pulmonary tuberculosis
@@ -5410,7 +5641,7 @@ Case Discussion: Case of pulmonary tuberculosis.
 
 The left upper cavitary lesion with thickened wall suggests an active lesion.
 
-Link: https://radiopaedia.org/cases/85103"
+Link: https://radiopaedia.org/cases/85103","The radiological findings indicate bilateral prominent bronchovascular markings and the presence of a left upper cavitary lesion with a thickened wall. These findings are suggestive of an active pulmonary tuberculosis case in the patient. The patient presented with symptoms of dry cough, headache, body pain, and significant weight loss over the past few months."
 194,case_195,Tuberculosis,TUBC,combined/case_195/img,combined/case_195/case_195_desc.txt,Almost Certain,Pulmonary tuberculosis,"Case by : David Cuete
 Diagnosis Almost Certain
 Diagnosis: Pulmonary tuberculosis
@@ -5426,7 +5657,7 @@ Description: Chest x-ray demonstrates consolidation in the left upper lobe.
 
 Case Discussion: Sputum microscopy and culture confirmed pulmonary TB.
 
-Link: https://radiopaedia.org/cases/33983"
+Link: https://radiopaedia.org/cases/33983","The chest x-ray reveals consolidation in the left upper lobe, consistent with pulmonary tuberculosis. Sputum microscopy and culture further confirmed the diagnosis of pulmonary TB in this patient presenting with symptoms of hemoptysis, dyspnea, and fever."
 195,case_196,Tuberculosis,TUBC,combined/case_196/img,combined/case_196/case_196_desc.txt,Certain,Post-primary pulmonary tuberculosis,"Case by: Henry Knipe
 Diagnosis Certain
 Diagnosis: Post-primary pulmonary tuberculosis
@@ -5454,7 +5685,7 @@ per HPF)
 DNA Amplification Assay for M. tuberculosis Complex (PCR): DETECTED
 
 Link: 
-https://radiopaedia.org/cases/47853"
+https://radiopaedia.org/cases/47853","The patient, a 50-year-old male, presented with weight loss, cough, and hemoptysis. Imaging revealed bilateral apical pulmonary cavities, more clearly visible on the left side, along with patchy consolidation in the left upper zone. No pleural effusion was noted. The findings are indicative of post-primary pulmonary tuberculosis, as supported by bronchoscopy and mycobacterial investigations showing the detection of Acid-fast bacilli and M. tuberculosis Complex."
 196,case_197,Tuberculosis,TUBC,combined/case_197/img,combined/case_197/case_197_desc.txt,Certain,Tuberculosis - Right upper lobe cavitation,"Case by : Frank Gaillard
 Diagnosis Certain
 Diagnosis: Tuberculosis - Right upper lobe cavitation
@@ -5492,7 +5723,7 @@ Isoniazid = sensitive
 Pyrazinamide = sensitive
 Rifampin = sensitive
 
-Link: https://radiopaedia.org/cases/35747"
+Link: https://radiopaedia.org/cases/35747","The radiology report indicates extensive cavitating nodular opacities in the right upper lobe, with a large cavity measuring 4cm in diameter. Additionally, multiple nodules are observed in the left upper lobe, along with a wide right paratracheal stripe possibly due to lymphadenopathy. The appearances are highly suspicious for pulmonary tuberculosis. Further investigations, including bronchial washings, confirmed pulmonary tuberculosis. Microscopic examination revealed a high presence of Acid-fast bacilli, and Mycobacterium tuberculosis was isolated in the culture. Sensitivity testing indicated susceptibility to Ethambutol, Isoniazid, Pyrazinamide, and Rifampin."
 197,case_198,Tuberculosis,TUBC,combined/case_198/img,combined/case_198/case_198_desc.txt,Certain,Tuberculosis - left upper lobe,"Case by: Bruno Di Muzio
 Diagnosis Certain
 Diagnosis: Tuberculosis - left upper lobe
@@ -5508,7 +5739,13 @@ consolidation in the left upper lobe.
 
 Case Discussion: Case confirmed as pulmonary TB by sputum culture.
 
-Link: https://radiopaedia.org/cases/34986"
+Link: https://radiopaedia.org/cases/34986","Diagnosis: Tuberculosis - left upper lobe
+
+Patient Presentation: Cough, fever, and weight loss
+
+Description: Chest x-ray shows multifocal patchy opacities and consolidation in the left upper lobe. 
+
+Case Discussion: pulmonary TB confirmed by sputum culture."
 198,case_199,Tuberculosis,TUBC,combined/case_199/img,combined/case_199/case_199_desc.txt,Certain,Tuberculosis - left upper lobe,"Case by: Frank Gaillard
 Diagnosis Certain
 Diagnosis: Tuberculosis - left upper lobe
@@ -5526,7 +5763,7 @@ enlargement.
 
 Case Discussion: Sputum microscopy and culture confirmed pulmonary TB. 
 
-Link: https://radiopaedia.org/cases/12569"
+Link: https://radiopaedia.org/cases/12569","The chest x-ray indicates consolidation in the left upper lobe, consistent with Tuberculosis. Additionally, two densely calcified granulomas are observed on the left side. Sputum microscopy and culture confirmed pulmonary TB."
 199,case_200,Tuberculosis,TUBC,combined/case_200/img,combined/case_200/case_200_desc.txt,Almost Certain,Post-primary tuberculosis,"Case by: Pawel Piotrowicz
 Diagnosis Almost Certain
 Diagnosis: Post-primary tuberculosis
@@ -5552,4 +5789,4 @@ Previous contact with tuberculosis was not reported in this case, and the
 bronchial lavage smear for acid-fast bacilli was positive. The CT was 
 performed to exclude other thoracic pathologies.  
 
-Link: https://radiopaedia.org/cases/52295"
+Link: https://radiopaedia.org/cases/52295","The radiology report reveals a diffuse reticular and micronodular pattern in the upper and middle zones of the lungs. A mass is noted in the middle zone of the right lung, along with two cavities in the middle and upper zones of the left lung. The patient presented with a non-specific cough for the last three months. Positive bronchial lavage smear for acid-fast bacilli suggests post-primary tuberculosis. Chest x-ray is emphasized as a valuable tool, particularly in younger patients with unclear airway changes, to diagnose this condition. The CT scan was conducted to rule out other thoracic pathologies. Previous contact with tuberculosis was not reported."
