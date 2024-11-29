@@ -331,15 +331,7 @@ class Trainer:
             end = time()
             self._on_fold_end(fold_num, end-start, val_loader)
 
-        print_and_log("Training complete", self.logger)
-        print_and_log("Training on whole dataset to save overall model...", self.logger)
-        self._on_fold_begin(6)
-        for epoch in range(num_epochs):
-            self._on_train_epoch_start()
-            train_metrics = self.train_epoch(self.data_loaders[-1])
-            self._on_train_epoch_end(train_metrics, epoch)
-
-        self.save_ckpt(6, epoch=-1)
+        print_and_log("Training complete.", self.logger)
         avg_accuracy = sum([self.ovr_metrics[i]["accuracy"] for i in range(5)]) / 5
         print_and_log("-"*88, self.logger)
         print_and_log(f"Average accuracy over 5 folds: {avg_accuracy:.2f}", self.logger)
@@ -362,6 +354,9 @@ class Trainer:
         -------
             None
         """
+
+        # reset fold and epoch
+        self.epoch = 0
 
         # initialize best_metrics if running from scratch
         if self.fold == 0:
