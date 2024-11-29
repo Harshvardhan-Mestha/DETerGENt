@@ -54,7 +54,8 @@ def BERTSim(report_A, report_B) -> float:
     cls_B = outputs_B["hidden_states"][-1][:, 0, :]
 
     # Calculate the similarity score
-    score = (cls_A @ cls_B.T).item()
+    score = (cls_A @ cls_B.T) / (torch.norm(cls_A) * torch.norm(cls_B))
+    score = score.item()
 
     return score
 
@@ -250,12 +251,12 @@ if __name__ == "__main__":
     disc_med = list(disc_med["explanation"])
     gt_expls = list(gt["report"])
 
-    # evaluate_expls(gt_expls, gt_expls)
-    # evaluate_expls(med_no_ctxt_expls, gt_expls)
-    # evaluate_expls(gpt_no_ctxt_expls, gt_expls)
-    # evaluate_expls(disc_gpt, gt_expls)
-    # evaluate_expls(disc_med, gt_expls)
+    evaluate_expls(gt_expls, gt_expls)
+    evaluate_expls(med_no_ctxt_expls, gt_expls)
+    evaluate_expls(gpt_no_ctxt_expls, gt_expls)
+    evaluate_expls(disc_gpt, gt_expls)
+    evaluate_expls(disc_med, gt_expls)
     # evaluate_expls(gpt_expls, gt_expls)
-    # evaluate_expls(gpt1_expls, gt_expls)
-    evaluate_expls(med_expls, gt_expls)
+    evaluate_expls(gpt1_expls, gt_expls)
+    # evaluate_expls(med_expls, gt_expls)
     evaluate_expls(med1_expls, gt_expls)
