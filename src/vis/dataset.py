@@ -147,9 +147,9 @@ def getDataLoadersFor5FoldCV(data: str, batch_size: int = 8, ddp: bool = True) -
         valid_sampler = DistributedSampler(valid_dataset, shuffle=False) if ddp else None
         train_loader = DataLoader(train_dataset, batch_size=batch_size, 
                                   shuffle=True if train_sampler is None else False, 
-                                  drop_last=True, sampler=train_sampler)
+                                  sampler=train_sampler)
         valid_loader = DataLoader(valid_dataset, batch_size=batch_size, 
-                                  shuffle=False, drop_last=True, sampler=valid_sampler)
+                                  shuffle=False, sampler=valid_sampler)
         dataloaders.append((train_loader, valid_loader))
 
     cases = set(cases)
