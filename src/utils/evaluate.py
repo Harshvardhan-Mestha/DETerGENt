@@ -187,20 +187,28 @@ if __name__ == "__main__":
     # Get explanation scores
     gpt_expls = pd.read_csv("results/expls/gen_expl_gpt.csv")
     med_expls = pd.read_csv("results/expls/gen_expl_med.csv")
+    gpt1_expls = pd.read_csv("results/expls/gen_expl_gpt_1.csv")
     med_no_ctxt_expls = pd.read_csv("results/expls/gen_expl_med_no_ctxt.csv")
     gpt_no_ctxt_expls = pd.read_csv("results/expls/gen_expl_gpt_no_ctxt.csv")
+    gpt_no_ctxt1_expls = pd.read_csv("results/expls/gen_expl_gpt_no_ctxt_1.csv")
     # disc_gpt
     # disc_med
 
     gpt_expls.fillna("", inplace=True)
     med_expls.fillna("", inplace=True)
+    gpt1_expls.fillna("", inplace=True)
     med_no_ctxt_expls.fillna("", inplace=True)
     gpt_no_ctxt_expls.fillna("", inplace=True)
+    gpt_no_ctxt1_expls.fillna("", inplace=True)
 
     # sort by case
     gpt_expls["case"] = gpt_expls["case"].apply(lambda x: x.split("_")[1])
     gpt_expls.sort_values(by="case", inplace=True)
     gpt_expls["case"] = gpt_expls["case"].apply(lambda x: f"case_{x}")
+
+    gpt1_expls["case"] = gpt1_expls["case"].apply(lambda x: x.split("_")[1])
+    gpt1_expls.sort_values(by="case", inplace=True)
+    gpt1_expls["case"] = gpt1_expls["case"].apply(lambda x: f"case_{x}")
 
     med_expls["case"] = med_expls["case"].apply(lambda x: x.split("_")[1])
     med_expls.sort_values(by="case", inplace=True)
@@ -214,15 +222,23 @@ if __name__ == "__main__":
     gpt_no_ctxt_expls.sort_values(by="case", inplace=True)
     gpt_no_ctxt_expls["case"] = gpt_no_ctxt_expls["case"].apply(lambda x: f"case_{x}")
 
+    gpt_no_ctxt1_expls["case"] = gpt_no_ctxt1_expls["case"].apply(lambda x: x.split("_")[1])
+    gpt_no_ctxt1_expls.sort_values(by="case", inplace=True)
+    gpt_no_ctxt1_expls["case"] = gpt_no_ctxt1_expls["case"].apply(lambda x: f"case_{x}")
+
     # evaluate explanations
     gpt_expls = list(gpt_expls["explanation"])
     med_expls = list(med_expls["explanation"])
+    gpt1_expls = list(gpt1_expls["explanation"])
     med_no_ctxt_expls = list(med_no_ctxt_expls["explanation"])
     gpt_no_ctxt_expls = list(gpt_no_ctxt_expls["explanation"])
+    gpt_no_ctxt1_expls = list(gpt_no_ctxt1_expls["explanation"])
     gt_expls = list(gt["report"])
 
     evaluate_expls(gt_expls, gt_expls)
     evaluate_expls(med_no_ctxt_expls, gt_expls)
     evaluate_expls(gpt_no_ctxt_expls, gt_expls)
+    evaluate_expls(gpt_no_ctxt1_expls, gt_expls)
     evaluate_expls(gpt_expls, gt_expls)
+    evaluate_expls(gpt1_expls, gt_expls)
     evaluate_expls(med_expls, gt_expls)
