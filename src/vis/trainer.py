@@ -358,11 +358,10 @@ class Trainer:
         # reset fold and epoch
         self.epoch = 0
 
-        # initialize best_metrics if running from scratch
-        if self.fold == 0:
-            self.best_metrics = {
-                "accuracy": 0.0,
-            }
+        # initialize best_metrics
+        self.best_metrics = {
+            "accuracy": 0.0,
+        }
 
         # reset model parameters after each fold
         if fold_num != 0:
