@@ -107,16 +107,43 @@ def evaluate_preds(preds, y) -> None:
         precision[i] = TP / (TP + FP)
         f1[i] = 2 * (precision[i] * recall[i]) / (precision[i] + recall[i])
 
-    print(f"Class Average Accuracy: {np.mean(acc)}")
-    print(f"Class Average Recall: {np.mean(recall)}")
-    print(f"Class Average Precision: {np.mean(precision)}")
-    print(f"Class Average F1: {np.mean(f1)}")
+    print(f"Class Average Accuracy: {np.mean(acc):.4f}")
+    print(f"Class Average Recall: {np.mean(recall):.4f}")
+    print(f"Class Average Precision: {np.mean(precision):.4f}")
+    print(f"Class Average F1: {np.mean(f1):.4f}")
 
     return
     
 
+def evaluate_expls(expls, y_es) -> None:
+    """
+    Evaluate the model explanations.
+
+    Args:
+    - expls
+    - y_es
+
+    Returns:
+    - None, prints the evaluation metrics.
+    """
+
+    # compute agree scores
+    # compute BERtSim scores
+    agree_scores, bert_scores = [], []
+    for i in range(len(expls)):
+        agree_score = agree(y_es[i], expls[i])
+        bert_score = BERTSim(y_es[i], expls[i])
+        agree_scores.append(agree_score)
+        bert_scores.append(bert_score)
+
+    print(f"Agree Score: {np.mean(agree_scores):.4f}")
+    print(f"Bert Score: {np.mean(bert_scores):.4f}")
+
+    return
+
+
 if __name__ == "__main__":
-    # Get evaluation scores
+    # Get classification scores
     gt = pd.read_csv("data/xray_data.csv")
     disc = pd.read_csv("results/preds/disc_predictions.csv")
     disc.fillna("", inplace=True)
@@ -153,4 +180,45 @@ if __name__ == "__main__":
     evaluate_preds(gpt_preds, gt_labels)
     evaluate_preds(med_preds, gt_labels)
     
-    
+    # Get explanation scores
+    gpt_expls = pd.read_csv("results/expls/gen_expl_gpt.csv")
+    med_expls = pd.read_csv("results/expls/gen_expl_med.csv")
+    med_no_ctxt_expls = pd.read_csv("results/expls/gen_expl_med_no_ctxt.csv")
+    gpt_no_ctxt_expls = pd.read_csv("results/expls/gen_expl_gpt_no_ctxt.csv")
+    # disc_gpt
+    # disc_med
+
+    gpt_expls.fillna("", inplace=True)
+    med_expls.fillna("", inplace=True)
+    med_no_ctxt_expls.fillna("", inplace=True)
+    gpt_no_ctxt_expls.fillna("", inplace=True)
+
+    # sort by case
+    gpt_expls["case"] = gpt_expls["case"].apply(lambda x: x.split("_")[1])
+    gpt_expls.sort_values(by="case", inplace=True)
+    gpt_expls["case"] = gpt_expls["case"].apply(lambda x: f"case_{x}")
+
+    med_expls["case"] = med_expls["case"].apply(lambda x: x.split("_")[1])
+    med_expls.sort_values(by="case", inplace=True)
+    med_expls["case"] = med_expls["case"].apply(lambda x: f"case_{x}")
+
+    med_no_ctxt_expls["case"] = med_no_ctxt_expls["case"].apply(lambda x: x.split("_")[1])
+    med_no_ctxt_expls.sort_values(by="case", inplace=True)
+    med_no_ctxt_expls["case"] = med_no_ctxt_expls["case"].apply(lambda x: f"case_{x}")
+
+    gpt_no_ctxt_expls["case"] = gpt_no_ctxt_expls["case"].apply(lambda x: x.split("_")[1])
+    gpt_no_ctxt_expls.sort_values(by="case", inplace=True)
+    gpt_no_ctxt_expls["case"] = gpt_no_ctxt_expls["case"].apply(lambda x: f"case_{x}")
+
+    # evaluate explanations
+    gpt_expls = list(gpt_expls["explanation"])
+    med_expls = list(med_expls["explanation"])
+    med_no_ctxt_expls = list(med_no_ctxt_expls["explanation"])
+    gpt_no_ctxt_expls = list(gpt_no_ctxt_expls["explanation"])
+    gt_expls = list(gt["report"])
+
+    evaluate_expls(gt_expls, gt_expls)
+    evaluate_expls(gpt_expls, gt_expls)
+    evaluate_expls(med_expls, gt_expls)
+    evaluate_expls(med_no_ctxt_expls, gt_expls)
+    evaluate_expls(gpt_no_ctxt_expls, gt_expls)

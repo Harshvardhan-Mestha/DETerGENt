@@ -73,7 +73,7 @@ class XRayDataset(Dataset):
         self.data['label1'] = self.data['label1'].map(label2int)
         self.data['label2'] = self.data['label2'].map(label2int)
         self.data['label3'] = self.data['label3'].map(label2int)
-        self.num_classes = len(label2int) 
+        self.num_classes = len(label2int) - 1
         self.training = training
 
         transform_list = [
