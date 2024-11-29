@@ -111,7 +111,7 @@ def generate_report(
                             "text": f"""
                             Pretend you are a radiologist
                             Given is the hypothetical X-ray image.
-                            The patient has been diagnosed with {pred}.
+                            This is the initial diagnosis of an XRay by a radiologist: {pred}.
                             Your output should be in the following format :
                             "Explanation" - A short passage describing the contents of the image with respect to the ailment(s) above
                             Adhere to the output format strictly, and be concise.
@@ -163,7 +163,7 @@ def generate_report(
             """
         else: # normal mode
             report_prompt = f"""
-            Given the prediction {pred}, please write a detailed report for the given Xray.
+            Given an initial diagnosis by a radiologist, {pred}, please write a detailed report for the given Xray.
             """
         prompt_args.mode = "caption"
         # get report from MiniGPTMed
