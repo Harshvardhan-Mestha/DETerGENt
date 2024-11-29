@@ -1,0 +1,24 @@
+exp_name: disc_MedGPT
+evaluate: false
+pred:
+    model: medgpt
+    generate: false
+    from_file: true
+    out_path: discriminator.csv
+
+expl:
+    model: medgpt
+    generate: true
+    from_file: false
+    out_path: disc_expl_med.csv
+    no_ctxt: false
+
+medgpt:
+    model_args:
+        cfg_path: configs/minigpt/default.yaml
+        gpu_id: 0
+        options: None
+    prompt_args:
+        temperature: 0.6
+        top_p: 0.9
+        mode: caption

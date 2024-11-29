@@ -1,15 +1,15 @@
-exp_name: vanilla_GPT
+exp_name: disc_GPT
 evaluate: false
 pred:
     model: gpt
-    generate: true
-    from_file: false
-    path: gen_pred_gpt.csv
+    generate: false
+    from_file: true
+    path: discriminator.csv
     out_path: gen_pred_gpt.csv
 
 expl:
     model: gpt
     generate: true
     from_file: false
-    out_path: gen_expl_gpt.csv
+    out_path: disc_expl_gpt.csv
     no_ctxt: false

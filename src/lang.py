@@ -22,7 +22,7 @@ CLASS_LIST = ["Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothel
 
 
 def generate_report(
-    llm: str, x: str, pred: str, no_ctxt: bool,
+    llm: str, x: str, pred: Optional[str], no_ctxt: bool,
     model: Optional[MiniGPTv2] = None,
     prompt_args: Optional[PromptArgs] = None,
     model_args: Optional[MiniGPTArgs] = None
@@ -59,11 +59,12 @@ def generate_report(
 
     
     if isinstance(pred, float) and no_ctxt == False:
-      print("skipped since no ailment diagnosed...")
-      report = ""
-      return report
+        print("skipped since no ailment diagnosed...")
+        report = ""
+        return report
     
-    if no_ctxt:pred = None # if no context is provided, the prediction is not used
+    if no_ctxt:
+        pred = None # if no context is provided, the prediction is not used
 
     # Get image path
     if os.path.isdir(f"data/{x}"):
@@ -78,7 +79,6 @@ def generate_report(
         print("[INFO] Generating report using GPT-4o")
 
         # messages object, to be passed to the OpenAI API
-        # TODO: refine prompt
         if no_ctxt and pred is None: # no context mode
             # we do not ask diagnosis we directly explain
             messages = [
