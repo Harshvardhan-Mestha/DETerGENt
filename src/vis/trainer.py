@@ -564,7 +564,7 @@ if __name__ == "__main__":
 
     world_size = torch.cuda.device_count()
     run_name = "base"
-    num_classes = 11
+    num_classes = 10
     with_tracking = False
     ckpt_path = None
     freeze_backbone = False
