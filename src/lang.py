@@ -22,7 +22,7 @@ CLASS_LIST = ["Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothel
 
 
 def generate_report(
-    llm: str, x: str, pred: str, no_ctxt: bool,,
+    llm: str, x: str, pred: str, no_ctxt: bool,
     model: Optional[MiniGPTv2] = None,
     prompt_args: Optional[PromptArgs] = None,
     model_args: Optional[MiniGPTArgs] = None
