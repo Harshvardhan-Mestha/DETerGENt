@@ -3,15 +3,16 @@ Module for evaluating the model predictions.
 - BERTSim: evaluate the model predictions using the BERT for sentence similarity.
 """
 
+import torch
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
 from src.utils.common import agree
 from transformers import BertTokenizer, BertForSequenceClassification
 
-
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 TOKENIZER = BertTokenizer.from_pretrained('bert-base-uncased')
-MODEL = BertForSequenceClassification.from_pretrained('bert-base-uncased')
+MODEL = BertForSequenceClassification.from_pretrained('bert-base-uncased').to(DEVICE)
 label2int = {
     "Atelectasis": 0,
     "Cardiomegaly": 1,
@@ -38,16 +39,16 @@ def BERTSim(report_A, report_B) -> float:
     """
 
     # Tokenize the input reports
-    inputs_A = TOKENIZER(report_A, return_tensors='pt', padding=True, truncation=True)
-    inputs_B = TOKENIZER(report_B, return_tensors='pt', padding=True, truncation=True)
+    inputs_A = TOKENIZER(report_A, return_tensors='pt', padding=True, truncation=True).to(DEVICE)
+    inputs_B = TOKENIZER(report_B, return_tensors='pt', padding=True, truncation=True).to(DEVICE)
 
     # Get the model outputs
-    outputs_A = MODEL(**inputs_A, hidden_states=True, return_dict=True)
-    outputs_B = MODEL(**inputs_B, hidden_states=True, return_dict=True)
+    outputs_A = MODEL(**inputs_A, output_hidden_states=True, return_dict=True)
+    outputs_B = MODEL(**inputs_B, output_hidden_states=True, return_dict=True)
 
     # Get the CLS token embeddings
-    cls_A = outputs_A.hidden_states[-1][:, 0, :]
-    cls_B = outputs_B.hidden_states[-1][:, 0, :]
+    cls_A = outputs_A["hidden_states"][-1][:, 0, :]
+    cls_B = outputs_B["hidden_states"][-1][:, 0, :]
 
     # Calculate the similarity score
     score = (cls_A @ cls_B.T).item()
@@ -221,7 +222,7 @@ if __name__ == "__main__":
     gt_expls = list(gt["report"])
 
     evaluate_expls(gt_expls, gt_expls)
-    evaluate_expls(gpt_expls, gt_expls)
-    evaluate_expls(med_expls, gt_expls)
     evaluate_expls(med_no_ctxt_expls, gt_expls)
     evaluate_expls(gpt_no_ctxt_expls, gt_expls)
+    evaluate_expls(gpt_expls, gt_expls)
+    evaluate_expls(med_expls, gt_expls)
