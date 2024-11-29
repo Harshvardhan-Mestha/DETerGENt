@@ -23,8 +23,8 @@ class ResNetAndHead(nn.Module):
         # create head
         self.head = nn.Sequential(
             nn.Dropout(0.5),
-            nn.BatchNorm1d(18),
-            nn.Linear(18, num_classes)
+            nn.BatchNorm1d(2048),
+            nn.Linear(2048, num_classes)
         )
         self.reset_model_state = deepcopy(self.head.state_dict())
 
@@ -64,7 +64,7 @@ class ResNetAndHead(nn.Module):
             x (torch.Tensor): input tensor of shape (B, C, H, W) / Images
         """
       
-        x = self.backbone(x)
+        x = self.backbone.features(x)
         x = self.head(x)
 
         return x
