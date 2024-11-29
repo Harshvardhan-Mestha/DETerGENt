@@ -4,6 +4,7 @@ pred:
     model: medgpt
     generate: false
     from_file: true
+    out_path: disc_pred_med.csv
     path: discriminator.csv
 
 expl:

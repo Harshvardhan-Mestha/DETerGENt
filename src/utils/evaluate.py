@@ -3,16 +3,26 @@ Module for evaluating the model predictions.
 - BERTSim: evaluate the model predictions using the BERT for sentence similarity.
 """
 
+import numpy as np
 import pandas as pd
-# from nubia import Nubia
-from src.utils.common import match, agree
+from src.utils.common import agree
 from transformers import BertTokenizer, BertForSequenceClassification
 
 
-# NUBIA = Nubia()
 TOKENIZER = BertTokenizer.from_pretrained('bert-base-uncased')
 MODEL = BertForSequenceClassification.from_pretrained('bert-base-uncased')
-
+label2int = {
+    "Atelectasis": 0,
+    "Cardiomegaly": 1,
+    "Calcifications": 2, 
+    "COPD": 3, 
+    "Lung Nodules": 4, 
+    "Mesothelioma": 5,
+    "Plueral Effusion": 6,
+    "Pneumonia": 7, 
+    "Pneumothorax": 8, 
+    "Tuberculosis": 9
+}
 
 def BERTSim(report_A, report_B) -> float:
     """
@@ -44,85 +54,103 @@ def BERTSim(report_A, report_B) -> float:
     return score
 
 
-def evaluate_fn(preds, expls, ys, es) -> pd.DataFrame:
+def evaluate_preds(preds, y) -> None:
     """
-    Evaluates the predictions and explanations.
+    Evaluate the model predictions.
 
     Args:
-        preds (List[str])
-            Predictions.
-        expls (List[str])
-            Explanations.
-        ys (List[str])
-            Ground truth labels.
-        es (List[str])
-            Ground truth explanations.
+    - preds
+    - y
 
     Returns:
-        pd.DataFrame
-            Dataframe with the overall evaluation.
+    - None, prints the evaluation metrics.
     """
 
-    assert len(preds) == len(expls), "[ERROR] Length of predictions and explanations do not match -- aborting evaluation."
-    c, i, po, eo = 0, 0, 0, 0
-    final_df = {
-        "Predictions": [],
-        "Explanations": [],
-        "Ground Truth": [],
-        "Ground Truth Explanation": [],
-        "predict_ok": [],
-        "explain_ok": [],
-        "bert_sim": [],
-        # "nub_score": [],
-        # "nub_semantic_rel":[],
-        # "nub_contradiction":[],
-        # "nub_irrelevancy":[],
-        # "nub_logical_agreement":[],
-        # "nub_grammar_ref":[],
-        # "nub_grammar_hyp":[]
-    }
+    # compute class wise confusion matrices
+    conf = np.zeros((10, 2, 2))
 
-    for k, _ in enumerate(preds):
-        y_pred, y, e_pred, e = preds[k], ys[k], expls[k], es[k]
+    # iteratre over each disease
+    for ailment in label2int:
+        gt_idx = label2int[ailment]
+        for ps, gs in zip(preds, y):
+            # True case
+            if ailment in gs:
+                # TP case
+                if ailment in ps:
+                    conf[gt_idx, 0, 0] += 1
+                # FN case
+                else:
+                    conf[gt_idx, 0, 1] += 1
+            # False case
+            else:
+                # FP case
+                if ailment in ps:
+                    conf[gt_idx, 1, 0] += 1
+                # TN case
+                else:
+                    conf[gt_idx, 1, 1] += 1
 
-        # Check if predictions and explanations are correct
-        predict_ok = match(y_pred, y)
-        explain_ok = agree(e_pred, e)
-        bert_sim = BERTSim(e, e_pred)
-        # nubia = NUBIA.score(ref=e,hyp=e_pred, verbose=False, get_features=True)
+    # compute class wise accuracy, recall, precision, f1
+    acc = np.zeros(10)
+    recall = np.zeros(10)
+    precision = np.zeros(10)
+    f1 = np.zeros(10)
 
-        # Append to final dataframe
-        final_df["Predictions"].append(y_pred)
-        final_df["Explanations"].append(e_pred)
-        final_df["Ground Truth"].append(y)
-        final_df["Ground Truth Explanation"].append(e)
-        final_df["predict_ok"].append(predict_ok)
-        final_df["explain_ok"].append(explain_ok)
-        final_df["bert_sim"].append(bert_sim)
-        # final_df["nub_score"].append(nubia["nubia_score"])
-        # final_df["nub_semantic_rel"].append(nubia["features"]["semantic_relation"])
-        # final_df["nub_contradiction"].append(nubia["features"]["contradiction"])
-        # final_df["nub_irrelevancy"].append(nubia["features"]["irrelevancy"])
-        # final_df["nub_logical_agreement"].append(nubia["features"]["logical_agreement"])
-        # final_df["nub_grammar_ref"].append(nubia["features"]["grammar_ref"])
-        # final_df["nub_grammar_hyp"].append(nubia["features"]["grammar_hyp"])
+    for i in range(10):
+        TP = conf[i, 0, 0]
+        FN = conf[i, 0, 1]
+        FP = conf[i, 1, 0]
+        TN = conf[i, 1, 1]
 
-        if predict_ok and explain_ok:
-            # Correct
-            c += 1
-        elif predict_ok and not explain_ok:
-            # Prediction correct but explanation incorrect
-            po += 1
-        elif not predict_ok and explain_ok:
-            # Prediction incorrect but explanation correct
-            eo += 1
-        else:
-            # Both incorrect
-            i += 1
+        acc[i] = (TP + TN) / (TP + TN + FP + FN)
+        recall[i] = TP / (TP + FN)
+        precision[i] = TP / (TP + FP)
+        f1[i] = 2 * (precision[i] * recall[i]) / (precision[i] + recall[i])
 
-    print(f"Correct: {c}/{len(preds)}")
-    print(f"Prediction correct but explanation incorrect: {po}/{len(preds)}")
-    print(f"Prediction incorrect but explanation correct: {eo}/{len(preds)}")
-    print(f"Both incorrect: {i}/{len(preds)}")
+    print(f"Class Average Accuracy: {np.mean(acc)}")
+    print(f"Class Average Recall: {np.mean(recall)}")
+    print(f"Class Average Precision: {np.mean(precision)}")
+    print(f"Class Average F1: {np.mean(f1)}")
 
-    return pd.DataFrame(final_df)
+    return
+    
+
+if __name__ == "__main__":
+    # Get evaluation scores
+    gt = pd.read_csv("data/xray_data.csv")
+    disc = pd.read_csv("results/preds/disc_predictions.csv")
+    disc.fillna("", inplace=True)
+    gpt_pred = pd.read_csv("results/preds/gen_pred_gpt.csv")
+    gpt_pred.fillna("", inplace=True)
+    med_pred = pd.read_csv("results/preds/gen_pred_med.csv")
+    med_pred.fillna("", inplace=True)
+
+    # sort by case
+    gt["case"] = gt["case"].apply(lambda x: x.split("_")[1])
+    gt.sort_values(by="case", inplace=True)
+    gt["case"] = gt["case"].apply(lambda x: f"case_{x}")
+
+    disc["case"] = disc["case"].apply(lambda x: x.split("_")[1])
+    disc.sort_values(by="case", inplace=True)
+    disc["case"] = disc["case"].apply(lambda x: f"case_{x}")
+
+    gpt_pred["case"] = gpt_pred["case"].apply(lambda x: x.split("_")[1])
+    gpt_pred.sort_values(by="case", inplace=True)
+    gpt_pred["case"] = gpt_pred["case"].apply(lambda x: f"case_{x}")
+
+    med_pred["case"] = med_pred["case"].apply(lambda x: x.split("_")[1])
+    med_pred.sort_values(by="case", inplace=True)
+    med_pred["case"] = med_pred["case"].apply(lambda x: f"case_{x}")
+
+    # evaluate predictions
+    disc_preds = list(disc["predictions"])
+    gpt_preds = list(gpt_pred["prediction"])
+    med_preds = list(med_pred["prediction"])
+    gt_labels = list(gt["label"])
+
+    evaluate_preds(gt_labels, gt_labels)
+    evaluate_preds(disc_preds, gt_labels)
+    evaluate_preds(gpt_preds, gt_labels)
+    evaluate_preds(med_preds, gt_labels)
+    
+    

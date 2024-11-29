@@ -19,11 +19,10 @@ label2int = {
     "COPD": torch.tensor(3), 
     "Lung Nodules": torch.tensor(4), 
     "Mesothelioma": torch.tensor(5),
-    "Cardiomegaly": torch.tensor(6), 
-    "Plueral Effusion": torch.tensor(7),
-    "Pneumonia": torch.tensor(8), 
-    "Pneumothorax": torch.tensor(9), 
-    "Tuberculosis": torch.tensor(10),
+    "Plueral Effusion": torch.tensor(6),
+    "Pneumonia": torch.tensor(7), 
+    "Pneumothorax": torch.tensor(8), 
+    "Tuberculosis": torch.tensor(9),
     np.nan: np.nan
 }
 
