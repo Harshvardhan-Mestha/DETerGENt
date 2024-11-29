@@ -1,4 +1,4 @@
-predictions,case,img_path
+prediction,case,img_path
 "Atelectasis, Plueral Effusion",case_1,combined/case_1/img/
 "Cardiomegaly, Mesothelioma, Plueral Effusion, Tuberculosis",case_2,combined/case_2/img/
 "Atelectasis, Cardiomegaly, Pneumothorax",case_3,combined/case_3/img/
