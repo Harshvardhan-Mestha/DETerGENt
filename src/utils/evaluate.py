@@ -190,8 +190,7 @@ if __name__ == "__main__":
     gpt1_expls = pd.read_csv("results/expls/gen_expl_gpt_1.csv")
     med_no_ctxt_expls = pd.read_csv("results/expls/gen_expl_med_no_ctxt.csv")
     gpt_no_ctxt_expls = pd.read_csv("results/expls/gen_expl_gpt_no_ctxt.csv")
-    gpt_no_ctxt1_expls = pd.read_csv("results/expls/gen_expl_gpt_no_ctxt_1.csv")
-    # disc_gpt
+    disc_gpt = pd.read_csv("results/expls/disc_expl_gpt.csv")
     # disc_med
 
     gpt_expls.fillna("", inplace=True)
@@ -199,7 +198,7 @@ if __name__ == "__main__":
     gpt1_expls.fillna("", inplace=True)
     med_no_ctxt_expls.fillna("", inplace=True)
     gpt_no_ctxt_expls.fillna("", inplace=True)
-    gpt_no_ctxt1_expls.fillna("", inplace=True)
+    disc_gpt.fillna("", inplace=True)
 
     # sort by case
     gpt_expls["case"] = gpt_expls["case"].apply(lambda x: x.split("_")[1])
@@ -222,9 +221,9 @@ if __name__ == "__main__":
     gpt_no_ctxt_expls.sort_values(by="case", inplace=True)
     gpt_no_ctxt_expls["case"] = gpt_no_ctxt_expls["case"].apply(lambda x: f"case_{x}")
 
-    gpt_no_ctxt1_expls["case"] = gpt_no_ctxt1_expls["case"].apply(lambda x: x.split("_")[1])
-    gpt_no_ctxt1_expls.sort_values(by="case", inplace=True)
-    gpt_no_ctxt1_expls["case"] = gpt_no_ctxt1_expls["case"].apply(lambda x: f"case_{x}")
+    disc_gpt["case"] = disc_gpt["case"].apply(lambda x: x.split("_")[1])
+    disc_gpt.sort_values(by="case", inplace=True)
+    disc_gpt["case"] = disc_gpt["case"].apply(lambda x: f"case_{x}")
 
     # evaluate explanations
     gpt_expls = list(gpt_expls["explanation"])
@@ -232,13 +231,13 @@ if __name__ == "__main__":
     gpt1_expls = list(gpt1_expls["explanation"])
     med_no_ctxt_expls = list(med_no_ctxt_expls["explanation"])
     gpt_no_ctxt_expls = list(gpt_no_ctxt_expls["explanation"])
-    gpt_no_ctxt1_expls = list(gpt_no_ctxt1_expls["explanation"])
+    disc_gpt = list(disc_gpt["explanation"])
     gt_expls = list(gt["report"])
 
     evaluate_expls(gt_expls, gt_expls)
     evaluate_expls(med_no_ctxt_expls, gt_expls)
     evaluate_expls(gpt_no_ctxt_expls, gt_expls)
-    evaluate_expls(gpt_no_ctxt1_expls, gt_expls)
+    evaluate_expls(disc_gpt, gt_expls)
     evaluate_expls(gpt_expls, gt_expls)
     evaluate_expls(gpt1_expls, gt_expls)
     evaluate_expls(med_expls, gt_expls)
