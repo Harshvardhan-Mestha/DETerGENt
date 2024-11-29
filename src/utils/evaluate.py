@@ -3,6 +3,9 @@ Module for evaluating the model predictions.
 - BERTSim: evaluate the model predictions using the BERT for sentence similarity.
 """
 
+import sys
+sys.path.append("./")
+
 import torch
 import numpy as np
 import pandas as pd
@@ -191,7 +194,7 @@ if __name__ == "__main__":
     med_no_ctxt_expls = pd.read_csv("results/expls/gen_expl_med_no_ctxt.csv")
     gpt_no_ctxt_expls = pd.read_csv("results/expls/gen_expl_gpt_no_ctxt.csv")
     disc_gpt = pd.read_csv("results/expls/disc_expl_gpt.csv")
-    # disc_med
+    disc_med = pd.read_csv("results/expls/disc_expl_med.csv")
 
     gpt_expls.fillna("", inplace=True)
     med_expls.fillna("", inplace=True)
@@ -199,6 +202,7 @@ if __name__ == "__main__":
     med_no_ctxt_expls.fillna("", inplace=True)
     gpt_no_ctxt_expls.fillna("", inplace=True)
     disc_gpt.fillna("", inplace=True)
+    disc_med.fillna("", inplace=True)
 
     # sort by case
     gpt_expls["case"] = gpt_expls["case"].apply(lambda x: x.split("_")[1])
@@ -225,6 +229,10 @@ if __name__ == "__main__":
     disc_gpt.sort_values(by="case", inplace=True)
     disc_gpt["case"] = disc_gpt["case"].apply(lambda x: f"case_{x}")
 
+    disc_med["case"] = disc_med["case"].apply(lambda x: x.split("_")[1])
+    disc_med.sort_values(by="case", inplace=True)
+    disc_med["case"] = disc_med["case"].apply(lambda x: f"case_{x}")
+
     # evaluate explanations
     gpt_expls = list(gpt_expls["explanation"])
     med_expls = list(med_expls["explanation"])
@@ -232,12 +240,14 @@ if __name__ == "__main__":
     med_no_ctxt_expls = list(med_no_ctxt_expls["explanation"])
     gpt_no_ctxt_expls = list(gpt_no_ctxt_expls["explanation"])
     disc_gpt = list(disc_gpt["explanation"])
+    disc_med = list(disc_med["explanation"])
     gt_expls = list(gt["report"])
 
-    evaluate_expls(gt_expls, gt_expls)
-    evaluate_expls(med_no_ctxt_expls, gt_expls)
-    evaluate_expls(gpt_no_ctxt_expls, gt_expls)
-    evaluate_expls(disc_gpt, gt_expls)
-    evaluate_expls(gpt_expls, gt_expls)
-    evaluate_expls(gpt1_expls, gt_expls)
-    evaluate_expls(med_expls, gt_expls)
+    # evaluate_expls(gt_expls, gt_expls)
+    # evaluate_expls(med_no_ctxt_expls, gt_expls)
+    # evaluate_expls(gpt_no_ctxt_expls, gt_expls)
+    # evaluate_expls(disc_gpt, gt_expls)
+    evaluate_expls(disc_med, gt_expls)
+    # evaluate_expls(gpt_expls, gt_expls)
+    # evaluate_expls(gpt1_expls, gt_expls)
+    # evaluate_expls(med_expls, gt_expls)
