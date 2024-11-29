@@ -139,13 +139,18 @@ def evaluate_expls(expls, y_es) -> None:
     # compute agree scores
     # compute BERtSim scores
     agree_scores, bert_scores = [], []
+    qwise = {"A": 0, "B": 0, "C": 0, "D": 0}
     for i in tqdm(range(len(expls)), total=len(expls)):
-        agree_score = agree(y_es[i], expls[i])
+        agree_score, agrees = agree(y_es[i], expls[i])
+        for key in agrees:
+            qwise[key] += agrees[key]
         bert_score = BERTSim(y_es[i], expls[i])
         agree_scores.append(agree_score)
         bert_scores.append(bert_score)
 
     print(f"Agree Score: {np.mean(agree_scores):.4f}")
+    for key in qwise:
+        print(f"Qwise {key} Score: {qwise[key] / len(expls):.4f}")
     print(f"Bert Score: {np.mean(bert_scores):.4f}")
 
     return

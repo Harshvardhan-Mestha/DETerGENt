@@ -118,6 +118,7 @@ def agree(e_a, e_b) -> bool:
     """
     # NOTE: for this task, we need to use GPT-4, 3.5 is not enough
     yes_count = 0
+    yeses = {"A": 0, "B": 0, "C": 0, "D": 0}
 
     # Pathologies
     completion = client.chat.completions.create(
@@ -140,6 +141,7 @@ def agree(e_a, e_b) -> bool:
     )
     out = completion.choices[0].message.content.lower()
     yes_count += out == "yes"
+    yeses["A"] += out == "yes"
 
     # Locations
     completion = client.chat.completions.create(
@@ -162,6 +164,7 @@ def agree(e_a, e_b) -> bool:
     )
     out = completion.choices[0].message.content.lower()
     yes_count += out == "yes"
+    yeses["B"] += out == "yes"
 
     # Number of pathologies
     completion = client.chat.completions.create(
@@ -184,6 +187,7 @@ def agree(e_a, e_b) -> bool:
     )
     out = completion.choices[0].message.content.lower()
     yes_count += out == "yes"
+    yeses["C"] += out == "yes"
 
     # Desc. match
     completion = client.chat.completions.create(
@@ -206,8 +210,9 @@ def agree(e_a, e_b) -> bool:
     )
     out = completion.choices[0].message.content.lower()
     yes_count += out == "yes"
+    yeses["D"] += out == "yes"
 
-    return (yes_count / 4)
+    return (yes_count / 4), yeses
 
 
 def print_and_log(text: str, log: io.FileIO) -> None:
