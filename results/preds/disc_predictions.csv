@@ -1,0 +1,198 @@
+predictions,case
+"Atelectasis, Plueral Effusion",case_1
+"Cardiomegaly, Mesothelioma, Plueral Effusion, Tuberculosis",case_2
+"Atelectasis, Cardiomegaly, Pneumothorax",case_3
+"COPD, Lung Nodules, Plueral Effusion",case_4
+"Calcifications, COPD, Lung Nodules, Pneumonia",case_5
+"Atelectasis, Mesothelioma",case_6
+Pneumothorax,case_7
+"Cardiomegaly, Plueral Effusion",case_8
+"Cardiomegaly, Tuberculosis",case_9
+"Atelectasis, Cardiomegaly, Plueral Effusion",case_10
+"Atelectasis, Cardiomegaly, Plueral Effusion",case_11
+"Mesothelioma, Plueral Effusion",case_12
+"Atelectasis, Plueral Effusion, Pneumonia",case_13
+,case_14
+"Atelectasis, Mesothelioma, Plueral Effusion, Pneumothorax",case_15
+,case_16
+Pneumothorax,case_17
+"Mesothelioma, Plueral Effusion",case_18
+Atelectasis,case_19
+"Lung Nodules, Pneumonia, Pneumothorax",case_20
+"Pneumothorax, Tuberculosis",case_21
+,case_22
+Tuberculosis,case_23
+"COPD, Pneumothorax",case_24
+Pneumothorax,case_25
+"Calcifications, Plueral Effusion",case_26
+"Lung Nodules, Pneumonia",case_27
+"Lung Nodules, Plueral Effusion, Tuberculosis",case_28
+,case_29
+Tuberculosis,case_30
+,case_31
+Mesothelioma,case_32
+,case_33
+"Pneumothorax, Tuberculosis",case_34
+,case_35
+"Atelectasis, Plueral Effusion",case_36
+"Atelectasis, Plueral Effusion, Pneumothorax",case_37
+Cardiomegaly,case_38
+Lung Nodules,case_39
+"Atelectasis, Plueral Effusion",case_40
+Pneumothorax,case_41
+"Mesothelioma, Plueral Effusion",case_42
+"Atelectasis, Cardiomegaly, Plueral Effusion",case_43
+Plueral Effusion,case_44
+"Pneumonia, Tuberculosis",case_45
+Pneumothorax,case_47
+Plueral Effusion,case_48
+"Plueral Effusion, Pneumothorax",case_49
+,case_50
+"Cardiomegaly, Plueral Effusion",case_51
+"Atelectasis, Cardiomegaly",case_52
+"Atelectasis, Cardiomegaly, Plueral Effusion",case_53
+"Cardiomegaly, Plueral Effusion",case_54
+"Calcifications, Plueral Effusion, Tuberculosis",case_55
+,case_56
+"Mesothelioma, Plueral Effusion",case_57
+"Cardiomegaly, Mesothelioma, Plueral Effusion",case_58
+,case_59
+"Atelectasis, Pneumonia",case_60
+Tuberculosis,case_61
+Tuberculosis,case_62
+,case_63
+Pneumothorax,case_64
+"Atelectasis, Tuberculosis",case_65
+Plueral Effusion,case_66
+Tuberculosis,case_67
+Tuberculosis,case_68
+"Atelectasis, Plueral Effusion, Pneumothorax",case_69
+"Calcifications, Plueral Effusion, Tuberculosis",case_70
+"Calcifications, Lung Nodules, Tuberculosis",case_71
+Lung Nodules,case_72
+"Lung Nodules, Pneumothorax",case_73
+,case_74
+Tuberculosis,case_75
+,case_76
+,case_77
+Tuberculosis,case_78
+"Lung Nodules, Tuberculosis",case_79
+Pneumothorax,case_80
+Tuberculosis,case_81
+Pneumothorax,case_82
+"Atelectasis, Lung Nodules, Pneumonia, Pneumothorax",case_83
+"Lung Nodules, Pneumonia, Pneumothorax, Tuberculosis",case_84
+"Lung Nodules, Pneumonia",case_85
+"Plueral Effusion, Tuberculosis",case_86
+,case_87
+,case_88
+Tuberculosis,case_89
+Pneumothorax,case_90
+"Lung Nodules, Pneumothorax",case_91
+"Atelectasis, Mesothelioma, Plueral Effusion, Pneumothorax",case_92
+"Lung Nodules, Pneumonia, Pneumothorax",case_93
+"COPD, Lung Nodules, Pneumothorax",case_94
+"Cardiomegaly, Tuberculosis",case_95
+"Calcifications, Lung Nodules, Tuberculosis",case_96
+"Calcifications, COPD, Lung Nodules",case_97
+"Cardiomegaly, Calcifications, Plueral Effusion",case_98
+"Lung Nodules, Pneumothorax",case_99
+COPD,case_100
+"Cardiomegaly, Mesothelioma, Plueral Effusion",case_101
+Pneumothorax,case_102
+"Calcifications, Pneumothorax",case_103
+"Atelectasis, Cardiomegaly, Plueral Effusion",case_104
+,case_105
+"Atelectasis, Plueral Effusion",case_106
+"Cardiomegaly, Plueral Effusion",case_107
+,case_108
+,case_109
+"Atelectasis, Mesothelioma, Plueral Effusion",case_110
+,case_111
+"Plueral Effusion, Tuberculosis",case_112
+"Atelectasis, Cardiomegaly, Calcifications, Mesothelioma, Plueral Effusion",case_113
+"Atelectasis, Plueral Effusion",case_114
+"COPD, Plueral Effusion",case_115
+"Cardiomegaly, Mesothelioma, Plueral Effusion",case_116
+"Cardiomegaly, Calcifications, Plueral Effusion",case_117
+"Cardiomegaly, Mesothelioma, Plueral Effusion",case_118
+"Cardiomegaly, Tuberculosis",case_119
+"Atelectasis, Calcifications, Plueral Effusion",case_120
+Tuberculosis,case_121
+Plueral Effusion,case_122
+"Atelectasis, Cardiomegaly, Mesothelioma, Plueral Effusion",case_123
+"Mesothelioma, Plueral Effusion",case_124
+"Mesothelioma, Plueral Effusion",case_125
+"Atelectasis, Mesothelioma, Plueral Effusion",case_126
+"Lung Nodules, Pneumothorax",case_127
+"Cardiomegaly, Mesothelioma, Plueral Effusion",case_128
+"Atelectasis, Plueral Effusion, Pneumothorax",case_129
+"Cardiomegaly, Calcifications, Mesothelioma, Plueral Effusion",case_130
+"Mesothelioma, Plueral Effusion",case_131
+Pneumothorax,case_132
+"Atelectasis, Cardiomegaly, Mesothelioma, Plueral Effusion",case_133
+"Atelectasis, Cardiomegaly, Plueral Effusion",case_134
+"Cardiomegaly, Tuberculosis",case_135
+"Plueral Effusion, Pneumonia, Pneumothorax",case_136
+"Atelectasis, Mesothelioma, Plueral Effusion",case_137
+"Cardiomegaly, Plueral Effusion",case_138
+Plueral Effusion,case_139
+"Atelectasis, Cardiomegaly, Mesothelioma, Plueral Effusion",case_140
+"Cardiomegaly, Plueral Effusion",case_141
+,case_142
+"Lung Nodules, Pneumonia",case_143
+"Plueral Effusion, Pneumonia, Pneumothorax",case_144
+"Lung Nodules, Pneumonia",case_145
+"COPD, Pneumothorax",case_146
+,case_147
+"Lung Nodules, Pneumonia, Pneumothorax, Tuberculosis",case_149
+Pneumonia,case_150
+COPD,case_151
+Pneumonia,case_152
+"Cardiomegaly, Plueral Effusion",case_153
+"Lung Nodules, Pneumonia",case_154
+"Atelectasis, Pneumothorax",case_155
+"Pneumonia, Pneumothorax",case_156
+"Lung Nodules, Pneumonia",case_157
+"Cardiomegaly, Plueral Effusion",case_158
+Cardiomegaly,case_160
+"Atelectasis, Plueral Effusion",case_161
+,case_162
+"Atelectasis, Plueral Effusion",case_163
+"Lung Nodules, Plueral Effusion",case_164
+"Atelectasis, Lung Nodules, Plueral Effusion, Pneumothorax",case_165
+,case_166
+"Atelectasis, Pneumonia, Pneumothorax",case_167
+COPD,case_168
+"COPD, Pneumothorax",case_169
+Pneumothorax,case_170
+"COPD, Pneumothorax",case_171
+,case_172
+Pneumothorax,case_173
+,case_174
+"Lung Nodules, Pneumonia, Pneumothorax, Tuberculosis",case_175
+Pneumothorax,case_176
+"Atelectasis, Plueral Effusion, Pneumothorax",case_177
+"Atelectasis, Plueral Effusion, Pneumothorax",case_178
+"Atelectasis, Pneumothorax",case_179
+Atelectasis,case_180
+"Lung Nodules, Pneumonia",case_181
+"Calcifications, Lung Nodules, Plueral Effusion, Tuberculosis",case_182
+"COPD, Pneumothorax",case_183
+"Calcifications, COPD, Lung Nodules, Tuberculosis",case_184
+"Lung Nodules, Pneumonia, Tuberculosis",case_185
+"Calcifications, Mesothelioma, Plueral Effusion",case_186
+Pneumothorax,case_187
+"Calcifications, COPD, Lung Nodules, Plueral Effusion",case_188
+Atelectasis,case_189
+,case_190
+Plueral Effusion,case_191
+Tuberculosis,case_192
+Tuberculosis,case_193
+"Calcifications, Plueral Effusion, Tuberculosis",case_194
+"Calcifications, COPD",case_195
+"Calcifications, Plueral Effusion, Tuberculosis",case_196
+"Mesothelioma, Plueral Effusion, Tuberculosis",case_197
+,case_198
+"Pneumothorax, Tuberculosis",case_199
+"Lung Nodules, Pneumothorax",case_200

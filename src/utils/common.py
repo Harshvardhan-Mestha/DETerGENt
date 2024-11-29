@@ -24,6 +24,13 @@ client = OpenAI(
 CLASS_LIST = ["Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothelioma",
               "Cardiomegaly", "Plueral Effusion", "Pneumonia", "Pneumothorax",
               "Tuberculosis"]
+SYS = f"""
+You are a radiology expert, with detailed knowledge of {', '.join(CLASS_LIST)}.
+Your task is to check factual consistency between two given diagnoses/explanations of an XRay.
+1. Ignore any personal patient information mentioned in either diagnosis/explanation, e.g. age, name, etc.
+2. Consider consistency in terms of the symptoms only and not the causes, e.g. if a report mentions xyz can be
+diagnosed from follow-up and another report just mentions xyz, then this is no problem, it's not necessary to mention follow-up.
+3. Respond only in Yes/No."""
 
 
 def encode_image(image_path):
@@ -109,8 +116,10 @@ def agree(e_a, e_b) -> bool:
     Returns:
         bool: True if the explanation agrees with the prediction, False otherwise
     """
-
     # NOTE: for this task, we need to use GPT-4, 3.5 is not enough
+    yes_count = 0
+
+    # Pathologies
     completion = client.chat.completions.create(
         model="gpt-4o",
         temperature=0.0,
@@ -118,13 +127,73 @@ def agree(e_a, e_b) -> bool:
         messages=[
             {
                 "role": "system",
+                "content": SYS
+            },
+            {
+                "role": "user",
                 "content": f"""
-                You are a radiology expert, with detailed knowledge of {', '.join(CLASS_LIST)}.
-                Your task is to check factual consistency between two given diagnoses/explanations of an XRay.
-                1. Ignore any personal patient information mentioned in either diagnosis/explanation, e.g. age, name, etc.
-                2. Consider consistency in terms of the symptoms only and not the causes, e.g. if a report mentions xyz can be
-                diagnosed from follow-up and another report just mentions xyz, then this is no problem, it's not necessary to mention follow-up.
-                3. Respond only in Yes/No."""
+                Given A: {e_a} is the correct diagnosis/explanation of an XRay, and B: {e_b} is another diagnosis/explanation of an XRay. 
+                Do these talk about the same ailments?
+                """
+            },
+        ]
+    )
+    out = completion.choices[0].message.content.lower()
+    yes_count += out == "yes"
+
+    # Locations
+    completion = client.chat.completions.create(
+        model="gpt-4o",
+        temperature=0.0,
+        seed=42,
+        messages=[
+            {
+                "role": "system",
+                "content": SYS
+            },
+            {
+                "role": "user",
+                "content": f"""
+                Given A: {e_a} is the correct diagnosis/explanation of an XRay, and B: {e_b} is another diagnosis/explanation of an XRay. 
+                Are ailments in A and B located on the same side of the lungs?
+                """
+            },
+        ]
+    )
+    out = completion.choices[0].message.content.lower()
+    yes_count += out == "yes"
+
+    # Number of pathologies
+    completion = client.chat.completions.create(
+        model="gpt-4o",
+        temperature=0.0,
+        seed=42,
+        messages=[
+            {
+                "role": "system",
+                "content": SYS
+            },
+            {
+                "role": "user",
+                "content": f"""
+                Given A: {e_a} is the correct diagnosis/explanation of an XRay, and B: {e_b} is another diagnosis/explanation of an XRay. 
+                Do they talk about the same number of ailments?
+                """
+            },
+        ]
+    )
+    out = completion.choices[0].message.content.lower()
+    yes_count += out == "yes"
+
+    # Desc. match
+    completion = client.chat.completions.create(
+        model="gpt-4o",
+        temperature=0.0,
+        seed=42,
+        messages=[
+            {
+                "role": "system",
+                "content": SYS
             },
             {
                 "role": "user",
@@ -135,11 +204,10 @@ def agree(e_a, e_b) -> bool:
             },
         ]
     )
-
-    # parse the response
     out = completion.choices[0].message.content.lower()
+    yes_count += out == "yes"
 
-    return out == "yes"
+    return (yes_count / 4)
 
 
 def print_and_log(text: str, log: io.FileIO) -> None:

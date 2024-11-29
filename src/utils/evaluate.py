@@ -5,6 +5,7 @@ Module for evaluating the model predictions.
 
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
 from src.utils.common import agree
 from transformers import BertTokenizer, BertForSequenceClassification
 
@@ -105,7 +106,10 @@ def evaluate_preds(preds, y) -> None:
         acc[i] = (TP + TN) / (TP + TN + FP + FN)
         recall[i] = TP / (TP + FN)
         precision[i] = TP / (TP + FP)
-        f1[i] = 2 * (precision[i] * recall[i]) / (precision[i] + recall[i])
+        if TP == 0:
+            f1[i] = 0
+        else:
+            f1[i] = 2 * (precision[i] * recall[i]) / (precision[i] + recall[i])
 
     print(f"Class Average Accuracy: {np.mean(acc):.4f}")
     print(f"Class Average Recall: {np.mean(recall):.4f}")
@@ -130,7 +134,7 @@ def evaluate_expls(expls, y_es) -> None:
     # compute agree scores
     # compute BERtSim scores
     agree_scores, bert_scores = [], []
-    for i in range(len(expls)):
+    for i in tqdm(range(len(expls)), total=len(expls)):
         agree_score = agree(y_es[i], expls[i])
         bert_score = BERTSim(y_es[i], expls[i])
         agree_scores.append(agree_score)
@@ -175,7 +179,6 @@ if __name__ == "__main__":
     med_preds = list(med_pred["prediction"])
     gt_labels = list(gt["label"])
 
-    evaluate_preds(gt_labels, gt_labels)
     evaluate_preds(disc_preds, gt_labels)
     evaluate_preds(gpt_preds, gt_labels)
     evaluate_preds(med_preds, gt_labels)
