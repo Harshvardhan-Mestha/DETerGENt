@@ -8,7 +8,19 @@ import pandas as pd
 
 
 CLASS_NAMES_SHORT = ["ATCS", "CLFS", "CRDM", "COPD", "LNGN", "MSTL", "PLEF", "PNUM", "PNTX", "TUBC"]
-
+label2int = {
+    "Atelectasis": 0,
+    "Cardiomegaly": 1,
+    "Calcifications": 2, 
+    "COPD": 3, 
+    "Lung Nodules": 4, 
+    "Mesothelioma": 5,
+    "Cardiomegaly": 6, 
+    "Plueral Effusion": 7,
+    "Pneumonia": 8, 
+    "Pneumothorax": 9, 
+    "Tuberculosis": 10
+}
 
 def _load_data(data_path="data/xray_data.csv"):
     """
@@ -100,4 +112,26 @@ def load_data():
         data.append((D[0][i], D[1][i], D[2][i], D[3][i]))
 
     print("[INFO] Data processed.")
+    return data
+
+
+def map_labels(data: str):
+    """
+    Maps a list of True False from the DenseNet to actual labels.
+    """
+
+    data = pd.read_csv(data, index_col=False)
+    # convert to python list
+    data["predictions"] = data["predictions"].apply(lambda x: eval(x))
+    int2label = {v: k for k, v in label2int.items()}
+    for i in range(len(data)):
+        prediction_list = data.at[i, "predictions"]
+        predictions = []
+        for j in range(len(prediction_list)):
+            if prediction_list[j] == True:
+                predictions.append(int2label[j])
+        if len(predictions) == 0:
+            predictions = ["None"]
+        data.at[i, "predictions"] = ", ".join(predictions)
+
     return data

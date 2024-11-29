@@ -55,9 +55,7 @@ class XRayDataset(Dataset):
             assert isinstance(data, pd.DataFrame), "data should be either path to CSV file or pandas DataFrame"
             self.data = data
 
-        # drop erroneous rows (45, 147, 158)
-        mask = self.data["case"].isin(["case_46", "case_148", "case_159"])
-        self.data = self.data[~mask]
+        # remove the string "case_" from the case column
         self.data["case"] = self.data["case"].apply(lambda x: int(x.split("_")[1]))
 
         # Split the 'labels' column into separate columns
@@ -107,7 +105,7 @@ class XRayDataset(Dataset):
         label = F.one_hot(self.data.iloc[idx]["label1"], self.num_classes).to(torch.float32)
         label += F.one_hot(self.data.iloc[idx]["label2"], self.num_classes).to(torch.float32) if not np.isnan(self.data.iloc[idx]["label2"]) else 0
         label += F.one_hot(self.data.iloc[idx]["label3"], self.num_classes).to(torch.float32) if not np.isnan(self.data.iloc[idx]["label3"]) else 0
-        weights = torch.ones_like(label) + 9*label # more weight to positive samples
+        weights = torch.ones_like(label) + 7*label # more weight to the positive class
         if self.training:
             return image, label, weights
         else:
@@ -127,6 +125,10 @@ def getDataLoadersFor5FoldCV(data: str, batch_size: int = 8, ddp: bool = True) -
         list: list of dataloaders for 5 fold cross validation
     """
     data = pd.read_csv(data)
+    # drop erroneous rows (45, 147, 158)
+    mask = data["case"].isin(["case_46", "case_148", "case_159"])
+    data = data[~mask]
+    total = len(data)
     data['kfold'] = -1
     data = data.sample(frac=1).reset_index(drop=True)
     # y = data["label1"].values
@@ -134,9 +136,11 @@ def getDataLoadersFor5FoldCV(data: str, batch_size: int = 8, ddp: bool = True) -
     for f, (t_, v_) in enumerate(kf.split(X=data)):
         data.loc[v_, 'kfold'] = f
     dataloaders = []
+    cases = []
     for i in range(5):
         train_data = data[data.kfold != i].reset_index(drop=True)
         valid_data = data[data.kfold == i].reset_index(drop=True)
+        cases += valid_data["case"].tolist()
         train_dataset = XRayDataset(train_data)
         valid_dataset = XRayDataset(valid_data, training=False)
         train_sampler = DistributedSampler(train_dataset, shuffle=True) if ddp else None
@@ -148,20 +152,11 @@ def getDataLoadersFor5FoldCV(data: str, batch_size: int = 8, ddp: bool = True) -
                                   shuffle=False, drop_last=True, sampler=valid_sampler)
         dataloaders.append((train_loader, valid_loader))
 
+    cases = set(cases)
+    assert len(cases) == total, "Some cases are missing in the validation set."
     # full data loader
     full_dataset = XRayDataset(data)
     full_loader = DataLoader(full_dataset, batch_size=batch_size, shuffle=True)
     dataloaders.append(full_loader)
 
     return dataloaders
-
-
-if __name__ == "__main__":
-    dataloaders = getDataLoadersFor5FoldCV("/home/f20212582/git/radio-lm/data/train_data.csv")
-    for train_loader, valid_loader in dataloaders[:-1]:
-        print(len(train_loader), len(valid_loader))
-        for i, (x, y) in enumerate(train_loader):
-            print(x.shape, y.shape)
-            if i == 0:
-                break
-    print(len(dataloaders[-1]))
