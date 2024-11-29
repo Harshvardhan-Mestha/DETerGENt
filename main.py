@@ -96,7 +96,7 @@ def main(config, D: list) -> Optional[pd.DataFrame]:
             "case": []
         }
         for _, pt in preds.iterrows():
-            explanation = generate_report(expl["model"], pt["img_path"], pt["prediction"], model, prompt_args, model_args)
+            explanation = generate_report(expl["model"], pt["img_path"], pt["prediction"],expl["no_ctxt"], model, prompt_args, model_args)
             expls["img_path"].append(pt["img_path"])
             expls["explanation"].append(explanation)
             expls["case"].append(pt["case"])

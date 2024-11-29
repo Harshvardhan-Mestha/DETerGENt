@@ -22,7 +22,7 @@ CLASS_LIST = ["Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothel
 
 
 def generate_report(
-    llm: str, x: str, pred: str,
+    llm: str, x: str, pred: str, no_ctxt: bool,,
     model: Optional[MiniGPTv2] = None,
     prompt_args: Optional[PromptArgs] = None,
     model_args: Optional[MiniGPTArgs] = None
@@ -38,6 +38,9 @@ def generate_report(
         Directory of the X-ray image (if multiple images, use the first image) OR the image path
     pred: str
         Predicted ailment for the given X-ray
+    no_ctxt: bool
+        if True, no context is provided, direct explanation
+        if False, context is provided, explanation with respect to the prediction
 
     The next 3 arguments are only used for MiniGPT-Med
     
@@ -54,10 +57,13 @@ def generate_report(
         Generated report for the given X-ray image
     """
 
+    
     if isinstance(pred, float):
       print("skipped since no ailment diagnosed...")
       report = ""
       return report
+    
+    if no_ctxt:pred = None # if no context is provided, the prediction is not used
 
     # Get image path
     if os.path.isdir(f"data/{x}"):
@@ -73,25 +79,48 @@ def generate_report(
 
         # messages object, to be passed to the OpenAI API
         # TODO: refine prompt
-        messages = [
-            {
-                "role": "user",
-                "content": [
-                    {
-                        "type": "text",
-                        "text": f"""
-                        Pretend you are a radiologist
-                        Given is the hypothetical X-ray image.
-                        The patient has been diagnosed with {pred}.
-                        Your output should be in the following format :
-                        "Explanation" - A short passage describing the contents of the image with respect to the ailment(s) above
-                        Adhere to the output format strictly, and be concise.
-                        Make no assumptions about the patient.
-                        """,
-                    },
-                ],
-            }
-        ]
+        if no_ctxt and pred is None: # no context mode
+            # we do not ask diagnosis we directly explain
+            messages = [
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": """
+                            Pretend you are a radiologist
+                            Given is the hypothetical X-ray image.
+                            The 10 ailments are as follows : "Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothelioma","Cardiomegaly", "Plueral Effusion", "Pneumonia", "Pneumothorax", "Tuberculosis"
+                            Your output should be in the following format :
+                            "Explanation" - A short passage describing the contents of the image with respect to the ailment(s) above
+                            Adhere to the output format strictly, and be concise.
+                            Make no assumptions about the patient.
+                            """,
+                        },
+                    ],
+                }
+            ]
+        else:
+            # normal mode -- explain with the given pred
+            messages = [
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": f"""
+                            Pretend you are a radiologist
+                            Given is the hypothetical X-ray image.
+                            The patient has been diagnosed with {pred}.
+                            Your output should be in the following format :
+                            "Explanation" - A short passage describing the contents of the image with respect to the ailment(s) above
+                            Adhere to the output format strictly, and be concise.
+                            Make no assumptions about the patient.
+                            """,
+                        },
+                    ],
+                }
+            ]
 
         # add the image in base64 encoding
         encoding = encode_image(image_path)
@@ -127,9 +156,15 @@ def generate_report(
             prompt_args = PromptArgs(temperature=0.9,
                                      top_p=0.9)
 
-        report_prompt = f"""
-        Given the prediction {pred}, please write a detailed report for the given Xray.
-        """
+        if no_ctxt and pred is None: # no context mode
+            # ask for a detailed report with respect to the 10 ailments instead of a diagnosis first
+            report_prompt = """
+            Please write a detailed report for the given Xray, with respect to "Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothelioma","Cardiomegaly", "Plueral Effusion", "Pneumonia", "Pneumothorax", "Tuberculosis"
+            """
+        else: # normal mode
+            report_prompt = f"""
+            Given the prediction {pred}, please write a detailed report for the given Xray.
+            """
         prompt_args.mode = "caption"
         # get report from MiniGPTMed
         report, _ = mini_gpt_client(
