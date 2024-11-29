@@ -1,17 +1,18 @@
-exp_name: vanilla_MedGPT
+exp_name: no_context_MedGPT
 evaluate: false
 pred:
     model: medgpt
-    generate: true
-    from_file: false
-    out_path: gen_pred_med.csv
+    generate: false
+    from_file: true
+    path: no_ctxt.csv
+    out_path: gen_pred_med_no_ctxt.csv
 
 expl:
     model: medgpt
     generate: true
     from_file: false
-    out_path: gen_expl_med.csv
-    no_ctxt: false
+    out_path: gen_expl_med_no_ctxt.csv
+    no_ctxt: true
 
 medgpt:
     model_args:
