@@ -58,7 +58,7 @@ def generate_report(
     """
 
     
-    if isinstance(pred, float):
+    if isinstance(pred, float) and no_ctxt == False:
       print("skipped since no ailment diagnosed...")
       report = ""
       return report
