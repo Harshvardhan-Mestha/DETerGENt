@@ -24,7 +24,8 @@ CLASS_LIST = ["Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothel
 
 # default: Load the model on the available device(s)
 QWEN = Qwen2VLForConditionalGeneration.from_pretrained(
-    "Qwen/Qwen2-VL-7B-Instruct", torch_dtype="auto", device_map="auto"
+    "Qwen/Qwen2-VL-7B-Instruct", torch_dtype="auto", device_map="auto",
+    attn_implementation="flash_attention_2"
 )
 # default processer
 QWEN_PROCESSOR = AutoProcessor.from_pretrained("Qwen/Qwen2-VL-7B-Instruct")
@@ -243,6 +244,7 @@ def generate_report(
         while not valid_report:
             # get the response from the API
             report = qwen_client(messages, QWEN, QWEN_PROCESSOR)
+            report = report[0]
             if "explanation" in report.lower():
                 valid_report = True
             else:
@@ -389,6 +391,7 @@ def generate_prediction(
         # similar to gpt
         print("[INFO] Generating predictions using Qwen2-VL-7B-Instruct")
 
+        y = []
         for cls in CLASS_LIST:
             messages = [
                 {
@@ -418,6 +421,7 @@ def generate_prediction(
             while not valid_prediction:
                 # get the response from the API
                 text = qwen_client(messages, QWEN, QWEN_PROCESSOR)
+                text = text[0]
                 if "present" in text.lower():
                     valid_prediction = True
                     if "yes" in text.lower():
