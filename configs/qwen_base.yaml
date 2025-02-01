@@ -1,15 +1,15 @@
-exp_name: vanilla_GPT
+exp_name: vanilla_qwen
 evaluate: false
 pred:
-    model: gpt
+    model: qwen
     generate: false
     from_file: true
-    path: gen_pred_gpt.csv
+    path: gen_pred_qwen.csv
     out_path: None
 
 expl:
-    model: gpt
+    model: qwen
     generate: true
     from_file: false
-    out_path: gen_expl_gpt.csv
+    out_path: gen_expl_qwen.csv
     no_ctxt: false

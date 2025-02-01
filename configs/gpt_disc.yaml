@@ -5,7 +5,7 @@ pred:
     generate: false
     from_file: true
     path: discriminator.csv
-    out_path: gen_pred_gpt.csv
+    out_path: None
 
 expl:
     model: gpt
