@@ -5,20 +5,29 @@ Interacts with both LLMs. Generates reports and predictions using GPT-4o and Min
 import os
 from openai import OpenAI
 from typing import Optional, Tuple
+from src.utils.qwen import qwen_client
 from src.utils.common import encode_image
 from minigpt4.models.minigpt_v2 import MiniGPTv2
 from src.utils.minigpt import mini_gpt_client, PromptArgs, MiniGPTArgs
+from transformers import Qwen2VLForConditionalGeneration, AutoProcessor
 
 openai_org = os.getenv("OPENAI_ORG")
 openai_key = os.getenv("OPENAI_KEY")
 CLIENT = OpenAI(
-    organization="org-FS3BNL7yaD4kX7b68zAMckVr",
-    api_key="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",
+    organization=openai_org,
+    api_key=openai_key,
 )
 
 CLASS_LIST = ["Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothelioma",
               "Cardiomegaly", "Plueral Effusion", "Pneumonia", "Pneumothorax",
               "Tuberculosis"]
+
+# default: Load the model on the available device(s)
+QWEN = Qwen2VLForConditionalGeneration.from_pretrained(
+    "Qwen/Qwen2-VL-7B-Instruct", torch_dtype="auto", device_map="auto"
+)
+# default processer
+QWEN_PROCESSOR = AutoProcessor.from_pretrained("Qwen/Qwen2-VL-7B-Instruct")
 
 
 def generate_report(
@@ -57,7 +66,6 @@ def generate_report(
         Generated report for the given X-ray image
     """
 
-    
     if isinstance(pred, float) and no_ctxt == False:
         print("skipped since no ailment diagnosed...")
         report = ""
@@ -176,6 +184,70 @@ def generate_report(
         )
         report = report[0]
 
+    elif llm == "qwen":
+        print("[INFO] Generating report using Qwen2-VL-7B-Instruct")
+
+        if no_ctxt and pred is None:
+            # no context mode
+            messages = [
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": f"""
+                            Pretend you are a radiologist
+                            Given is the hypothetical X-ray image.
+                            The 10 ailments are as follows : "Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothelioma","Cardiomegaly", "Plueral Effusion", "Pneumonia", "Pneumothorax", "Tuberculosis"
+                            Your output should be in the following format :
+                            "Explanation" - A short passage describing the contents of the image with respect to the ailment(s) above
+                            Adhere to the output format strictly, and be concise.
+                            Make no assumptions about the patient.
+                            """,
+                        },
+                        {
+                            "type": "image",
+                            "image": image_path
+                        }
+                    ]
+                }
+            ]
+        else:
+            # normal mode
+            messages = [
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": f"""
+                            Pretend you are a radiologist
+                            Given is the hypothetical X-ray image.
+                            This is the initial diagnosis of an XRay by a radiologist: {pred}.
+                            Your output should be in the following format :
+                            "Explanation" - A short passage describing the contents of the image with respect to the ailment(s) above
+                            Adhere to the output format strictly, and be concise.
+                            Make no assumptions about the patient.
+                            """,
+                        },
+                        {
+                            "type": "image",
+                            "image": image_path
+                        }
+                    ]
+                }
+            ]
+
+        # get the response from the API
+        valid_report = False
+        while not valid_report:
+            # get the response from the API
+            report = qwen_client(messages, QWEN, QWEN_PROCESSOR)
+            if "explanation" in report.lower():
+                valid_report = True
+            else:
+                print("retrying...")        
+
     else:
         print("[ERROR] Invalid LLM")
         report = None
@@ -213,6 +285,7 @@ def generate_prediction(
     y: str
         Predicted ailment for the given X-ray
     """
+
     # Get image path
     if os.path.isdir(f"data/{x}"):
         image_name = os.listdir(f"data/{x}")[0]
@@ -221,6 +294,7 @@ def generate_prediction(
         image_path = x
 
     if not os.path.exists(image_path):
+        print(f"[ERROR] Image path does not exist. {image_path}")
         return None, None
 
     if llm == "gpt":
@@ -309,6 +383,52 @@ def generate_prediction(
             if label[0].lower() == "yes" or "yes" in label[0].lower():
                 y += [ailment]
 
+        y = ", ".join(y)
+
+    elif llm == "qwen":
+        # similar to gpt
+        print("[INFO] Generating predictions using Qwen2-VL-7B-Instruct")
+
+        for cls in CLASS_LIST:
+            messages = [
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text", 
+                            "text": f"""Pretend you are a radiologist
+                            Given is the hypothetical X-ray image.
+                            Your task is to output an analysis of the given X-ray with respect {cls}.
+                            You shall analyse this image closely for its attributes.
+                            You must provide an output strictly in the following format :
+                            "present" - Yes/No
+                            Adhere to the output format strictly.
+                            Make no assumptions about the patient.
+                            """},
+                        {
+                            "type": "image",
+                            "image": image_path
+                        }
+                    ]
+                }
+            ]
+
+            ailment = False
+            valid_prediction = False
+            while not valid_prediction:
+                # get the response from the API
+                text = qwen_client(messages, QWEN, QWEN_PROCESSOR)
+                if "present" in text.lower():
+                    valid_prediction = True
+                    if "yes" in text.lower():
+                        ailment = True
+                    else:
+                        ailment = False
+            # add the ailment to the overall prediction
+            if ailment:
+                y += [cls]
+
+        # merge
         y = ", ".join(y)
 
     else:
