@@ -62,45 +62,41 @@ def BERTSim(report_A, report_B) -> float:
 
 def evaluate_preds(preds, y) -> None:
     """
-    Evaluate the model predictions.
+    Evaluate the model predictions with weighted accuracy, balanced accuracy, and other metrics.
 
     Args:
-    - preds
-    - y
+    - preds: List of predicted labels for each sample
+    - y: List of ground truth labels for each sample
 
     Returns:
     - None, prints the evaluation metrics.
     """
-
-    # compute class wise confusion matrices
+    # compute class-wise confusion matrices
     conf = np.zeros((10, 2, 2))
+    class_counts = np.zeros(10)
 
-    # iteratre over each disease
     for ailment in label2int:
         gt_idx = label2int[ailment]
         for ps, gs in zip(preds, y):
-            # True case
             if ailment in gs:
-                # TP case
+                class_counts[gt_idx] += 1  # Track prevalence
                 if ailment in ps:
-                    conf[gt_idx, 0, 0] += 1
-                # FN case
+                    conf[gt_idx, 0, 0] += 1  # TP
                 else:
-                    conf[gt_idx, 0, 1] += 1
-            # False case
+                    conf[gt_idx, 0, 1] += 1  # FN
             else:
-                # FP case
                 if ailment in ps:
-                    conf[gt_idx, 1, 0] += 1
-                # TN case
+                    conf[gt_idx, 1, 0] += 1  # FP
                 else:
-                    conf[gt_idx, 1, 1] += 1
+                    conf[gt_idx, 1, 1] += 1  # TN
 
-    # compute class wise accuracy, recall, precision, f1
+    # compute class-wise metrics
     acc = np.zeros(10)
     recall = np.zeros(10)
     precision = np.zeros(10)
     f1 = np.zeros(10)
+    specificity = np.zeros(10)
+    balanced_acc = np.zeros(10)
 
     for i in range(10):
         TP = conf[i, 0, 0]
@@ -108,19 +104,38 @@ def evaluate_preds(preds, y) -> None:
         FP = conf[i, 1, 0]
         TN = conf[i, 1, 1]
 
-        acc[i] = (TP + TN) / (TP + TN + FP + FN)
-        recall[i] = TP / (TP + FN)
-        precision[i] = TP / (TP + FP)
-        if TP == 0:
-            f1[i] = 0
-        else:
-            f1[i] = 2 * (precision[i] * recall[i]) / (precision[i] + recall[i])
+        acc[i] = (TP + TN) / (TP + TN + FP + FN) if (TP + TN + FP + FN) > 0 else 0
+        recall[i] = TP / (TP + FN) if (TP + FN) > 0 else 0
+        precision[i] = TP / (TP + FP) if (TP + FP) > 0 else 0
+        specificity[i] = TN / (TN + FP) if (TN + FP) > 0 else 0
+        balanced_acc[i] = (recall[i] + specificity[i]) / 2
+        f1[i] = 2 * (precision[i] * recall[i]) / (precision[i] + recall[i]) if (precision[i] + recall[i]) > 0 else 0
+    
+    # Compute weighted metrics based on class prevalence
+    total_samples = np.sum(class_counts)
+    weights = class_counts / total_samples if total_samples > 0 else np.ones(10) / 10  # Normalize weights
+    
+    weighted_acc = np.sum(weights * acc)
+    weighted_recall = np.sum(weights * recall)
+    weighted_precision = np.sum(weights * precision)
+    weighted_f1 = np.sum(weights * f1)
+    weighted_balanced_acc = np.sum(weights * balanced_acc)
 
-    print(f"Class Average Accuracy: {np.mean(acc):.4f}")
-    print(f"Class Average Recall: {np.mean(recall):.4f}")
-    print(f"Class Average Precision: {np.mean(precision):.4f}")
-    print(f"Class Average F1: {np.mean(f1):.4f}")
+    print(f"Weighted Accuracy: {weighted_acc:.4f}")
+    print(f"Weighted Recall: {weighted_recall:.4f}")
+    print(f"Weighted Precision: {weighted_precision:.4f}")
+    print(f"Weighted F1: {weighted_f1:.4f}")
+    print(f"Weighted Balanced Accuracy: {weighted_balanced_acc:.4f}")
 
+    # also calculate the subset accuracy
+    subset_acc = 0
+    for ps, gs in zip(preds, y):
+        if set(ps) == set(gs):
+            subset_acc += 1
+
+    subset_acc /= len(preds)
+    print(f"Subset Accuracy: {subset_acc:.4f}")
+    
     return
     
 
@@ -165,6 +180,8 @@ if __name__ == "__main__":
     gpt_pred.fillna("", inplace=True)
     med_pred = pd.read_csv("results/preds/gen_pred_med.csv")
     med_pred.fillna("", inplace=True)
+    qwen_pred = pd.read_csv("results/preds/gen_pred_qwen.csv")
+    qwen_pred.fillna("", inplace=True)
 
     # sort by case
     gt["case"] = gt["case"].apply(lambda x: x.split("_")[1])
@@ -183,15 +200,26 @@ if __name__ == "__main__":
     med_pred.sort_values(by="case", inplace=True)
     med_pred["case"] = med_pred["case"].apply(lambda x: f"case_{x}")
 
+    qwen_pred["case"] = qwen_pred["case"].apply(lambda x: x.split("_")[1])
+    qwen_pred.sort_values(by="case", inplace=True)
+    qwen_pred["case"] = qwen_pred["case"].apply(lambda x: f"case_{x}")
+
     # evaluate predictions
     disc_preds = list(disc["predictions"])
     gpt_preds = list(gpt_pred["prediction"])
     med_preds = list(med_pred["prediction"])
+    qwen_preds = list(qwen_pred["prediction"])
     gt_labels = list(gt["label"])
 
+    print("Vision Model")
     evaluate_preds(disc_preds, gt_labels)
+    print("GPT")
     evaluate_preds(gpt_preds, gt_labels)
+    print("MedGPT")
     evaluate_preds(med_preds, gt_labels)
+    print("Qwen")
+    evaluate_preds(qwen_preds, gt_labels)
+    exit(0)
     
     # Get explanation scores
     gpt_expls = pd.read_csv("results/expls/gen_expl_gpt.csv")
