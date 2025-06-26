@@ -4,7 +4,7 @@
 
 Exploring the Missing Medical Context in Generated Radiology Reports, accepted to [SLM4Health](https://slm4health2025.netlify.app/) @ [AIME-2025](https://aime25.aimedicine.info/).
 
-[![DOI](https://img.shields.io/badge/DOI-soon-blue?style=flat&link=https://doi.org/soon)](https://doi.org/doi)
+[![CEUR-WS Paper](https://img.shields.io/badge/CEUR--WS-Paper-blue?logo=ceur)](https://ceur-ws.org/Vol-3985/paper4.pdf)
 
 To make our research reproducible, we provide all the code used and also instructions on how to reproduce.
 
