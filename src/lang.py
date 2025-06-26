@@ -11,12 +11,16 @@ from minigpt4.models.minigpt_v2 import MiniGPTv2
 from src.utils.minigpt import mini_gpt_client, PromptArgs, MiniGPTArgs
 from transformers import Qwen2VLForConditionalGeneration, AutoProcessor
 
-openai_org = os.getenv("OPENAI_ORG")
-openai_key = os.getenv("OPENAI_KEY")
-CLIENT = OpenAI(
-    organization=openai_org,
-    api_key=openai_key,
-)
+try:
+    openai_org = os.getenv("OPENAI_ORG")
+    openai_key = os.getenv("OPENAI_KEY")
+    CLIENT = OpenAI(
+        organization=openai_org,
+        api_key=openai_key,
+    )
+except Exception as e:
+    print(f"OpenAI key not set (OPENAI_ORG, OPENAI_KEY) are not available. Please set these vars if you want to use GPT4.")
+    CLIENT = None
 
 CLASS_LIST = ["Atelectasis", "Calcifications", "COPD", "Lung Nodules", "Mesothelioma",
               "Cardiomegaly", "Plueral Effusion", "Pneumonia", "Pneumothorax",
@@ -300,6 +304,7 @@ def generate_prediction(
         return None, None
 
     if llm == "gpt":
+        assert CLIENT is not None, "GPT4 cannot be used without API keys."
         print("[INFO] Generating predictions using GPT-4o")
 
         ovr_y = ""

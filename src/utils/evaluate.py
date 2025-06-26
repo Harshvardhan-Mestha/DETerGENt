@@ -29,6 +29,7 @@ label2int = {
     "Tuberculosis": 9
 }
 
+
 def BERTSim(report_A, report_B) -> float:
     """
     Evaluate the model predictions using the BERT for sentence similarity.
